@@ -3817,3 +3817,95 @@ body {
   }
 
 }
+/* =========================================================
+   FINAL MOBILE FIX
+========================================================= */
+
+@media (max-width: 760px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .main-layout {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .manual {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .step-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .content-inner {
+    margin: 0 8px 12px;
+    padding: 12px 8px 16px;
+  }
+
+  .manual-slider {
+    width: 100% !important;
+    min-height: 520px !important;
+
+    padding:
+      10px
+      48px
+      58px
+      8px !important;
+  }
+
+  .slider-viewport {
+    width: 100% !important;
+    height: 430px !important;
+  }
+
+  .slide {
+    width: 100% !important;
+    height: 430px !important;
+    flex: 0 0 430px !important;
+  }
+
+  .slide-scroll {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .slide-image {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+  }
+
+  .slider-button {
+    width: 38px !important;
+    height: 38px !important;
+    right: 5px !important;
+  }
+
+  .slider-button.prev {
+    top: 10px !important;
+  }
+
+  .slider-button.next {
+    bottom: 72px !important;
+  }
+
+  .step-nav {
+    grid-template-columns: 1fr !important;
+  }
+
+  .previous-step,
+  .next-step {
+    width: 100% !important;
+  }
+
+}
