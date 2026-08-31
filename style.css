@@ -3909,3 +3909,57 @@ body {
   }
 
 }
+/* =========================================================
+   FINAL MOBILE LAYOUT FIX
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .main-layout {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto 40px !important;
+    padding: 0 8px !important;
+  }
+
+  .step-sidebar {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+
+    margin-bottom: 12px !important;
+  }
+
+  .manual {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .step-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .step-header {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hero-title {
+    left: 12px !important;
+    right: 12px !important;
+    top: auto !important;
+    bottom: 16px !important;
+
+    width: auto !important;
+    max-width: none !important;
+  }
+
+}
