@@ -1,0 +1,3819 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Noto Sans Thai",
+    Tahoma,
+    Arial,
+    sans-serif;
+
+  color: #153a63;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.04),
+      rgba(255,255,255,.04)
+    ),
+    url("Image/BG.png");
+
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+
+  min-height: 96px;
+
+  padding:
+    13px 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      108deg,
+      #c6ffe7 0%,
+      #78e5d8 37%,
+      #58c5e7 68%,
+      #388fe7 100%
+    );
+
+  border-top:
+    1px solid rgba(255,255,255,.95);
+
+  border-bottom:
+    3px solid rgba(255,255,255,.92);
+
+  box-shadow:
+    0 7px 0 rgba(22,112,181,.13),
+    0 14px 28px rgba(13,79,130,.23),
+    inset 0 1px 0 rgba(255,255,255,.85),
+    inset 0 -2px 6px rgba(15,89,158,.10);
+}
+
+.topbar-shine {
+  position: absolute;
+
+  top: 0;
+  left: 2%;
+  right: 2%;
+
+  height: 5px;
+
+  border-radius:
+    0 0 20px 20px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.9),
+      transparent
+    );
+
+  opacity: .8;
+
+  pointer-events: none;
+}
+
+.brand {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.dia-logo {
+  width: 61px;
+  height: 61px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 17px;
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: 950;
+
+  background:
+    linear-gradient(
+      145deg,
+      #3a94f3,
+      #0855cb
+    );
+
+  border:
+    2px solid rgba(255,255,255,.52);
+
+  box-shadow:
+    0 8px 0 rgba(7,69,160,.17),
+    0 12px 22px rgba(8,71,159,.30),
+    inset 0 2px 3px rgba(255,255,255,.35);
+}
+
+.brand-name {
+  color: #084294;
+
+  font-size: 25px;
+  font-weight: 950;
+
+  letter-spacing: .2px;
+
+  text-shadow:
+    0 1px 0 rgba(255,255,255,.72);
+}
+
+.brand-sub {
+  margin-top: 2px;
+
+  color: #335f7e;
+
+  font-size: 14px;
+  font-weight: 750;
+}
+
+
+/* =========================================================
+   LANGUAGE
+========================================================= */
+
+.language-switch {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.lang-btn {
+  width: 53px;
+  height: 53px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  border:
+    2px solid rgba(255,255,255,.95);
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #e8f5ff
+    );
+
+  color: #1764b4;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 950;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 6px 0 rgba(21,92,161,.13),
+    0 10px 19px rgba(18,81,142,.22),
+    inset 0 2px 3px rgba(255,255,255,.9);
+
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease;
+}
+
+.lang-btn:hover {
+  transform:
+    translateY(-2px);
+}
+
+.lang-btn:active {
+  transform:
+    translateY(1px);
+}
+
+.lang-btn.active {
+  color: white;
+
+  background:
+    linear-gradient(
+      145deg,
+      #359cf4,
+      #0759d6
+    );
+
+  border-color: white;
+
+  box-shadow:
+    0 6px 0 rgba(4,66,162,.27),
+    0 12px 24px rgba(6,76,176,.34),
+    inset 0 2px 3px rgba(255,255,255,.30);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+  width:
+    min(
+      1500px,
+      calc(100% - 30px)
+    );
+
+  margin:
+    18px auto;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 26px;
+
+  border:
+    1px solid rgba(255,255,255,.84);
+
+  box-shadow:
+    0 18px 45px rgba(23,85,137,.18);
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+.hero-title {
+  position: absolute;
+
+  z-index: 2;
+
+  left: 32px;
+  top: 92px;
+
+  width: 430px;
+
+  max-width:
+    calc(100% - 64px);
+
+  padding:
+    17px 24px 19px;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.99) 0%,
+      rgba(247,253,255,.97) 55%,
+      rgba(232,248,255,.96) 100%
+    );
+
+  border:
+    2px solid rgba(255,255,255,.98);
+
+  backdrop-filter:
+    blur(12px);
+
+  box-shadow:
+    0 8px 0 rgba(39,168,166,.18),
+    0 14px 0 rgba(41,135,202,.08),
+    0 20px 34px rgba(24,83,135,.24),
+    inset 0 3px 4px rgba(255,255,255,.95),
+    inset 0 -3px 5px rgba(55,153,196,.09);
+
+  transform:
+    translateY(-2px);
+
+  transition:
+    transform .22s ease,
+    box-shadow .22s ease;
+}
+
+.hero-title::before {
+  content: "";
+
+  position: absolute;
+
+  top: 3px;
+  left: 18px;
+  right: 18px;
+
+  height: 3px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.95),
+      transparent
+    );
+
+  pointer-events: none;
+}
+
+.hero-title:hover {
+  transform:
+    translateY(-5px);
+
+  box-shadow:
+    0 10px 0 rgba(39,168,166,.20),
+    0 16px 0 rgba(41,135,202,.09),
+    0 24px 40px rgba(24,83,135,.28),
+    inset 0 3px 4px rgba(255,255,255,.98),
+    inset 0 -3px 5px rgba(55,153,196,.10);
+}
+
+.hero-kicker {
+  color: #2083d7;
+
+  font-size: 14px;
+  font-weight: 850;
+}
+
+.hero-title h1 {
+  margin-top: 2px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  color: #153b6b;
+
+  font-size: 30px;
+  line-height: 1.28;
+}
+
+.hero-highlight {
+  color: #0965db;
+}
+
+.hero-title p {
+  margin-top: 6px;
+
+  color: #66829d;
+
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.main-layout {
+  width:
+    min(
+      1500px,
+      calc(100% - 30px)
+    );
+
+  margin:
+    0 auto 80px;
+
+  display: grid;
+
+  grid-template-columns:
+    160px
+    minmax(0,1fr);
+
+  gap: 16px;
+}
+
+
+/* =========================================================
+   PATH
+========================================================= */
+
+.step-sidebar {
+  position: sticky;
+
+  top: 116px;
+
+  align-self: start;
+
+  padding: 12px;
+
+  border-radius: 24px;
+
+  background:
+    rgba(255,255,255,.86);
+
+  backdrop-filter:
+    blur(15px);
+
+  box-shadow:
+    0 12px 0 rgba(25,128,151,.06),
+    0 15px 34px rgba(31,85,128,.14);
+}
+
+.journey-start,
+.side-step {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.journey-start-image {
+  width: 122px;
+  height: 122px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  background: white;
+
+  border:
+    2px solid rgba(52,205,189,.44);
+
+  box-shadow:
+    0 7px 0 rgba(31,163,160,.10),
+    0 11px 22px rgba(38,111,141,.12);
+}
+
+.journey-start-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+
+/* =========================================================
+   PATH LINE
+========================================================= */
+
+.journey-line {
+  width: 4px;
+  height: 25px;
+
+  margin:
+    2px 0;
+
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      #32cbbb 0,
+      #32cbbb 6px,
+      transparent 6px,
+      transparent 11px
+    );
+
+  border-radius: 10px;
+}
+
+.journey-start.completed
+.journey-line,
+
+.side-step.completed
+.journey-line {
+  background: #32cbbb;
+
+  box-shadow:
+    0 0 7px rgba(50,203,187,.30);
+}
+
+
+/* =========================================================
+   PATH BUTTON
+========================================================= */
+
+.side-button {
+  width: 100%;
+
+  min-height: 86px;
+
+  padding:
+    9px 7px;
+
+  border: none;
+
+  border-radius: 19px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  color: #286099;
+
+  background:
+    linear-gradient(
+      160deg,
+      #ffffff,
+      #edf7fd
+    );
+
+  box-shadow:
+    0 6px 0 rgba(32,102,145,.07),
+    0 10px 17px rgba(30,86,141,.09);
+
+  cursor: pointer;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.side-button:hover {
+  transform:
+    translateY(-2px);
+}
+
+.side-step.completed
+.side-button,
+
+.side-button.active {
+  color: white;
+
+  background:
+  linear-gradient(
+    180deg,
+    #2c9bf1,
+    #0969df
+  );
+
+  box-shadow:
+    0 7px 0 rgba(7,87,182,.19),
+    0 12px 22px rgba(12,105,215,.26);
+}
+
+.side-button.active {
+  box-shadow:
+    0 8px 0 rgba(7,80,177,.22),
+    0 14px 25px rgba(7,91,215,.37);
+}
+
+.side-number {
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  background:
+    rgba(255,255,255,.92);
+
+  color: #1761bd;
+
+  font-size: 12px;
+  font-weight: 950;
+}
+
+.side-step.completed
+.side-number,
+
+.side-button.active
+.side-number {
+  color: white;
+
+  background:
+    rgba(255,255,255,.20);
+}
+
+.side-button span:last-child {
+  width: 100%;
+  max-width: 140px;
+
+  text-align: center;
+
+  white-space: normal;
+
+  overflow-wrap: break-word;
+
+  font-size: 11px;
+  font-weight: 850;
+  line-height: 1.28;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.manual {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.step-card {
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  border:
+    1px solid rgba(255,255,255,.92);
+
+  background:
+    rgba(249,253,255,.93);
+
+  box-shadow:
+    0 7px 0 rgba(32,114,157,.06),
+    0 13px 28px rgba(32,88,137,.12);
+
+  scroll-margin-top: 118px;
+}
+
+.step-card.open {
+  border-color:
+    rgba(50,203,187,.62);
+
+  box-shadow:
+    0 7px 0 rgba(33,175,167,.12),
+    0 15px 32px rgba(32,88,137,.15);
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.step-header {
+  width: 100%;
+
+  min-height: 112px;
+
+  padding:
+    13px 17px;
+
+  border: none;
+
+  background: transparent;
+
+  display: grid;
+
+  grid-template-columns:
+    53px
+    100px
+    minmax(0,1fr)
+    54px;
+
+  align-items: center;
+
+  gap: 14px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  font-family: inherit;
+}
+
+.step-number {
+  width: 46px;
+  height: 46px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 15px;
+
+  color: #116dd6;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #eef7ff
+    );
+
+  border:
+    1px solid #dbeeff;
+
+  font-size: 16px;
+  font-weight: 950;
+
+  box-shadow:
+    0 5px 10px rgba(29,98,168,.09);
+}
+
+.step-picture {
+  width: 92px;
+
+  aspect-ratio:
+    6.33 / 7.11;
+
+  display: grid;
+  place-items: center;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #dff9f6,
+      #e2f1ff
+    );
+
+  box-shadow:
+    0 5px 10px rgba(25,99,135,.09);
+}
+
+.step-picture img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+.step-title h2 {
+  margin-bottom: 6px;
+
+  color: #173f72;
+
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.step-title p {
+  color: #66809b;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   CARD OPEN/CLOSE BUTTON
+========================================================= */
+
+.step-header {
+  grid-template-columns:
+    53px
+    100px
+    minmax(0,1fr)
+    auto;
+}
+
+.step-toggle {
+  min-width: 168px;
+  height: 50px;
+
+  justify-self: end;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding:
+    0 18px;
+
+  border-radius: 999px;
+
+  border:
+    1px solid #aeeae4;
+
+  color: #1179be;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #efffff
+    );
+
+  box-shadow:
+    0 5px 0 rgba(27,161,155,.09),
+    0 10px 18px rgba(24,92,133,.13),
+    inset 0 2px 2px rgba(255,255,255,.92);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background .2s ease;
+
+  white-space: nowrap;
+}
+
+.step-header:hover
+.step-toggle {
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 7px 0 rgba(27,161,155,.10),
+    0 13px 22px rgba(24,92,133,.16),
+    inset 0 2px 2px rgba(255,255,255,.95);
+}
+
+.step-toggle-text {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.step-toggle-icon {
+  width: 28px;
+  height: 28px;
+
+  display: grid;
+  place-items: center;
+
+  flex: 0 0 28px;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      145deg,
+      #2fd0b7,
+      #249be8
+    );
+
+  box-shadow:
+    0 3px 7px rgba(29,145,195,.22);
+
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.step-card.open
+.step-toggle {
+  color: #0d6fae;
+
+  background:
+    linear-gradient(
+      145deg,
+      #e8fbf7,
+      #eaf5ff
+    );
+}
+
+
+/* =========================================================
+   ACCORDION
+========================================================= */
+
+.step-content {
+  max-height: 0;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+  transition:
+    max-height .42s ease,
+    opacity .27s ease;
+}
+
+.step-card.open
+.step-content {
+  opacity: 1;
+}
+
+.content-inner {
+  margin:
+    0 18px 18px;
+
+  padding: 20px;
+
+  border-radius: 18px;
+
+  border:
+    1px solid #d8ecfc;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(235,249,255,.96),
+      rgba(255,255,255,.98)
+    );
+}
+
+.content-inner h3 {
+  margin-bottom: 9px;
+
+  color: #185eaa;
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   SUBNAV
+========================================================= */
+
+.subnav {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin:
+    14px 0 12px;
+
+  padding-bottom: 5px;
+
+  overflow-x: auto;
+}
+
+.subnav-btn {
+  flex: 0 0 auto;
+
+  padding:
+    10px 16px;
+
+  border:
+    1px solid #bfe7e3;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      #ffffff,
+      #f7ffff
+    );
+
+  color: #3173a9;
+
+  font-family: inherit;
+
+  font-size: 12px;
+  font-weight: 750;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 3px 6px rgba(29,98,140,.06);
+}
+
+.subnav-btn.active {
+  color: white;
+
+  border-color: #2cc6b7;
+
+  background:
+    linear-gradient(
+      135deg,
+      #35cbbb,
+      #178fdc
+    );
+
+  box-shadow:
+    0 5px 0 rgba(23,141,166,.12),
+    0 8px 14px rgba(35,174,177,.20);
+}
+
+
+/* =========================================================
+   VERTICAL SLIDER
+========================================================= */
+
+.manual-slider {
+  position: relative;
+
+  margin-top: 8px;
+
+  padding:
+    16px 58px;
+
+  border-radius: 20px;
+
+  background:
+    rgba(247,252,255,.98);
+
+  border:
+    1px solid #d6eafd;
+}
+
+.slider-viewport {
+  width: 100%;
+  height: 590px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  border-radius: 18px;
+}
+
+.slider-track {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    transform .40s ease;
+}
+
+.slide {
+  width: 100%;
+  height: 590px;
+
+  flex:
+    0 0 590px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.slide-scroll {
+  width:
+    calc(100% - 54px);
+
+  height: 100%;
+
+  position: relative;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  margin-right: 54px;
+
+  padding:
+    12px;
+
+  border:
+    2px dashed #96c9ff;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #eef8ff
+    );
+
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+
+  /*
+    Hide the OS-native scrollbar.
+    The visible scrollbar is the
+    custom one below, so it will not
+    disappear on macOS.
+  */
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slide-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+
+/* =========================================================
+   ALWAYS-VISIBLE CUSTOM SCROLLBAR
+========================================================= */
+
+.custom-scrollbar {
+  position: absolute;
+
+  top: 10px;
+  right: 5px;
+  bottom: 10px;
+
+  width: 38px;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 12;
+
+  user-select: none;
+  touch-action: none;
+
+  pointer-events: auto;
+}
+
+.custom-scrollbar-track {
+  position: relative;
+
+  width: 24px;
+  height: 100%;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #d9faf4 0%,
+      #d8efff 50%,
+      #e5f5ff 100%
+    );
+
+  border:
+    2px solid rgba(
+      48,
+      183,
+      197,
+      .25
+    );
+
+  box-shadow:
+    inset 0 3px 7px
+      rgba(32,145,185,.16),
+    0 3px 7px
+      rgba(40,151,190,.12);
+
+  cursor: pointer;
+
+  pointer-events: auto;
+}
+
+.custom-scrollbar-thumb {
+  position: absolute;
+
+  top: 0;
+  left: 2px;
+
+  width: 16px;
+  min-height: 96px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #38d6b7 0%,
+      #27c9c6 40%,
+      #2da4df 72%,
+      #3797ef 100%
+    );
+
+  border:
+    2px solid
+      rgba(255,255,255,.88);
+
+  box-shadow:
+    0 5px 13px
+      rgba(38,151,197,.34),
+    inset 0 2px 2px
+      rgba(255,255,255,.52),
+    inset 0 -2px 3px
+      rgba(27,130,190,.18);
+
+  cursor: grab;
+
+  will-change: transform;
+
+  pointer-events: auto;
+}
+
+.custom-scrollbar-thumb:hover {
+  background:
+    linear-gradient(
+      180deg,
+      #28cfae 0%,
+      #18bec7 45%,
+      #278fe8 100%
+    );
+
+  box-shadow:
+    0 6px 15px
+      rgba(38,151,197,.40),
+    inset 0 2px 2px
+      rgba(255,255,255,.55);
+}
+
+.custom-scrollbar-thumb:active,
+.custom-scrollbar-thumb.dragging {
+  cursor: grabbing;
+}
+
+.custom-scrollbar.no-overflow
+.custom-scrollbar-thumb {
+  opacity: .72;
+}
+
+@media (max-width: 760px) {
+
+  .slide-scroll {
+    width:
+      calc(100% - 30px);
+
+    margin-right:
+      30px;
+  }
+
+  .custom-scrollbar {
+    right: 1px;
+    width: 20px;
+  }
+
+  .custom-scrollbar-track {
+    width: 12px;
+  }
+
+  .custom-scrollbar-thumb {
+    min-height: 70px;
+  }
+
+}
+
+
+@media (max-width: 760px) {
+
+  .step-header {
+    grid-template-columns:
+      46px
+      76px
+      minmax(0,1fr);
+  }
+
+  .step-toggle {
+    grid-column:
+      2 / -1;
+
+    justify-self:
+      stretch;
+
+    min-width: 0;
+    width: 100%;
+
+    margin-top: 4px;
+
+    height: 46px;
+  }
+
+  .step-toggle-text {
+    font-size: 13px;
+  }
+
+  .slide-scroll {
+    width:
+      calc(100% - 46px);
+
+    margin-right:
+      46px;
+  }
+
+  .custom-scrollbar {
+    width: 34px;
+    right: 2px;
+  }
+
+  .custom-scrollbar-track {
+    width: 22px;
+  }
+
+  .custom-scrollbar-thumb {
+    width: 14px;
+    min-height: 84px;
+  }
+
+}
+
+
+/* =========================================================
+   V5 — INNER MANUAL VIEW
+   Reference: latest user-provided screenshot
+========================================================= */
+
+.step-content {
+  overflow: hidden;
+}
+
+.content-inner {
+  margin: 0 18px 18px;
+  padding: 18px 20px 20px;
+
+  border-radius: 20px;
+  border: 1px solid #cfe8fb;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(244,252,255,.98),
+      rgba(255,255,255,.99)
+    );
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.98);
+}
+
+.content-inner h3 {
+  margin: 0 0 10px;
+
+  color: #1464ac;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.subnav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 10px 0 14px;
+  padding: 0 0 4px;
+
+  overflow-x: auto;
+}
+
+.subnav-btn {
+  flex: 0 0 auto;
+
+  min-height: 46px;
+  padding: 0 18px;
+
+  border-radius: 999px;
+  border: 2px solid #b9e6e5;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f5ffff
+    );
+
+  color: #246ea9;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 850;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 10px rgba(32,101,145,.08),
+    inset 0 2px 2px rgba(255,255,255,.96);
+
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    background .18s ease;
+}
+
+.subnav-btn:hover {
+  transform: translateY(-1px);
+}
+
+.subnav-btn.active {
+  color: #ffffff;
+
+  border-color: #2bc8bf;
+
+  background:
+    linear-gradient(
+      135deg,
+      #35cfbb 0%,
+      #24bdbf 46%,
+      #218fe6 100%
+    );
+
+  box-shadow:
+    0 5px 0 rgba(31,159,170,.12),
+    0 10px 18px rgba(34,164,185,.18);
+}
+
+
+/* =========================================================
+   MAIN SLIDER FRAME
+========================================================= */
+
+.manual-slider {
+  position: relative;
+
+  margin-top: 4px;
+
+  min-height: 700px;
+
+  padding:
+    18px
+    92px
+    72px
+    40px;
+
+  border-radius: 22px;
+
+  border:
+    2px solid #d7ecfb;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(250,254,255,.99),
+      rgba(242,250,255,.99)
+    );
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.98);
+}
+
+.slider-viewport {
+  position: relative;
+
+  width: 100%;
+  height: 590px;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+}
+
+.slider-track {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    transform .38s ease;
+}
+
+.slide {
+  position: relative;
+
+  width: 100%;
+  height: 590px;
+
+  flex: 0 0 590px;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+
+/* =========================================================
+   SCROLLABLE CONTENT PANEL
+========================================================= */
+
+.slide-scroll {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  border:
+    2px dashed #78b8ff;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #fbfdff 62%,
+      #f3faff 100%
+    );
+
+  scroll-behavior: auto;
+  overscroll-behavior: contain;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slide-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.slide-image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   MISSING IMAGE PLACEHOLDER — CENTERED LIKE REFERENCE
+========================================================= */
+
+.slide-placeholder {
+  width: 100%;
+  min-height: 586px;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 28px;
+
+  text-align: center;
+}
+
+.slide.missing-image
+.slide-placeholder {
+  display: flex;
+}
+
+.placeholder-number {
+  width: 64px;
+  height: 64px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 3px;
+
+  border-radius: 16px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      145deg,
+      #2e8cff,
+      #1265d9
+    );
+
+  box-shadow:
+    0 7px 0 rgba(26,92,185,.12),
+    0 13px 22px rgba(27,97,184,.20);
+
+  font-size: 18px;
+  font-weight: 950;
+}
+
+.slide-placeholder strong {
+  color: #1e68b4;
+
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.slide-placeholder span {
+  color: #8298ae;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   UP / DOWN BUTTONS — RIGHT SIDE
+========================================================= */
+
+.slider-button {
+  position: absolute;
+  right: 19px;
+
+  width: 50px;
+  height: 50px;
+
+  display: grid;
+  place-items: center;
+
+  z-index: 25;
+
+  border-radius: 50%;
+  border: 1px solid #d9eded;
+
+  color: #28c7b6;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f5ffff
+    );
+
+  box-shadow:
+    0 6px 16px rgba(28,104,146,.15),
+    inset 0 2px 2px rgba(255,255,255,.98);
+
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 950;
+
+  cursor: pointer;
+
+  transition:
+    transform .16s ease,
+    opacity .16s ease;
+}
+
+.slider-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.slider-button.prev {
+  top: 18px;
+}
+
+.slider-button.next {
+  bottom: 92px;
+}
+
+.slider-button:disabled {
+  opacity: .32;
+  cursor: default;
+}
+
+
+/* =========================================================
+   WORKING GREEN-BLUE SCROLLBAR
+   Between the ▲ and ▼ buttons
+========================================================= */
+
+.custom-scrollbar {
+  position: absolute;
+
+  top: 82px;
+  right: -74px;
+  bottom: 82px;
+
+  width: 50px;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 20;
+
+  user-select: none;
+  touch-action: none;
+
+  pointer-events: auto;
+}
+
+.custom-scrollbar-track {
+  position: relative;
+
+  width: 10px;
+  height: 100%;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #d7f5f0 0%,
+      #d6edff 100%
+    );
+
+  border:
+    1px solid rgba(51,177,194,.18);
+
+  box-shadow:
+    inset 0 2px 5px rgba(29,132,174,.12);
+
+  cursor: pointer;
+
+  pointer-events: auto;
+}
+
+.custom-scrollbar-thumb {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  width: 18px;
+  min-height: 110px;
+
+  border-radius: 999px;
+
+  transform:
+    translateX(-50%)
+    translateY(0);
+
+  background:
+    linear-gradient(
+      180deg,
+      #3ad3b7 0%,
+      #29c7bf 40%,
+      #28a8dc 70%,
+      #2489ee 100%
+    );
+
+  border:
+    2px solid rgba(255,255,255,.88);
+
+  box-shadow:
+    0 5px 12px rgba(36,145,197,.26),
+    inset 0 2px 2px rgba(255,255,255,.45);
+
+  cursor: grab;
+
+  will-change: transform;
+
+  pointer-events: auto;
+}
+
+.custom-scrollbar-thumb:hover {
+  filter: brightness(.98);
+}
+
+.custom-scrollbar-thumb:active,
+.custom-scrollbar-thumb.dragging {
+  cursor: grabbing;
+}
+
+.custom-scrollbar.no-overflow
+.custom-scrollbar-track {
+  opacity: .55;
+}
+
+.custom-scrollbar.no-overflow
+.custom-scrollbar-thumb {
+  opacity: .55;
+  cursor: default;
+}
+
+
+/* =========================================================
+   DOTS + COUNTER + HINT
+========================================================= */
+
+.slider-footer {
+  position: absolute;
+
+  left: 40px;
+  right: 92px;
+  bottom: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  z-index: 22;
+}
+
+.slider-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+}
+
+.slider-dot {
+  width: 9px;
+  height: 9px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 999px;
+
+  background: #d6e5f3;
+
+  cursor: pointer;
+}
+
+.slider-dot.active {
+  width: 22px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #25cfb3,
+      #26bfc4
+    );
+}
+
+.slide-counter {
+  color: #52739a;
+
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.scroll-hint {
+  position: absolute;
+
+  left: 40px;
+  right: 92px;
+  bottom: 13px;
+
+  text-align: center;
+
+  color: #7d96af;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   PREVIOUS / NEXT STEP
+========================================================= */
+
+.step-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+
+  margin-top: 20px;
+  padding-top: 16px;
+
+  border-top: 1px solid #d9eaf6;
+}
+
+.previous-step,
+.next-step {
+  min-height: 54px;
+
+  padding: 0 22px;
+
+  border-radius: 15px;
+
+  border: 0;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 900;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 6px 0 rgba(24,112,175,.10),
+    0 10px 20px rgba(29,98,150,.12);
+}
+
+.previous-step {
+  justify-self: start;
+
+  color: #2870a8;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #eef9ff
+    );
+
+  border: 1px solid #d5eaf8;
+}
+
+.next-step {
+  justify-self: end;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #31d0bb 0%,
+      #22bfc8 45%,
+      #1c82ed 100%
+    );
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .manual-slider {
+    min-height: 640px;
+
+    padding:
+      16px
+      80px
+      66px
+      24px;
+  }
+
+  .slider-viewport,
+  .slide {
+    height: 530px;
+  }
+
+  .slide {
+    flex-basis: 530px;
+  }
+
+  .slide-placeholder {
+    min-height: 526px;
+  }
+
+  .slider-button {
+    right: 14px;
+  }
+
+  .custom-scrollbar {
+    right: -66px;
+  }
+
+  .slider-footer,
+  .scroll-hint {
+    left: 24px;
+    right: 80px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .content-inner {
+    margin: 0 10px 12px;
+    padding: 14px 12px 16px;
+  }
+
+  .content-inner h3 {
+    font-size: 16px;
+  }
+
+  .subnav-btn {
+    min-height: 42px;
+    padding: 0 14px;
+    font-size: 13px;
+  }
+
+  .manual-slider {
+    min-height: 570px;
+
+    padding:
+      12px
+      54px
+      64px
+      10px;
+  }
+
+  .slider-viewport,
+  .slide {
+    height: 460px;
+  }
+
+  .slide {
+    flex-basis: 460px;
+  }
+
+  .slide-placeholder {
+    min-height: 456px;
+    padding: 18px;
+  }
+
+  .placeholder-number {
+    width: 56px;
+    height: 56px;
+  }
+
+  .slide-placeholder strong {
+    font-size: 16px;
+  }
+
+  .slide-placeholder span {
+    font-size: 13px;
+  }
+
+  .slider-button {
+    right: 6px;
+
+    width: 42px;
+    height: 42px;
+
+    font-size: 14px;
+  }
+
+  .slider-button.prev {
+    top: 12px;
+  }
+
+  .slider-button.next {
+    bottom: 86px;
+  }
+
+  .custom-scrollbar {
+    top: 67px;
+    right: -48px;
+    bottom: 72px;
+
+    width: 38px;
+  }
+
+  .custom-scrollbar-track {
+    width: 8px;
+  }
+
+  .custom-scrollbar-thumb {
+    width: 15px;
+    min-height: 86px;
+  }
+
+  .slider-footer {
+    left: 10px;
+    right: 54px;
+    bottom: 39px;
+  }
+
+  .scroll-hint {
+    left: 10px;
+    right: 54px;
+    bottom: 11px;
+
+    font-size: 12px;
+  }
+
+  .step-nav {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+
+  .previous-step,
+  .next-step {
+    width: 100%;
+    justify-self: stretch;
+  }
+
+}
+
+
+/* =========================================================
+   V8 — SIMPLE MANUAL SLIDER
+   LARGE UP / DOWN BUTTONS — NO SCROLLBAR
+========================================================= */
+
+
+/* Main slider */
+
+.manual-slider {
+  position: relative !important;
+
+  min-height: 700px !important;
+
+  padding:
+    18px
+    100px
+    72px
+    40px !important;
+
+  overflow: hidden !important;
+}
+
+
+/* Main image area */
+
+.slider-viewport {
+  width: 100% !important;
+  height: 590px !important;
+
+  overflow: hidden !important;
+
+  position: relative !important;
+
+  border-radius: 18px !important;
+}
+
+
+.slider-track {
+  width: 100% !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  transition:
+    transform .38s ease !important;
+}
+
+
+.slide {
+  width: 100% !important;
+  height: 590px !important;
+
+  flex:
+    0 0 590px !important;
+
+  position: relative !important;
+
+  display: flex !important;
+}
+
+
+/* Restore one clean content box */
+
+.slide-scroll {
+  width: 100% !important;
+  height: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+
+  border:
+    2px dashed #78b8ff !important;
+
+  border-radius:
+    18px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #fbfdff 62%,
+      #f3faff 100%
+    ) !important;
+}
+
+
+/* Completely remove old custom scrollbar */
+
+.custom-scrollbar {
+  display: none !important;
+}
+
+
+/* =========================================================
+   LARGE UP / DOWN BUTTONS
+========================================================= */
+
+.slider-button {
+  position: absolute !important;
+
+  right: 18px !important;
+
+  width: 64px !important;
+  height: 64px !important;
+
+  display: grid !important;
+  place-items: center !important;
+
+  padding: 0 !important;
+
+  border-radius: 50% !important;
+
+  border:
+    2px solid
+    rgba(48,203,190,.30) !important;
+
+  color:
+    #ffffff !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #38d3b8 0%,
+      #26bec7 48%,
+      #2189e9 100%
+    ) !important;
+
+  box-shadow:
+    0 7px 0
+      rgba(28,136,177,.13),
+    0 12px 22px
+      rgba(25,119,174,.24),
+    inset 0 2px 3px
+      rgba(255,255,255,.35) !important;
+
+  font-size: 25px !important;
+  font-weight: 950 !important;
+
+  cursor: pointer !important;
+
+  z-index: 100 !important;
+
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    opacity .18s ease !important;
+}
+
+
+.slider-button:hover:not(:disabled) {
+  transform:
+    translateY(-3px)
+    scale(1.04) !important;
+
+  box-shadow:
+    0 9px 0
+      rgba(28,136,177,.13),
+    0 15px 26px
+      rgba(25,119,174,.28) !important;
+}
+
+
+.slider-button:active:not(:disabled) {
+  transform:
+    translateY(1px)
+    scale(.98) !important;
+}
+
+
+/* ▲ */
+
+.slider-button.prev {
+  top: 26px !important;
+}
+
+
+/* ▼ */
+
+.slider-button.next {
+  bottom: 96px !important;
+}
+
+
+/* Disabled at first / last image */
+
+.slider-button:disabled {
+  opacity: .28 !important;
+
+  cursor: default !important;
+
+  transform: none !important;
+}
+
+
+/* =========================================================
+   DOTS / COUNTER
+========================================================= */
+
+.slider-footer {
+  left: 40px !important;
+  right: 100px !important;
+  bottom: 42px !important;
+}
+
+
+.scroll-hint {
+  left: 40px !important;
+  right: 100px !important;
+  bottom: 13px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .manual-slider {
+    padding:
+      16px
+      90px
+      66px
+      24px !important;
+  }
+
+
+  .slider-button {
+    right: 14px !important;
+
+    width: 58px !important;
+    height: 58px !important;
+
+    font-size: 22px !important;
+  }
+
+
+  .slider-footer,
+  .scroll-hint {
+    right: 90px !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .manual-slider {
+    min-height: 570px !important;
+
+    padding:
+      12px
+      64px
+      64px
+      10px !important;
+  }
+
+
+  .slider-viewport,
+  .slide {
+    height: 460px !important;
+  }
+
+
+  .slide {
+    flex-basis:
+      460px !important;
+  }
+
+
+  .slider-button {
+    right: 7px !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    font-size: 18px !important;
+  }
+
+
+  .slider-button.prev {
+    top: 18px !important;
+  }
+
+
+  .slider-button.next {
+    bottom: 88px !important;
+  }
+
+
+  .slider-footer,
+  .scroll-hint {
+    right: 64px !important;
+  }
+
+}
+/* =========================================================
+   FINAL — LARGE UP / DOWN BUTTONS
+========================================================= */
+
+.slider-button {
+  width: 62px !important;
+  height: 62px !important;
+
+  right: 18px !important;
+
+  border-radius: 50% !important;
+
+  color: #ffffff !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #39d2bc 0%,
+      #25bdc6 48%,
+      #218ee7 100%
+    ) !important;
+
+  border:
+    2px solid
+    rgba(255,255,255,.92) !important;
+
+  box-shadow:
+    0 7px 0 rgba(27,144,173,.14),
+    0 12px 22px rgba(27,115,171,.22),
+    inset 0 2px 3px rgba(255,255,255,.38) !important;
+
+  font-size: 25px !important;
+  font-weight: 950 !important;
+
+  z-index: 100 !important;
+}
+
+
+/* ▲ ด้านบน */
+
+.slider-button.prev {
+  top: 18px !important;
+  bottom: auto !important;
+}
+
+
+/* ▼ ด้านล่าง */
+
+.slider-button.next {
+  top: auto !important;
+  bottom: 18px !important;
+}
+
+
+.slider-button:hover:not(:disabled) {
+  transform:
+    translateY(-2px)
+    scale(1.05) !important;
+}
+
+
+.slider-button:disabled {
+  opacity: .30 !important;
+}
+
+
+/* เว้นช่องด้านขวาสำหรับปุ่ม */
+
+.manual-slider {
+  padding-right:
+    96px !important;
+}
+
+
+/* พื้นที่รูปกลับมาเป็นกรอบเดียว */
+
+.slide-scroll {
+  width: 100% !important;
+
+  margin-right: 0 !important;
+}
+
+
+/* ไม่ใช้ Scroll Bar แล้ว */
+
+.custom-scrollbar {
+  display: none !important;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+
+  .slider-button {
+    width: 58px !important;
+    height: 58px !important;
+
+    right: 14px !important;
+
+    font-size: 22px !important;
+  }
+
+  .manual-slider {
+    padding-right:
+      88px !important;
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 760px) {
+
+  .slider-button {
+    width: 48px !important;
+    height: 48px !important;
+
+    right: 7px !important;
+
+    font-size: 18px !important;
+  }
+
+  .slider-button.prev {
+    top: 12px !important;
+  }
+
+  .slider-button.next {
+    bottom: 12px !important;
+  }
+
+  .manual-slider {
+    padding-right:
+      64px !important;
+  }
+
+}
+/* =========================================================
+   FINAL CLEAN MANUAL SLIDER
+========================================================= */
+
+.custom-scrollbar,
+.custom-scrollbar-track,
+.custom-scrollbar-thumb {
+  display: none !important;
+}
+
+.manual-slider {
+  position: relative !important;
+
+  min-height: 700px !important;
+
+  padding:
+    18px
+    96px
+    72px
+    40px !important;
+
+  overflow: hidden !important;
+}
+
+.slider-viewport {
+  width: 100% !important;
+  height: 590px !important;
+
+  position: relative !important;
+
+  overflow: hidden !important;
+
+  border-radius: 18px !important;
+}
+
+.slider-track {
+  width: 100% !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  transition:
+    transform .38s ease !important;
+}
+
+.slide {
+  width: 100% !important;
+  height: 590px !important;
+
+  flex:
+    0 0 590px !important;
+
+  display: flex !important;
+
+  position: relative !important;
+}
+
+.slide-scroll {
+  width: 100% !important;
+  height: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+
+  border:
+    2px dashed #78b8ff !important;
+
+  border-radius:
+    18px !important;
+}
+
+
+/* BIG ▲ / ▼ BUTTONS */
+
+.slider-button {
+  position: absolute !important;
+
+  right: 18px !important;
+
+  width: 62px !important;
+  height: 62px !important;
+
+  display: grid !important;
+  place-items: center !important;
+
+  border-radius:
+    50% !important;
+
+  border:
+    2px solid rgba(255,255,255,.9) !important;
+
+  color:
+    #ffffff !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #3ad3b8 0%,
+      #27c0c6 48%,
+      #218ce9 100%
+    ) !important;
+
+  box-shadow:
+    0 7px 0 rgba(27,144,173,.13),
+    0 12px 22px rgba(27,115,171,.23),
+    inset 0 2px 3px rgba(255,255,255,.38) !important;
+
+  font-size:
+    25px !important;
+
+  font-weight:
+    950 !important;
+
+  z-index:
+    100 !important;
+}
+
+.slider-button.prev {
+  top:
+    18px !important;
+
+  bottom:
+    auto !important;
+}
+
+.slider-button.next {
+  top:
+    auto !important;
+
+  bottom:
+    18px !important;
+}
+
+.slider-button:disabled {
+  opacity:
+    .3 !important;
+}
+
+
+/* DOTS / COUNTER */
+
+.slider-footer {
+  position: absolute !important;
+
+  left:
+    40px !important;
+
+  right:
+    96px !important;
+
+  bottom:
+    42px !important;
+
+  display: flex !important;
+  justify-content: center !important;
+
+  z-index:
+    20 !important;
+}
+
+
+/* HINT */
+
+.scroll-hint {
+  position: absolute !important;
+
+  left:
+    40px !important;
+
+  right:
+    96px !important;
+
+  bottom:
+    13px !important;
+
+  text-align:
+    center !important;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+
+  .manual-slider {
+    padding-right:
+      88px !important;
+  }
+
+  .slider-button {
+    width:
+      58px !important;
+
+    height:
+      58px !important;
+
+    right:
+      14px !important;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+  .manual-slider {
+    min-height:
+      570px !important;
+
+    padding:
+      12px
+      64px
+      64px
+      10px !important;
+  }
+
+  .slider-viewport,
+  .slide {
+    height:
+      460px !important;
+  }
+
+  .slide {
+    flex-basis:
+      460px !important;
+  }
+
+  .slider-button {
+    width:
+      48px !important;
+
+    height:
+      48px !important;
+
+    right:
+      7px !important;
+
+    font-size:
+      18px !important;
+  }
+
+  .slider-button.prev {
+    top:
+      12px !important;
+  }
+
+  .slider-button.next {
+    bottom:
+      12px !important;
+  }
+
+  .slider-footer,
+  .scroll-hint {
+    right:
+      64px !important;
+  }
+}
+/* =========================================================
+   FINAL — BIT TELEMEDICINE STYLE CONTENT SCROLL
+========================================================= */
+
+
+/* ปิด Scrollbar เก่าทั้งหมด */
+
+.custom-scrollbar,
+.custom-scrollbar-track,
+.custom-scrollbar-thumb {
+  display: none !important;
+}
+
+
+/* =========================================================
+   MANUAL SLIDER FRAME
+========================================================= */
+
+.manual-slider {
+  position: relative !important;
+
+  min-height: 700px !important;
+
+  padding:
+    18px
+    100px
+    72px
+    40px !important;
+
+  overflow: hidden !important;
+}
+
+
+.slider-viewport {
+  position: relative !important;
+
+  width: 100% !important;
+  height: 590px !important;
+
+  overflow: hidden !important;
+
+  border-radius: 18px !important;
+}
+
+
+.slider-track {
+  width: 100% !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  transition:
+    transform .38s ease !important;
+}
+
+
+.slide {
+  position: relative !important;
+
+  width: 100% !important;
+  height: 590px !important;
+
+  flex:
+    0 0 590px !important;
+
+  display: block !important;
+}
+
+
+/* =========================================================
+   REAL SCROLLABLE CONTENT AREA
+========================================================= */
+
+.slide-scroll {
+  position: relative !important;
+
+  width:
+    calc(100% - 48px) !important;
+
+  height: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+
+  border:
+    2px dashed #78b8ff !important;
+
+  border-radius:
+    18px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #fbfdff 62%,
+      #f3faff 100%
+    ) !important;
+
+  scroll-behavior:
+    smooth !important;
+
+  overscroll-behavior:
+    contain !important;
+
+  scrollbar-width:
+    none !important;
+
+  -ms-overflow-style:
+    none !important;
+}
+
+
+.slide-scroll::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+
+  display: none !important;
+}
+
+
+.slide-image {
+  display: block !important;
+
+  width: 100% !important;
+  height: auto !important;
+
+  margin: 0 !important;
+
+  object-fit: contain !important;
+}
+
+
+/* =========================================================
+   CONTENT SCROLLBAR
+========================================================= */
+
+.content-scrollbar {
+  position: absolute !important;
+
+  top: 76px !important;
+  right: 9px !important;
+  bottom: 76px !important;
+
+  width: 32px !important;
+
+  display: flex !important;
+  justify-content: center !important;
+
+  z-index: 60 !important;
+
+  user-select: none;
+  touch-action: none;
+}
+
+
+.content-scrollbar-track {
+  position: relative !important;
+
+  width: 9px !important;
+  height: 100% !important;
+
+  border-radius: 999px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #dcf7f2 0%,
+      #d9efff 100%
+    ) !important;
+
+  border:
+    1px solid
+      rgba(45,182,194,.24) !important;
+
+  box-shadow:
+    inset 0 2px 5px
+      rgba(30,132,175,.14) !important;
+
+  cursor: pointer !important;
+}
+
+
+.content-scrollbar-thumb {
+  position: absolute !important;
+
+  top: 0 !important;
+  left: 50% !important;
+
+  width: 18px !important;
+  min-height: 72px !important;
+
+  border-radius: 999px !important;
+
+  transform:
+    translateX(-50%)
+    translateY(0);
+
+  background:
+    linear-gradient(
+      180deg,
+      #39d5b8 0%,
+      #29c8c0 40%,
+      #29a8dc 70%,
+      #2187ed 100%
+    ) !important;
+
+  border:
+    2px solid
+      rgba(255,255,255,.92) !important;
+
+  box-shadow:
+    0 5px 12px
+      rgba(36,145,197,.28),
+    inset 0 2px 2px
+      rgba(255,255,255,.48) !important;
+
+  cursor: grab !important;
+
+  will-change: transform;
+}
+
+
+.content-scrollbar-thumb:hover {
+  filter: brightness(.98);
+}
+
+
+.content-scrollbar-thumb.dragging {
+  cursor: grabbing !important;
+}
+
+
+.content-scrollbar.no-scroll {
+  opacity: .35 !important;
+}
+
+
+/* =========================================================
+   LARGE ▲ / ▼ BUTTONS
+========================================================= */
+
+.slider-button {
+  position: absolute !important;
+
+  right: 8px !important;
+
+  width: 58px !important;
+  height: 58px !important;
+
+  display: grid !important;
+  place-items: center !important;
+
+  padding: 0 !important;
+
+  border-radius:
+    50% !important;
+
+  border:
+    2px solid
+    rgba(255,255,255,.92) !important;
+
+  color:
+    #ffffff !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #3ad4b9 0%,
+      #26c0c6 48%,
+      #218ce9 100%
+    ) !important;
+
+  box-shadow:
+    0 7px 0
+      rgba(27,144,173,.13),
+    0 12px 22px
+      rgba(27,115,171,.24),
+    inset 0 2px 3px
+      rgba(255,255,255,.38) !important;
+
+  font-size:
+    23px !important;
+
+  font-weight:
+    950 !important;
+
+  cursor:
+    pointer !important;
+
+  z-index:
+    100 !important;
+
+  transition:
+    transform .18s ease,
+    opacity .18s ease !important;
+}
+
+
+/* ▲ */
+
+.slider-button.prev {
+  top:
+    10px !important;
+
+  bottom:
+    auto !important;
+}
+
+
+/* ▼ */
+
+.slider-button.next {
+  top:
+    auto !important;
+
+  bottom:
+    10px !important;
+}
+
+
+.slider-button:hover:not(:disabled) {
+  transform:
+    scale(1.06) !important;
+}
+
+
+.slider-button:disabled {
+  opacity:
+    .28 !important;
+
+  cursor:
+    default !important;
+}
+
+
+/* =========================================================
+   DOTS / COUNTER / HINT
+========================================================= */
+
+.slider-footer {
+  position: absolute !important;
+
+  left:
+    40px !important;
+
+  right:
+    100px !important;
+
+  bottom:
+    42px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap:
+    9px !important;
+
+  z-index:
+    30 !important;
+}
+
+
+.scroll-hint {
+  position: absolute !important;
+
+  left:
+    40px !important;
+
+  right:
+    100px !important;
+
+  bottom:
+    13px !important;
+
+  text-align:
+    center !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .manual-slider {
+    padding:
+      16px
+      88px
+      66px
+      24px !important;
+  }
+
+
+  .slider-button {
+    width:
+      54px !important;
+
+    height:
+      54px !important;
+
+    right:
+      7px !important;
+  }
+
+
+  .content-scrollbar {
+    right:
+      6px !important;
+  }
+
+
+  .slider-footer,
+  .scroll-hint {
+    right:
+      88px !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .manual-slider {
+    min-height:
+      570px !important;
+
+    padding:
+      12px
+      66px
+      64px
+      10px !important;
+  }
+
+
+  .slider-viewport,
+  .slide {
+    height:
+      460px !important;
+  }
+
+
+  .slide {
+    flex-basis:
+      460px !important;
+  }
+
+
+  .slide-scroll {
+    width:
+      calc(100% - 34px) !important;
+  }
+
+
+  .slider-button {
+    width:
+      46px !important;
+
+    height:
+      46px !important;
+
+    right:
+      4px !important;
+
+    font-size:
+      17px !important;
+  }
+
+
+  .slider-button.prev {
+    top:
+      8px !important;
+  }
+
+
+  .slider-button.next {
+    bottom:
+      8px !important;
+  }
+
+
+  .content-scrollbar {
+    top:
+      62px !important;
+
+    right:
+      1px !important;
+
+    bottom:
+      62px !important;
+
+    width:
+      26px !important;
+  }
+
+
+  .content-scrollbar-track {
+    width:
+      7px !important;
+  }
+
+
+  .content-scrollbar-thumb {
+    width:
+      14px !important;
+
+    min-height:
+      58px !important;
+  }
+
+
+  .slider-footer,
+  .scroll-hint {
+    right:
+      66px !important;
+  }
+
+}
+/* =========================================================
+   FIX BROKEN IMAGE PLACEHOLDER
+========================================================= */
+
+.slide.missing-image .slide-image {
+  display: none !important;
+}
+
+.slide.missing-image .slide-placeholder {
+  display: flex !important;
+}
+/* =========================================================
+   ALIGN ▲ / SCROLLBAR / ▼
+========================================================= */
+
+.slider-button {
+  right: 96px !important;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+
+  .slider-button {
+    right: 83px !important;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+  .slider-button {
+    right: 57px !important;
+  }
+
+}
+/* =========================================================
+   FINAL FIX — P8 CONTENT SCROLL CONTROL RAIL
+========================================================= */
+
+/* กันพื้นที่ด้านขวาไว้ให้ ▲ / Scrollbar / ▼ */
+
+.manual-slider {
+  position: relative !important;
+
+  min-height: 700px !important;
+
+  padding:
+    18px
+    112px
+    72px
+    40px !important;
+
+  overflow: hidden !important;
+}
+
+
+/* กรอบรูปไม่กินพื้นที่ Control Rail */
+
+.slider-viewport {
+  position: relative !important;
+
+  width: 100% !important;
+  height: 590px !important;
+
+  overflow: hidden !important;
+
+  border-radius: 18px !important;
+}
+
+
+/* =========================================================
+   SLIDE
+========================================================= */
+
+.slide {
+  position: relative !important;
+
+  width: 100% !important;
+  height: 590px !important;
+
+  flex: 0 0 590px !important;
+
+  display: block !important;
+}
+
+
+/* พื้นที่ Content เต็มกรอบตัวเอง
+   ไม่ต้องหักพื้นที่ Scrollbar อีกแล้ว */
+
+.slide-scroll {
+  position: relative !important;
+
+  width: 100% !important;
+  height: 590px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+
+  border:
+    2px dashed #78b8ff !important;
+
+  border-radius: 18px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #fbfdff 62%,
+      #f3faff 100%
+    ) !important;
+
+  scroll-behavior: smooth !important;
+  overscroll-behavior: contain !important;
+
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+
+.slide-scroll::-webkit-scrollbar {
+  display: none !important;
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+   ทำให้ Scroll ได้ตอนยังไม่มีรูปจริง
+========================================================= */
+
+.slide.missing-image
+.slide-placeholder {
+  display: flex !important;
+
+  /*
+    มากกว่า viewport 590px
+    เพื่อให้ ▲ / ▼ / Scrollbar ทดสอบได้จริง
+  */
+  min-height: 980px !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+
+.slide.missing-image
+.slide-image {
+  display: none !important;
+}
+
+
+/* =========================================================
+   CONTROL RAIL
+========================================================= */
+
+/*
+   ทุกอย่างใช้แกน X เดียวกัน
+   ปุ่มบน + Scrollbar + ปุ่มล่าง
+*/
+
+.slider-button {
+  position: absolute !important;
+
+  right: 20px !important;
+
+  width: 62px !important;
+  height: 62px !important;
+
+  display: grid !important;
+  place-items: center !important;
+
+  padding: 0 !important;
+
+  border-radius: 50% !important;
+
+  color: #ffffff !important;
+
+  border:
+    2px solid
+    rgba(255,255,255,.94) !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #39d3bb 0%,
+      #25c3c3 50%,
+      #218ee8 100%
+    ) !important;
+
+  box-shadow:
+    0 7px 0 rgba(20,142,169,.13),
+    0 12px 22px rgba(27,115,171,.23),
+    inset 0 2px 3px rgba(255,255,255,.40) !important;
+
+  font-size: 24px !important;
+  font-weight: 950 !important;
+
+  z-index: 100 !important;
+
+  cursor: pointer !important;
+}
+
+
+/* ▲ */
+
+.slider-button.prev {
+  top: 18px !important;
+  bottom: auto !important;
+}
+
+
+/* ▼ */
+
+.slider-button.next {
+  top: auto !important;
+  bottom: 82px !important;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+.content-scrollbar {
+  position: absolute !important;
+
+  /*
+    อยู่ตรงกลางระหว่างปุ่ม ▲ / ▼
+  */
+
+  top: 94px !important;
+  right: 35px !important;
+  bottom: 158px !important;
+
+  width: 32px !important;
+
+  display: flex !important;
+  justify-content: center !important;
+
+  z-index: 80 !important;
+
+  opacity: 1 !important;
+
+  user-select: none !important;
+  touch-action: none !important;
+
+  pointer-events: auto !important;
+}
+
+
+.content-scrollbar-track {
+  position: relative !important;
+
+  width: 9px !important;
+  height: 100% !important;
+
+  border-radius: 999px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #d9f7f4 0%,
+      #d9f1f2 100%
+    ) !important;
+
+  border:
+    1px solid
+    rgba(35,190,183,.30) !important;
+
+  box-shadow:
+    inset 0 2px 5px
+    rgba(25,151,165,.15) !important;
+
+  cursor: pointer !important;
+
+  pointer-events: auto !important;
+}
+
+
+/* Tiffany Blue Thumb */
+
+.content-scrollbar-thumb {
+  position: absolute !important;
+
+  top: 0 !important;
+  left: 50% !important;
+
+  width: 19px !important;
+  min-height: 72px !important;
+
+  border-radius: 999px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #45E0D0 0%,
+      #2FD0C4 50%,
+      #18BFB7 100%
+    ) !important;
+
+  border:
+    2px solid
+    rgba(255,255,255,.94) !important;
+
+  box-shadow:
+    0 5px 13px
+      rgba(28,169,170,.30),
+    inset 0 2px 2px
+      rgba(255,255,255,.50) !important;
+
+  cursor: grab !important;
+
+  pointer-events: auto !important;
+
+  will-change: transform;
+}
+
+
+.content-scrollbar-thumb.dragging {
+  cursor: grabbing !important;
+}
+
+
+/*
+  อย่าซ่อน Scrollbar ตอน Placeholder
+*/
+
+.content-scrollbar.no-scroll {
+  opacity: 1 !important;
+}
+
+
+/* =========================================================
+   DOTS / TEXT
+========================================================= */
+
+.slider-footer {
+  left: 40px !important;
+  right: 112px !important;
+  bottom: 42px !important;
+}
+
+
+.scroll-hint {
+  left: 40px !important;
+  right: 112px !important;
+  bottom: 13px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .manual-slider {
+    padding:
+      16px
+      100px
+      66px
+      24px !important;
+  }
+
+
+  .slider-button {
+    right: 16px !important;
+
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+
+  .content-scrollbar {
+    right: 29px !important;
+  }
+
+
+  .slider-footer,
+  .scroll-hint {
+    right: 100px !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .manual-slider {
+    min-height: 570px !important;
+
+    padding:
+      12px
+      74px
+      64px
+      10px !important;
+  }
+
+
+  .slider-viewport,
+  .slide,
+  .slide-scroll {
+    height: 460px !important;
+  }
+
+
+  .slide {
+    flex-basis: 460px !important;
+  }
+
+
+  .slide.missing-image
+  .slide-placeholder {
+    min-height: 760px !important;
+  }
+
+
+  .slider-button {
+    right: 8px !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    font-size: 18px !important;
+  }
+
+
+  .slider-button.prev {
+    top: 10px !important;
+  }
+
+
+  .slider-button.next {
+    bottom: 76px !important;
+  }
+
+
+  .content-scrollbar {
+    top: 72px !important;
+
+    right: 20px !important;
+
+    bottom: 140px !important;
+
+    width: 24px !important;
+  }
+
+
+  .content-scrollbar-track {
+    width: 7px !important;
+  }
+
+
+  .content-scrollbar-thumb {
+    width: 15px !important;
+    min-height: 58px !important;
+  }
+
+
+  .slider-footer,
+  .scroll-hint {
+    right: 74px !important;
+  }
+
+}
