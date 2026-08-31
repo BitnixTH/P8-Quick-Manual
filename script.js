@@ -2,6 +2,28 @@
    P8 QUICK MANUAL DATA
 ========================================================= */
 
+// =========================================================
+// EXTERNAL RESOURCE LINKS
+// =========================================================
+// CareSense PDF link supplied in the project notes.
+// Add/replace the remaining Google Drive / YouTube links here when available.
+const RESOURCE_LINKS = {
+  careSensePdf:
+    "https://drive.google.com/file/d/18RKcoWQi0HCNr49S_V2wjRswCoZsd-Pj/view",
+
+  // TODO: replace with the actual CareSense Air 365 review video URL.
+  careSenseVideo:
+    "",
+
+  // TODO: replace with the actual Food Exchange PDF Google Drive URL.
+  foodExchangePdf:
+    "",
+
+  // TODO: replace with the actual Food Absorption / GI PDF Google Drive URL.
+  foodAbsorptionPdf:
+    ""
+};
+
 const steps = [
 
   /* =======================================================
@@ -377,6 +399,23 @@ const steps = [
 
       "Image/Step06-3.png"
 
+    ],
+
+    resources: [
+      {
+        imageTH: "Image/CareSense-TH-Pic1.png",
+        imageEN: "Image/CareSense-EN-Pic1.png",
+        url: RESOURCE_LINKS.careSensePdf,
+        labelTH: "ข้อมูล CareSense Air 365 CGM [PDF]",
+        labelEN: "CareSense Air 365 CGM Information [PDF]"
+      },
+      {
+        imageTH: "Image/CareSense-TH-Pic2.png",
+        imageEN: "Image/CareSense-EN-Pic2.png",
+        url: RESOURCE_LINKS.careSenseVideo,
+        labelTH: "ดูรีวิว CareSense Air 365 CGM [VDO]",
+        labelEN: "Watch CareSense Air 365 CGM Review [VDO]"
+      }
     ]
   },
 
@@ -429,12 +468,26 @@ const steps = [
 
       {
         th: "อาหารแลกเปลี่ยน",
-        en: "Thai Food Exchange"
+        en: "Thai Food Exchange",
+        imagesTH: [
+          "Image/Thai Exchange Food List-1.jpg",
+          "Image/Thai Exchange Food List-2.jpg"
+        ],
+        imagesEN: [
+          "Image/Thai Exchange Food List-1.jpg",
+          "Image/Thai Exchange Food List-2.jpg"
+        ]
       },
 
       {
         th: "การดูดซึมอาหาร",
-        en: "Food Absorption"
+        en: "Food Absorption",
+        imagesTH: [
+          "Image/GI-TH.png"
+        ],
+        imagesEN: [
+          "Image/GI-EN.png"
+        ]
       },
 
       {
@@ -465,6 +518,23 @@ const steps = [
 
       "Image/Step07-7.png"
 
+    ],
+
+    resources: [
+      {
+        imageTH: "Image/อาหารแลกเปลี่ยน.png",
+        imageEN: "Image/Food Exchange.png",
+        url: RESOURCE_LINKS.foodExchangePdf,
+        labelTH: "อาหารแลกเปลี่ยน [PDF]",
+        labelEN: "Food Exchange [PDF]"
+      },
+      {
+        imageTH: "Image/ประเมินการดูดซึมของอาหาร.png",
+        imageEN: "Image/Food Absorb Evaluation.png",
+        url: RESOURCE_LINKS.foodAbsorptionPdf,
+        labelTH: "ประเมินการดูดซึมของอาหาร [PDF]",
+        labelEN: "Food Absorption Evaluation [PDF]"
+      }
     ]
   },
 
@@ -578,8 +648,7 @@ const steps = [
 
     icon:
       "Image/Icon-8.png",
-
-    pathTH:
+          pathTH:
       "ดูแลเบาหวาน",
 
     pathEN:
@@ -797,6 +866,170 @@ function buildSidebar() {
   );
 
 }
+
+
+/* =========================================================
+   BUILD RESOURCE LINKS
+========================================================= */
+
+function buildResourceLinks(step) {
+
+  if (
+    !Array.isArray(step.resources) ||
+    step.resources.length === 0
+  ) {
+    return "";
+  }
+
+
+  const links =
+    step.resources
+      .map(
+        (resource, resourceIndex) => {
+
+          const url =
+            resource.url || "";
+
+
+          const label =
+            currentLanguage === "th"
+              ? resource.labelTH
+              : resource.labelEN;
+
+
+          /*
+            STEP 06
+            CareSense buttons are generated
+            completely with HTML + CSS.
+            No button image is required.
+          */
+
+          if (step.id === "step06") {
+
+            const isVideo =
+              resourceIndex === 1;
+
+
+            const iconClass =
+              isVideo
+                ? "video"
+                : "pdf";
+
+
+            const iconText =
+              isVideo
+                ? "▶"
+                : "PDF";
+
+
+            const disabledClass =
+              url
+                ? ""
+                : " resource-link-disabled";
+
+
+            const href =
+              url
+                ? url
+                : "#";
+
+
+            return `
+
+              <a
+                class="resource-link caresense-resource${disabledClass}"
+                href="${href}"
+                ${
+                  url
+                    ? `target="_blank" rel="noopener noreferrer"`
+                    : `aria-disabled="true"`
+                }
+                data-resource-link
+              >
+
+                <span
+                  class="resource-icon ${iconClass}"
+                  aria-hidden="true"
+                >
+                  ${iconText}
+                </span>
+
+                <span
+                  class="resource-link-text"
+                >
+                  ${label}
+                </span>
+
+              </a>
+
+            `;
+
+          }
+
+
+          /*
+            STEP 07
+            Use the prepared TH / EN artwork
+            as the external-resource button.
+          */
+
+          const image =
+            currentLanguage === "th"
+              ? resource.imageTH
+              : resource.imageEN;
+
+
+          const disabledClass =
+            url
+              ? ""
+              : " resource-link-disabled";
+
+
+          const href =
+            url
+              ? url
+              : "#";
+
+
+          return `
+
+            <a
+              class="resource-link image-resource${disabledClass}"
+              href="${href}"
+              ${
+                url
+                  ? `target="_blank" rel="noopener noreferrer"`
+                  : `aria-disabled="true"`
+              }
+              data-resource-link
+              aria-label="${label}"
+            >
+
+              <img
+                src="${image}"
+                alt="${label}"
+              >
+
+            </a>
+
+          `;
+
+        }
+      )
+      .join("");
+
+
+  return `
+
+    <div class="resource-links">
+      ${links}
+    </div>
+
+  `;
+
+}
+
+
 /* =========================================================
    BUILD MANUAL
 ========================================================= */
@@ -876,7 +1109,13 @@ function buildManual() {
           .join("");
 
 
-             const slides =
+      const resourceLinks =
+        buildResourceLinks(
+          step
+        );
+
+
+      const slides =
         step.topics
           .map(
             (
@@ -885,24 +1124,54 @@ function buildManual() {
             ) => {
 
               /*
-                NEW STRUCTURE:
-                Each topic can contain multiple images.
+                MULTIPLE IMAGES PER TOPIC
 
-                If topic.images does not exist yet,
-                use the old step.images[topicIndex]
-                so existing content still works.
+                Priority:
+                1. Language-specific topic images
+                   imagesTH / imagesEN
+                2. Generic topic.images
+                3. Existing step.images[topicIndex]
+
+                This means files such as
+                ...-1 and ...-2 can be displayed
+                continuously inside one topic.
               */
 
-              const topicImages =
-                Array.isArray(
-                  topic.images
-                )
-                  ? topic.images
-                  : [
-                      step.images?.[
-                        topicIndex
-                      ]
-                    ].filter(Boolean);
+              let topicImages = [];
+
+
+              if (
+                currentLanguage === "th" &&
+                Array.isArray(topic.imagesTH)
+              ) {
+
+                topicImages =
+                  topic.imagesTH;
+
+              } else if (
+                currentLanguage === "en" &&
+                Array.isArray(topic.imagesEN)
+              ) {
+
+                topicImages =
+                  topic.imagesEN;
+
+              } else if (
+                Array.isArray(topic.images)
+              ) {
+
+                topicImages =
+                  topic.images;
+
+              } else {
+
+                topicImages = [
+                  step.images?.[
+                    topicIndex
+                  ]
+                ].filter(Boolean);
+
+              }
 
 
               const multipleText =
@@ -1149,14 +1418,22 @@ function buildManual() {
             </h3>
 
 
-            <div class="subnav">
+            <div
+              class="manual-toolbar"
+            >
 
-              ${topicButtons}
+              <div class="subnav">
+
+                ${topicButtons}
+
+              </div>
+
+              ${resourceLinks}
 
             </div>
 
 
-                         <div
+            <div
               class="manual-slider"
               data-slider
               data-step-index="${index}"
@@ -1184,19 +1461,25 @@ function buildManual() {
                 </div>
 
               </div>
-            
+
+
               <div
-  class="content-scrollbar"
-  aria-label="Content scroll"
->
-  <div
-    class="content-scrollbar-track"
-  >
-    <div
-      class="content-scrollbar-thumb"
-    ></div>
-  </div>
-</div>
+                class="content-scrollbar"
+                aria-label="Content scroll"
+              >
+
+                <div
+                  class="content-scrollbar-track"
+                >
+
+                  <div
+                    class="content-scrollbar-thumb"
+                  ></div>
+
+                </div>
+
+              </div>
+
 
               <button
                 class="slider-button next"
@@ -1231,7 +1514,7 @@ function buildManual() {
                   <span
                     class="total-slides"
                   >
-                    ${step.images.length}
+                    ${step.topics.length}
                   </span>
 
                 </div>
@@ -1282,6 +1565,9 @@ function buildManual() {
   bindCardEvents();
 
 
+  bindResourceLinks();
+
+
   setupSliders();
 
 
@@ -1289,6 +1575,48 @@ function buildManual() {
 
 
   updateOpenCardHeight();
+
+}
+
+
+/* =========================================================
+   RESOURCE LINK EVENTS
+========================================================= */
+
+function bindResourceLinks() {
+
+  document
+    .querySelectorAll(
+      "[data-resource-link]"
+    )
+    .forEach(
+      (link) => {
+
+        link.addEventListener(
+          "click",
+          (event) => {
+
+            /*
+              A resource with no URL yet
+              stays visible but does not
+              navigate to an empty page.
+            */
+
+            if (
+              link.classList.contains(
+                "resource-link-disabled"
+              )
+            ) {
+
+              event.preventDefault();
+
+            }
+
+          }
+        );
+
+      }
+    );
 
 }
 
@@ -1509,7 +1837,6 @@ function bindCardEvents() {
     );
 
 }
-
 /* =========================================================
    GO TO STEP
 ========================================================= */
@@ -1548,40 +1875,30 @@ function goToStep(index) {
     );
 
 
-  if (!card) return;
+  if (card) {
+
+    const headerOffset =
+      18;
 
 
-  setTimeout(
-    () => {
-
-      const top =
-        card
-          .getBoundingClientRect()
-          .top
-        +
-        window.scrollY
-        -
-        118;
+    const top =
+      card.getBoundingClientRect().top +
+      window.pageYOffset -
+      headerOffset;
 
 
-      window.scrollTo({
+    window.scrollTo({
+      top,
+      behavior: "smooth"
+    });
 
-        top,
-
-        behavior:
-          "smooth"
-
-      });
-
-    },
-    100
-  );
+  }
 
 }
 
 
 /* =========================================================
-   OPEN ONE CARD ONLY
+   OPEN ONLY ONE STEP
 ========================================================= */
 
 function openOnlyStep(index) {
@@ -1606,44 +1923,26 @@ function openOnlyStep(index) {
         );
 
 
-      const shouldOpen =
+      const isTarget =
         cardIndex === index;
 
 
       card.classList.toggle(
         "open",
-        shouldOpen
+        isTarget
       );
 
 
       updateCardToggle(
         card,
-        shouldOpen
+        isTarget
       );
 
 
-      if (shouldOpen) {
-
-        openStepIndex =
-          index;
-
+      if (isTarget) {
 
         content.style.maxHeight =
-          content.scrollHeight +
-          "px";
-
-
-        setTimeout(
-          () => {
-
-            content.style.maxHeight =
-              content.scrollHeight +
-              "px";
-
-          },
-          100
-        );
-
+          `${content.scrollHeight}px`;
 
       } else {
 
@@ -1651,6 +1950,64 @@ function openOnlyStep(index) {
           null;
 
       }
+
+    }
+  );
+
+
+  openStepIndex =
+    index;
+
+
+  activeStepIndex =
+    index;
+
+
+  updateActiveSidebar(
+    index
+  );
+
+
+  /*
+    Wait until the browser has
+    calculated the newly opened content.
+  */
+
+  requestAnimationFrame(
+    () => {
+
+      updateOpenCardHeight();
+
+    }
+  );
+
+}
+
+
+/* =========================================================
+   UPDATE ACTIVE SIDEBAR
+========================================================= */
+
+function updateActiveSidebar(index) {
+
+  const buttons =
+    Array.from(
+      document.querySelectorAll(
+        ".side-button"
+      )
+    );
+
+
+  buttons.forEach(
+    (
+      button,
+      buttonIndex
+    ) => {
+
+      button.classList.toggle(
+        "active",
+        buttonIndex === index
+      );
 
     }
   );
@@ -1663,41 +2020,6 @@ function openOnlyStep(index) {
 ========================================================= */
 
 function updateJourneyProgress(index) {
-
-  const wrappers =
-    Array.from(
-      document.querySelectorAll(
-        ".side-step"
-      )
-    );
-
-
-  wrappers.forEach(
-    (
-      wrapper,
-      wrapperIndex
-    ) => {
-
-      const button =
-        wrapper.querySelector(
-          ".side-button"
-        );
-
-
-      wrapper.classList.toggle(
-        "completed",
-        wrapperIndex <= index
-      );
-
-
-      button.classList.toggle(
-        "active",
-        wrapperIndex === index
-      );
-
-    }
-  );
-
 
   const start =
     document.querySelector(
@@ -1713,771 +2035,1073 @@ function updateJourneyProgress(index) {
 
   }
 
+
+  const sideSteps =
+    Array.from(
+      document.querySelectorAll(
+        ".side-step"
+      )
+    );
+
+
+  sideSteps.forEach(
+    (
+      item,
+      itemIndex
+    ) => {
+
+      /*
+        Current step and every previous
+        step are considered completed.
+
+        CSS uses .completed to change
+        the connector from dashed
+        to solid.
+      */
+
+      item.classList.toggle(
+        "completed",
+        itemIndex <= index
+      );
+
+
+      item.classList.toggle(
+        "active",
+        itemIndex === index
+      );
+
+    }
+  );
+
+
+  updateActiveSidebar(
+    index
+  );
+
 }
 
-/* =========================================================
-   SLIDERS
-========================================================= */
 
 /* =========================================================
-   MANUAL CONTENT SCROLL
-   BIT TELEMEDICINE STYLE
+   SLIDER SETUP
 ========================================================= */
 
 function setupSliders() {
 
-  document
-    .querySelectorAll(
-      "[data-slider]"
-    )
-    .forEach(
-      (slider) => {
+  const sliders =
+    Array.from(
+      document.querySelectorAll(
+        "[data-slider]"
+      )
+    );
 
-        const card =
-          slider.closest(
-            ".step-card"
+
+  sliders.forEach(
+    (slider) => {
+
+      setupSingleSlider(
+        slider
+      );
+
+    }
+  );
+
+}
+
+
+/* =========================================================
+   SINGLE SLIDER
+========================================================= */
+
+function setupSingleSlider(slider) {
+
+  const slides =
+    Array.from(
+      slider.querySelectorAll(
+        ".slide"
+      )
+    );
+
+
+  if (
+    slides.length === 0
+  ) {
+    return;
+  }
+
+
+  const stepIndex =
+    Number(
+      slider.dataset.stepIndex
+    );
+
+
+  const step =
+    steps[stepIndex];
+
+
+  const subnav =
+    slider
+      .closest(
+        ".content-inner"
+      )
+      ?.querySelectorAll(
+        ".subnav-btn"
+      );
+
+
+  const prevButton =
+    slider.querySelector(
+      ".slider-button.prev"
+    );
+
+
+  const nextButton =
+    slider.querySelector(
+      ".slider-button.next"
+    );
+
+
+  const currentSlideText =
+    slider.querySelector(
+      ".current-slide"
+    );
+
+
+  const totalSlideText =
+    slider.querySelector(
+      ".total-slides"
+    );
+
+
+  const dotsContainer =
+    slider.querySelector(
+      ".slider-dots"
+    );
+
+
+  const scrollbarTrack =
+    slider.querySelector(
+      ".content-scrollbar-track"
+    );
+
+
+  const scrollbarThumb =
+    slider.querySelector(
+      ".content-scrollbar-thumb"
+    );
+
+
+  let currentIndex =
+    0;
+
+
+  /* -------------------------------------------------------
+     CREATE DOTS
+  ------------------------------------------------------- */
+
+  if (dotsContainer) {
+
+    dotsContainer.innerHTML =
+      "";
+
+
+    slides.forEach(
+      (
+        slide,
+        index
+      ) => {
+
+        const dot =
+          document.createElement(
+            "button"
           );
 
 
-        const viewport =
-          slider.querySelector(
-            ".slider-viewport"
-          );
+        dot.type =
+          "button";
 
 
-        const track =
-          slider.querySelector(
-            ".slider-track"
-          );
+        dot.className =
+          index === 0
+            ? "slider-dot active"
+            : "slider-dot";
 
 
-        const slides =
-          Array.from(
-            slider.querySelectorAll(
-              ".slide"
-            )
-          );
-
-
-        const previousButton =
-          slider.querySelector(
-            ".slider-button.prev"
-          );
-
-
-        const nextButton =
-          slider.querySelector(
-            ".slider-button.next"
-          );
-
-
-        const dotsContainer =
-          slider.querySelector(
-            ".slider-dots"
-          );
-
-
-        const currentLabel =
-          slider.querySelector(
-            ".current-slide"
-          );
-
-
-        const totalLabel =
-          slider.querySelector(
-            ".total-slides"
-          );
-
-
-        const subnavButtons =
-          Array.from(
-            card.querySelectorAll(
-              ".subnav-btn"
-            )
-          );
-
-
-        let currentIndex = 0;
-
-
-        /* ===================================================
-           DOTS
-        =================================================== */
-
-        dotsContainer.innerHTML = "";
-
-
-        slides.forEach(
-          (slide, index) => {
-
-            const dot =
-              document.createElement(
-                "button"
-              );
-
-
-            dot.type = "button";
-            dot.className = "slider-dot";
-
-
-            dot.addEventListener(
-              "click",
-              () => {
-
-                currentIndex = index;
-
-                showSlide();
-
-              }
-            );
-
-
-            dotsContainer.appendChild(
-              dot
-            );
-
-          }
+        dot.setAttribute(
+          "aria-label",
+          `Slide ${index + 1}`
         );
 
 
-        const dots =
-          Array.from(
-            dotsContainer.querySelectorAll(
-              ".slider-dot"
-            )
-          );
-
-
-        totalLabel.textContent =
-          slides.length;
-
-
-        /* ===================================================
-           ACTIVE CONTENT
-        =================================================== */
-
-        function getActiveSlide() {
-
-          return slides[currentIndex];
-
-        }
-
-
-        function getActiveScrollBox() {
-
-          return getActiveSlide()
-            ?.querySelector(
-              ".slide-scroll"
-            );
-
-        }
-
-
-        /* ===================================================
-           UPDATE REAL CONTENT SCROLLBAR
-        =================================================== */
-
-        function updateContentScrollbar() {
-
-          const slide =
-            getActiveSlide();
-
-
-          if (!slide) {
-            return;
-          }
-
-
-          const scrollBox =
-            slide.querySelector(
-              ".slide-scroll"
-            );
-
-
-          const scrollbar =
-  slider.querySelector(
-    ".content-scrollbar"
-  );
-
-
-const scrollbarTrack =
-  slider.querySelector(
-    ".content-scrollbar-track"
-  );
-
-
-const scrollbarThumb =
-  slider.querySelector(
-    ".content-scrollbar-thumb"
-  );
-
-
-          if (
-            !scrollBox ||
-            !scrollbar ||
-            !scrollbarTrack ||
-            !scrollbarThumb
-          ) {
-            return;
-          }
-
-
-          const visibleHeight =
-            scrollBox.clientHeight;
-
-
-          const fullHeight =
-            scrollBox.scrollHeight;
-
-
-          const trackHeight =
-            scrollbarTrack.clientHeight;
-
-
-          if (
-            visibleHeight <= 0 ||
-            fullHeight <= 0 ||
-            trackHeight <= 0
-          ) {
-            return;
-          }
-
-
-          const visibleRatio =
-            Math.min(
-              1,
-              visibleHeight / fullHeight
-            );
-
-
-          const thumbHeight =
-            Math.max(
-              72,
-              trackHeight * visibleRatio
-            );
-
-
-          scrollbarThumb.style.height =
-            `${Math.min(
-              thumbHeight,
-              trackHeight
-            )}px`;
-
-
-          const maxScroll =
-            Math.max(
-              0,
-              fullHeight - visibleHeight
-            );
-
-
-          const maxThumbTop =
-            Math.max(
-              0,
-              trackHeight -
-              scrollbarThumb.offsetHeight
-            );
-
-
-          const scrollRatio =
-            maxScroll === 0
-              ? 0
-              : scrollBox.scrollTop /
-                maxScroll;
-
-
-          const thumbTop =
-            scrollRatio *
-            maxThumbTop;
-
-
-          scrollbarThumb.style.transform =
-            `translateX(-50%) translateY(${thumbTop}px)`;
-
-
-          scrollbar.classList.toggle(
-            "no-scroll",
-            maxScroll <= 1
-          );
-
-
-          /* ▲ disabled when at top */
-
-          previousButton.disabled =
-            scrollBox.scrollTop <= 1;
-
-
-          /* ▼ disabled when at bottom */
-
-          nextButton.disabled =
-            scrollBox.scrollTop +
-              scrollBox.clientHeight
-            >=
-            scrollBox.scrollHeight - 1;
-
-        }
-
-
-        /* ===================================================
-           BIND SCROLLBAR TO EACH TOPIC
-        =================================================== */
-
-        function bindRealScrollbar(
-          slide
-        ) {
-
-          const scrollBox =
-            slide.querySelector(
-              ".slide-scroll"
-            );
-
-
-          const scrollbarTrack =
-  slider.querySelector(
-    ".content-scrollbar-track"
-  );
-
-
-const scrollbarThumb =
-  slider.querySelector(
-    ".content-scrollbar-thumb"
-  );
-
-          if (
-            !scrollBox ||
-            !scrollbarTrack ||
-            !scrollbarThumb
-          ) {
-            return;
-          }
-
-
-          /* Track normal mouse / touch scrolling */
-
-          scrollBox.addEventListener(
-            "scroll",
-            () => {
-
-              if (
-                slide ===
-                getActiveSlide()
-              ) {
-
-                updateContentScrollbar();
-
-              }
-
-            },
-            {
-              passive: true
-            }
-          );
-
-
-          /* Click scrollbar track */
-
-          scrollbarTrack.addEventListener(
-            "pointerdown",
-            (event) => {
-
-              if (
-                event.target ===
-                scrollbarThumb
-              ) {
-                return;
-              }
-
-
-              event.preventDefault();
-
-
-              const rect =
-                scrollbarTrack
-                  .getBoundingClientRect();
-
-
-              const ratio =
-                Math.max(
-                  0,
-                  Math.min(
-                    1,
-                    (
-                      event.clientY -
-                      rect.top
-                    ) /
-                    rect.height
-                  )
-                );
-
-
-              const maxScroll =
-                Math.max(
-                  0,
-                  scrollBox.scrollHeight -
-                  scrollBox.clientHeight
-                );
-
-
-              scrollBox.scrollTo({
-
-                top:
-                  maxScroll * ratio,
-
-                behavior:
-                  "smooth"
-
-              });
-
-            }
-          );
-
-
-          /* Drag scrollbar thumb */
-
-          scrollbarThumb.addEventListener(
-            "pointerdown",
-            (event) => {
-
-              event.preventDefault();
-
-
-              const startY =
-                event.clientY;
-
-
-              const startScroll =
-                scrollBox.scrollTop;
-
-
-              const maxScroll =
-                Math.max(
-                  0,
-                  scrollBox.scrollHeight -
-                  scrollBox.clientHeight
-                );
-
-
-              const maxThumbTravel =
-                Math.max(
-                  1,
-                  scrollbarTrack.clientHeight -
-                  scrollbarThumb.offsetHeight
-                );
-
-
-              scrollbarThumb.classList.add(
-                "dragging"
-              );
-
-
-              function onMove(
-                moveEvent
-              ) {
-
-                const deltaY =
-                  moveEvent.clientY -
-                  startY;
-
-
-                const scrollDelta =
-                  (
-                    deltaY /
-                    maxThumbTravel
-                  ) *
-                  maxScroll;
-
-
-                scrollBox.scrollTop =
-                  startScroll +
-                  scrollDelta;
-
-              }
-
-
-              function onEnd() {
-
-                scrollbarThumb.classList.remove(
-                  "dragging"
-                );
-
-
-                document.removeEventListener(
-                  "pointermove",
-                  onMove
-                );
-
-
-                document.removeEventListener(
-                  "pointerup",
-                  onEnd
-                );
-
-
-                document.removeEventListener(
-                  "pointercancel",
-                  onEnd
-                );
-
-              }
-
-
-              document.addEventListener(
-                "pointermove",
-                onMove
-              );
-
-
-              document.addEventListener(
-                "pointerup",
-                onEnd
-              );
-
-
-              document.addEventListener(
-                "pointercancel",
-                onEnd
-              );
-
-            }
-          );
-
-        }
-
-
-        slides.forEach(
-          bindRealScrollbar
-        );
-
-
-        /* ===================================================
-           CHANGE TOPIC / IMAGE GROUP
-        =================================================== */
-
-        function showSlide() {
-
-          const height =
-            viewport.clientHeight;
-
-
-          track.style.transform =
-            `translateY(-${currentIndex * height}px)`;
-
-
-          slides.forEach(
-            (slide, index) => {
-
-              slide.classList.toggle(
-                "active",
-                index === currentIndex
-              );
-
-            }
-          );
-
-
-          dots.forEach(
-            (dot, index) => {
-
-              dot.classList.toggle(
-                "active",
-                index === currentIndex
-              );
-
-            }
-          );
-
-
-          subnavButtons.forEach(
-            (button) => {
-
-              const target =
-                Number(
-                  button.dataset
-                    .slideTarget
-                );
-
-
-              button.classList.toggle(
-                "active",
-                target === currentIndex
-              );
-
-            }
-          );
-
-
-          currentLabel.textContent =
-            currentIndex + 1;
-
-
-          /*
-            When changing topic,
-            start content from the top.
-          */
-
-          const scrollBox =
-            getActiveScrollBox();
-
-
-          if (scrollBox) {
-
-            scrollBox.scrollTop = 0;
-
-          }
-
-
-          requestAnimationFrame(
-            () => {
-
-              updateContentScrollbar();
-
-              updateOpenCardHeight();
-
-            }
-          );
-
-        }
-
-
-        /* ===================================================
-           ▲ SCROLL CONTENT UP
-        =================================================== */
-
-        previousButton.addEventListener(
+        dot.addEventListener(
           "click",
-          (event) => {
-
-            event.stopPropagation();
-
-
-            const scrollBox =
-              getActiveScrollBox();
-
-
-            if (!scrollBox) {
-              return;
-            }
-
-
-            scrollBox.scrollBy({
-
-              top:
-                -Math.max(
-                  180,
-                  scrollBox.clientHeight *
-                  0.70
-                ),
-
-              behavior:
-                "smooth"
-
-            });
-
-          }
-        );
-
-
-        /* ===================================================
-           ▼ SCROLL CONTENT DOWN
-        =================================================== */
-
-        nextButton.addEventListener(
-          "click",
-          (event) => {
-
-            event.stopPropagation();
-
-
-            const scrollBox =
-              getActiveScrollBox();
-
-
-            if (!scrollBox) {
-              return;
-            }
-
-
-            scrollBox.scrollBy({
-
-              top:
-                Math.max(
-                  180,
-                  scrollBox.clientHeight *
-                  0.70
-                ),
-
-              behavior:
-                "smooth"
-
-            });
-
-          }
-        );
-
-
-        /* ===================================================
-           TOP SUBNAV BUTTONS
-        =================================================== */
-
-        subnavButtons.forEach(
-          (button) => {
-
-            button.addEventListener(
-              "click",
-              (event) => {
-
-                event.stopPropagation();
-
-
-                const target =
-                  Number(
-                    button.dataset
-                      .slideTarget
-                  );
-
-
-                if (
-                  target < 0 ||
-                  target >= slides.length
-                ) {
-                  return;
-                }
-
-
-                currentIndex = target;
-
-                showSlide();
-
-              }
-            );
-
-          }
-        );
-
-
-        /* ===================================================
-           RESIZE
-        =================================================== */
-
-        window.addEventListener(
-          "resize",
           () => {
 
-            showSlide();
+            showSlide(
+              index
+            );
 
           }
         );
 
 
-        /* Initial state */
+        dotsContainer.appendChild(
+          dot
+        );
 
-        showSlide();
+      }
+    );
+
+  }
+
+
+  if (totalSlideText) {
+
+    totalSlideText.textContent =
+      slides.length;
+
+  }
+
+
+  /* -------------------------------------------------------
+     GET CURRENT SCROLL AREA
+  ------------------------------------------------------- */
+
+  function getScrollArea() {
+
+    const activeSlide =
+      slides[currentIndex];
+
+
+    if (!activeSlide) {
+      return null;
+    }
+
+
+    return activeSlide.querySelector(
+      ".slide-scroll"
+    );
+
+  }
+
+
+  /* -------------------------------------------------------
+     UPDATE SCROLLBAR
+  ------------------------------------------------------- */
+
+  function updateScrollbar() {
+
+    const scrollArea =
+      getScrollArea();
+
+
+    if (
+      !scrollArea ||
+      !scrollbarTrack ||
+      !scrollbarThumb
+    ) {
+      return;
+    }
+
+
+    const scrollHeight =
+      scrollArea.scrollHeight;
+
+
+    const clientHeight =
+      scrollArea.clientHeight;
+
+
+    const maxScroll =
+      scrollHeight -
+      clientHeight;
+
+
+    /*
+      Content fits completely.
+      Keep the thumb full height.
+    */
+
+    if (
+      scrollHeight <= clientHeight ||
+      maxScroll <= 0
+    ) {
+
+      scrollbarThumb.style.height =
+        "100%";
+
+
+      scrollbarThumb.style.transform =
+        "translateY(0)";
+
+
+      scrollbarTrack.classList.add(
+        "is-static"
+      );
+
+
+      return;
+
+    }
+
+
+    scrollbarTrack.classList.remove(
+      "is-static"
+    );
+
+
+    const trackHeight =
+      scrollbarTrack.clientHeight;
+
+
+    const minimumThumb =
+      34;
+
+
+    const calculatedThumb =
+      (
+        clientHeight /
+        scrollHeight
+      ) *
+      trackHeight;
+
+
+    const thumbHeight =
+      Math.max(
+        minimumThumb,
+        calculatedThumb
+      );
+
+
+    const availableTravel =
+      Math.max(
+        0,
+        trackHeight -
+        thumbHeight
+      );
+
+
+    const scrollRatio =
+      scrollArea.scrollTop /
+      maxScroll;
+
+
+    const translateY =
+      availableTravel *
+      scrollRatio;
+
+
+    scrollbarThumb.style.height =
+      `${thumbHeight}px`;
+
+
+    scrollbarThumb.style.transform =
+      `translateY(${translateY}px)`;
+
+  }
+
+
+  /* -------------------------------------------------------
+     BIND SCROLL AREA
+  ------------------------------------------------------- */
+
+  function bindActiveScrollArea() {
+
+    slides.forEach(
+      (slide) => {
+
+        const area =
+          slide.querySelector(
+            ".slide-scroll"
+          );
+
+
+        if (!area) {
+          return;
+        }
+
+
+        /*
+          Prevent duplicate listeners
+          when the active topic changes.
+        */
+
+        if (
+          area.dataset.scrollBound ===
+          "true"
+        ) {
+          return;
+        }
+
+
+        area.dataset.scrollBound =
+          "true";
+
+
+        area.addEventListener(
+          "scroll",
+          () => {
+
+            if (
+              slide.classList.contains(
+                "active"
+              )
+            ) {
+
+              updateScrollbar();
+
+            }
+
+          },
+          {
+            passive: true
+          }
+        );
+
+      }
+    );
+
+  }
+
+
+  /* -------------------------------------------------------
+     UPDATE DOTS
+  ------------------------------------------------------- */
+
+  function updateDots() {
+
+    if (!dotsContainer) {
+      return;
+    }
+
+
+    const dots =
+      Array.from(
+        dotsContainer.children
+      );
+
+
+    dots.forEach(
+      (
+        dot,
+        index
+      ) => {
+
+        dot.classList.toggle(
+          "active",
+          index === currentIndex
+        );
+
+      }
+    );
+
+  }
+
+
+  /* -------------------------------------------------------
+     UPDATE SUBNAV
+  ------------------------------------------------------- */
+
+  function updateSubnav() {
+
+    if (!subnav) {
+      return;
+    }
+
+
+    Array.from(
+      subnav
+    ).forEach(
+      (
+        button,
+        index
+      ) => {
+
+        button.classList.toggle(
+          "active",
+          index === currentIndex
+        );
+
+      }
+    );
+
+  }
+
+
+  /* -------------------------------------------------------
+     UPDATE PREV / NEXT BUTTON
+  ------------------------------------------------------- */
+
+  function updateSliderButtons() {
+
+    if (prevButton) {
+
+      prevButton.disabled =
+        currentIndex === 0;
+
+    }
+
+
+    if (nextButton) {
+
+      nextButton.disabled =
+        currentIndex ===
+        slides.length - 1;
+
+    }
+
+  }
+
+
+  /* -------------------------------------------------------
+     SHOW SLIDE
+  ------------------------------------------------------- */
+
+  function showSlide(index) {
+
+    if (
+      index < 0 ||
+      index >= slides.length
+    ) {
+      return;
+    }
+
+
+    currentIndex =
+      index;
+
+
+    slides.forEach(
+      (
+        slide,
+        slideIndex
+      ) => {
+
+        slide.classList.toggle(
+          "active",
+          slideIndex === currentIndex
+        );
+
+      }
+    );
+
+
+    /*
+      Return the newly selected topic
+      to the top of its content.
+    */
+
+    const activeScrollArea =
+      getScrollArea();
+
+
+    if (activeScrollArea) {
+
+      activeScrollArea.scrollTop =
+        0;
+
+    }
+
+
+    if (currentSlideText) {
+
+      currentSlideText.textContent =
+        currentIndex + 1;
+
+    }
+
+
+    updateDots();
+
+
+    updateSubnav();
+
+
+    updateSliderButtons();
+
+
+    requestAnimationFrame(
+      () => {
+
+        updateScrollbar();
+
+
+        updateOpenCardHeight();
+
+      }
+    );
+
+  }
+
+
+  /* -------------------------------------------------------
+     SUBNAV CLICK
+  ------------------------------------------------------- */
+
+  if (subnav) {
+
+    Array.from(
+      subnav
+    ).forEach(
+      (
+        button,
+        index
+      ) => {
+
+        button.addEventListener(
+          "click",
+          () => {
+
+            showSlide(
+              index
+            );
+
+          }
+        );
+
+      }
+    );
+
+  }
+
+
+  /* -------------------------------------------------------
+     PREVIOUS TOPIC
+  ------------------------------------------------------- */
+
+  if (prevButton) {
+
+    prevButton.addEventListener(
+      "click",
+      () => {
+
+        /*
+          First try scrolling upward
+          inside the current topic.
+
+          If already at the top,
+          move to the previous topic.
+        */
+
+        const scrollArea =
+          getScrollArea();
+
+
+        if (
+          scrollArea &&
+          scrollArea.scrollTop > 4
+        ) {
+
+          scrollArea.scrollBy({
+            top:
+              -Math.max(
+                220,
+                scrollArea.clientHeight *
+                  0.78
+              ),
+            behavior: "smooth"
+          });
+
+
+          return;
+
+        }
+
+
+        if (currentIndex > 0) {
+
+          showSlide(
+            currentIndex - 1
+          );
+
+        }
+
+      }
+    );
+
+  }
+
+
+  /* -------------------------------------------------------
+     NEXT TOPIC
+  ------------------------------------------------------- */
+
+  if (nextButton) {
+
+    nextButton.addEventListener(
+      "click",
+      () => {
+
+        /*
+          Scroll downward inside the
+          current topic first.
+
+          Only move to the next topic
+          when the current content has
+          reached the bottom.
+        */
+
+        const scrollArea =
+          getScrollArea();
+
+
+        if (scrollArea) {
+
+          const maxScroll =
+            scrollArea.scrollHeight -
+            scrollArea.clientHeight;
+
+
+          const isAtBottom =
+            scrollArea.scrollTop >=
+            maxScroll - 4;
+
+
+          if (
+            maxScroll > 4 &&
+            !isAtBottom
+          ) {
+
+            scrollArea.scrollBy({
+              top:
+                Math.max(
+                  220,
+                  scrollArea.clientHeight *
+                    0.78
+                ),
+              behavior: "smooth"
+            });
+
+
+            return;
+
+          }
+
+        }
+
+
+        if (
+          currentIndex <
+          slides.length - 1
+        ) {
+
+          showSlide(
+            currentIndex + 1
+          );
+
+        }
+
+      }
+    );
+
+  }
+
+
+  /* -------------------------------------------------------
+     CUSTOM SCROLLBAR CLICK
+  ------------------------------------------------------- */
+
+  if (
+    scrollbarTrack &&
+    scrollbarThumb
+  ) {
+
+    scrollbarTrack.addEventListener(
+      "click",
+      (event) => {
+
+        /*
+          Do not jump when the user
+          directly clicks the thumb.
+        */
+
+        if (
+          event.target ===
+          scrollbarThumb
+        ) {
+          return;
+        }
+
+
+        const scrollArea =
+          getScrollArea();
+
+
+        if (!scrollArea) {
+          return;
+        }
+
+
+        const rect =
+          scrollbarTrack
+            .getBoundingClientRect();
+
+
+        const clickY =
+          event.clientY -
+          rect.top;
+
+
+        const ratio =
+          Math.min(
+            1,
+            Math.max(
+              0,
+              clickY /
+                rect.height
+            )
+          );
+
+
+        const maxScroll =
+          scrollArea.scrollHeight -
+          scrollArea.clientHeight;
+
+
+        scrollArea.scrollTo({
+          top:
+            maxScroll *
+            ratio,
+          behavior:
+            "smooth"
+        });
+
+      }
+    );
+
+
+    /* -----------------------------------------------------
+       DRAG CUSTOM SCROLLBAR
+    ----------------------------------------------------- */
+
+    let dragging =
+      false;
+
+
+    let dragStartY =
+      0;
+
+
+    let dragStartScroll =
+      0;
+
+
+    scrollbarThumb.addEventListener(
+      "pointerdown",
+      (event) => {
+
+        const scrollArea =
+          getScrollArea();
+
+
+        if (!scrollArea) {
+          return;
+        }
+
+
+        dragging =
+          true;
+
+
+        dragStartY =
+          event.clientY;
+
+
+        dragStartScroll =
+          scrollArea.scrollTop;
+
+
+        scrollbarThumb
+          .setPointerCapture(
+            event.pointerId
+          );
+
+
+        event.preventDefault();
+
+      }
+    );
+
+
+    scrollbarThumb.addEventListener(
+      "pointermove",
+      (event) => {
+
+        if (!dragging) {
+          return;
+        }
+
+
+        const scrollArea =
+          getScrollArea();
+
+
+        if (!scrollArea) {
+          return;
+        }
+
+
+        const trackHeight =
+          scrollbarTrack.clientHeight;
+
+
+        const thumbHeight =
+          scrollbarThumb.offsetHeight;
+
+
+        const availableTravel =
+          trackHeight -
+          thumbHeight;
+
+
+        const maxScroll =
+          scrollArea.scrollHeight -
+          scrollArea.clientHeight;
+
+
+        if (
+          availableTravel <= 0 ||
+          maxScroll <= 0
+        ) {
+          return;
+        }
+
+
+        const deltaY =
+          event.clientY -
+          dragStartY;
+
+
+        const scrollDelta =
+          (
+            deltaY /
+            availableTravel
+          ) *
+          maxScroll;
+
+
+        scrollArea.scrollTop =
+          dragStartScroll +
+          scrollDelta;
+
+      }
+    );
+
+
+    function stopDragging() {
+
+      dragging =
+        false;
+
+    }
+
+
+    scrollbarThumb.addEventListener(
+      "pointerup",
+      stopDragging
+    );
+
+
+    scrollbarThumb.addEventListener(
+      "pointercancel",
+      stopDragging
+    );
+
+  }
+
+
+  /* -------------------------------------------------------
+     INITIAL SLIDER STATE
+  ------------------------------------------------------- */
+
+  bindActiveScrollArea();
+
+
+  showSlide(
+    0
+  );
+
+
+  /*
+    Images can change the content height
+    after they finish loading.
+  */
+
+  slider
+    .querySelectorAll(
+      "img"
+    )
+    .forEach(
+      (image) => {
+
+        image.addEventListener(
+          "load",
+          () => {
+
+            updateScrollbar();
+
+
+            updateOpenCardHeight();
+
+          }
+        );
 
       }
     );
 
 }
 
+
+/* =========================================================
+   UPDATE OPEN CARD HEIGHT
+========================================================= */
+
+function updateOpenCardHeight() {
+
+  const openCard =
+    document.querySelector(
+      ".step-card.open"
+    );
+
+
+  if (!openCard) {
+    return;
+  }
+
+
+  const content =
+    openCard.querySelector(
+      ".step-content"
+    );
+
+
+  if (!content) {
+    return;
+  }
+
+
+  /*
+    Temporarily remove the previous
+    max-height so scrollHeight can be
+    measured correctly after:
+    - changing language
+    - changing topic
+    - loading multiple images
+    - changing screen width
+  */
+
+  content.style.maxHeight =
+    "none";
+
+
+  const height =
+    content.scrollHeight;
+
+
+  content.style.maxHeight =
+    `${height}px`;
+
+}
 /* =========================================================
    MISSING IMAGE HANDLING
    MULTIPLE IMAGES PER TOPIC
@@ -2525,8 +3149,8 @@ function setupMissingImages() {
 
 
       /*
-        Check whether at least one image
-        inside this topic is available.
+        Check whether at least one
+        image in this topic loaded.
       */
 
       function updateSlideState() {
@@ -2543,11 +3167,6 @@ function setupMissingImages() {
           validImages.length > 0
         ) {
 
-          /*
-            At least one real image exists.
-            Show real content.
-          */
-
           placeholder.style.display =
             "none";
 
@@ -2556,14 +3175,7 @@ function setupMissingImages() {
             "missing-image"
           );
 
-
         } else {
-
-          /*
-            No image in this topic
-            loaded successfully.
-            Show placeholder.
-          */
 
           placeholder.style.display =
             "flex";
@@ -2575,12 +3187,6 @@ function setupMissingImages() {
 
         }
 
-
-        /*
-          Image loading changes scrollHeight.
-          Trigger the scroll handler so the
-          real scrollbar recalculates itself.
-        */
 
         requestAnimationFrame(
           () => {
@@ -2599,7 +3205,7 @@ function setupMissingImages() {
 
 
       /*
-        No image assigned to this topic.
+        No image assigned.
       */
 
       if (
@@ -2646,8 +3252,9 @@ function setupMissingImages() {
             () => {
 
               /*
-                Only hide this broken image.
-                Do NOT hide the whole topic.
+                Hide only the broken image.
+                Other images in the same topic
+                can still remain visible.
               */
 
               image.dataset.imageStatus =
@@ -2665,9 +3272,8 @@ function setupMissingImages() {
 
 
           /*
-            Handle images that already
-            finished loading before the
-            listeners were attached.
+            Handle cached images that may
+            already have finished loading.
           */
 
           if (
@@ -2685,7 +3291,6 @@ function setupMissingImages() {
               image.style.display =
                 "block";
 
-
             } else {
 
               image.dataset.imageStatus =
@@ -2702,12 +3307,6 @@ function setupMissingImages() {
         }
       );
 
-
-      /*
-        Initial state.
-        If some images are still loading,
-        wait for their load/error events.
-      */
 
       const finishedImages =
         images.filter(
@@ -2729,6 +3328,7 @@ function setupMissingImages() {
   );
 
 }
+
 
 /* =========================================================
    BEFORE IMAGE FALLBACK
@@ -2795,55 +3395,27 @@ function setupBeforeImageFallback() {
 
 
 /* =========================================================
-   UPDATE OPEN CARD HEIGHT
-========================================================= */
-
-function updateOpenCardHeight() {
-
-  const openCard =
-    document.querySelector(
-      ".step-card.open"
-    );
-
-
-  if (!openCard) {
-    return;
-  }
-
-
-  const content =
-    openCard.querySelector(
-      ".step-content"
-    );
-
-
-  if (!content) {
-    return;
-  }
-
-
-  requestAnimationFrame(
-    () => {
-
-      content.style.maxHeight =
-        content.scrollHeight +
-        "px";
-
-    }
-  );
-
-}
-
-
-/* =========================================================
    LANGUAGE
 ========================================================= */
 
 function setLanguage(language) {
 
+  if (
+    language !== "th" &&
+    language !== "en"
+  ) {
+    return;
+  }
+
+
   currentLanguage =
     language;
 
+
+  /*
+    Update any static HTML elements
+    that use data-th / data-en.
+  */
 
   document
     .querySelectorAll(
@@ -2874,6 +3446,8 @@ function setLanguage(language) {
     );
 
 
+  /* LANGUAGE BUTTON STATE */
+
   languageButtons.forEach(
     (button) => {
 
@@ -2893,6 +3467,15 @@ function setLanguage(language) {
       : "en";
 
 
+  /*
+    Rebuild dynamic content so:
+    - Step titles change language
+    - Subnav labels change language
+    - Resource buttons change language
+    - GI-TH / GI-EN changes automatically
+    - TH/EN resource images change
+  */
+
   buildSidebar();
 
 
@@ -2900,12 +3483,7 @@ function setLanguage(language) {
 
 
   /*
-    If the patient already opened
-    a card, preserve that open card
-    after switching language.
-
-    If no card is open,
-    keep every card collapsed.
+    Preserve the currently open card.
   */
 
   if (
@@ -2924,7 +3502,13 @@ function setLanguage(language) {
   );
 
 
-  updateOpenCardHeight();
+  requestAnimationFrame(
+    () => {
+
+      updateOpenCardHeight();
+
+    }
+  );
 
 }
 
@@ -2969,6 +3553,69 @@ languageButtons.forEach(
 
 
 /* =========================================================
+   KEEP ACTIVE STEP VISIBLE ON MOBILE
+========================================================= */
+
+function keepActiveStepVisible() {
+
+  if (
+    window.innerWidth > 760
+  ) {
+    return;
+  }
+
+
+  const activeButton =
+    document.querySelector(
+      ".side-button.active"
+    );
+
+
+  if (!activeButton) {
+    return;
+  }
+
+
+  /*
+    Horizontal step navigation:
+    gently move the current step
+    into the visible area.
+  */
+
+  activeButton.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "center"
+  });
+
+}
+
+
+/* =========================================================
+   OBSERVE ACTIVE STEP CHANGE
+========================================================= */
+
+function updateJourneyAndVisibility(
+  index
+) {
+
+  updateJourneyProgress(
+    index
+  );
+
+
+  requestAnimationFrame(
+    () => {
+
+      keepActiveStepVisible();
+
+    }
+  );
+
+}
+
+
+/* =========================================================
    WINDOW LOAD
 ========================================================= */
 
@@ -2978,6 +3625,24 @@ window.addEventListener(
 
     updateOpenCardHeight();
 
+
+    keepActiveStepVisible();
+
+
+    /*
+      Re-check image heights after
+      fonts and images are ready.
+    */
+
+    setTimeout(
+      () => {
+
+        updateOpenCardHeight();
+
+      },
+      150
+    );
+
   }
 );
 
@@ -2986,18 +3651,38 @@ window.addEventListener(
    WINDOW RESIZE
 ========================================================= */
 
+let resizeTimer =
+  null;
+
+
 window.addEventListener(
   "resize",
   () => {
 
-    updateOpenCardHeight();
+    clearTimeout(
+      resizeTimer
+    );
+
+
+    resizeTimer =
+      setTimeout(
+        () => {
+
+          updateOpenCardHeight();
+
+
+          keepActiveStepVisible();
+
+        },
+        100
+      );
 
   }
 );
 
 
 /* =========================================================
-   BACK TO TOP
+   BACK TO TOP VISIBILITY
 ========================================================= */
 
 window.addEventListener(
@@ -3011,12 +3696,19 @@ window.addEventListener(
 
     backTop.classList.toggle(
       "show",
-      window.scrollY > 500
+      window.scrollY > 420
     );
 
+  },
+  {
+    passive: true
   }
 );
 
+
+/* =========================================================
+   BACK TO TOP CLICK
+========================================================= */
 
 if (backTop) {
 
@@ -3054,14 +3746,22 @@ document.addEventListener(
     if (
       target &&
       (
-        target.tagName === "INPUT" ||
-        target.tagName === "TEXTAREA" ||
+        target.tagName ===
+          "INPUT" ||
+
+        target.tagName ===
+          "TEXTAREA" ||
+
         target.isContentEditable
       )
     ) {
       return;
     }
 
+
+    /*
+      PageDown = next Step
+    */
 
     if (
       event.key ===
@@ -3085,6 +3785,10 @@ document.addEventListener(
     }
 
 
+    /*
+      PageUp = previous Step
+    */
+
     if (
       event.key ===
       "PageUp"
@@ -3107,8 +3811,6 @@ document.addEventListener(
 
   }
 );
-
-
 /* =========================================================
    INITIAL STATE
 ========================================================= */
@@ -3139,18 +3841,75 @@ setTimeout(
 
     /*
       Keep every card collapsed
-      on first page load.
+      when the page first loads.
 
       Step 01 remains highlighted
-      as the starting point in Path.
+      as the starting point.
     */
+
+    openStepIndex =
+      null;
+
+
+    const cards =
+      Array.from(
+        document.querySelectorAll(
+          ".step-card"
+        )
+      );
+
+
+    cards.forEach(
+      (card) => {
+
+        card.classList.remove(
+          "open"
+        );
+
+
+        const content =
+          card.querySelector(
+            ".step-content"
+          );
+
+
+        if (content) {
+
+          content.style.maxHeight =
+            null;
+
+        }
+
+
+        updateCardToggle(
+          card,
+          false
+        );
+
+      }
+    );
+
 
     updateJourneyProgress(
       activeStepIndex
     );
 
 
-    updateOpenCardHeight();
+    keepActiveStepVisible();
+
+
+    /*
+      Initial Back to Top state
+    */
+
+    if (backTop) {
+
+      backTop.classList.toggle(
+        "show",
+        window.scrollY > 420
+      );
+
+    }
 
   },
   100

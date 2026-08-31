@@ -1338,7 +1338,7 @@ body {
 
 
 /* =========================================================
-   V5 â€” INNER MANUAL VIEW
+   V5 Ã¢â‚¬â€ INNER MANUAL VIEW
    Reference: latest user-provided screenshot
 ========================================================= */
 
@@ -1564,7 +1564,7 @@ body {
 
 
 /* =========================================================
-   MISSING IMAGE PLACEHOLDER â€” CENTERED LIKE REFERENCE
+   MISSING IMAGE PLACEHOLDER Ã¢â‚¬â€ CENTERED LIKE REFERENCE
 ========================================================= */
 
 .slide-placeholder {
@@ -1632,7 +1632,7 @@ body {
 
 
 /* =========================================================
-   UP / DOWN BUTTONS â€” RIGHT SIDE
+   UP / DOWN BUTTONS Ã¢â‚¬â€ RIGHT SIDE
 ========================================================= */
 
 .slider-button {
@@ -1694,7 +1694,7 @@ body {
 
 /* =========================================================
    WORKING GREEN-BLUE SCROLLBAR
-   Between the â–² and â–¼ buttons
+   Between the Ã¢â€“Â² and Ã¢â€“Â¼ buttons
 ========================================================= */
 
 .custom-scrollbar {
@@ -2334,7 +2334,7 @@ body {
 }
 
 /* =========================================================
-   MOBILE â€” BIT TELEMEDICINE LAYOUT / P8 COLORS
+   MOBILE Ã¢â‚¬â€ BIT TELEMEDICINE LAYOUT / P8 COLORS
 ========================================================= */
 
 @media (max-width: 760px) {
@@ -2399,30 +2399,29 @@ body {
 
   .hero-title {
     left: 10px !important;
-    right: 10px !important;
-    top: auto !important;
-    bottom: 10px !important;
-    width: auto !important;
-    max-width: none !important;
-    padding: 11px 13px 12px;
-    border-radius: 16px;
+    right: auto !important;
+    top: 28px !important;
+    bottom: auto !important;
+    width: 42% !important;
+    max-width: 150px !important;
+    padding: 7px 8px 8px !important;
+    border-radius: 13px !important;
   }
 
   .hero-kicker {
-    font-size: 11px;
+    font-size: 8.5px !important;
+    line-height: 1.15 !important;
   }
 
   .hero-title h1 {
-    margin-top: 1px;
-    gap: 5px;
-    font-size: 19px;
-    line-height: 1.22;
+    margin-top: 1px !important;
+    gap: 3px !important;
+    font-size: 13px !important;
+    line-height: 1.16 !important;
   }
 
   .hero-title p {
-    margin-top: 4px;
-    font-size: 10px;
-    line-height: 1.45;
+    display: none !important;
   }
 
   /* Main becomes one column, like BIT Telemedicine. */
@@ -2807,5 +2806,186 @@ body {
     width: 24px !important;
     height: 24px !important;
     flex-basis: 24px !important;
+  }
+}
+
+/* =========================================================
+   RESOURCE LINKS (STEP 06 / STEP 07)
+========================================================= */
+
+.manual-toolbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 10px 0 14px;
+  flex-wrap: wrap;
+}
+
+.manual-toolbar .subnav {
+  flex: 1 1 520px;
+  margin: 0;
+}
+
+.resource-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+}
+
+.resource-link {
+  display: block;
+  flex: 0 0 auto;
+  max-width: 210px;
+  border-radius: 10px;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(27,98,145,.14);
+  transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+}
+
+.resource-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 15px rgba(27,98,145,.18);
+}
+
+.resource-link-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.resource-link-disabled {
+  cursor: not-allowed;
+  opacity: .62;
+}
+
+.resource-link-disabled:hover {
+  transform: none;
+}
+
+/* Keep multiple images in one topic visually continuous. */
+.slide-images {
+  width: 100%;
+}
+
+.slide-images .slide-image + .slide-image {
+  margin-top: 0;
+}
+
+/* =========================================================
+   BACK TO TOP - PC / IPAD / PHONE
+========================================================= */
+
+.back-top {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 5000;
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 3px solid rgba(255,255,255,.96);
+  border-radius: 50%;
+  color: #ffffff;
+  background: linear-gradient(145deg,#39d3bb 0%,#25c3c3 48%,#218ee8 100%);
+  box-shadow:
+    0 8px 0 rgba(20,142,169,.15),
+    0 14px 26px rgba(22,104,165,.30),
+    inset 0 2px 3px rgba(255,255,255,.45);
+  font-family: inherit;
+  font-size: 31px;
+  font-weight: 950;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(12px) scale(.94);
+  transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+}
+
+.back-top.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.back-top:hover {
+  transform: translateY(-3px) scale(1.04);
+}
+
+.back-top:active {
+  transform: translateY(1px) scale(.98);
+}
+
+@media (max-width: 1024px) {
+  .back-top {
+    right: 22px;
+    bottom: 28px;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 760px) {
+  .manual-toolbar {
+    display: block;
+    margin: 8px 0 10px;
+  }
+
+  .manual-toolbar .subnav {
+    margin: 0 0 8px !important;
+  }
+
+  .resource-links {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    padding: 1px 0 5px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .resource-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .resource-link {
+    min-width: 144px;
+    max-width: 170px;
+  }
+
+  .back-top {
+    right: 16px;
+    bottom: calc(82px + env(safe-area-inset-bottom));
+    width: 58px;
+    height: 58px;
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 390px) {
+  .resource-link {
+    min-width: 132px;
+    max-width: 154px;
+  }
+
+  .back-top {
+    right: 14px;
+    width: 56px;
+    height: 56px;
+    font-size: 26px;
   }
 }
