@@ -2182,7 +2182,8 @@ body {
 
 .slide.missing-image .slide-placeholder {
   display: flex !important;
-  min-height: 980px !important;
+  min-height: 100% !important;
+  height: 100% !important;
   align-items: center !important;
   justify-content: center !important;
 }
@@ -2731,7 +2732,7 @@ body {
   }
 
   .slide.missing-image .slide-placeholder {
-    min-height: 700px !important;
+    min-height: 430px !important;
   }
 
   .slider-button {
