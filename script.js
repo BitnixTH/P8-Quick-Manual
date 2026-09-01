@@ -619,65 +619,6 @@ const steps = [
       },
 
 
-      /* ---------------------------------------------------
-         FOOD EXCHANGE
-
-         ใช้ไฟล์เดียวกันทั้ง TH และ EN
-
-         -1 และ -2 เรียงต่อกันแนวตั้ง
-      --------------------------------------------------- */
-
-      {
-        th:
-          "อาหารแลกเปลี่ยน",
-
-        en:
-          "Food Exchange",
-
-        imagesTH: [
-
-          "Image/Thai Exchange Food List-1.jpg",
-
-          "Image/Thai Exchange Food List-2.jpg"
-
-        ],
-
-        imagesEN: [
-
-          "Image/Thai Exchange Food List-1.jpg",
-
-          "Image/Thai Exchange Food List-2.jpg"
-
-        ]
-      },
-
-
-      /* ---------------------------------------------------
-         FOOD ABSORPTION
-
-         เปลี่ยนรูปตาม Language Setting
-      --------------------------------------------------- */
-
-      {
-        th:
-          "การดูดซึมอาหาร",
-
-        en:
-          "Food Absorption",
-
-        imagesTH: [
-
-          "Image/GI-TH.png"
-
-        ],
-
-        imagesEN: [
-
-          "Image/GI-EN.png"
-
-        ]
-      },
-
       {
         th:
           "คำนวณโบลัส",
@@ -707,10 +648,6 @@ const steps = [
       "Image/Step07-4.png",
 
       "Image/Step07-5.png",
-
-      "Image/Step07-6.png",
-
-      "Image/Step07-7.png"
 
     ],
 
@@ -2173,29 +2110,43 @@ function bindCardEvents() {
 
           /* OPEN THIS CARD */
 
-          activeStepIndex =
-            index;
+activeStepIndex =
+  index;
 
 
-          openStepIndex =
-            index;
+openStepIndex =
+  index;
 
 
-          openOnlyStep(
-            index
-          );
+openOnlyStep(
+  index
+);
 
 
-          updateJourneyProgress(
-            index
-          );
+updateJourneyProgress(
+  index
+);
+
+
+setTimeout(
+  () => {
+
+    card.scrollIntoView({
+      behavior:
+        "smooth",
+      block:
+        "start"
+    });
+
+  },
+  80
+);
 
         }
       );
 
     }
   );
-
 
   /* PREVIOUS / NEXT */
 
@@ -2270,46 +2221,28 @@ function goToStep(
 
   const card =
     document.getElementById(
-      steps[
-        index
-      ].id
+      steps[index].id
     );
 
 
-  if (card) {
-
-    const header =
-      card.querySelector(
-        ".step-header"
-      );
+  if (!card) {
+    return;
+  }
 
 
-    if (header) {
+  setTimeout(
+    () => {
 
-      const headerHeight =
-        document.querySelector(
-          ".site-header"
-        )?.offsetHeight || 0;
-
-
-      const top =
-        header
-          .getBoundingClientRect()
-          .top +
-        window.scrollY -
-        headerHeight -
-        18;
-
-
-      window.scrollTo({
-        top,
+      card.scrollIntoView({
         behavior:
-          "smooth"
+          "smooth",
+        block:
+          "start"
       });
 
-    }
-
-  }
+    },
+    80
+  );
 
 }
 
@@ -2351,55 +2284,10 @@ function openOnlyStep(
         shouldOpen
       );
 
-
-      const content =
-        card.querySelector(
-          ".step-content"
-        );
-
-
-      if (!content) {
-        return;
-      }
-
-
-      if (shouldOpen) {
-
-        /*
-          Wait one frame before
-          measuring scrollHeight.
-        */
-
-        requestAnimationFrame(
-          () => {
-
-            content.style.maxHeight =
-              `${content.scrollHeight}px`;
-
-          }
-        );
-
-      } else {
-
-        content.style.maxHeight =
-          null;
-
-      }
-
-    }
-  );
-
-
-  requestAnimationFrame(
-    () => {
-
-      updateOpenCardHeight();
-
     }
   );
 
 }
-
 
 /* =========================================================
    UPDATE OPEN CARD HEIGHT
@@ -2510,537 +2398,1004 @@ function updateJourneyProgress(
    SETUP SLIDERS
 ========================================================= */
 
+/* =========================================================
+   SLIDER SETUP
+========================================================= */
+
 function setupSliders() {
 
   const sliders =
-    document.querySelectorAll(
-      "[data-slider]"
+    Array.from(
+      document.querySelectorAll(
+        "[data-slider]"
+      )
     );
-
 
   sliders.forEach(
     (slider) => {
 
-      const stepIndex =
-        Number(
-          slider.dataset
-            .stepIndex
-        );
+      setupSingleSlider(
+        slider
+      );
+
+    }
+  );
+
+}
 
 
-      const step =
-        steps[
-          stepIndex
-        ];
+/* =========================================================
+   SINGLE SLIDER
+========================================================= */
+
+function setupSingleSlider(slider) {
+
+  const slides =
+    Array.from(
+      slider.querySelectorAll(
+        ".slide"
+      )
+    );
+
+  if (
+    slides.length === 0
+  ) {
+    return;
+  }
 
 
-      if (!step) {
-        return;
-      }
+  const subnav =
+    slider
+      .closest(
+        ".content-inner"
+      )
+      ?.querySelectorAll(
+        ".subnav-btn"
+      );
 
 
-      const card =
-        slider.closest(
-          ".step-card"
-        );
+  const prevButton =
+    slider.querySelector(
+      ".slider-button.prev"
+    );
 
 
-      if (!card) {
-        return;
-      }
+  const nextButton =
+    slider.querySelector(
+      ".slider-button.next"
+    );
 
 
-      const slides =
-        Array.from(
-          slider.querySelectorAll(
-            ".slide"
-          )
-        );
+  const currentSlideText =
+    slider.querySelector(
+      ".current-slide"
+    );
 
 
-      const subnavButtons =
-        Array.from(
-          card.querySelectorAll(
-            ".subnav-btn"
-          )
-        );
+  const totalSlideText =
+    slider.querySelector(
+      ".total-slides"
+    );
 
 
-      const prevButton =
-        slider.querySelector(
-          ".slider-button.prev"
-        );
+  const dotsContainer =
+    slider.querySelector(
+      ".slider-dots"
+    );
 
 
-      const nextButton =
-        slider.querySelector(
-          ".slider-button.next"
-        );
+  const scrollbar =
+    slider.querySelector(
+      ".content-scrollbar"
+    );
 
 
-      const currentSlide =
-        slider.querySelector(
-          ".current-slide"
-        );
+  const scrollbarTrack =
+    slider.querySelector(
+      ".content-scrollbar-track"
+    );
 
 
-      const totalSlides =
-        slider.querySelector(
-          ".total-slides"
-        );
+  const scrollbarThumb =
+    slider.querySelector(
+      ".content-scrollbar-thumb"
+    );
 
 
-      const dotsContainer =
-        slider.querySelector(
-          ".slider-dots"
-        );
+  let currentIndex =
+    0;
 
 
-      const viewport =
-        slider.querySelector(
-          ".slider-viewport"
-        );
+  /* -------------------------------------------------------
+     CREATE DOTS
+  ------------------------------------------------------- */
+
+  if (dotsContainer) {
+
+    dotsContainer.innerHTML =
+      "";
 
 
-      const scrollbarTrack =
-        slider.querySelector(
-          ".content-scrollbar-track"
-        );
+    slides.forEach(
+      (
+        slide,
+        index
+      ) => {
 
-
-      const scrollbarThumb =
-        slider.querySelector(
-          ".content-scrollbar-thumb"
-        );
-
-
-      let activeIndex =
-        0;
-
-
-      /* -----------------------------------------------------
-         TOTAL
-      ----------------------------------------------------- */
-
-      if (totalSlides) {
-
-        totalSlides.textContent =
-          String(
-            slides.length
+        const dot =
+          document.createElement(
+            "button"
           );
 
+
+        dot.type =
+          "button";
+
+
+        dot.className =
+          index === 0
+            ? "slider-dot active"
+            : "slider-dot";
+
+
+        dot.setAttribute(
+          "aria-label",
+          `Slide ${index + 1}`
+        );
+
+
+        dot.addEventListener(
+          "click",
+          (event) => {
+
+            event.preventDefault();
+            event.stopPropagation();
+
+            showSlide(
+              index
+            );
+
+          }
+        );
+
+
+        dotsContainer.appendChild(
+          dot
+        );
+
+      }
+    );
+
+  }
+
+
+  if (totalSlideText) {
+
+    totalSlideText.textContent =
+      slides.length;
+
+  }
+
+
+  /* -------------------------------------------------------
+     GET CURRENT SCROLL AREA
+  ------------------------------------------------------- */
+
+  function getScrollArea() {
+
+    const activeSlide =
+      slides[currentIndex];
+
+
+    if (!activeSlide) {
+      return null;
+    }
+
+
+    return activeSlide.querySelector(
+      ".slide-scroll"
+    );
+
+  }
+
+
+  /* -------------------------------------------------------
+     UPDATE SCROLLBAR
+  ------------------------------------------------------- */
+
+  function updateScrollbar() {
+
+    const scrollArea =
+      getScrollArea();
+
+
+    if (
+      !scrollArea ||
+      !scrollbarTrack ||
+      !scrollbarThumb
+    ) {
+      return;
+    }
+
+
+    const scrollHeight =
+      scrollArea.scrollHeight;
+
+
+    const clientHeight =
+      scrollArea.clientHeight;
+
+
+    const maxScroll =
+      scrollHeight -
+      clientHeight;
+
+
+    /*
+      ถ้า Card ยังปิดอยู่
+      ยังไม่ต้องคำนวณ Scrollbar
+    */
+
+    if (
+      clientHeight <= 0 ||
+      scrollbarTrack.clientHeight <= 0
+    ) {
+      return;
+    }
+
+
+    /*
+      Content ไม่มีระยะ Scroll
+    */
+
+    if (
+  scrollHeight <= clientHeight ||
+  maxScroll <= 0
+) {
+
+  const trackHeight =
+    scrollbarTrack.clientHeight;
+
+  const thumbHeight =
+    Math.max(
+      34,
+      trackHeight / slides.length
+    );
+
+  const availableTravel =
+    Math.max(
+      0,
+      trackHeight - thumbHeight
+    );
+
+  const topicRatio =
+    slides.length <= 1
+      ? 0
+      : currentIndex /
+        (slides.length - 1);
+
+  const translateY =
+    availableTravel *
+    topicRatio;
+
+  scrollbarThumb.style.height =
+    `${thumbHeight}px`;
+
+  scrollbarThumb.style.transform =
+    `translateX(-50%) translateY(${translateY}px)`;
+
+  scrollbarTrack.classList.add(
+    "is-static"
+  );
+
+  if (scrollbar) {
+    scrollbar.classList.remove(
+      "no-scroll"
+    );
+  }
+
+  return;
+}
+
+
+    scrollbarTrack.classList.remove(
+      "is-static"
+    );
+
+
+    if (scrollbar) {
+
+      scrollbar.classList.remove(
+        "no-scroll"
+      );
+
+    }
+
+
+    const trackHeight =
+      scrollbarTrack.clientHeight;
+
+
+    const minimumThumb =
+      34;
+
+
+    const calculatedThumb =
+      (
+        clientHeight /
+        scrollHeight
+      ) *
+      trackHeight;
+
+
+    const thumbHeight =
+      Math.min(
+        trackHeight,
+        Math.max(
+          minimumThumb,
+          calculatedThumb
+        )
+      );
+
+
+    const availableTravel =
+      Math.max(
+        0,
+        trackHeight -
+        thumbHeight
+      );
+
+
+    const scrollRatio =
+      maxScroll <= 0
+        ? 0
+        : scrollArea.scrollTop /
+          maxScroll;
+
+
+    const translateY =
+      availableTravel *
+      scrollRatio;
+
+
+    scrollbarThumb.style.height =
+      `${thumbHeight}px`;
+
+
+    scrollbarThumb.style.transform =
+      `translateX(-50%) translateY(${translateY}px)`;
+
+  }
+
+
+  /* -------------------------------------------------------
+     RECALCULATE
+  ------------------------------------------------------- */
+
+  function refreshSlider() {
+
+    requestAnimationFrame(
+      () => {
+
+        updateScrollbar();
+
+      }
+    );
+
+  }
+
+
+  /* -------------------------------------------------------
+     BIND SCROLL AREA
+  ------------------------------------------------------- */
+
+  slides.forEach(
+    (slide) => {
+
+      const area =
+        slide.querySelector(
+          ".slide-scroll"
+        );
+
+
+      if (!area) {
+        return;
       }
 
 
-      /* -----------------------------------------------------
-         DOTS
-      ----------------------------------------------------- */
+      area.addEventListener(
+        "scroll",
+        () => {
 
-      if (dotsContainer) {
+          if (
+            slide.classList.contains(
+              "active"
+            )
+          ) {
 
-        dotsContainer.innerHTML =
-          "";
+            updateScrollbar();
 
+          }
 
-        slides.forEach(
-          (
-            slide,
-            index
-          ) => {
+        },
+        {
+          passive: true
+        }
+      );
 
-            const dot =
-              document.createElement(
-                "button"
-              );
-
-
-            dot.type =
-              "button";
+  });
 
 
-            dot.className =
-              index === 0
-                ? "slider-dot active"
-                : "slider-dot";
+  /* -------------------------------------------------------
+     UPDATE DOTS
+  ------------------------------------------------------- */
+
+  function updateDots() {
+
+    if (!dotsContainer) {
+      return;
+    }
 
 
-            dot.setAttribute(
-              "aria-label",
-              `Slide ${index + 1}`
-            );
+    const dots =
+      Array.from(
+        dotsContainer.children
+      );
 
 
-            dot.addEventListener(
-              "click",
-              () => {
+    dots.forEach(
+      (
+        dot,
+        index
+      ) => {
 
-                showSlide(
-                  index
-                );
+        dot.classList.toggle(
+          "active",
+          index === currentIndex
+        );
 
-              }
-            );
+      }
+    );
+
+  }
 
 
-            dotsContainer.appendChild(
-              dot
+  /* -------------------------------------------------------
+     UPDATE SUBNAV
+  ------------------------------------------------------- */
+
+  function updateSubnav() {
+
+    if (!subnav) {
+      return;
+    }
+
+
+    Array.from(
+      subnav
+    ).forEach(
+      (
+        button,
+        index
+      ) => {
+
+        button.classList.toggle(
+          "active",
+          index === currentIndex
+        );
+
+      }
+    );
+
+  }
+
+
+  /* -------------------------------------------------------
+     KEEP ▲ / ▼ CLICKABLE
+  ------------------------------------------------------- */
+
+  function updateSliderButtons() {
+
+    if (prevButton) {
+
+      prevButton.disabled =
+        false;
+
+    }
+
+
+    if (nextButton) {
+
+      nextButton.disabled =
+        false;
+
+    }
+
+  }
+
+
+  /* -------------------------------------------------------
+     SHOW SLIDE
+  ------------------------------------------------------- */
+
+  function showSlide(index) {
+
+    if (
+      index < 0 ||
+      index >= slides.length
+    ) {
+      return;
+    }
+
+
+    currentIndex =
+      index;
+
+
+    slides.forEach(
+      (
+        slide,
+        slideIndex
+      ) => {
+
+        slide.classList.toggle(
+          "active",
+          slideIndex ===
+            currentIndex
+        );
+
+      }
+    );
+
+
+    /*
+      เมื่อเปลี่ยน Topic
+      กลับขึ้นบนสุดของ Topic
+    */
+
+    const activeScrollArea =
+      getScrollArea();
+
+
+    if (activeScrollArea) {
+
+      activeScrollArea.scrollTop =
+        0;
+
+    }
+
+
+    if (currentSlideText) {
+
+      currentSlideText.textContent =
+        currentIndex + 1;
+
+    }
+
+
+    updateDots();
+
+
+    updateSubnav();
+
+
+    updateSliderButtons();
+
+
+    requestAnimationFrame(
+      () => {
+
+        updateScrollbar();
+
+        updateOpenCardHeight();
+
+      }
+    );
+
+  }
+
+
+  /*
+    สำคัญ:
+    Step 07 Resource Buttons
+    ของ Code ปัจจุบันใช้ตัวนี้
+  */
+
+  slider._showSlide =
+    (index) => {
+
+      showSlide(
+        index
+      );
+
+    };
+
+
+  /* -------------------------------------------------------
+     SUBNAV CLICK
+  ------------------------------------------------------- */
+
+  if (subnav) {
+
+    Array.from(
+      subnav
+    ).forEach(
+      (
+        button,
+        index
+      ) => {
+
+        button.addEventListener(
+          "click",
+          (event) => {
+
+            event.preventDefault();
+
+            event.stopPropagation();
+
+
+            showSlide(
+              index
             );
 
           }
         );
 
       }
+    );
+
+  }
 
 
-      /* -----------------------------------------------------
-         SHOW SLIDE
-      ----------------------------------------------------- */
+  /* -------------------------------------------------------
+     ▲ SCROLL UP
+  ------------------------------------------------------- */
 
-      function showSlide(
-        index,
-        options = {}
-      ) {
+  if (prevButton) {
 
-        if (
-          index < 0 ||
-          index >= slides.length
-        ) {
+    prevButton.addEventListener(
+      "click",
+      (event) => {
+
+        event.preventDefault();
+
+        event.stopPropagation();
+
+
+        const scrollArea =
+          getScrollArea();
+
+
+        if (!scrollArea) {
           return;
         }
 
 
-        activeIndex =
-          index;
+        /*
+          ถ้ายังไม่ได้อยู่บนสุด
+          ให้เลื่อน Content ขึ้นก่อน
+        */
+
+        if (
+          scrollArea.scrollTop > 4
+        ) {
+
+          scrollArea.scrollBy({
+
+            top:
+              -Math.max(
+                220,
+                scrollArea.clientHeight *
+                  0.78
+              ),
+
+            behavior:
+              "smooth"
+
+          });
 
 
-        slides.forEach(
-          (
-            slide,
-            slideIndex
-          ) => {
-
-            slide.classList.toggle(
-              "active",
-              slideIndex === activeIndex
-            );
-
-          }
-        );
-
-
-        subnavButtons.forEach(
-          (
-            button,
-            buttonIndex
-          ) => {
-
-            button.classList.toggle(
-              "active",
-              buttonIndex === activeIndex
-            );
-
-          }
-        );
-
-
-        const dots =
-          Array.from(
-            slider.querySelectorAll(
-              ".slider-dot"
-            )
-          );
-
-
-        dots.forEach(
-          (
-            dot,
-            dotIndex
-          ) => {
-
-            dot.classList.toggle(
-              "active",
-              dotIndex === activeIndex
-            );
-
-          }
-        );
-
-
-        if (currentSlide) {
-
-          currentSlide.textContent =
-            String(
-              activeIndex + 1
-            );
+          return;
 
         }
 
 
         /*
-          Return scroll position
-          to the top whenever
-          the topic changes.
+          ถ้าอยู่บนสุดแล้ว
+          ค่อยย้อน Topic ก่อนหน้า
         */
 
-        const activeSlide =
-          slides[
-            activeIndex
-          ];
-
-
-        const activeScroll =
-          activeSlide?.querySelector(
-            ".slide-scroll"
-          );
-
-
         if (
-          activeScroll &&
-          options.keepScroll !== true
+          currentIndex > 0
         ) {
 
-          activeScroll.scrollTop =
-            0;
-
-        }
-
-
-        updateSliderButtons();
-
-
-        updateCustomScrollbar();
-
-
-        requestAnimationFrame(
-          () => {
-
-            updateOpenCardHeight();
-
-          }
-        );
-
-      }
-
-
-      /*
-        Expose showSlide()
-        for Step 07 resource buttons.
-      */
-
-      slider._showSlide =
-        showSlide;
-
-
-      /* -----------------------------------------------------
-         SUBNAV BUTTONS
-      ----------------------------------------------------- */
-
-      subnavButtons.forEach(
-        (
-          button,
-          index
-        ) => {
-
-          button.addEventListener(
-            "click",
-            (event) => {
-
-              event.preventDefault();
-
-
-              event.stopPropagation();
-
-
-              showSlide(
-                index
-              );
-
-            }
+          showSlide(
+            currentIndex - 1
           );
 
         }
-      );
-
-
-      /* -----------------------------------------------------
-         PREVIOUS TOPIC
-      ----------------------------------------------------- */
-
-      if (prevButton) {
-
-        prevButton.addEventListener(
-          "click",
-          (event) => {
-
-            event.preventDefault();
-
-
-            event.stopPropagation();
-
-
-            const nextIndex =
-              activeIndex - 1;
-
-
-            if (
-              nextIndex >= 0
-            ) {
-
-              showSlide(
-                nextIndex
-              );
-
-            }
-
-          }
-        );
 
       }
+    );
+
+  }
 
 
-      /* -----------------------------------------------------
-         NEXT TOPIC
-      ----------------------------------------------------- */
+  /* -------------------------------------------------------
+     ▼ SCROLL DOWN
+  ------------------------------------------------------- */
 
-      if (nextButton) {
+  if (nextButton) {
 
-        nextButton.addEventListener(
-          "click",
-          (event) => {
+    nextButton.addEventListener(
+      "click",
+      (event) => {
 
-            event.preventDefault();
+        event.preventDefault();
 
+        event.stopPropagation();
 
-            event.stopPropagation();
-
-
-            const nextIndex =
-              activeIndex + 1;
-
-
-            if (
-              nextIndex <
-              slides.length
-            ) {
-
-              showSlide(
-                nextIndex
-              );
-
-            }
-
-          }
-        );
-
-      }
-
-
-      /* -----------------------------------------------------
-         UPDATE PREV / NEXT BUTTON
-      ----------------------------------------------------- */
-
-      function updateSliderButtons() {
-
-        if (prevButton) {
-
-          prevButton.disabled =
-            activeIndex === 0;
-
-        }
-
-
-        if (nextButton) {
-
-          nextButton.disabled =
-            activeIndex ===
-            slides.length - 1;
-
-        }
-
-      }
-
-
-      /* -----------------------------------------------------
-         CURRENT ACTIVE SCROLL AREA
-      ----------------------------------------------------- */
-
-      function getActiveScrollArea() {
-
-        return slides[
-          activeIndex
-        ]?.querySelector(
-          ".slide-scroll"
-        ) || null;
-
-      }
-
-
-      /* -----------------------------------------------------
-         CUSTOM SCROLLBAR
-      ----------------------------------------------------- */
-
-      function updateCustomScrollbar() {
 
         const scrollArea =
-          getActiveScrollArea();
+          getScrollArea();
 
+
+        if (!scrollArea) {
+          return;
+        }
+
+
+        const maxScroll =
+          scrollArea.scrollHeight -
+          scrollArea.clientHeight;
+
+
+        const isAtBottom =
+          scrollArea.scrollTop >=
+          maxScroll - 4;
+
+
+        /*
+          ถ้ายังมี Content ด้านล่าง
+          ให้เลื่อนลงก่อน
+        */
 
         if (
-          !scrollArea ||
-          !scrollbarTrack ||
-          !scrollbarThumb
+          maxScroll > 4 &&
+          !isAtBottom
         ) {
+
+          scrollArea.scrollBy({
+
+            top:
+              Math.max(
+                220,
+                scrollArea.clientHeight *
+                  0.78
+              ),
+
+            behavior:
+              "smooth"
+
+          });
+
 
           return;
 
         }
 
 
-        const scrollHeight =
-          scrollArea.scrollHeight;
+        /*
+          เมื่อถึงล่างสุดแล้ว
+          ค่อยไป Topic ถัดไป
+        */
+
+        if (
+          currentIndex <
+          slides.length - 1
+        ) {
+
+          showSlide(
+            currentIndex + 1
+          );
+
+        }
+
+      }
+    );
+
+  }
 
 
-        const clientHeight =
-          scrollArea.clientHeight;
+  /* -------------------------------------------------------
+     CLICK SCROLLBAR TRACK
+  ------------------------------------------------------- */
+
+  if (
+    scrollbarTrack &&
+    scrollbarThumb
+  ) {
+
+    scrollbarTrack.addEventListener(
+      "pointerdown",
+      (event) => {
+
+        if (
+          event.target ===
+          scrollbarThumb
+        ) {
+          return;
+        }
+
+
+        const scrollArea =
+          getScrollArea();
+
+
+        if (!scrollArea) {
+          return;
+        }
+
+
+        event.preventDefault();
+
+        event.stopPropagation();
+
+
+        const rect =
+          scrollbarTrack
+            .getBoundingClientRect();
+
+
+        if (rect.height <= 0) {
+          return;
+        }
 
 
         const maxScroll =
           Math.max(
-            scrollHeight -
-              clientHeight,
-            0
+            0,
+            scrollArea.scrollHeight -
+            scrollArea.clientHeight
           );
 
 
-        /*
-          No vertical overflow.
-        */
-
-        if (
-          maxScroll <= 1
-        ) {
-
-          scrollbarThumb.style.height =
-            "100%";
-
-
-          scrollbarThumb.style.transform =
-            "translateY(0)";
-
-
-          scrollbarTrack.classList.add(
-            "no-scroll"
-          );
-
-
+        if (maxScroll <= 0) {
           return;
+        }
+
+
+        const ratio =
+          Math.min(
+            1,
+            Math.max(
+              0,
+              (
+                event.clientY -
+                rect.top
+              ) /
+              rect.height
+            )
+          );
+
+
+        scrollArea.scrollTo({
+
+          top:
+            maxScroll *
+            ratio,
+
+          behavior:
+            "smooth"
+
+        });
+
+      }
+    );
+
+
+    /* -----------------------------------------------------
+       DRAG SCROLLBAR THUMB
+    ----------------------------------------------------- */
+
+    let dragging =
+      false;
+
+
+    let dragStartY =
+      0;
+
+
+    let dragStartScroll =
+      0;
+
+
+    let dragPointerId =
+      null;
+
+
+    scrollbarThumb.addEventListener(
+      "pointerdown",
+      (event) => {
+
+        const scrollArea =
+          getScrollArea();
+
+
+        if (!scrollArea) {
+          return;
+        }
+
+
+        const maxScroll =
+          scrollArea.scrollHeight -
+          scrollArea.clientHeight;
+
+
+        if (maxScroll <= 0) {
+          return;
+        }
+
+
+        dragging =
+          true;
+
+
+        dragStartY =
+          event.clientY;
+
+
+        dragStartScroll =
+          scrollArea.scrollTop;
+
+
+        dragPointerId =
+          event.pointerId;
+
+
+        scrollbarThumb.classList.add(
+          "dragging"
+        );
+
+
+        try {
+
+          scrollbarThumb
+            .setPointerCapture(
+              event.pointerId
+            );
+
+        } catch (error) {
+
+          /* no action */
 
         }
 
 
-        scrollbarTrack.classList.remove(
-          "no-scroll"
-        );
+        event.preventDefault();
+
+        event.stopPropagation();
+
+      }
+    );
+
+
+    scrollbarThumb.addEventListener(
+      "pointermove",
+      (event) => {
+
+        if (!dragging) {
+          return;
+        }
+
+
+        const scrollArea =
+          getScrollArea();
+
+
+        if (!scrollArea) {
+          return;
+        }
 
 
         const trackHeight =
@@ -3048,449 +3403,184 @@ function setupSliders() {
 
 
         const thumbHeight =
-          Math.max(
-            34,
-            (
-              clientHeight /
-              scrollHeight
-            ) *
-              trackHeight
-          );
+          scrollbarThumb.offsetHeight;
 
 
-        const maxThumbTop =
-          Math.max(
-            trackHeight -
-              thumbHeight,
-            0
-          );
+        const availableTravel =
+          trackHeight -
+          thumbHeight;
 
 
-        const scrollRatio =
-          scrollArea.scrollTop /
+        const maxScroll =
+          scrollArea.scrollHeight -
+          scrollArea.clientHeight;
+
+
+        if (
+          availableTravel <= 0 ||
+          maxScroll <= 0
+        ) {
+          return;
+        }
+
+
+        const deltaY =
+          event.clientY -
+          dragStartY;
+
+
+        const scrollDelta =
+          (
+            deltaY /
+            availableTravel
+          ) *
           maxScroll;
 
 
-        const thumbTop =
-          scrollRatio *
-          maxThumbTop;
-
-
-        scrollbarThumb.style.height =
-          `${thumbHeight}px`;
-
-
-        scrollbarThumb.style.transform =
-          `translateY(${thumbTop}px)`;
+        scrollArea.scrollTop =
+          dragStartScroll +
+          scrollDelta;
 
       }
+    );
 
 
-      /* -----------------------------------------------------
-         SCROLL LISTENER
-      ----------------------------------------------------- */
+    function stopDragging() {
 
-      slides.forEach(
-        (slide) => {
-
-          const scrollArea =
-            slide.querySelector(
-              ".slide-scroll"
-            );
+      dragging =
+        false;
 
 
-          if (!scrollArea) {
-            return;
-          }
-
-
-          scrollArea.addEventListener(
-            "scroll",
-            () => {
-
-              if (
-                slide.classList.contains(
-                  "active"
-                )
-              ) {
-
-                updateCustomScrollbar();
-
-              }
-
-            },
-            {
-              passive:
-                true
-            }
-          );
-
-        }
+      scrollbarThumb.classList.remove(
+        "dragging"
       );
 
-
-      /* -----------------------------------------------------
-         CLICK / DRAG CUSTOM SCROLLBAR
-      ----------------------------------------------------- */
 
       if (
-        scrollbarTrack &&
-        scrollbarThumb
+        dragPointerId !== null
       ) {
 
-        let dragging =
-          false;
+        try {
 
-
-        let dragStartY =
-          0;
-
-
-        let dragStartScrollTop =
-          0;
-
-
-        function moveScrollFromPointer(
-          clientY
-        ) {
-
-          const scrollArea =
-            getActiveScrollArea();
-
-
-          if (!scrollArea) {
-            return;
-          }
-
-
-          const rect =
-            scrollbarTrack
-              .getBoundingClientRect();
-
-
-          const thumbHeight =
-            scrollbarThumb
-              .getBoundingClientRect()
-              .height;
-
-
-          const trackRange =
-            Math.max(
-              rect.height -
-                thumbHeight,
-              1
+          scrollbarThumb
+            .releasePointerCapture(
+              dragPointerId
             );
 
+        } catch (error) {
 
-          const pointerY =
-            Math.min(
-              Math.max(
-                clientY -
-                  rect.top -
-                  thumbHeight / 2,
-                0
-              ),
-              trackRange
-            );
-
-
-          const ratio =
-            pointerY /
-            trackRange;
-
-
-          const maxScroll =
-            Math.max(
-              scrollArea.scrollHeight -
-                scrollArea.clientHeight,
-              0
-            );
-
-
-          scrollArea.scrollTop =
-            ratio *
-            maxScroll;
+          /* no action */
 
         }
-
-
-        scrollbarTrack.addEventListener(
-          "click",
-          (event) => {
-
-            if (
-              event.target ===
-              scrollbarThumb
-            ) {
-              return;
-            }
-
-
-            moveScrollFromPointer(
-              event.clientY
-            );
-
-          }
-        );
-
-
-        scrollbarThumb.addEventListener(
-          "pointerdown",
-          (event) => {
-
-            const scrollArea =
-              getActiveScrollArea();
-
-
-            if (!scrollArea) {
-              return;
-            }
-
-
-            dragging =
-              true;
-
-
-            dragStartY =
-              event.clientY;
-
-
-            dragStartScrollTop =
-              scrollArea.scrollTop;
-
-
-            scrollbarThumb
-              .setPointerCapture?.(
-                event.pointerId
-              );
-
-
-            event.preventDefault();
-
-          }
-        );
-
-
-        scrollbarThumb.addEventListener(
-          "pointermove",
-          (event) => {
-
-            if (!dragging) {
-              return;
-            }
-
-
-            const scrollArea =
-              getActiveScrollArea();
-
-
-            if (!scrollArea) {
-              return;
-            }
-
-
-            const trackHeight =
-              scrollbarTrack.clientHeight;
-
-
-            const thumbHeight =
-              scrollbarThumb
-                .getBoundingClientRect()
-                .height;
-
-
-            const trackRange =
-              Math.max(
-                trackHeight -
-                  thumbHeight,
-                1
-              );
-
-
-            const maxScroll =
-              Math.max(
-                scrollArea.scrollHeight -
-                  scrollArea.clientHeight,
-                0
-              );
-
-
-            const deltaY =
-              event.clientY -
-              dragStartY;
-
-
-            scrollArea.scrollTop =
-              dragStartScrollTop +
-              (
-                deltaY /
-                trackRange
-              ) *
-                maxScroll;
-
-          }
-        );
-
-
-        function stopDragging(
-          event
-        ) {
-
-          if (!dragging) {
-            return;
-          }
-
-
-          dragging =
-            false;
-
-
-          if (
-            event &&
-            scrollbarThumb
-              .hasPointerCapture?.(
-                event.pointerId
-              )
-          ) {
-
-            scrollbarThumb
-              .releasePointerCapture?.(
-                event.pointerId
-              );
-
-          }
-
-        }
-
-
-        scrollbarThumb.addEventListener(
-          "pointerup",
-          stopDragging
-        );
-
-
-        scrollbarThumb.addEventListener(
-          "pointercancel",
-          stopDragging
-        );
 
       }
 
 
-      /* -----------------------------------------------------
-         MOUSE WHEEL
+      dragPointerId =
+        null;
 
-         When the cursor is over the
-         slider viewport, scroll content
-         vertically.
-      ----------------------------------------------------- */
-
-      if (viewport) {
-
-        viewport.addEventListener(
-          "wheel",
-          (event) => {
-
-            const scrollArea =
-              getActiveScrollArea();
+    }
 
 
-            if (!scrollArea) {
-              return;
-            }
+    scrollbarThumb.addEventListener(
+      "pointerup",
+      stopDragging
+    );
 
 
-            const maxScroll =
-              scrollArea.scrollHeight -
-              scrollArea.clientHeight;
+    scrollbarThumb.addEventListener(
+      "pointercancel",
+      stopDragging
+    );
+
+  }
 
 
-            if (
-              maxScroll <= 0
-            ) {
+  /* -------------------------------------------------------
+     IMAGE LOAD
+  ------------------------------------------------------- */
 
-              return;
+  slider
+    .querySelectorAll(
+      "img"
+    )
+    .forEach(
+      (image) => {
 
-            }
+        image.addEventListener(
+          "load",
+          () => {
 
+            refreshSlider();
 
-            const movingDown =
-              event.deltaY > 0;
+            updateOpenCardHeight();
 
-
-            const movingUp =
-              event.deltaY < 0;
-
-
-            const atBottom =
-              scrollArea.scrollTop >=
-              maxScroll - 1;
-
-
-            const atTop =
-              scrollArea.scrollTop <=
-              1;
+          }
+        );
 
 
-            /*
-              Allow page scroll if
-              content already reaches
-              its boundary.
-            */
+        image.addEventListener(
+          "error",
+          () => {
 
-            if (
-              (
-                movingDown &&
-                atBottom
-              ) ||
-              (
-                movingUp &&
-                atTop
-              )
-            ) {
+            refreshSlider();
 
-              return;
-
-            }
-
-
-            scrollArea.scrollTop +=
-              event.deltaY;
-
-
-            event.preventDefault();
-
-          },
-          {
-            passive:
-              false
           }
         );
 
       }
+    );
 
 
-      /* -----------------------------------------------------
-         INITIALIZE
-      ----------------------------------------------------- */
+  /* -------------------------------------------------------
+     RESIZE OBSERVER
+     Card เปิดจาก display:none → block
+     จะคำนวณ Scrollbar ใหม่โดยอัตโนมัติ
+  ------------------------------------------------------- */
 
-      showSlide(
-        0
-      );
+  if (
+    typeof ResizeObserver !==
+      "undefined"
+  ) {
 
-
-      window.addEventListener(
-        "resize",
+    const observer =
+      new ResizeObserver(
         () => {
 
-          updateCustomScrollbar();
+          refreshSlider();
 
         }
       );
+
+
+    observer.observe(
+      slider
+    );
+
+  }
+
+
+  /* -------------------------------------------------------
+     WINDOW RESIZE
+  ------------------------------------------------------- */
+
+  window.addEventListener(
+    "resize",
+    () => {
+
+      refreshSlider();
 
     }
   );
 
+
+        /* ===================================================
+           INITIAL STATE
+        =================================================== */
+
+        showSlide(
+          0
+        );
 }
 
 
@@ -4547,43 +4637,51 @@ function scrollCardIntoView(
     return;
   }
 
-
   const siteHeader =
     document.querySelector(
       ".site-header"
     );
-
 
   const headerHeight =
     siteHeader
       ? siteHeader.offsetHeight
       : 0;
 
+  const cardHeader =
+    card.querySelector(
+      ".step-header"
+    );
 
-  const top =
-    card
-      .getBoundingClientRect()
-      .top +
-    window.scrollY -
-    headerHeight -
-    14;
+  if (!cardHeader) {
+    return;
+  }
 
+  window.setTimeout(
+    () => {
 
-  window.scrollTo({
+      const top =
+        cardHeader
+          .getBoundingClientRect()
+          .top +
+        window.scrollY -
+        headerHeight -
+        12;
 
-    top:
-      Math.max(
-        0,
-        top
-      ),
+      window.scrollTo({
+        top:
+          Math.max(
+            0,
+            top
+          ),
+        behavior:
+          "smooth"
+      });
 
-    behavior:
-      "smooth"
-
-  });
+    },
+    180
+  );
 
 }
-
 
 /* =========================================================
    SCROLL TO STEP FROM HASH
@@ -4631,6 +4729,11 @@ function openStepFromHash() {
   updateJourneyProgress(
     index
   );
+
+
+  scrollCardIntoView(
+  card
+);
 
 
   const card =
@@ -5480,7 +5583,7 @@ function initializeP8Manual() {
   setupPageScrollBehavior();
 
 
-  setupScrollSpy();
+  /* setupScrollSpy(); */
 
 
   setupHeroImageLoad();

@@ -919,20 +919,13 @@ body {
 ========================================================= */
 
 .step-content {
-  max-height: 0;
-
+  display: none;
   overflow: hidden;
-
-  opacity: 0;
-
-  transition:
-    max-height .42s ease,
-    opacity .27s ease;
 }
 
 .step-card.open
 .step-content {
-  opacity: 1;
+  display: block;
 }
 
 .content-inner {
@@ -1588,6 +1581,10 @@ body {
   display: flex;
 }
 
+.slide-placeholder.show {
+  display: flex !important;
+}
+
 .placeholder-number {
   width: 64px;
   height: 64px;
@@ -2196,16 +2193,23 @@ body {
 }
 
 /* Visible content scrollbar used by the current script. */
+
 .content-scrollbar {
   position: absolute !important;
-  top: 94px !important;
-  right: 35px !important;
-  bottom: 158px !important;
-  width: 32px !important;
+
+  top: 92px !important;
+  right: 31px !important;
+  bottom: 150px !important;
+
+  width: 30px !important;
+
   display: flex !important;
   justify-content: center !important;
+
   z-index: 80 !important;
+
   opacity: 1 !important;
+
   user-select: none !important;
   touch-action: none !important;
   pointer-events: auto !important;
@@ -2213,30 +2217,59 @@ body {
 
 .content-scrollbar-track {
   position: relative !important;
-  width: 9px !important;
+
+  width: 8px !important;
   height: 100% !important;
+
   border-radius: 999px !important;
-  background: linear-gradient(180deg,#d9f7f4 0%,#d9f1f2 100%) !important;
-  border: 1px solid rgba(35,190,183,.30) !important;
-  box-shadow: inset 0 2px 5px rgba(25,151,165,.15) !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #dffaf7 0%,
+      #d6f2f4 100%
+    ) !important;
+
+  border:
+    1px solid rgba(35, 190, 183, .28) !important;
+
+  box-shadow:
+    inset 0 2px 5px rgba(25, 151, 165, .13) !important;
+
   cursor: pointer !important;
   pointer-events: auto !important;
 }
 
 .content-scrollbar-thumb {
   position: absolute !important;
+
   top: 0 !important;
   left: 50% !important;
-  width: 19px !important;
-  min-height: 72px !important;
+
+  width: 16px !important;
+
+  min-height: 34px !important;
+
   border-radius: 999px !important;
-  background: linear-gradient(180deg,#45e0d0 0%,#2fd0c4 50%,#18bfb7 100%) !important;
-  border: 2px solid rgba(255,255,255,.94) !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #4be5d5 0%,
+      #2fd2c6 52%,
+      #18beb7 100%
+    ) !important;
+
+  border:
+    2px solid rgba(255, 255, 255, .96) !important;
+
   box-shadow:
-    0 5px 13px rgba(28,169,170,.30),
-    inset 0 2px 2px rgba(255,255,255,.50) !important;
+    0 4px 10px rgba(28, 169, 170, .25),
+    inset 0 2px 2px rgba(255, 255, 255, .52) !important;
+
   cursor: grab !important;
   pointer-events: auto !important;
+
   will-change: transform;
 }
 
@@ -2245,7 +2278,8 @@ body {
 }
 
 .content-scrollbar.no-scroll {
-  opacity: 1 !important;
+  opacity: .35 !important;
+  pointer-events: none !important;
 }
 
 /* ---------- Slider controls ---------- */
@@ -2398,27 +2432,27 @@ body {
   }
 
   .hero-title {
-    left: 10px !important;
-    right: auto !important;
-    top: 28px !important;
-    bottom: auto !important;
-    width: 42% !important;
-    max-width: 150px !important;
-    padding: 7px 8px 8px !important;
-    border-radius: 13px !important;
-  }
+  left: 10px !important;
+  right: auto !important;
+  top: 28px !important;
+  bottom: auto !important;
+  width: 30% !important;
+  max-width: 102px !important;
+  padding: 5px 6px 6px !important;
+  border-radius: 11px !important;
+}
 
-  .hero-kicker {
-    font-size: 8.5px !important;
-    line-height: 1.15 !important;
-  }
+.hero-kicker {
+  font-size: 7px !important;
+  line-height: 1.08 !important;
+}
 
-  .hero-title h1 {
-    margin-top: 1px !important;
-    gap: 3px !important;
-    font-size: 13px !important;
-    line-height: 1.16 !important;
-  }
+.hero-title h1 {
+  margin-top: 1px !important;
+  gap: 2px !important;
+  font-size: 10px !important;
+  line-height: 1.10 !important;
+}
 
   .hero-title p {
     display: none !important;
@@ -2727,10 +2761,10 @@ body {
   }
 
   .content-scrollbar-thumb {
-    width: 15px !important;
-    min-height: 56px !important;
+  width: 15px !important;
+  min-height: 34px !important;
   }
-
+  
   .slider-footer {
     left: 8px !important;
     right: 54px !important;
