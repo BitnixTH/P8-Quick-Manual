@@ -2605,56 +2605,19 @@ function setupSingleSlider(slider) {
 
   function updateScrollbar() {
 
-    const scrollArea =
-      getScrollArea();
-
-
-    if (
-      !scrollArea ||
-      !scrollbarTrack ||
-      !scrollbarThumb
-    ) {
-      return;
-    }
-
-
-    const scrollHeight =
-      scrollArea.scrollHeight;
-
-
-    const clientHeight =
-      scrollArea.clientHeight;
-
-
-    const maxScroll =
-      scrollHeight -
-      clientHeight;
-
-
-    /*
-      ถ้า Card ยังปิดอยู่
-      ยังไม่ต้องคำนวณ Scrollbar
-    */
-
-    if (
-      clientHeight <= 0 ||
-      scrollbarTrack.clientHeight <= 0
-    ) {
-      return;
-    }
-
-
-    /*
-      Content ไม่มีระยะ Scroll
-    */
-
-    if (
-  scrollHeight <= clientHeight ||
-  maxScroll <= 0
-) {
+  if (
+    !scrollbarTrack ||
+    !scrollbarThumb
+  ) {
+    return;
+  }
 
   const trackHeight =
     scrollbarTrack.clientHeight;
+
+  if (trackHeight <= 0) {
+    return;
+  }
 
   const thumbHeight =
     Math.max(
@@ -2684,88 +2647,12 @@ function setupSingleSlider(slider) {
   scrollbarThumb.style.transform =
     `translateX(-50%) translateY(${translateY}px)`;
 
-  scrollbarTrack.classList.add(
-    "is-static"
-  );
-
   if (scrollbar) {
     scrollbar.classList.remove(
       "no-scroll"
     );
   }
-
-  return;
 }
-
-
-    scrollbarTrack.classList.remove(
-      "is-static"
-    );
-
-
-    if (scrollbar) {
-
-      scrollbar.classList.remove(
-        "no-scroll"
-      );
-
-    }
-
-
-    const trackHeight =
-      scrollbarTrack.clientHeight;
-
-
-    const minimumThumb =
-      34;
-
-
-    const calculatedThumb =
-      (
-        clientHeight /
-        scrollHeight
-      ) *
-      trackHeight;
-
-
-    const thumbHeight =
-      Math.min(
-        trackHeight,
-        Math.max(
-          minimumThumb,
-          calculatedThumb
-        )
-      );
-
-
-    const availableTravel =
-      Math.max(
-        0,
-        trackHeight -
-        thumbHeight
-      );
-
-
-    const scrollRatio =
-      maxScroll <= 0
-        ? 0
-        : scrollArea.scrollTop /
-          maxScroll;
-
-
-    const translateY =
-      availableTravel *
-      scrollRatio;
-
-
-    scrollbarThumb.style.height =
-      `${thumbHeight}px`;
-
-
-    scrollbarThumb.style.transform =
-      `translateX(-50%) translateY(${translateY}px)`;
-
-  }
 
 
   /* -------------------------------------------------------
@@ -3052,160 +2939,47 @@ function setupSingleSlider(slider) {
   ------------------------------------------------------- */
 
   if (prevButton) {
+  prevButton.addEventListener(
+    "click",
+    (event) => {
 
-    prevButton.addEventListener(
-      "click",
-      (event) => {
+      event.preventDefault();
+      event.stopPropagation();
 
-        event.preventDefault();
-
-        event.stopPropagation();
-
-
-        const scrollArea =
-          getScrollArea();
-
-
-        if (!scrollArea) {
-          return;
-        }
-
-
-        /*
-          ถ้ายังไม่ได้อยู่บนสุด
-          ให้เลื่อน Content ขึ้นก่อน
-        */
-
-        if (
-          scrollArea.scrollTop > 4
-        ) {
-
-          scrollArea.scrollBy({
-
-            top:
-              -Math.max(
-                220,
-                scrollArea.clientHeight *
-                  0.78
-              ),
-
-            behavior:
-              "smooth"
-
-          });
-
-
-          return;
-
-        }
-
-
-        /*
-          ถ้าอยู่บนสุดแล้ว
-          ค่อยย้อน Topic ก่อนหน้า
-        */
-
-        if (
-          currentIndex > 0
-        ) {
-
-          showSlide(
-            currentIndex - 1
-          );
-
-        }
-
+      if (currentIndex > 0) {
+        showSlide(
+          currentIndex - 1
+        );
       }
-    );
 
-  }
-
+    }
+  );
+}
 
   /* -------------------------------------------------------
      ▼ SCROLL DOWN
   ------------------------------------------------------- */
 
   if (nextButton) {
+  nextButton.addEventListener(
+    "click",
+    (event) => {
 
-    nextButton.addEventListener(
-      "click",
-      (event) => {
+      event.preventDefault();
+      event.stopPropagation();
 
-        event.preventDefault();
-
-        event.stopPropagation();
-
-
-        const scrollArea =
-          getScrollArea();
-
-
-        if (!scrollArea) {
-          return;
-        }
-
-
-        const maxScroll =
-          scrollArea.scrollHeight -
-          scrollArea.clientHeight;
-
-
-        const isAtBottom =
-          scrollArea.scrollTop >=
-          maxScroll - 4;
-
-
-        /*
-          ถ้ายังมี Content ด้านล่าง
-          ให้เลื่อนลงก่อน
-        */
-
-        if (
-          maxScroll > 4 &&
-          !isAtBottom
-        ) {
-
-          scrollArea.scrollBy({
-
-            top:
-              Math.max(
-                220,
-                scrollArea.clientHeight *
-                  0.78
-              ),
-
-            behavior:
-              "smooth"
-
-          });
-
-
-          return;
-
-        }
-
-
-        /*
-          เมื่อถึงล่างสุดแล้ว
-          ค่อยไป Topic ถัดไป
-        */
-
-        if (
-          currentIndex <
-          slides.length - 1
-        ) {
-
-          showSlide(
-            currentIndex + 1
-          );
-
-        }
-
+      if (
+        currentIndex <
+        slides.length - 1
+      ) {
+        showSlide(
+          currentIndex + 1
+        );
       }
-    );
 
-  }
-
+    }
+  );
+}
 
   /* -------------------------------------------------------
      CLICK SCROLLBAR TRACK
