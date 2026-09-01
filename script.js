@@ -509,53 +509,59 @@ const steps = [
 
     resources: [
 
-      {
-        type:
-          "external",
+  {
+    type: "external",
+    kind: "document",
 
-        kind:
-          "pdf",
+    iconImage:
+      "Image/PDF-Icon.png",
 
-        imageTH:
-          "Image/CareSense-TH-Pic1.png",
+    labelTH:
+      "ข้อมูล CareSense Air 365 CGM [PDF]",
 
-        imageEN:
-          "Image/CareSense-EN-Pic1.png",
+    labelEN:
+      "CareSense Air 365 CGM Information [PDF]",
 
-        url:
-          RESOURCE_LINKS.careSensePdf,
+    subtitleTH:
+      "ข้อมูล CareSense Air 365 CGM",
 
-        labelTH:
-          "ข้อมูล CareSense Air 365 CGM [PDF]",
+    subtitleEN:
+      "CareSense Air 365 CGM Information",
 
-        labelEN:
-          "CareSense Air 365 CGM Information [PDF]"
-      },
+    urlTH:
+      "resource-viewer.html?resource=caresense&lang=th",
 
-      {
-        type:
-          "external",
+    urlEN:
+      "resource-viewer.html?resource=caresense&lang=en"
+  },
 
-        kind:
-          "video",
+  {
+    type: "external",
+    kind: "video",
 
-        imageTH:
-          "Image/CareSense-TH-Pic2.png",
+    iconImage:
+      "Image/VDO-Icon.png",
 
-        imageEN:
-          "Image/CareSense-EN-Pic2.png",
+    labelTH:
+      "การติดตั้ง CareSense Air 365 CGM [VDO]",
 
-        url:
-          RESOURCE_LINKS.careSenseVideo,
+    labelEN:
+      "CareSense Air 365 CGM Installation [VDO]",
 
-        labelTH:
-          "ดูรีวิว CareSense Air 365 CGM [VDO]",
+    subtitleTH:
+      "CareSense Air 365 CGM Installation [Video]",
 
-        labelEN:
-          "Watch CareSense Air 365 CGM Review [VDO]"
-      }
+    subtitleEN:
+      "CareSense Air 365 CGM Installation [Video]",
 
-    ]
+    urlTH:
+      RESOURCE_LINKS.careSenseVideo,
+
+    urlEN:
+      RESOURCE_LINKS.careSenseVideo
+  }
+
+]
   },
 
 
@@ -666,47 +672,59 @@ const steps = [
 
     resources: [
 
-      {
-        type:
-          "topic",
+  {
+    type: "external",
+    kind: "document",
 
-        targetTopic:
-          3,
+    iconImage:
+      "Image/Food Exchange-Icon.png",
 
-        imageTH:
-          "Image/อาหารแลกเปลี่ยน.png",
+    labelTH:
+      "อาหารแลกเปลี่ยน",
 
-        imageEN:
-          "Image/Food Exchange.png",
+    labelEN:
+      "Food Exchange",
 
-        labelTH:
-          "อาหารแลกเปลี่ยน",
+    subtitleTH:
+      "ตารางอาหารแลกเปลี่ยนครบ 6 หมวดหมู่",
 
-        labelEN:
-          "Food Exchange"
-      },
+    subtitleEN:
+      "Thai Food Exchange List",
 
-      {
-        type:
-          "topic",
+    urlTH:
+      "resource-viewer.html?resource=foodexchange&lang=th",
 
-        targetTopic:
-          4,
+    urlEN:
+      "resource-viewer.html?resource=foodexchange&lang=en"
+  },
 
-        imageTH:
-          "Image/ประเมินการดูดซึมของอาหาร.png",
+  {
+    type: "external",
+    kind: "document",
 
-        imageEN:
-          "Image/Food Absorb Evaluation.png",
+    iconImage:
+      "Image/Food Absorb-Icon.png",
 
-        labelTH:
-          "ประเมินการดูดซึมของอาหาร",
+    labelTH:
+      "ประเมินการดูดซึมของอาหาร",
 
-        labelEN:
-          "Food Absorption Evaluation"
-      }
+    labelEN:
+      "Food Absorption Evaluation",
 
-    ]
+    subtitleTH:
+      "ดูดซึมเร็ว, ปานกลาง, ช้า",
+
+    subtitleEN:
+      "Fast, moderate, slow absorption",
+
+    urlTH:
+      "resource-viewer.html?resource=absorption&lang=th",
+
+    urlEN:
+      "resource-viewer.html?resource=absorption&lang=en"
+  }
+
+]
   },
 
 
@@ -1065,9 +1083,7 @@ function buildResourceButtons(
     ) ||
     step.resources.length === 0
   ) {
-
     return "";
-
   }
 
 
@@ -1079,22 +1095,31 @@ function buildResourceButtons(
           resourceIndex
         ) => {
 
-          const image =
-            currentLanguage === "th"
-              ? resource.imageTH
-              : resource.imageEN;
-
-
           const label =
             currentLanguage === "th"
               ? resource.labelTH
               : resource.labelEN;
 
 
-          /* -------------------------------------------------
-             EXTERNAL LINK
-             STEP 06
-          ------------------------------------------------- */
+          const subtitle =
+            currentLanguage === "th"
+              ? resource.subtitleTH
+              : resource.subtitleEN;
+
+
+          const url =
+            currentLanguage === "th"
+              ? resource.urlTH
+              : resource.urlEN;
+
+
+          const iconImage =
+          resource.iconImage || "";
+
+          /* -----------------------------------------------
+             EXTERNAL RESOURCE
+             STEP 06 / STEP 07
+          ----------------------------------------------- */
 
           if (
             resource.type ===
@@ -1102,93 +1127,133 @@ function buildResourceButtons(
           ) {
 
             const hasUrl =
-              typeof resource.url ===
-                "string" &&
-              resource.url.trim() !== "";
+              typeof url === "string" &&
+              url.trim() !== "";
 
 
-            if (hasUrl) {
+            if (!hasUrl) {
 
               return `
 
-                <a
-                  class="resource-link resource-external"
-                  href="${resource.url}"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <span
+                  class="
+                    resource-card
+                    resource-card-disabled
+                  "
                   aria-label="${label}"
+                  aria-disabled="true"
                 >
 
-                  <img
-                    src="${image}"
-                    alt="${label}"
-                    class="resource-link-image"
+                  <span
+  class="resource-card-icon"
+  aria-hidden="true"
+>
+
+  <img
+    src="${iconImage}"
+    alt=""
+    class="resource-card-icon-image"
+  >
+
+</span>
+
+
+                  <span
+                    class="resource-card-copy"
                   >
 
-                </a>
+                    <strong
+                      class="resource-card-title"
+                    >
+                      ${label}
+                    </strong>
+
+                    ${
+                      subtitle
+                        ? `
+                          <span
+                            class="resource-card-subtitle"
+                          >
+                            ${subtitle}
+                          </span>
+                        `
+                        : ""
+                    }
+
+                  </span>
+
+
+                  <span
+                    class="resource-card-arrow"
+                    aria-hidden="true"
+                  >
+                    →
+                  </span>
+
+                </span>
 
               `;
 
             }
 
 
-            /*
-              No URL yet:
-              keep the image visible,
-              but the button is disabled.
-            */
-
             return `
 
-              <span
-                class="resource-link
-                       resource-external
-                       resource-link-disabled"
-                aria-label="${label}"
-                aria-disabled="true"
-              >
-
-                <img
-                  src="${image}"
-                  alt="${label}"
-                  class="resource-link-image"
-                >
-
-              </span>
-
-            `;
-
-          }
-
-
-          /* -------------------------------------------------
-             INTERNAL TOPIC LINK
-             STEP 07
-          ------------------------------------------------- */
-
-          if (
-            resource.type ===
-            "topic"
-          ) {
-
-            return `
-
-              <button
-                class="resource-link
-                       resource-topic"
-                type="button"
-                data-resource-topic="${resource.targetTopic}"
-                data-resource-step="${stepIndex}"
+              <a
+                class="resource-card"
+                href="${url}"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="${label}"
               >
 
-                <img
-                  src="${image}"
-                  alt="${label}"
-                  class="resource-link-image"
+                <span
+  class="resource-card-icon"
+  aria-hidden="true"
+>
+
+  <img
+    src="${iconImage}"
+    alt=""
+    class="resource-card-icon-image"
+  >
+
+</span>
+
+
+                <span
+                  class="resource-card-copy"
                 >
 
-              </button>
+                  <strong
+                    class="resource-card-title"
+                  >
+                    ${label}
+                  </strong>
+
+                  ${
+                    subtitle
+                      ? `
+                        <span
+                          class="resource-card-subtitle"
+                        >
+                          ${subtitle}
+                        </span>
+                      `
+                      : ""
+                  }
+
+                </span>
+
+
+                <span
+                  class="resource-card-arrow"
+                  aria-hidden="true"
+                >
+                  →
+                </span>
+
+              </a>
 
             `;
 

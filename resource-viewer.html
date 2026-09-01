@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>P8 Resource Viewer</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans Thai",
+        Arial,
+        sans-serif;
+
+      background:
+        linear-gradient(
+          180deg,
+          #eefbff,
+          #ffffff
+        );
+
+      color: #153a63;
+    }
+
+    .viewer-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+
+      padding: 14px 18px;
+
+      text-align: center;
+
+      background:
+        rgba(255,255,255,.94);
+
+      backdrop-filter:
+        blur(12px);
+
+      border-bottom:
+        1px solid #dceef7;
+
+      box-shadow:
+        0 5px 18px
+        rgba(31,96,140,.08);
+    }
+
+    .viewer-header h1 {
+      font-size: 18px;
+      color: #1464a8;
+    }
+
+    .viewer-container {
+      width:
+        min(
+          1000px,
+          calc(100% - 20px)
+        );
+
+      margin:
+        18px auto 40px;
+    }
+
+    .resource-image {
+      width: 100%;
+      height: auto;
+
+      display: block;
+
+      margin: 0;
+
+      background: white;
+    }
+
+    .resource-image + .resource-image {
+      margin-top: 10px;
+    }
+
+    .error-message {
+      padding: 50px 20px;
+      text-align: center;
+      color: #6d8298;
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <header class="viewer-header">
+
+    <h1 id="viewerTitle">
+      P8 Resource
+    </h1>
+
+  </header>
+
+
+  <main
+    class="viewer-container"
+    id="viewerContainer"
+  ></main>
+
+
+  <script>
+
+    const params =
+      new URLSearchParams(
+        window.location.search
+      );
+
+
+    const resource =
+      params.get("resource");
+
+
+    const lang =
+      params.get("lang") === "en"
+        ? "en"
+        : "th";
+
+
+    const resources = {
+
+      caresense: {
+
+        titleTH:
+          "ข้อมูล CareSense Air 365 CGM",
+
+        titleEN:
+          "CareSense Air 365 CGM Information",
+
+        th: [
+          "Image/CareSense-TH-Pic1.png",
+          "Image/CareSense-TH-Pic2.png"
+        ],
+
+        en: [
+          "Image/CareSense-EN-Pic1.png",
+          "Image/CareSense-EN-Pic2.png"
+        ]
+
+      },
+
+
+      foodexchange: {
+
+        titleTH:
+          "อาหารแลกเปลี่ยน",
+
+        titleEN:
+          "Food Exchange",
+
+        th: [
+          "Image/Thai Exchange Food List-1.jpg",
+          "Image/Thai Exchange Food List-2.jpg"
+        ],
+
+        en: [
+          "Image/Thai Exchange Food List-1.jpg",
+          "Image/Thai Exchange Food List-2.jpg"
+        ]
+
+      },
+
+
+      absorption: {
+
+        titleTH:
+          "ประเมินการดูดซึมของอาหาร",
+
+        titleEN:
+          "Food Absorption Evaluation",
+
+        th: [
+          "Image/GI-TH.png"
+        ],
+
+        en: [
+          "Image/GI-EN.png"
+        ]
+
+      }
+
+    };
+
+
+    const data =
+      resources[resource];
+
+
+    const container =
+      document.getElementById(
+        "viewerContainer"
+      );
+
+
+    const title =
+      document.getElementById(
+        "viewerTitle"
+      );
+
+
+    if (!data) {
+
+      container.innerHTML = `
+
+        <div class="error-message">
+          Resource not found
+        </div>
+
+      `;
+
+    } else {
+
+      title.textContent =
+        lang === "th"
+          ? data.titleTH
+          : data.titleEN;
+
+
+      const images =
+        lang === "th"
+          ? data.th
+          : data.en;
+
+
+      container.innerHTML =
+        images
+          .map(
+            (image) => `
+
+              <img
+                src="${image}"
+                class="resource-image"
+                alt=""
+              >
+
+            `
+          )
+          .join("");
+
+    }
+
+  </script>
+
+</body>
+
+</html>
