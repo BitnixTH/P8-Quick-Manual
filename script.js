@@ -2420,7 +2420,7 @@ function updateJourneyProgress(
 
       wrapper.classList.toggle(
         "completed",
-        stepIndex <= index
+        stepIndex < index
       );
 
     }
