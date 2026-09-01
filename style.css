@@ -2697,14 +2697,22 @@ body {
   }
 
   .subnav {
-    gap: 7px !important;
-    margin: 8px 0 10px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  overflow-x: visible !important;
+  gap: 8px !important;
+  margin: 8px 0 10px !important;
   }
 
-  .subnav-btn {
-    min-height: 40px !important;
-    padding: 0 12px !important;
-    font-size: 12px !important;
+.subnav-btn {
+  flex: 1 1 calc(50% - 8px) !important;
+  min-width: 0 !important;
+  min-height: 40px !important;
+  padding: 7px 10px !important;
+  white-space: normal !important;
+  text-align: center !important;
+  line-height: 1.25 !important;
+  font-size: 12px !important;
   }
 
   /* ---------- Inner manual slider ---------- */
