@@ -93,6 +93,21 @@
       margin-top: 10px;
     }
 
+    .video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  display: block;
+
+  border: 0;
+  border-radius: 18px;
+
+  background: #000;
+
+  box-shadow:
+    0 10px 28px rgba(24, 83, 135, .18);
+}
+
     .error-message {
       padding: 50px 20px;
       text-align: center;
@@ -160,6 +175,22 @@
         ]
 
       },
+
+      caresenseVideo: {
+
+  titleTH:
+    "การติดตั้ง CareSense Air 365 CGM",
+
+  titleEN:
+    "CareSense Air 365 CGM Installation",
+
+  type:
+    "video",
+
+  videoUrl:
+    "https://www.youtube.com/embed/7gXZ7IVSckc"
+
+},
 
 
       foodexchange: {
@@ -238,28 +269,46 @@
           : data.titleEN;
 
 
-      const images =
-        lang === "th"
-          ? data.th
-          : data.en;
+      if (data.type === "video") {
+
+  container.innerHTML = `
+
+    <iframe
+      class="video-frame"
+      src="${data.videoUrl}"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+      title="${title.textContent}"
+    ></iframe>
+
+  `;
+
+} else {
+
+  const images =
+    lang === "th"
+      ? data.th
+      : data.en;
 
 
-      container.innerHTML =
-        images
-          .map(
-            (image) => `
+  container.innerHTML =
+    images
+      .map(
+        (image) => `
 
-              <img
-                src="${image}"
-                class="resource-image"
-                alt=""
-              >
+          <img
+            src="${image}"
+            class="resource-image"
+            alt=""
+          >
 
-            `
-          )
-          .join("");
+        `
+      )
+      .join("");
 
-    }
+}
+
+}
 
   </script>
 

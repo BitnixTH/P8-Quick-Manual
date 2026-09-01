@@ -555,10 +555,10 @@ const steps = [
       "CareSense Air 365 CGM Installation [Video]",
 
     urlTH:
-      RESOURCE_LINKS.careSenseVideo,
+      "resource-viewer.html?resource=caresenseVideo&lang=th",
 
     urlEN:
-      RESOURCE_LINKS.careSenseVideo
+      "resource-viewer.html?resource=caresenseVideo&lang=en"
   }
 
 ]
