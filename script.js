@@ -5400,6 +5400,19 @@ function initializeP8Manual() {
 
   bindLanguageButtons();
 
+  const urlLanguage =
+  new URLSearchParams(
+    window.location.search
+  ).get("lang");
+
+if (
+  urlLanguage === "th" ||
+  urlLanguage === "en"
+) {
+  setLanguage(
+    urlLanguage
+  );
+}
 
   bindGlobalImageLoad();
 
