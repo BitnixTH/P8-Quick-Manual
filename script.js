@@ -741,7 +741,7 @@ const steps = [
       "08",
 
     icon:
-      "Image/Icon-9.png",
+      "Image/Icon-8.png",
 
     pathTH:
       "แจ้งเตือนและ<br>การดูแล P8",
@@ -834,7 +834,7 @@ const steps = [
       "09",
 
     icon:
-      "Image/Icon-8.png",
+      "Image/Icon-9.png",
 
     pathTH:
       "ดูแลเบาหวาน",
