@@ -1951,6 +1951,7 @@ const videoScrollHint =
   hasTopicVideos
     ? `
       <div
+        class="video-scroll-message"
         style="
           text-align: center;
           font-weight: 800;

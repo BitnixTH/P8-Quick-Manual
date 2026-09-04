@@ -3545,3 +3545,11 @@ body {
   }
 
 }
+/* VIDEO SCROLL MESSAGE - MOBILE ONLY */
+@media (max-width: 760px) {
+  .video-scroll-message {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    margin: 8px 0 10px !important;
+  }
+}
