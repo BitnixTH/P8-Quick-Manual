@@ -3494,8 +3494,8 @@ body {
 
 .slide.fit-full-image .slide-images {
   width: 100%;
-  height: 100%;
-  min-height: 100%;
+  height: calc(100% - 58px);
+  min-height: 0;
 
   display: flex;
   align-items: center;
@@ -3529,6 +3529,19 @@ body {
   .slide.fit-full-image .youtube-links {
     width: calc(100% - 20px);
     margin: 10px;
+  }
+
+}
+/* =========================================================
+   CENTER LAST YOUTUBE CARD WHEN VIDEO COUNT IS ODD
+========================================================= */
+
+@media (min-width: 761px) {
+
+  .youtube-links > .youtube-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: calc(50% - 6px);
+    justify-self: center;
   }
 
 }

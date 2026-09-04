@@ -1937,6 +1937,38 @@ function buildManual() {
                   "video"
                 );
 
+              const hasTopicVideos =
+  Array.isArray(topicVideos) &&
+  topicVideos.some(
+    (video) =>
+      video &&
+      typeof video.url === "string" &&
+      video.url.trim() !== ""
+  );
+
+
+const videoScrollHint =
+  hasTopicVideos
+    ? `
+      <div
+        style="
+          text-align: center;
+          font-weight: 800;
+          font-size: 26px;
+          line-height: 1.35;
+          color: #06427f;
+          margin: 14px 0 18px;
+          letter-spacing: 0.2px;
+        "
+      >
+        ${
+          currentLanguage === "th"
+            ? "กรุณาเลื่อนลง 👇 เพื่อดูวิดีโอ"
+            : "Please scroll down 👇 to view the video"
+        }
+      </div>
+    `
+    : "";
 
               const placeholderTitle =
                 currentLanguage === "th"
@@ -1967,19 +1999,22 @@ function buildManual() {
                 >
 
                   <div
-                    class="slide-scroll"
-                  >
+  class="slide-scroll"
+>
 
-                    <div
-                      class="slide-images"
-                    >
+  <div
+    class="slide-images"
+  >
 
-                      ${imageItems}
+    ${imageItems}
 
-                    </div>
+  </div>
 
 
-                    ${videoButtons}
+  ${videoScrollHint}
+
+
+  ${videoButtons}
 
 
                     <div
