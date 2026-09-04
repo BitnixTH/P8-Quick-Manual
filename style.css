@@ -3553,3 +3553,23 @@ body {
     margin: 8px 0 10px !important;
   }
 }
+
+/* IMAGE ZOOM HINT - MOBILE ONLY */
+
+.image-zoom-hint {
+  display: none;
+}
+
+@media (max-width: 760px) {
+
+  .image-zoom-hint {
+    display: block;
+    margin: 8px 6px 10px;
+    text-align: center;
+    color: #06427f;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.4;
+  }
+
+}

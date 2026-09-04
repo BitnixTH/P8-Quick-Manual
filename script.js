@@ -1924,6 +1924,16 @@ function buildManual() {
                   )
                   .join("");
 
+                  const imageZoomHint = `
+  <div class="image-zoom-hint">
+    ${
+      currentLanguage === "th"
+        ? "🤏 ใช้นิ้วขยาย–ย่อภาพ เพื่อดูรายละเอียด"
+        : "🤏 Pinch to zoom in/out for more details"
+    }
+  </div>
+`;
+
 
               const topicVideos =
                 currentLanguage === "th"
@@ -2006,7 +2016,7 @@ const videoScrollHint =
   <div
     class="slide-images"
   >
-
+    ${imageZoomHint}
     ${imageItems}
 
   </div>
