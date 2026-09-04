@@ -519,7 +519,7 @@ const steps = [
 
       {
         label:
-          "Playlist การเปิดและปิดเครื่อง P8",
+          "เพลย์ลิสต์ การเปิดและปิดเครื่อง P8",
 
         url:
           "https://www.youtube.com/playlist?list=PLKN0TWjoRZgk"
@@ -527,7 +527,7 @@ const steps = [
 
       {
         label:
-          "Playlist โหมดพักหน้าจอ",
+          "เพลย์ลิสต์ โหมดพักหน้าจอ",
 
         url:
           "https://www.youtube.com/playlist?list=PLJWJvd8uHbhw"
@@ -1652,7 +1652,7 @@ function buildYoutubeButtons(
     variant === "playlist"
       ? (
           currentLanguage === "th"
-            ? "ดู Playlist"
+            ? "ดู เพลย์ลิสต์"
             : "Watch Playlist"
         )
       : (
