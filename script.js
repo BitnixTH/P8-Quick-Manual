@@ -2013,13 +2013,13 @@ const videoScrollHint =
   class="slide-scroll"
 >
 
-  <div
-    class="slide-images"
-  >
-    ${imageZoomHint}
-    ${imageItems}
+  ${imageZoomHint}
 
-  </div>
+<div
+  class="slide-images"
+>
+  ${imageItems}
+</div>
 
 
   ${videoScrollHint}
