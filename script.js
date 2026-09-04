@@ -63,41 +63,163 @@ const steps = [
     descriptionEN:
       "Learn what is included in the P8 set and the function of each item.",
 
+    playlistsTH: [
+      {
+        label:
+          "ดูวิดีโอการใช้งานปุ่ม P8 ทั้งหมด",
+
+        url:
+          "https://www.youtube.com/playlist?list=PLK0_7laFrXHsB09aJO9i8_afr6iOnw9qj"
+      }
+    ],
+
+    playlistsEN: [
+      {
+        label:
+          "Watch All P8 Button Videos",
+
+        url:
+          "https://www.youtube.com/playlist?list=PLK0_7laFrXHur2GZmAqiw-iyFA71XR2dR"
+      }
+    ],
+
     topics: [
 
       {
         th:
-          "อุปกรณ์ในชุด",
+          "ชุดอุปกรณ์ P8",
 
         en:
-          "P8 Set"
+          "P8 Kit",
+
+        imagesTH: [
+          "Image/step-01/th/1.1-TH.png"
+        ],
+
+        imagesEN: [
+          "Image/step-01/en/1.1-EN.png"
+        ]
       },
 
       {
         th:
-          "หน้าที่ของอุปกรณ์",
+          "ความเข้ากันได้",
 
         en:
-          "Device Functions"
+          "Compatibility",
+
+        imagesTH: [
+          "Image/step-01/th/1.2-TH.png"
+        ],
+
+        imagesEN: [
+          "Image/step-01/en/1.2-EN.png"
+        ]
       },
 
       {
         th:
-          "อุปกรณ์เสริม",
+          "โครงสร้าง P8",
 
         en:
-          "Accessories"
+          "P8 Structure",
+
+        imagesTH: [
+          "Image/step-01/th/1.3-TH.png"
+        ],
+
+        imagesEN: [
+          "Image/step-01/en/1.3-EN.png"
+        ]
+      },
+
+      {
+        th:
+          "การทำงานของปุ่ม",
+
+        en:
+          "Button Functions",
+
+        imagesTH: [
+          "Image/step-01/th/1.4-TH.png"
+        ],
+
+        imagesEN: [
+          "Image/step-01/en/1.4-EN.png"
+        ],
+
+        videosTH: [
+
+          {
+            label:
+              "ปุ่ม ACT",
+
+            url:
+              "https://youtu.be/pwEQordbMbY"
+          },
+
+          {
+            label:
+              "ปุ่ม M",
+
+            url:
+              "https://youtu.be/KMm5-XTKStE"
+          },
+
+          {
+            label:
+              "ปุ่มขึ้น",
+
+            url:
+              "https://youtu.be/dSeXiwJDOSg"
+          },
+
+          {
+            label:
+              "ปุ่มลง",
+
+            url:
+              "https://youtu.be/vl7c41KUEsE"
+          }
+
+        ],
+
+        videosEN: [
+
+          {
+            label:
+              "ACT Button",
+
+            url:
+              "https://youtu.be/kyB7ODIZg-g"
+          },
+
+          {
+            label:
+              "M Button",
+
+            url:
+              "https://youtu.be/JPgVrK4q72U"
+          },
+
+          {
+            label:
+              "Up Button",
+
+            url:
+              "https://youtu.be/7WjFhPyknaE"
+          },
+
+          {
+            label:
+              "Down Button",
+
+            url:
+              "https://youtu.be/gUtn9HHzXaw"
+          }
+
+        ]
       }
-
-    ],
-
-    images: [
-
-      "Image/Step01-1.png",
-
-      "Image/Step01-2.png",
-
-      "Image/Step01-3.png"
 
     ]
   },
@@ -135,41 +257,227 @@ const steps = [
     descriptionEN:
       "Pen structure and display → Buttons → Main menu structure",
 
+    playlistsTH: [
+      {
+        label:
+          "ดูวิดีโอโครงสร้างเมนูหลักทั้งหมด",
+
+        url:
+          "https://www.youtube.com/playlist?list=PLdHbhasR9Z0Q"
+      }
+    ],
+
+    playlistsEN: [
+      {
+        label:
+          "Watch All P8 Main Menu Videos",
+
+        url:
+          "https://www.youtube.com/playlist?list=PLJ6bip0RLwoY"
+      }
+    ],
+
     topics: [
 
       {
         th:
-          "โครงสร้าง P8",
+          "โครงสร้างหน้าจอ",
 
         en:
-          "P8 Structure"
+          "Screen Structure",
+
+        imagesTH: [
+          "Image/step-02/th/2.1-TH.png"
+        ],
+
+        imagesEN: [
+          "Image/step-02/en/2.1-EN.png"
+        ]
       },
 
       {
         th:
-          "หน้าจอและปุ่ม",
+          "โครงสร้างเมนูหลัก",
 
         en:
-          "Display & Buttons"
-      },
+          "Main Menu Structure",
 
-      {
-        th:
-          "เมนูหลัก",
+        imagesTH: [
+          "Image/step-02/th/2.2-TH.png"
+        ],
 
-        en:
-          "Main Menu"
+        imagesEN: [
+          "Image/step-02/en/2.2-EN.png"
+        ],
+
+        videosTH: [
+
+          {
+            label:
+              "การไล่อากาศ (Prime)",
+
+            url:
+              "https://youtu.be/jYa3aL6ZxUI"
+          },
+
+          {
+            label:
+              "การเปลี่ยนคาร์ทริดจ์ (Cartridge)",
+
+            url:
+              "https://youtu.be/wN7_6W2rjNM"
+          },
+
+          {
+            label:
+              "ความเร็วในการฉีดอินซูลิน (INJ Speed)",
+
+            url:
+              "https://youtu.be/E5F3Pev88aY"
+          },
+
+          {
+            label:
+              "ข้อมูลของ P8 (Info)",
+
+            url:
+              "https://youtu.be/dBwcGnP7lEY"
+          },
+
+          {
+            label:
+              "การตั้งค่า: ระดับเสียง",
+
+            url:
+              "https://youtu.be/HsK91yF7f3Q"
+          },
+
+          {
+            label:
+              "การตั้งค่า: วันที่และเวลา",
+
+            url:
+              "https://youtu.be/0rj1MOjaHjY"
+          },
+
+          {
+            label:
+              "การตั้งค่า: ภาษา",
+
+            url:
+              "https://youtu.be/-gvyLtLWWr4"
+          },
+
+          {
+            label:
+              "การตั้งค่า: ระยะเวลาเปิดหน้าจอ",
+
+            url:
+              "https://youtu.be/EH8nfVZVNOU"
+          },
+
+          {
+            label:
+              "การตั้งค่า: บลูทูธ",
+
+            url:
+              "https://youtu.be/44AvdYObZUc"
+          },
+
+          {
+            label:
+              "การตั้งค่า: หน่วยอุณหภูมิ",
+
+            url:
+              "https://youtu.be/2AbPUOW8B6M"
+          }
+
+        ],
+
+        videosEN: [
+
+          {
+            label:
+              "Prime",
+
+            url:
+              "https://youtu.be/Lqz9efHSyi0"
+          },
+
+          {
+            label:
+              "Cartridge",
+
+            url:
+              "https://youtu.be/PGXhz9bLt-Q"
+          },
+
+          {
+            label:
+              "INJ Speed",
+
+            url:
+              "https://youtu.be/BShxfa6Igs0"
+          },
+
+          {
+            label:
+              "Info",
+
+            url:
+              "https://youtu.be/SoD2_G10eus"
+          },
+
+          {
+            label:
+              "Settings: Volume",
+
+            url:
+              "https://youtu.be/SoD2_G10eus"
+          },
+
+          {
+            label:
+              "Settings: Date/Time",
+
+            url:
+              "https://youtu.be/SbKFVA9x1W8"
+          },
+
+          {
+            label:
+              "Settings: Language",
+
+            url:
+              "https://youtu.be/lLw7hFQ2-nY"
+          },
+
+          {
+            label:
+              "Settings: Screen Time",
+
+            url:
+              "https://youtu.be/3wGtc7g0yRk"
+          },
+
+          {
+            label:
+              "Settings: Bluetooth",
+
+            url:
+              "https://youtu.be/dMslGt4CR8I"
+          },
+
+          {
+            label:
+              "Settings: TEMP Unit",
+
+            url:
+              "https://youtu.be/4gJSmth848Q"
+          }
+
+        ]
       }
-
-    ],
-
-    images: [
-
-      "Image/Step02-1.png",
-
-      "Image/Step02-2.png",
-
-      "Image/Step02-3.png"
 
     ]
   },
@@ -207,57 +515,123 @@ const steps = [
     descriptionEN:
       "Power On → Power Off → Screen Saver Mode → Wake the Screen",
 
-    topics: [
+    playlistsTH: [
 
       {
-        th:
-          "เปิดเครื่อง",
+        label:
+          "Playlist การเปิดและปิดเครื่อง P8",
 
-        en:
-          "Power On"
+        url:
+          "https://www.youtube.com/playlist?list=PLKN0TWjoRZgk"
       },
 
       {
-        th:
-          "ปิดเครื่อง",
+        label:
+          "Playlist โหมดพักหน้าจอ",
 
-        en:
-          "Power Off"
-      },
-
-      {
-        th:
-          "โหมดพักหน้าจอ",
-
-        en:
-          "Screen Saver"
-      },
-
-      {
-        th:
-          "ปลุกหน้าจอ",
-
-        en:
-          "Wake Screen"
+        url:
+          "https://www.youtube.com/playlist?list=PLJWJvd8uHbhw"
       }
 
     ],
 
-    images: [
+    playlistsEN: [
 
-      "Image/Step03-1.png",
+      {
+        label:
+          "Power On/Off Playlist",
 
-      "Image/Step03-2.png",
+        url:
+          "https://www.youtube.com/playlist?list=PLOXnusFnxhtY"
+      },
 
-      "Image/Step03-3.png",
+      {
+        label:
+          "Screen Saver Playlist",
 
-      "Image/Step03-4.png"
+        url:
+          "https://www.youtube.com/playlist?list=PLV086eXSwm7E"
+      }
+
+    ],
+
+    topics: [
+
+      {
+        th:
+          "เปิด–ปิดและโหมดพักหน้าจอ",
+
+        en:
+          "Power On/Off & Screen Saver",
+
+        imagesTH: [
+          "Image/step-03/th/3.1-TH.png"
+        ],
+
+        imagesEN: [
+          "Image/step-03/en/3.1-EN.png"
+        ],
+
+        videosTH: [
+
+          {
+            label:
+              "การเปิดเครื่อง P8",
+
+            url:
+              "https://youtu.be/JWE8sWQ2iNc"
+          },
+
+          {
+            label:
+              "การปิดเครื่อง P8",
+
+            url:
+              "https://youtu.be/nlT5HpFM-g0"
+          },
+
+          {
+            label:
+              "โหมดพักหน้าจอ P8",
+
+            url:
+              "https://youtu.be/9pj48slsEQg"
+          }
+
+        ],
+
+        videosEN: [
+
+          {
+            label:
+              "Power On the P8",
+
+            url:
+              "https://youtu.be/KyTE_RDgj2U"
+          },
+
+          {
+            label:
+              "Power Off the P8",
+
+            url:
+              "https://youtu.be/hlUyCj4OiY0"
+          },
+
+          {
+            label:
+              "Screen Saver Mode of P8",
+
+            url:
+              "https://youtu.be/gDk6hvOkIpY"
+          }
+
+        ]
+      }
 
     ]
   },
-
-
-  /* =======================================================
+    /* =======================================================
      STEP 04
   ======================================================= */
 
@@ -492,76 +866,67 @@ const steps = [
 
     ],
 
-    /*
-      STEP 06 RESOURCE BUTTONS
-
-      Position:
-      ต่อท้าย 3 topic buttons ด้านบน
-
-      TH:
-      CareSense-TH-Pic1.png
-      CareSense-TH-Pic2.png
-
-      EN:
-      CareSense-EN-Pic1.png
-      CareSense-EN-Pic2.png
-    */
-
     resources: [
 
-  {
-    type: "external",
-    kind: "document",
+      {
+        type:
+          "external",
 
-    iconImage:
-      "Image/PDF-Icon.png",
+        kind:
+          "document",
 
-    labelTH:
-      "ข้อมูล CareSense Air 365 CGM [PDF]",
+        iconImage:
+          "Image/PDF-Icon.png",
 
-    labelEN:
-      "CareSense Air 365 CGM Information [PDF]",
+        labelTH:
+          "ข้อมูล CareSense Air 365 CGM [PDF]",
 
-    subtitleTH:
-      "ข้อมูล CareSense Air 365 CGM",
+        labelEN:
+          "CareSense Air 365 CGM Information [PDF]",
 
-    subtitleEN:
-      "CareSense Air 365 CGM Information",
+        subtitleTH:
+          "ข้อมูล CareSense Air 365 CGM",
 
-    urlTH:
-      "resource-viewer.html?resource=caresense&lang=th",
+        subtitleEN:
+          "CareSense Air 365 CGM Information",
 
-    urlEN:
-      "resource-viewer.html?resource=caresense&lang=en"
-  },
+        urlTH:
+          "resource-viewer.html?resource=caresense&lang=th",
 
-  {
-    type: "external",
-    kind: "video",
+        urlEN:
+          "resource-viewer.html?resource=caresense&lang=en"
+      },
 
-    iconImage:
-      "Image/VDO-Icon.png",
+      {
+        type:
+          "external",
 
-    labelTH:
-      "การติดตั้ง CareSense Air 365 CGM [VDO]",
+        kind:
+          "video",
 
-    labelEN:
-      "CareSense Air 365 CGM Installation [VDO]",
+        iconImage:
+          "Image/VDO-Icon.png",
 
-    subtitleTH:
-      "CareSense Air 365 CGM Installation [Video]",
+        labelTH:
+          "การติดตั้ง CareSense Air 365 CGM [VDO]",
 
-    subtitleEN:
-      "CareSense Air 365 CGM Installation [Video]",
+        labelEN:
+          "CareSense Air 365 CGM Installation [VDO]",
 
-    urlTH:
-      "resource-viewer.html?resource=caresenseVideo&lang=th",
+        subtitleTH:
+          "CareSense Air 365 CGM Installation [Video]",
 
-    urlEN:
-      "resource-viewer.html?resource=caresenseVideo&lang=en"
-  }
+        subtitleEN:
+          "CareSense Air 365 CGM Installation [Video]",
 
-]
+        urlTH:
+          "resource-viewer.html?resource=caresenseVideo&lang=th",
+
+        urlEN:
+          "resource-viewer.html?resource=caresenseVideo&lang=en"
+      }
+
+    ]
   },
 
 
@@ -624,7 +989,6 @@ const steps = [
           "Carbohydrate Calculation"
       },
 
-
       {
         th:
           "คำนวณโบลัส",
@@ -653,78 +1017,71 @@ const steps = [
 
       "Image/Step07-4.png",
 
-      "Image/Step07-5.png",
+      "Image/Step07-5.png"
 
     ],
 
-
-    /*
-      STEP 07 RESOURCE BUTTONS
-
-      ไม่ใช้ Google Drive
-
-      กดปุ่มแล้วไป Topic ภายใน Step 07 โดยตรง
-
-      targetTopic:
-      3 = อาหารแลกเปลี่ยน
-      4 = การดูดซึมอาหาร
-    */
-
     resources: [
 
-  {
-    type: "external",
-    kind: "document",
+      {
+        type:
+          "external",
 
-    iconImage:
-      "Image/Food Exchange-Icon.png",
+        kind:
+          "document",
 
-    labelTH:
-      "อาหารแลกเปลี่ยน",
+        iconImage:
+          "Image/Food Exchange-Icon.png",
 
-    labelEN:
-      "Food Exchange",
+        labelTH:
+          "อาหารแลกเปลี่ยน",
 
-    subtitleTH:
-      "ตารางอาหารแลกเปลี่ยนครบ 6 หมวดหมู่",
+        labelEN:
+          "Food Exchange",
 
-    subtitleEN:
-      "Thai Food Exchange List",
+        subtitleTH:
+          "ตารางอาหารแลกเปลี่ยนครบ 6 หมวดหมู่",
 
-    urlTH:
-      "resource-viewer.html?resource=foodexchange&lang=th",
+        subtitleEN:
+          "Thai Food Exchange List",
 
-    urlEN:
-      "resource-viewer.html?resource=foodexchange&lang=en"
-  },
+        urlTH:
+          "resource-viewer.html?resource=foodexchange&lang=th",
 
-  {
-    type: "external",
-    kind: "document",
+        urlEN:
+          "resource-viewer.html?resource=foodexchange&lang=en"
+      },
 
-    iconImage:
-      "Image/Food Absorb-Icon.png",
+      {
+        type:
+          "external",
 
-    labelTH:
-      "ประเมินการดูดซึมของอาหาร",
+        kind:
+          "document",
 
-    labelEN:
-      "Food Absorption Evaluation",
+        iconImage:
+          "Image/Food Absorb-Icon.png",
 
-    subtitleTH:
-      "ดูดซึมเร็ว, ปานกลาง, ช้า",
+        labelTH:
+          "ประเมินการดูดซึมของอาหาร",
 
-    subtitleEN:
-      "Fast, moderate, slow absorption",
+        labelEN:
+          "Food Absorption Evaluation",
 
-    urlTH:
-      "resource-viewer.html?resource=absorption&lang=th",
+        subtitleTH:
+          "ดูดซึมเร็ว, ปานกลาง, ช้า",
 
-    urlEN:
-      "resource-viewer.html?resource=absorption&lang=en"
-  }
+        subtitleEN:
+          "Fast, moderate, slow absorption",
 
-]
+        urlTH:
+          "resource-viewer.html?resource=absorption&lang=th",
+
+        urlEN:
+          "resource-viewer.html?resource=absorption&lang=en"
+      }
+
+    ]
   },
 
 
@@ -884,8 +1241,6 @@ const steps = [
   }
 
 ];
-
-
 /* =========================================================
    GLOBAL STATE
 ========================================================= */
@@ -942,8 +1297,6 @@ function buildSidebar() {
     "";
 
 
-  /* BEFORE STEP 01 */
-
   const start =
     document.createElement(
       "div"
@@ -979,8 +1332,6 @@ function buildSidebar() {
     start
   );
 
-
-  /* STEP BUTTONS */
 
   steps.forEach(
     (
@@ -1068,6 +1419,8 @@ function buildSidebar() {
   );
 
 }
+
+
 /* =========================================================
    BUILD RESOURCE BUTTONS
 ========================================================= */
@@ -1114,12 +1467,8 @@ function buildResourceButtons(
 
 
           const iconImage =
-          resource.iconImage || "";
+            resource.iconImage || "";
 
-          /* -----------------------------------------------
-             EXTERNAL RESOURCE
-             STEP 06 / STEP 07
-          ----------------------------------------------- */
 
           if (
             resource.type ===
@@ -1145,17 +1494,17 @@ function buildResourceButtons(
                 >
 
                   <span
-  class="resource-card-icon"
-  aria-hidden="true"
->
+                    class="resource-card-icon"
+                    aria-hidden="true"
+                  >
 
-  <img
-    src="${iconImage}"
-    alt=""
-    class="resource-card-icon-image"
-  >
+                    <img
+                      src="${iconImage}"
+                      alt=""
+                      class="resource-card-icon-image"
+                    >
 
-</span>
+                  </span>
 
 
                   <span
@@ -1208,17 +1557,17 @@ function buildResourceButtons(
               >
 
                 <span
-  class="resource-card-icon"
-  aria-hidden="true"
->
+                  class="resource-card-icon"
+                  aria-hidden="true"
+                >
 
-  <img
-    src="${iconImage}"
-    alt=""
-    class="resource-card-icon-image"
-  >
+                  <img
+                    src="${iconImage}"
+                    alt=""
+                    class="resource-card-icon-image"
+                  >
 
-</span>
+                </span>
 
 
                 <span
@@ -1283,6 +1632,118 @@ function buildResourceButtons(
 
 
 /* =========================================================
+   BUILD YOUTUBE BUTTONS
+========================================================= */
+
+function buildYoutubeButtons(
+  items,
+  variant = "video"
+) {
+
+  if (
+    !Array.isArray(items) ||
+    items.length === 0
+  ) {
+    return "";
+  }
+
+
+  const buttonText =
+    variant === "playlist"
+      ? (
+          currentLanguage === "th"
+            ? "ดู Playlist"
+            : "Watch Playlist"
+        )
+      : (
+          currentLanguage === "th"
+            ? "ดูวิดีโอ"
+            : "Watch Video"
+        );
+
+
+  const buttons =
+    items
+      .filter(
+        (item) =>
+          item &&
+          typeof item.url === "string" &&
+          item.url.trim() !== ""
+      )
+      .map(
+        (item) => `
+
+          <a
+            class="youtube-card youtube-card-${variant}"
+            href="${item.url}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="${buttonText}: ${item.label}"
+          >
+
+            <span
+              class="youtube-card-icon"
+              aria-hidden="true"
+            >
+
+              <img
+                src="Image/youtube.png"
+                alt=""
+              >
+
+            </span>
+
+
+            <span
+              class="youtube-card-copy"
+            >
+
+              <strong>
+                ${item.label}
+              </strong>
+
+              <small>
+                ${buttonText}
+              </small>
+
+            </span>
+
+
+            <span
+              class="youtube-card-arrow"
+              aria-hidden="true"
+            >
+              →
+            </span>
+
+          </a>
+
+        `
+      )
+      .join("");
+
+
+  if (!buttons) {
+    return "";
+  }
+
+
+  return `
+
+    <div
+      class="youtube-links youtube-links-${variant}"
+    >
+
+      ${buttons}
+
+    </div>
+
+  `;
+
+}
+
+
+/* =========================================================
    BUILD MANUAL
 ========================================================= */
 
@@ -1328,10 +1789,6 @@ function buildManual() {
           : "Hide details";
 
 
-      /* -----------------------------------------------------
-         TOPIC BUTTONS
-      ----------------------------------------------------- */
-
       const topicButtons =
         step.topics
           .map(
@@ -1369,10 +1826,6 @@ function buildManual() {
           .join("");
 
 
-      /* -----------------------------------------------------
-         RESOURCE BUTTONS
-      ----------------------------------------------------- */
-
       const resourceButtons =
         buildResourceButtons(
           step,
@@ -1380,9 +1833,18 @@ function buildManual() {
         );
 
 
-      /* -----------------------------------------------------
-         BUILD SLIDES
-      ----------------------------------------------------- */
+      const stepPlaylists =
+        currentLanguage === "th"
+          ? step.playlistsTH
+          : step.playlistsEN;
+
+
+      const playlistButtons =
+        buildYoutubeButtons(
+          stepPlaylists,
+          "playlist"
+        );
+
 
       const slides =
         step.topics
@@ -1395,14 +1857,6 @@ function buildManual() {
               let topicImages =
                 [];
 
-
-              /*
-                PRIORITY
-
-                1. imagesTH / imagesEN
-                2. topic.images
-                3. step.images[topicIndex]
-              */
 
               if (
                 currentLanguage === "th" &&
@@ -1471,6 +1925,19 @@ function buildManual() {
                   .join("");
 
 
+              const topicVideos =
+                currentLanguage === "th"
+                  ? topic.videosTH
+                  : topic.videosEN;
+
+
+              const videoButtons =
+                buildYoutubeButtons(
+                  topicVideos,
+                  "video"
+                );
+
+
               const placeholderTitle =
                 currentLanguage === "th"
                   ? "ยังไม่มีรูปคู่มือ"
@@ -1490,6 +1957,11 @@ function buildManual() {
                     topicIndex === 0
                       ? "active"
                       : ""
+                  } ${
+                    ["01", "02", "03"]
+                      .includes(step.number)
+                        ? "fit-full-image"
+                        : ""
                   }"
                   data-topic-index="${topicIndex}"
                 >
@@ -1505,6 +1977,9 @@ function buildManual() {
                       ${imageItems}
 
                     </div>
+
+
+                    ${videoButtons}
 
 
                     <div
@@ -1538,10 +2013,6 @@ function buildManual() {
           .join("");
 
 
-      /* -----------------------------------------------------
-         PREVIOUS STEP
-      ----------------------------------------------------- */
-
       const previousButton =
         index > 0
 
@@ -1567,10 +2038,6 @@ function buildManual() {
 
           : "<div></div>";
 
-
-      /* -----------------------------------------------------
-         NEXT STEP
-      ----------------------------------------------------- */
 
       const nextButton =
         index <
@@ -1599,10 +2066,6 @@ function buildManual() {
           : "<div></div>";
 
 
-      /* -----------------------------------------------------
-         CARD
-      ----------------------------------------------------- */
-
       const card =
         document.createElement(
           "article"
@@ -1630,7 +2093,7 @@ function buildManual() {
             class="step-number"
           >
             ${step.number}
-          </div>
+                   </div>
 
 
           <div
@@ -1722,6 +2185,9 @@ function buildManual() {
 
 
               ${resourceButtons}
+
+
+              ${playlistButtons}
 
             </div>
 
@@ -1836,6 +2302,7 @@ function buildManual() {
 
               ${previousButton}
 
+
               ${nextButton}
 
             </div>
@@ -1870,23 +2337,11 @@ function buildManual() {
   updateOpenCardHeight();
 
 }
-
-
 /* =========================================================
    RESOURCE BUTTON EVENTS
 ========================================================= */
 
 function bindResourceButtons() {
-
-  /*
-    STEP 07
-
-    กดรูป "อาหารแลกเปลี่ยน"
-    หรือ "การดูดซึมอาหาร"
-
-    แล้วเปิด Topic ภายใน Step 07
-    ไม่เปิด Google Drive
-  */
 
   document
     .querySelectorAll(
@@ -1932,11 +2387,6 @@ function bindResourceButtons() {
             }
 
 
-            /*
-              Open Step 07 first
-              if it is currently closed.
-            */
-
             activeStepIndex =
               stepIndex;
 
@@ -1950,10 +2400,6 @@ function bindResourceButtons() {
             );
 
 
-            /*
-              Find slider inside this card.
-            */
-
             const slider =
               card.querySelector(
                 "[data-slider]"
@@ -1964,13 +2410,6 @@ function bindResourceButtons() {
               return;
             }
 
-
-            /*
-              Slider stores showSlide()
-              on the element so an
-              external topic button can
-              activate the requested topic.
-            */
 
             if (
               typeof slider
@@ -2175,43 +2614,45 @@ function bindCardEvents() {
 
           /* OPEN THIS CARD */
 
-activeStepIndex =
-  index;
+          activeStepIndex =
+            index;
 
 
-openStepIndex =
-  index;
+          openStepIndex =
+            index;
 
 
-openOnlyStep(
-  index
-);
+          openOnlyStep(
+            index
+          );
 
 
-updateJourneyProgress(
-  index
-);
+          updateJourneyProgress(
+            index
+          );
 
 
-setTimeout(
-  () => {
+          setTimeout(
+            () => {
 
-    card.scrollIntoView({
-      behavior:
-        "smooth",
-      block:
-        "start"
-    });
+              card.scrollIntoView({
+                behavior:
+                  "smooth",
 
-  },
-  80
-);
+                block:
+                  "start"
+              });
+
+            },
+            80
+          );
 
         }
       );
 
     }
   );
+
 
   /* PREVIOUS / NEXT */
 
@@ -2250,6 +2691,8 @@ setTimeout(
     );
 
 }
+
+
 /* =========================================================
    GO TO STEP
 ========================================================= */
@@ -2301,6 +2744,7 @@ function goToStep(
       card.scrollIntoView({
         behavior:
           "smooth",
+
         block:
           "start"
       });
@@ -2353,6 +2797,7 @@ function openOnlyStep(
   );
 
 }
+
 
 /* =========================================================
    UPDATE OPEN CARD HEIGHT
@@ -2457,12 +2902,6 @@ function updateJourneyProgress(
   }
 
 }
-
-
-/* =========================================================
-   SETUP SLIDERS
-========================================================= */
-
 /* =========================================================
    SLIDER SETUP
 ========================================================= */
@@ -2475,6 +2914,7 @@ function setupSliders() {
         "[data-slider]"
       )
     );
+
 
   sliders.forEach(
     (slider) => {
@@ -2502,11 +2942,24 @@ function setupSingleSlider(slider) {
       )
     );
 
+
   if (
     slides.length === 0
   ) {
     return;
   }
+
+
+  const viewport =
+    slider.querySelector(
+      ".slider-viewport"
+    );
+
+
+  const track =
+    slider.querySelector(
+      ".slider-track"
+    );
 
 
   const subnav =
@@ -2614,7 +3067,9 @@ function setupSingleSlider(slider) {
           (event) => {
 
             event.preventDefault();
+
             event.stopPropagation();
+
 
             showSlide(
               index
@@ -2670,54 +3125,66 @@ function setupSingleSlider(slider) {
 
   function updateScrollbar() {
 
-  if (
-    !scrollbarTrack ||
-    !scrollbarThumb
-  ) {
-    return;
+    if (
+      !scrollbarTrack ||
+      !scrollbarThumb
+    ) {
+      return;
+    }
+
+
+    const trackHeight =
+      scrollbarTrack.clientHeight;
+
+
+    if (trackHeight <= 0) {
+      return;
+    }
+
+
+    const thumbHeight =
+      Math.max(
+        34,
+        trackHeight / slides.length
+      );
+
+
+    const availableTravel =
+      Math.max(
+        0,
+        trackHeight - thumbHeight
+      );
+
+
+    const topicRatio =
+      slides.length <= 1
+        ? 0
+        : currentIndex /
+          (slides.length - 1);
+
+
+    const translateY =
+      availableTravel *
+      topicRatio;
+
+
+    scrollbarThumb.style.height =
+      `${thumbHeight}px`;
+
+
+    scrollbarThumb.style.transform =
+      `translateX(-50%) translateY(${translateY}px)`;
+
+
+    if (scrollbar) {
+
+      scrollbar.classList.remove(
+        "no-scroll"
+      );
+
+    }
+
   }
-
-  const trackHeight =
-    scrollbarTrack.clientHeight;
-
-  if (trackHeight <= 0) {
-    return;
-  }
-
-  const thumbHeight =
-    Math.max(
-      34,
-      trackHeight / slides.length
-    );
-
-  const availableTravel =
-    Math.max(
-      0,
-      trackHeight - thumbHeight
-    );
-
-  const topicRatio =
-    slides.length <= 1
-      ? 0
-      : currentIndex /
-        (slides.length - 1);
-
-  const translateY =
-    availableTravel *
-    topicRatio;
-
-  scrollbarThumb.style.height =
-    `${thumbHeight}px`;
-
-  scrollbarThumb.style.transform =
-    `translateX(-50%) translateY(${translateY}px)`;
-
-  if (scrollbar) {
-    scrollbar.classList.remove(
-      "no-scroll"
-    );
-  }
-}
 
 
   /* -------------------------------------------------------
@@ -2775,7 +3242,8 @@ function setupSingleSlider(slider) {
         }
       );
 
-  });
+    }
+  );
 
 
   /* -------------------------------------------------------
@@ -2882,6 +3350,21 @@ function setupSingleSlider(slider) {
 
     currentIndex =
       index;
+
+
+    if (
+      viewport &&
+      track
+    ) {
+
+      const slideHeight =
+        viewport.clientHeight;
+
+
+      track.style.transform =
+        `translateY(-${currentIndex * slideHeight}px)`;
+
+    }
 
 
     slides.forEach(
@@ -3000,51 +3483,65 @@ function setupSingleSlider(slider) {
 
 
   /* -------------------------------------------------------
-     ▲ SCROLL UP
+     ▲ PREVIOUS SLIDE
   ------------------------------------------------------- */
 
   if (prevButton) {
-  prevButton.addEventListener(
-    "click",
-    (event) => {
 
-      event.preventDefault();
-      event.stopPropagation();
+    prevButton.addEventListener(
+      "click",
+      (event) => {
 
-      if (currentIndex > 0) {
-        showSlide(
-          currentIndex - 1
-        );
+        event.preventDefault();
+
+        event.stopPropagation();
+
+
+        if (currentIndex > 0) {
+
+          showSlide(
+            currentIndex - 1
+          );
+
+        }
+
       }
+    );
 
-    }
-  );
-}
+  }
+
 
   /* -------------------------------------------------------
-     ▼ SCROLL DOWN
+     ▼ NEXT SLIDE
   ------------------------------------------------------- */
 
   if (nextButton) {
-  nextButton.addEventListener(
-    "click",
-    (event) => {
 
-      event.preventDefault();
-      event.stopPropagation();
+    nextButton.addEventListener(
+      "click",
+      (event) => {
 
-      if (
-        currentIndex <
-        slides.length - 1
-      ) {
-        showSlide(
-          currentIndex + 1
-        );
+        event.preventDefault();
+
+        event.stopPropagation();
+
+
+        if (
+          currentIndex <
+          slides.length - 1
+        ) {
+
+          showSlide(
+            currentIndex + 1
+          );
+
+        }
+
       }
+    );
 
-    }
-  );
-}
+  }
+
 
   /* -------------------------------------------------------
      CLICK SCROLLBAR TRACK
@@ -3067,15 +3564,6 @@ function setupSingleSlider(slider) {
         }
 
 
-        const scrollArea =
-          getScrollArea();
-
-
-        if (!scrollArea) {
-          return;
-        }
-
-
         event.preventDefault();
 
         event.stopPropagation();
@@ -3087,19 +3575,6 @@ function setupSingleSlider(slider) {
 
 
         if (rect.height <= 0) {
-          return;
-        }
-
-
-        const maxScroll =
-          Math.max(
-            0,
-            scrollArea.scrollHeight -
-            scrollArea.clientHeight
-          );
-
-
-        if (maxScroll <= 0) {
           return;
         }
 
@@ -3118,16 +3593,16 @@ function setupSingleSlider(slider) {
           );
 
 
-        scrollArea.scrollTo({
+        const targetIndex =
+          Math.round(
+            ratio *
+            (slides.length - 1)
+          );
 
-          top:
-            maxScroll *
-            ratio,
 
-          behavior:
-            "smooth"
-
-        });
+        showSlide(
+          targetIndex
+        );
 
       }
     );
@@ -3145,7 +3620,7 @@ function setupSingleSlider(slider) {
       0;
 
 
-    let dragStartScroll =
+    let dragStartTranslate =
       0;
 
 
@@ -3157,21 +3632,7 @@ function setupSingleSlider(slider) {
       "pointerdown",
       (event) => {
 
-        const scrollArea =
-          getScrollArea();
-
-
-        if (!scrollArea) {
-          return;
-        }
-
-
-        const maxScroll =
-          scrollArea.scrollHeight -
-          scrollArea.clientHeight;
-
-
-        if (maxScroll <= 0) {
+        if (slides.length <= 1) {
           return;
         }
 
@@ -3184,8 +3645,26 @@ function setupSingleSlider(slider) {
           event.clientY;
 
 
-        dragStartScroll =
-          scrollArea.scrollTop;
+        const trackHeight =
+          scrollbarTrack.clientHeight;
+
+
+        const thumbHeight =
+          scrollbarThumb.offsetHeight;
+
+
+        const availableTravel =
+          Math.max(
+            0,
+            trackHeight - thumbHeight
+          );
+
+
+        dragStartTranslate =
+          (
+            currentIndex /
+            (slides.length - 1)
+          ) * availableTravel;
 
 
         dragPointerId =
@@ -3228,15 +3707,6 @@ function setupSingleSlider(slider) {
         }
 
 
-        const scrollArea =
-          getScrollArea();
-
-
-        if (!scrollArea) {
-          return;
-        }
-
-
         const trackHeight =
           scrollbarTrack.clientHeight;
 
@@ -3250,14 +3720,9 @@ function setupSingleSlider(slider) {
           thumbHeight;
 
 
-        const maxScroll =
-          scrollArea.scrollHeight -
-          scrollArea.clientHeight;
-
-
         if (
           availableTravel <= 0 ||
-          maxScroll <= 0
+          slides.length <= 1
         ) {
           return;
         }
@@ -3268,17 +3733,38 @@ function setupSingleSlider(slider) {
           dragStartY;
 
 
-        const scrollDelta =
-          (
-            deltaY /
-            availableTravel
-          ) *
-          maxScroll;
+        const translateY =
+          Math.min(
+            availableTravel,
+            Math.max(
+              0,
+              dragStartTranslate + deltaY
+            )
+          );
 
 
-        scrollArea.scrollTop =
-          dragStartScroll +
-          scrollDelta;
+        const ratio =
+          translateY /
+          availableTravel;
+
+
+        const targetIndex =
+          Math.round(
+            ratio *
+            (slides.length - 1)
+          );
+
+
+        if (
+          targetIndex !==
+          currentIndex
+        ) {
+
+          showSlide(
+            targetIndex
+          );
+
+        }
 
       }
     );
@@ -3373,13 +3859,11 @@ function setupSingleSlider(slider) {
 
   /* -------------------------------------------------------
      RESIZE OBSERVER
-     Card เปิดจาก display:none → block
-     จะคำนวณ Scrollbar ใหม่โดยอัตโนมัติ
   ------------------------------------------------------- */
 
   if (
     typeof ResizeObserver !==
-      "undefined"
+    "undefined"
   ) {
 
     const observer =
@@ -3407,19 +3891,22 @@ function setupSingleSlider(slider) {
     "resize",
     () => {
 
-      refreshSlider();
+      showSlide(
+        currentIndex
+      );
 
     }
   );
 
 
-        /* ===================================================
-           INITIAL STATE
-        =================================================== */
+  /* -------------------------------------------------------
+     INITIAL STATE
+  ------------------------------------------------------- */
 
-        showSlide(
-          0
-        );
+  showSlide(
+    0
+  );
+
 }
 
 
@@ -3467,8 +3954,7 @@ function setupTouchSupport() {
 
           },
           {
-            passive:
-              true
+            passive: true
           }
         );
 
@@ -3502,8 +3988,7 @@ function setupTouchSupport() {
 
           },
           {
-            passive:
-              true
+            passive: true
           }
         );
 
@@ -4300,8 +4785,6 @@ function bindKeyboardSupport() {
   );
 
 }
-
-
 /* =========================================================
    TOOLBAR HORIZONTAL SCROLL
 ========================================================= */
@@ -4315,22 +4798,11 @@ function setupToolbarScroll() {
     .forEach(
       (toolbar) => {
 
-        /*
-          Shift + mouse wheel can be used
-          to move the toolbar horizontally
-          on desktop.
-
-          On mobile/iPad the toolbar
-          remains native touch-scrollable.
-        */
-
         toolbar.addEventListener(
           "wheel",
           (event) => {
 
-            if (
-              !event.shiftKey
-            ) {
+            if (!event.shiftKey) {
               return;
             }
 
@@ -4351,8 +4823,7 @@ function setupToolbarScroll() {
 
           },
           {
-            passive:
-              false
+            passive: false
           }
         );
 
@@ -4476,24 +4947,29 @@ function scrollCardIntoView(
     return;
   }
 
+
   const siteHeader =
     document.querySelector(
       ".site-header"
     );
+
 
   const headerHeight =
     siteHeader
       ? siteHeader.offsetHeight
       : 0;
 
+
   const cardHeader =
     card.querySelector(
       ".step-header"
     );
 
+
   if (!cardHeader) {
     return;
   }
+
 
   window.setTimeout(
     () => {
@@ -4506,12 +4982,14 @@ function scrollCardIntoView(
         headerHeight -
         12;
 
+
       window.scrollTo({
         top:
           Math.max(
             0,
             top
           ),
+
         behavior:
           "smooth"
       });
@@ -4521,6 +4999,7 @@ function scrollCardIntoView(
   );
 
 }
+
 
 /* =========================================================
    SCROLL TO STEP FROM HASH
@@ -4545,9 +5024,7 @@ function openStepFromHash() {
     );
 
 
-  if (
-    index < 0
-  ) {
+  if (index < 0) {
     return;
   }
 
@@ -4570,16 +5047,9 @@ function openStepFromHash() {
   );
 
 
-  scrollCardIntoView(
-  card
-);
-
-
   const card =
     document.getElementById(
-      steps[
-        index
-      ].id
+      steps[index].id
     );
 
 
@@ -4623,9 +5093,7 @@ function updateStepHash(
 ) {
 
   const step =
-    steps[
-      index
-    ];
+    steps[index];
 
 
   if (!step) {
@@ -4710,6 +5178,8 @@ function bindOrientationChange() {
   );
 
 }
+
+
 /* =========================================================
    BACK TO TOP
 ========================================================= */
@@ -4739,8 +5209,7 @@ function setupBackToTop() {
     "scroll",
     updateBackTopVisibility,
     {
-      passive:
-        true
+      passive: true
     }
   );
 
@@ -4750,11 +5219,8 @@ function setupBackToTop() {
     () => {
 
       window.scrollTo({
-        top:
-          0,
-
-        behavior:
-          "smooth"
+        top: 0,
+        behavior: "smooth"
       });
 
     }
@@ -4792,12 +5258,6 @@ function setupPageScrollBehavior() {
       window.requestAnimationFrame(
         () => {
 
-          /*
-            Keep the current Step navigation
-            available without rebuilding
-            the page while scrolling.
-          */
-
           ticking =
             false;
 
@@ -4806,8 +5266,7 @@ function setupPageScrollBehavior() {
 
     },
     {
-      passive:
-        true
+      passive: true
     }
   );
 
@@ -4854,8 +5313,7 @@ function setupScrollSpy() {
 
 
     const referenceY =
-      headerHeight +
-      140;
+      headerHeight + 140;
 
 
     let closestIndex =
@@ -4946,8 +5404,7 @@ function setupScrollSpy() {
 
     },
     {
-      passive:
-        true
+      passive: true
     }
   );
 
@@ -5080,13 +5537,12 @@ function setupSubnavResourceSync() {
 
 
                 resourceButtons.forEach(
-                  (
-                    resourceButton
-                  ) => {
+                  (resourceButton) => {
 
                     const targetTopic =
                       Number(
-                        resourceButton.dataset
+                        resourceButton
+                          .dataset
                           .resourceTopic
                       );
 
@@ -5095,7 +5551,7 @@ function setupSubnavResourceSync() {
                       .classList.toggle(
                         "active",
                         targetTopic ===
-                          topicIndex
+                        topicIndex
                       );
 
                   }
@@ -5138,14 +5594,6 @@ function prepareResourceButtons() {
 ========================================================= */
 
 function setupInitialOpenState() {
-
-  /*
-    Default:
-    หน้าแรกไม่เปิด Card ใด ๆ
-
-    ผู้ใช้กด Card
-    แล้วจึงเปิดรายละเอียด
-  */
 
   openStepIndex =
     null;
@@ -5353,8 +5801,7 @@ window.addEventListener(
   "resize",
   handleResize,
   {
-    passive:
-      true
+    passive: true
   }
 );
 
@@ -5400,19 +5847,24 @@ function initializeP8Manual() {
 
   bindLanguageButtons();
 
-  const urlLanguage =
-  new URLSearchParams(
-    window.location.search
-  ).get("lang");
 
-if (
-  urlLanguage === "th" ||
-  urlLanguage === "en"
-) {
-  setLanguage(
-    urlLanguage
-  );
-}
+  const urlLanguage =
+    new URLSearchParams(
+      window.location.search
+    ).get("lang");
+
+
+  if (
+    urlLanguage === "th" ||
+    urlLanguage === "en"
+  ) {
+
+    setLanguage(
+      urlLanguage
+    );
+
+  }
+
 
   bindGlobalImageLoad();
 
@@ -5435,6 +5887,12 @@ if (
   setupPageScrollBehavior();
 
 
+  /*
+    ปิด Scroll Spy ไว้
+    เพื่อไม่ให้ Step Navigation
+    เปลี่ยนตามการเลื่อนหน้าเว็บไซต์
+  */
+
   /* setupScrollSpy(); */
 
 
@@ -5456,14 +5914,7 @@ if (
 
 
   /* -------------------------------------------------------
-     HASH
-
-     If URL is:
-     #step06
-     #step07
-     etc.
-
-     open that Step.
+     OPEN STEP FROM URL HASH
   ------------------------------------------------------- */
 
   if (

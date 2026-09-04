@@ -3271,3 +3271,264 @@ body {
 
   font-size: 21px;
 }
+
+}
+
+
+/* =========================================================
+   YOUTUBE VIDEO / PLAYLIST CARDS
+   STEP 01–03
+========================================================= */
+
+.youtube-links {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.youtube-links-playlist {
+  margin-top: 12px;
+}
+
+.youtube-card {
+  min-width: 0;
+  min-height: 92px;
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr) 40px;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 16px;
+  border: 2px solid rgba(118, 197, 242, .72);
+  border-radius: 21px;
+  color: #123f6b;
+  text-decoration: none;
+  background:
+    linear-gradient(
+      145deg,
+      #eefaff 0%,
+      #d9f2ff 52%,
+      #c9eaff 100%
+    );
+  box-shadow:
+    0 7px 0 rgba(72, 155, 207, .18),
+    0 14px 25px rgba(37, 105, 158, .16),
+    inset 0 3px 4px rgba(255, 255, 255, .82),
+    inset 0 -4px 7px rgba(76, 157, 211, .10);
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    border-color .18s ease;
+}
+
+.youtube-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(48, 157, 224, .92);
+  box-shadow:
+    0 9px 0 rgba(72, 155, 207, .16),
+    0 19px 30px rgba(37, 105, 158, .20),
+    inset 0 3px 4px rgba(255, 255, 255, .92);
+}
+
+.youtube-card:active {
+  transform: translateY(1px);
+}
+
+.youtube-card:focus-visible {
+  outline: 4px solid rgba(34, 145, 224, .28);
+  outline-offset: 3px;
+}
+
+.youtube-card-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow:
+    0 7px 14px rgba(31, 100, 152, .18),
+    inset 0 2px 3px rgba(255, 255, 255, .86);
+}
+
+.youtube-card-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.youtube-card-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.youtube-card-copy strong {
+  color: #0b426f;
+  font-size: 15px;
+  font-weight: 950;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.youtube-card-copy small {
+  color: #39739d;
+  font-size: 11px;
+  font-weight: 850;
+  line-height: 1.25;
+}
+
+.youtube-card-arrow {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  justify-self: end;
+  border-radius: 50%;
+  color: #ffffff;
+  background: linear-gradient(145deg, #48cbe2, #238fe2);
+  box-shadow: 0 6px 12px rgba(31, 130, 193, .24);
+  font-size: 20px;
+  font-weight: 950;
+}
+
+.youtube-card-playlist {
+  border-style: dashed;
+  background:
+    linear-gradient(
+      145deg,
+      #f4fbff 0%,
+      #e7f6ff 54%,
+      #d7efff 100%
+    );
+}
+
+
+/* iPad portrait and smaller tablets */
+@media (max-width: 1024px) {
+  .youtube-links {
+    gap: 10px;
+  }
+
+  .youtube-card {
+    grid-template-columns: 54px minmax(0, 1fr) 36px;
+    min-height: 86px;
+    padding: 12px 14px;
+  }
+
+  .youtube-card-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .youtube-card-arrow {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+
+/* Phones */
+@media (max-width: 760px) {
+  .youtube-links {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .youtube-card {
+    min-height: 78px;
+    grid-template-columns: 48px minmax(0, 1fr) 32px;
+    gap: 10px;
+    padding: 11px 12px;
+    border-radius: 17px;
+  }
+
+  .youtube-card-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 13px;
+  }
+
+  .youtube-card-copy strong {
+    font-size: 13px;
+  }
+
+  .youtube-card-copy small {
+    font-size: 10px;
+  }
+
+  .youtube-card-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 390px) {
+  .youtube-card {
+    grid-template-columns: 43px minmax(0, 1fr) 28px;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .youtube-card-icon {
+    width: 41px;
+    height: 41px;
+  }
+
+  .youtube-card-arrow {
+    width: 27px;
+    height: 27px;
+    font-size: 14px;
+  }
+}
+/* =========================================================
+   STEP 01–03: SHOW EACH POWERPOINT IMAGE IN FULL
+========================================================= */
+
+.slide.fit-full-image .slide-images {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px;
+}
+
+.slide.fit-full-image .slide-image {
+  width: auto !important;
+  height: auto !important;
+
+  max-width: 100% !important;
+  max-height: 100% !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+.slide.fit-full-image .youtube-links {
+  width: calc(100% - 28px);
+  margin: 14px;
+}
+
+@media (max-width: 760px) {
+
+  .slide.fit-full-image .slide-images {
+    padding: 4px;
+  }
+
+  .slide.fit-full-image .youtube-links {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+
+}
