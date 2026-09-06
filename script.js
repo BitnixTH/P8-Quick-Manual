@@ -1047,7 +1047,7 @@ const steps = [
     /* ---------- 06-5 : DISCONNECT CAREWEB — PATIENT ---------- */
 
     {
-      th: "ยกเลิก CareWeb (ผู้ป่วย)",
+      th: "ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)",
       en: "Disconnect CareWeb (Patient)",
 
       imagesTH: [
@@ -1069,7 +1069,7 @@ const steps = [
     /* ---------- 06-6 : DISCONNECT CAREWEB — HOSPITAL ---------- */
 
     {
-      th: "ยกเลิก CareWeb (โรงพยาบาล)",
+      th: "ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)",
       en: "Disconnect CareWeb (Hospital)",
 
       imagesTH: [
