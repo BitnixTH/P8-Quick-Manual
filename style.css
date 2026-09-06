@@ -3768,7 +3768,24 @@ body {
   }
 
 }
+/* =========================================================
+   STEP 04 — MOBILE TALL VIEW
+   Extra space for Registration & P8 Pairing (2 images)
+========================================================= */
 
+@media (max-width: 760px) {
+
+  #step04 .slider-viewport,
+  #step04 .slide,
+  #step04 .slide-scroll {
+    height: 650px !important;
+  }
+
+  #step04 .slide {
+    flex: 0 0 650px !important;
+  }
+
+}
 
 /* =========================================================
    STEP 06 — RESPONSIVE MULTI-IMAGE VIEW
