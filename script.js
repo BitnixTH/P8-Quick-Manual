@@ -631,304 +631,464 @@ const steps = [
 
     ]
   },
-    /* =======================================================
-     STEP 04
-  ======================================================= */
 
-  {
-    id:
-      "step04",
+/* =======================================================
+   STEP 04
+   DIA:CONN APP / P8 CONNECTION & SETTINGS
+======================================================= */
 
-    number:
-      "04",
+{
+  id: "step04",
 
-    icon:
-      "Image/Icon-4.png",
+  number: "04",
+
+  icon: "Image/Icon-4.png",
 
-    pathTH:
-      "เชื่อมต่อแอป",
+  pathTH: "เชื่อมต่อแอป",
+  pathEN: "Connect App",
+
+  titleTH: "เชื่อมต่อและตั้งค่า P8 กับแอป DIA:CONN",
+  titleEN: "Connect and Set Up P8 with the DIA:CONN App",
+
+  descriptionTH:
+    "ลงทะเบียนและจับคู่ P8 → เลิกจับคู่ P8 → ค้นหาปากกา → ตั้งค่าอุปกรณ์",
+
+  descriptionEN:
+    "Register and Pair P8 → Unpair P8 → Find the Pen → Device Settings",
+
+  playlistsTH: [],
+  playlistsEN: [],
+
+  topics: [
+
+    /* ---------- 04-1 ---------- */
+
+    {
+      th: "ลงทะเบียนและจับคู่ปากกา P8",
+      en: "P8 Registration and Pairing",
+
+      imagesTH: [
+        "Image/step-04/th/4.1-TH.png",
+        "Image/step-04/th/4.2-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-04/en/4.1-EN.png",
+        "Image/step-04/en/4.2-EN.png"
+      ],
+
+      videosTH: [
+        {
+          label: "การลงทะเบียนและจับคู่ปากกา P8",
+          url: "https://youtu.be/uSYwPaVxmyA"
+        }
+      ],
+
+      videosEN: [
+        {
+          label: "P8 Registration and Pairing",
+          url: "https://youtu.be/5FeWETUjhH8"
+        }
+      ]
+    },
+
+    /* ---------- 04-2 ---------- */
+
+    {
+      th: "เลิกจับคู่ปากกา P8",
+      en: "Unpair the P8",
+
+      imagesTH: [
+        "Image/step-04/th/4.3-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-04/en/4.3-EN.png"
+      ],
+
+      videosTH: [
+        {
+          label: "เลิกจับคู่ปากกา P8",
+          url: "https://youtu.be/6hRcj-8iZFc"
+        }
+      ],
+
+      videosEN: [
+        {
+          label: "Unpair the P8",
+          url: "https://youtu.be/hBqoP2WZXQc"
+        }
+      ]
+    },
+
+    /* ---------- 04-3 ---------- */
+
+    {
+      th: "ค้นหาปากกา P8",
+      en: "Find the Pen",
+
+      imagesTH: [
+        "Image/step-04/th/4.4-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-04/en/4.4-EN.png"
+      ],
+
+      videosTH: [
+        {
+          label: "ค้นหาปากกา P8",
+          url: "https://youtu.be/-L8sHJbihy8"
+        }
+      ],
+
+      videosEN: [
+        {
+          label: "Find the Pen",
+          url: "https://youtu.be/FHWBBa5GqrQ"
+        }
+      ]
+    },
+
+    /* ---------- 04-4.1 ---------- */
+
+    {
+      th: "ตั้งค่าอุปกรณ์: ความเร็วในการฉีด",
+      en: "Device Settings: Injection Speed",
+
+      imagesTH: [
+        "Image/step-04/th/4.5-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-04/en/4.5-EN.png"
+      ],
+
+      videosTH: [
+        {
+          label: "การตั้งค่าอุปกรณ์: ความเร็วในการฉีดของ P8",
+          url: "https://youtu.be/SG5D4vj_3k4"
+        }
+      ],
+
+      videosEN: [
+        {
+          label: "P8 Device Settings: Injection Speed",
+          url: "https://youtu.be/SQlcHqN86Tc"
+        }
+      ]
+    },
+
+    /* ---------- 04-4.2 ---------- */
+
+    {
+      th: "ตั้งค่าอุปกรณ์: ระยะเวลารอหลังฉีดยา",
+      en: "Device Settings: Waiting Time After Injection",
+
+      imagesTH: [
+        "Image/step-04/th/4.6-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-04/en/4.6-EN.png"
+      ],
+
+      videosTH: [
+        {
+          label: "การตั้งค่าอุปกรณ์: ระยะเวลารอคอยหลังฉีดยาของ P8",
+          url: "https://youtu.be/jG0JA-J-lt4"
+        }
+      ],
+
+      videosEN: [
+        {
+          label: "P8 Device Settings: Waiting Time After Injection",
+          url: "https://youtu.be/TKfuFk9iWLQ"
+        }
+      ]
+    },
+
+    /* ---------- 04-4.3 ---------- */
+
+    {
+      th: "ตั้งค่าอุปกรณ์: จำกัดปริมาณอินซูลินสูงสุดต่อครั้ง",
+      en: "Device Settings: Single Dose Limit",
+
+      imagesTH: [
+        "Image/step-04/th/4.7-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-04/en/4.7-EN.png"
+      ],
+
+      videosTH: [
+        {
+          label: "การตั้งค่าอุปกรณ์: จำกัดปริมาณอินซูลินสูงสุดต่อครั้ง",
+          url: "https://youtu.be/mDe9GCXbnew"
+        }
+      ],
+
+      videosEN: [
+        {
+          label: "P8 Device Settings: Single Dose Limit",
+          url: "https://youtu.be/4XaX7dLw270"
+        }
+      ]
+    },
+
+    /* ---------- 04-4.4 ---------- */
+
+    {
+      th: "ตั้งค่าอุปกรณ์: อินซูลิน",
+      en: "Device Settings: Insulin",
+
+      imagesTH: [
+        "Image/step-04/th/4.8-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-04/en/4.8-EN.png"
+      ],
+
+      videosTH: [
+        {
+          label: "การตั้งค่าอุปกรณ์: อินซูลิน",
+          url: "https://youtu.be/XOT1KLINEuM"
+        }
+      ],
+
+      videosEN: [
+        {
+          label: "P8 Device Settings: Insulin",
+          url: "https://youtu.be/HglCAFK9Pgo"
+        }
+      ]
+    }
+
+  ]
+},
+
+
+/* =======================================================
+   STEP 05
+   CARTRIDGE REPLACEMENT
+======================================================= */
+
+{
+  id: "step05",
+
+  number: "05",
+
+  icon: "Image/Icon-5.png",
+
+  pathTH: "การเปลี่ยน<br>คาร์ทริดจ์",
+  pathEN: "Cartridge<br>Replacement",
+
+  titleTH: "การเปลี่ยนคาร์ทริดจ์ P8",
+  titleEN: "P8 Cartridge Replacement",
+
+  descriptionTH: "ขั้นตอนการเปลี่ยนคาร์ทริดจ์ P8",
+  descriptionEN: "How to replace the P8 cartridge",
+
+  /* ไม่ใช้ Playlist */
+  playlistsTH: [],
+  playlistsEN: [],
 
-    pathEN:
-      "Connect App",
+  topics: [
+
+    /* ---------- 05-1 ---------- */
 
-    titleTH:
-      "เชื่อมต่อและตั้งค่า P8 กับแอป DIA:CONN",
-
-    titleEN:
-      "Connect and Set Up P8 with the DIA:CONN App",
-
-    descriptionTH:
-      "จับคู่ P8 → ตั้งค่า P8 → ค้นหาปากกา → ยกเลิกการจับคู่ P8",
-
-    descriptionEN:
-      "Pair P8 → Configure P8 → Find Pen → Unpair P8",
-
-    topics: [
-
-      {
-        th:
-          "จับคู่ P8",
-
-        en:
-          "Pair P8"
-      },
-
-      {
-        th:
-          "ตั้งค่า P8",
-
-        en:
-          "P8 Settings"
-      },
-
-      {
-        th:
-          "ค้นหาปากกา",
-
-        en:
-          "Find Pen"
-      },
-
-      {
-        th:
-          "ยกเลิกการจับคู่",
-
-        en:
-          "Unpair P8"
-      }
-
-    ],
-
-    images: [
-
-      "Image/Step04-1.png",
-
-      "Image/Step04-2.png",
-
-      "Image/Step04-3.png",
-
-      "Image/Step04-4.png"
-
-    ]
-  },
-
-
-  /* =======================================================
-     STEP 05
-  ======================================================= */
-
-  {
-    id:
-      "step05",
-
-    number:
-      "05",
-
-    icon:
-      "Image/Icon-5.png",
-
-    pathTH:
-      "การเปลี่ยน<br>คาร์ทริดจ์",
-
-    pathEN:
-      "Cartridge<br>Replacement",
-
-    titleTH:
-      "การเปลี่ยนคาร์ทริดจ์อินซูลิน",
-
-    titleEN:
-      "Replacing the Insulin Cartridge",
-
-    descriptionTH:
-      "เปลี่ยนคาร์ทริดจ์ → ตรวจสอบสถานะ → ตรวจสอบประวัติการเปลี่ยนคาร์ทริดจ์",
-
-    descriptionEN:
-      "Replace Cartridge → Check Status → Review Cartridge History",
-
-    topics: [
-
-      {
-        th:
-          "เตรียมคาร์ทริดจ์",
-
-        en:
-          "Prepare Cartridge"
-      },
-
-      {
-        th:
-          "เปลี่ยนคาร์ทริดจ์",
-
-        en:
-          "Replace Cartridge"
-      },
-
-      {
-        th:
-          "ตรวจสอบสถานะ",
-
-        en:
-          "Check Status"
-      },
-
-      {
-        th:
-          "ตรวจสอบประวัติ",
-
-        en:
-          "Review History"
-      }
-
-    ],
-
-    images: [
-
-      "Image/Step05-1.png",
-
-      "Image/Step05-2.png",
-
-      "Image/Step05-3.png",
-
-      "Image/Step05-4.png"
-
-    ]
-  },
-
-
-  /* =======================================================
-     STEP 06
-     CGM / CARE TEAM / REPORT
-  ======================================================= */
-
-  {
-    id:
-      "step06",
-
-    number:
-      "06",
-
-    icon:
-      "Image/Icon-6.png",
-
-    pathTH:
-      "เชื่อมต่อข้อมูล",
-
-    pathEN:
-      "Connect Data",
-
-    titleTH:
-      "เชื่อมต่อข้อมูลและทีมรักษา",
-
-    titleEN:
-      "Connect Data and Care Team",
-
-    descriptionTH:
-      "เชื่อมต่อ/ยกเลิกการเชื่อมต่อ CGM → เชื่อมต่อ/ยกเลิกการเชื่อมต่อทีมรักษา → ดูข้อมูลสุขภาพและรายงาน",
-
-    descriptionEN:
-      "Connect / Disconnect CGM → Connect / Disconnect Care Team → View Reports",
-
-    topics: [
-
-      {
-        th:
-          "เชื่อมต่อ CGM",
-
-        en:
-          "Connect CGM"
-      },
-
-      {
-        th:
-          "เชื่อมต่อทีมรักษา",
-
-        en:
-          "Connect Care Team"
-      },
-
-      {
-        th:
-          "รายงานสุขภาพ",
-
-        en:
-          "Health Reports"
-      }
-
-    ],
-
-    images: [
-
-      "Image/Step06-1.png",
-
-      "Image/Step06-2.png",
-
-      "Image/Step06-3.png"
-
-    ],
-
-    resources: [
-
-      {
-        type:
-          "external",
-
-        kind:
-          "document",
-
-        iconImage:
-          "Image/PDF-Icon.png",
-
-        labelTH:
-          "ข้อมูล CareSense Air 365 CGM [PDF]",
-
-        labelEN:
-          "CareSense Air 365 CGM Information [PDF]",
-
-        subtitleTH:
-          "ข้อมูล CareSense Air 365 CGM",
-
-        subtitleEN:
-          "CareSense Air 365 CGM Information",
-
-        urlTH:
-          "resource-viewer.html?resource=caresense&lang=th",
-
-        urlEN:
-          "resource-viewer.html?resource=caresense&lang=en"
-      },
-
-      {
-        type:
-          "external",
-
-        kind:
-          "video",
-
-        iconImage:
-          "Image/VDO-Icon.png",
-
-        labelTH:
-          "การติดตั้ง CareSense Air 365 CGM [VDO]",
-
-        labelEN:
-          "CareSense Air 365 CGM Installation [VDO]",
-
-        subtitleTH:
-          "CareSense Air 365 CGM Installation [Video]",
-
-        subtitleEN:
-          "CareSense Air 365 CGM Installation [Video]",
-
-        urlTH:
-          "resource-viewer.html?resource=caresenseVideo&lang=th",
-
-        urlEN:
-          "resource-viewer.html?resource=caresenseVideo&lang=en"
-      }
-
-    ]
-  },
-
+    {
+      th: "การเปลี่ยนคาร์ทริดจ์ P8",
+      en: "P8 Cartridge Replacement",
+
+      imagesTH: [
+        "Image/step-05/th/5.1-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-05/en/5.1-EN.png"
+      ],
+
+      videosTH: [
+        {
+          label: "การเปลี่ยนคาร์ทริดจ์ P8",
+          url: "https://youtu.be/p7TRi8wVHE0"
+        }
+      ],
+
+      videosEN: [
+        {
+          label: "P8 Cartridge Replacement",
+          url: "https://youtu.be/4qSFRWU6rpQ"
+        }
+      ]
+    }
+
+  ]
+},
+
+
+/* =======================================================
+   STEP 06
+   CGM / MY REPORT / CAREWEB
+======================================================= */
+
+{
+  id: "step06",
+
+  number: "06",
+
+  icon: "Image/Icon-6.png",
+
+  pathTH: "เชื่อมต่อข้อมูล",
+  pathEN: "Connect Data",
+
+  titleTH: "เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน",
+  titleEN: "Device, CareWeb and Report Connections",
+
+  descriptionTH:
+    "เชื่อมต่อ/ยกเลิก CGM → My Report → เชื่อมต่อ/ยกเลิก CareWeb",
+
+  descriptionEN:
+    "Connect/Disconnect CGM → My Report → Connect/Disconnect CareWeb",
+
+  topics: [
+
+    /* ---------- 06-1 : CONNECT CGM ---------- */
+
+    {
+      th: "เชื่อมต่อ CareSens Air 365 CGM",
+      en: "Connect CareSens Air 365 CGM",
+
+      imagesTH: [
+        "Image/step-06/th/6.1-TH.png",
+        "Image/step-06/th/6.2-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-06/en/6.1-EN.png",
+        "Image/step-06/en/6.2-EN.png"
+      ]
+    },
+
+
+    /* ---------- 06-2 : DISCONNECT CGM ---------- */
+
+    {
+      th: "ยกเลิกการเชื่อมต่อ CareSens Air 365 CGM",
+      en: "Disconnect CareSens Air 365 CGM",
+
+      imagesTH: [
+        "Image/step-06/th/6.3-TH.png",
+        "Image/step-06/th/6.4-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-06/en/6.3-EN.png",
+        "Image/step-06/en/6.4-EN.png"
+      ]
+    },
+
+
+    /* ---------- 06-3 : MY REPORT ---------- */
+
+    {
+      th: "รายงานของฉัน",
+      en: "My Report",
+
+      imagesTH: [
+        "Image/step-06/th/6.5-TH.png",
+        "Image/step-06/th/6.6-TH.png",
+        "Image/step-06/th/6.7-TH.png",
+        "Image/step-06/th/6.8-TH.png",
+        "Image/step-06/th/6.9-TH.png",
+        "Image/step-06/th/6.10-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-06/en/6.5-EN.png",
+        "Image/step-06/en/6.6-EN.png",
+        "Image/step-06/en/6.7-EN.png",
+        "Image/step-06/en/6.8-EN.png",
+        "Image/step-06/en/6.9-EN.png",
+        "Image/step-06/en/6.10-EN.png"
+      ]
+    },
+
+
+    /* ---------- 06-4 : CONNECT CAREWEB ---------- */
+
+    {
+      th: "เชื่อมต่อ CareWeb",
+      en: "Connect CareWeb",
+
+      imagesTH: [
+        "Image/step-06/th/6.11-TH.png",
+        "Image/step-06/th/6.12-TH.png",
+        "Image/step-06/th/6.13-TH.png",
+        "Image/step-06/th/6.14-TH.png",
+        "Image/step-06/th/6.15-TH.png",
+        "Image/step-06/th/6.16-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-06/en/6.11-EN.png",
+        "Image/step-06/en/6.12-EN.png",
+        "Image/step-06/en/6.13-EN.png",
+        "Image/step-06/en/6.14-EN.png",
+        "Image/step-06/en/6.15-EN.png",
+        "Image/step-06/en/6.16-EN.png"
+      ]
+    },
+
+
+    /* ---------- 06-5 : DISCONNECT CAREWEB — PATIENT ---------- */
+
+    {
+      th: "ยกเลิก CareWeb (ผู้ป่วย)",
+      en: "Disconnect CareWeb (Patient)",
+
+      imagesTH: [
+        "Image/step-06/th/6.17-TH.png",
+        "Image/step-06/th/6.18-TH.png",
+        "Image/step-06/th/6.19-TH.png",
+        "Image/step-06/th/6.20-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-06/en/6.17-EN.png",
+        "Image/step-06/en/6.18-EN.png",
+        "Image/step-06/en/6.19-EN.png",
+        "Image/step-06/en/6.20-EN.png"
+      ]
+    },
+
+
+    /* ---------- 06-6 : DISCONNECT CAREWEB — HOSPITAL ---------- */
+
+    {
+      th: "ยกเลิก CareWeb (โรงพยาบาล)",
+      en: "Disconnect CareWeb (Hospital)",
+
+      imagesTH: [
+        "Image/step-06/th/6.21-TH.png",
+        "Image/step-06/th/6.22-TH.png",
+        "Image/step-06/th/6.23-TH.png",
+        "Image/step-06/th/6.24-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-06/en/6.21-EN.png",
+        "Image/step-06/en/6.22-EN.png",
+        "Image/step-06/en/6.23-EN.png",
+        "Image/step-06/en/6.24-EN.png"
+      ]
+    }
+
+  ]
+},
 
   /* =======================================================
      STEP 07
@@ -1900,29 +2060,81 @@ function buildManual() {
               }
 
 
-              const imageItems =
-                topicImages
-                  .map(
-                    (
-                      image,
-                      imageIndex
-                    ) => {
+             const isStep06MultiImage =
+  step.number === "06" &&
+  topicImages.length > 1;
 
-                      return `
 
-                        <img
-                          src="${image}"
-                          alt=""
-                          class="slide-image"
-                          data-content-image
-                          data-image-index="${imageIndex}"
-                        >
+const imageItems =
+  topicImages
+    .map(
+      (
+        image,
+        imageIndex
+      ) => {
 
-                      `;
+        const isLastImage =
+          imageIndex ===
+          topicImages.length - 1;
 
-                    }
-                  )
-                  .join("");
+
+        const nextImageHint =
+          isStep06MultiImage &&
+          !isLastImage
+
+            ? `
+              <div class="next-image-hint">
+                ${
+                  currentLanguage === "th"
+                    ? "กรุณาเลื่อนลง 👇 เพื่อดูขั้นตอนถัดไป"
+                    : "Please scroll down 👇 to view the next step"
+                }
+              </div>
+            `
+
+            : "";
+
+
+        return `
+
+          <img
+            src="${image}"
+            alt=""
+            class="slide-image"
+            data-content-image
+            data-image-index="${imageIndex}"
+          >
+
+          ${nextImageHint}
+
+        `;
+
+      }
+    )
+    .join("");
+
+    const multiImageGuideHint =
+  isStep06MultiImage
+    ? `
+      <div class="multi-image-guide-hint">
+        <span>
+          ${
+            currentLanguage === "th"
+              ? `📑 คู่มือนี้มี ${topicImages.length} ภาพ`
+              : `📑 This guide contains ${topicImages.length} images`
+          }
+        </span>
+
+        <span class="multi-image-scroll-text">
+          ${
+            currentLanguage === "th"
+              ? "กรุณาเลื่อนลง 👇 เพื่อดูขั้นตอนถัดไป"
+              : "Please scroll down 👇 to view the next step"
+          }
+        </span>
+      </div>
+    `
+    : "";
 
                   const imageZoomHint = `
   <div class="image-zoom-hint">
@@ -2014,6 +2226,8 @@ const videoScrollHint =
 >
 
   ${imageZoomHint}
+
+  ${multiImageGuideHint}
 
 <div
   class="slide-images"
