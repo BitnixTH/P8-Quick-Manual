@@ -949,7 +949,7 @@ const steps = [
   titleEN: "Device, CareWeb and Report Connections",
 
   descriptionTH:
-    "เชื่อมต่อ/ยกเลิก CGM → My Report → เชื่อมต่อ/ยกเลิก CareWeb",
+    "เชื่อมต่อ/ยกเลิก CGM → รายงานของฉัน → เชื่อมต่อ/ยกเลิก CareWeb",
 
   descriptionEN:
     "Connect/Disconnect CGM → My Report → Connect/Disconnect CareWeb",
@@ -1089,10 +1089,9 @@ const steps = [
 
   ]
 },
-
   /* =======================================================
      STEP 07
-     INJECTION + BOLUS
+     GETTING TO KNOW DIA:CONN APP
   ======================================================= */
 
   {
@@ -1104,6 +1103,75 @@ const steps = [
 
     icon:
       "Image/Icon-7.png",
+
+    pathTH:
+      "รู้จัก<br>DIA:CONN",
+
+    pathEN:
+      "DIA:CONN<br>App",
+
+    titleTH:
+      "ทำความรู้จัก DIA:CONN App",
+
+    titleEN:
+      "Getting to Know the DIA:CONN App",
+
+    descriptionTH:
+      "ทำความรู้จักหน้าจอและข้อมูลต่าง ๆ ภายในแอป DIA:CONN",
+
+    descriptionEN:
+      "Learn about the screens and information available in the DIA:CONN App",
+
+    topics: [
+
+      {
+        th:
+          "หน้าหลัก",
+
+        en:
+          "Home",
+
+        imagesTH: [
+          "Image/step-07/th/7.1-TH.png"
+        ],
+
+        imagesEN: [
+          "Image/step-07/en/7.1-EN.png"
+        ]
+      },
+
+      {
+        th:
+          "ข้อมูลปากกา",
+
+        en:
+          "Pen Information",
+
+        imagesTH: [
+          "Image/step-07/th/7.2-TH.png"
+        ],
+
+        imagesEN: [
+          "Image/step-07/en/7.2-EN.png"
+        ]
+      }
+
+    ]
+  },
+  /* =======================================================
+     STEP 08
+     INJECTION + BOLUS
+  ======================================================= */
+
+  {
+    id:
+      "step08",
+
+    number:
+      "08",
+
+    icon:
+      "Image/Icon-8.png",
 
     pathTH:
       "ฉีดอินซูลิน",
@@ -1169,15 +1237,15 @@ const steps = [
 
     images: [
 
-      "Image/Step07-1.png",
+      "Image/Step08-1.png",
 
-      "Image/Step07-2.png",
+      "Image/Step08-2.png",
 
-      "Image/Step07-3.png",
+      "Image/Step08-3.png",
 
-      "Image/Step07-4.png",
+      "Image/Step08-4.png",
 
-      "Image/Step07-5.png"
+      "Image/Step08-5.png"
 
     ],
 
@@ -1246,19 +1314,19 @@ const steps = [
 
 
   /* =======================================================
-     STEP 08
+     STEP 09
      ALERTS + P8 CARE
   ======================================================= */
 
   {
     id:
-      "step08",
+      "step09",
 
     number:
-      "08",
+      "09",
 
     icon:
-      "Image/Icon-8.png",
+      "Image/Icon-9.png",
 
     pathTH:
       "แจ้งเตือนและ<br>การดูแล P8",
@@ -1324,34 +1392,34 @@ const steps = [
 
     images: [
 
-      "Image/Step08-1.png",
+      "Image/Step09-1.png",
 
-      "Image/Step08-2.png",
+      "Image/Step09-2.png",
 
-      "Image/Step08-3.png",
+      "Image/Step09-3.png",
 
-      "Image/Step08-4.png",
+      "Image/Step09-4.png",
 
-      "Image/Step08-5.png"
+      "Image/Step09-5.png"
 
     ]
   },
 
 
   /* =======================================================
-     STEP 09
+     STEP 10
      DIABETES CARE
   ======================================================= */
 
   {
     id:
-      "step09",
+      "step10",
 
     number:
-      "09",
+      "10",
 
     icon:
-      "Image/Icon-9.png",
+      "Image/Icon-10.png",
 
     pathTH:
       "ดูแลเบาหวาน",
@@ -1393,9 +1461,9 @@ const steps = [
 
     images: [
 
-      "Image/Step09-1.png",
+      "Image/Step10-1.png",
 
-      "Image/Step09-2.png"
+      "Image/Step10-2.png"
 
     ]
   }
@@ -3692,7 +3760,7 @@ function setupSingleSlider(slider) {
 
   /*
     สำคัญ:
-    Step 07 Resource Buttons
+    Step 08 Resource Buttons
     ของ Code ปัจจุบันใช้ตัวนี้
   */
 
@@ -4556,7 +4624,7 @@ function setLanguage(
       CareSense-EN-Pic2.png
 
 
-    STEP 07 RESOURCE BUTTONS
+    STEP 08 RESOURCE BUTTONS
     TH:
       อาหารแลกเปลี่ยน.png
       ประเมินการดูดซึมของอาหาร.png
@@ -4566,7 +4634,7 @@ function setLanguage(
       Food Absorb Evaluation.png
 
 
-    STEP 07 FOOD EXCHANGE CONTENT
+    STEP 08 FOOD EXCHANGE CONTENT
     TH + EN use the SAME files:
 
       Thai Exchange Food List-1.jpg
