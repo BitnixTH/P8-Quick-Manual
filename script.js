@@ -1089,228 +1089,487 @@ const steps = [
 
   ]
 },
+/* =======================================================
+   STEP 07
+   GETTING TO KNOW DIA:CONN APP
+======================================================= */
+
+{
+  id: "step07",
+
+  number: "07",
+
+  icon: "Image/Icon-7.png",
+
+  pathTH: "รู้จัก<br>DIA:CONN",
+  pathEN: "DIA:CONN<br>App",
+
+  titleTH: "ทำความรู้จัก DIA:CONN App",
+  titleEN: "Getting to Know the DIA:CONN App",
+
+  descriptionTH:
+    "ทำความรู้จักหน้าจอและข้อมูลต่าง ๆ ภายในแอป DIA:CONN",
+
+  descriptionEN:
+    "Learn about the screens and information available in the DIA:CONN App",
+
+  topics: [
+
+    /* ---------- 07-1 : HOME ---------- */
+
+    {
+      th: "หน้าหลัก",
+      en: "Home Screen",
+
+      imagesTH: [
+        "Image/step-07/th/7.1-TH.png",
+        "Image/step-07/th/7.2-TH.png",
+        "Image/step-07/th/7.3-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-07/en/7.1-EN.png",
+        "Image/step-07/en/7.2-EN.png",
+        "Image/step-07/en/7.3-EN.png"
+      ]
+    },
+
+
+    /* ---------- 07-2 : PEN INFORMATION ---------- */
+
+    {
+      th: "ข้อมูลปากกา",
+      en: "Pen Information",
+
+      imagesTH: [
+        "Image/step-07/th/7.4-TH.png",
+        "Image/step-07/th/7.5-TH.png",
+        "Image/step-07/th/7.6-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-07/en/7.4-EN.png",
+        "Image/step-07/en/7.5-EN.png",
+        "Image/step-07/en/7.6-EN.png"
+      ]
+    },
+
+
+    /* ---------- 07-3 : MORE ---------- */
+
+    {
+      th: "เพิ่มเติม",
+      en: "More",
+
+      imagesTH: [
+        "Image/step-07/th/7.7-TH.png",
+        "Image/step-07/th/7.8-TH.png",
+        "Image/step-07/th/7.9-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-07/en/7.7-EN.png",
+        "Image/step-07/en/7.8-EN.png",
+        "Image/step-07/en/7.9-EN.png"
+      ]
+    },
+
+
+    /* ---------- 07-4 : INJECT ---------- */
+
+    {
+      th: "การฉีด",
+      en: "Inject",
+
+      imagesTH: [
+        "Image/step-07/th/7.10-TH.png",
+        "Image/step-07/th/7.11-TH.png",
+        "Image/step-07/th/7.12-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-07/en/7.10-EN.png",
+        "Image/step-07/en/7.11-EN.png",
+        "Image/step-07/en/7.12-EN.png"
+      ]
+    },
+
+
+    /* ---------- 07-5 : FIND THE PEN ---------- */
+
+    {
+      th: "ค้นหาปากกา",
+      en: "Find the pen",
+
+      imagesTH: [
+        "Image/step-07/th/7.13-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-07/en/7.13-EN.png"
+      ]
+    },
+
+
+    /* ---------- 07-6 : DEVICE SETTINGS ---------- */
+
+    {
+      th: "การตั้งค่าอุปกรณ์",
+      en: "Device Settings",
+
+      imagesTH: [
+        "Image/step-07/th/7.14-TH.png",
+        "Image/step-07/th/7.15-TH.png",
+        "Image/step-07/th/7.16-TH.png",
+        "Image/step-07/th/7.17-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-07/en/7.14-EN.png",
+        "Image/step-07/en/7.15-EN.png",
+        "Image/step-07/en/7.16-EN.png",
+        "Image/step-07/en/7.17-EN.png"
+      ]
+    }
+
+  ]
+},
+
   /* =======================================================
-     STEP 07
-     GETTING TO KNOW DIA:CONN APP
-  ======================================================= */
-
-  {
-    id:
-      "step07",
-
-    number:
-      "07",
-
-    icon:
-      "Image/Icon-7.png",
-
-    pathTH:
-      "รู้จัก<br>DIA:CONN",
-
-    pathEN:
-      "DIA:CONN<br>App",
-
-    titleTH:
-      "ทำความรู้จัก DIA:CONN App",
-
-    titleEN:
-      "Getting to Know the DIA:CONN App",
-
-    descriptionTH:
-      "ทำความรู้จักหน้าจอและข้อมูลต่าง ๆ ภายในแอป DIA:CONN",
-
-    descriptionEN:
-      "Learn about the screens and information available in the DIA:CONN App",
-
-    topics: [
-
-      {
-        th:
-          "หน้าหลัก",
-
-        en:
-          "Home",
-
-        imagesTH: [
-          "Image/step-07/th/7.1-TH.png"
-        ],
-
-        imagesEN: [
-          "Image/step-07/en/7.1-EN.png"
-        ]
-      },
-
-      {
-        th:
-          "ข้อมูลปากกา",
-
-        en:
-          "Pen Information",
-
-        imagesTH: [
-          "Image/step-07/th/7.2-TH.png"
-        ],
-
-        imagesEN: [
-          "Image/step-07/en/7.2-EN.png"
-        ]
-      }
-
-    ]
-  },
-  /* =======================================================
-     STEP 08
-     INJECTION + BOLUS
-  ======================================================= */
-
-  {
-    id:
-      "step08",
-
-    number:
-      "08",
-
-    icon:
-      "Image/Icon-8.png",
-
-    pathTH:
-      "ฉีดอินซูลิน",
-
-    pathEN:
-      "Injection",
-
-    titleTH:
-      "การฉีดอินซูลินและการคำนวณโบลัส",
-
-    titleEN:
-      "Insulin Injection and Bolus Calculator",
-
-    descriptionTH:
-      "ฉีดผ่าน P8 หรือฉีดผ่านแอป DIA:CONN",
-
-    descriptionEN:
-      "Inject using P8 or through the DIA:CONN App",
-
-    topics: [
-
-      {
-        th:
-          "ฉีดผ่าน P8",
-
-        en:
-          "Inject with P8"
-      },
-
-      {
-        th:
-          "ฉีดด่วน",
-
-        en:
-          "Quick Injection"
-      },
-
-      {
-        th:
-          "คำนวณคาร์โบไฮเดรต",
-
-        en:
-          "Carbohydrate Calculation"
-      },
-
-      {
-        th:
-          "คำนวณโบลัส",
-
-        en:
-          "Bolus Calculation"
-      },
-
-      {
-        th:
-          "ประวัติการฉีด",
-
-        en:
-          "Injection History"
-      }
-
-    ],
-
-    images: [
-
-      "Image/Step08-1.png",
-
-      "Image/Step08-2.png",
-
-      "Image/Step08-3.png",
-
-      "Image/Step08-4.png",
-
-      "Image/Step08-5.png"
-
-    ],
-
-    resources: [
-
-      {
-        type:
-          "external",
-
-        kind:
-          "document",
-
-        iconImage:
-          "Image/Food Exchange-Icon.png",
-
-        labelTH:
-          "อาหารแลกเปลี่ยน",
-
-        labelEN:
-          "Food Exchange",
-
-        subtitleTH:
-          "ตารางอาหารแลกเปลี่ยนครบ 6 หมวดหมู่",
-
-        subtitleEN:
-          "Thai Food Exchange List",
-
-        urlTH:
-          "resource-viewer.html?resource=foodexchange&lang=th",
-
-        urlEN:
-          "resource-viewer.html?resource=foodexchange&lang=en"
-      },
-
-      {
-        type:
-          "external",
-
-        kind:
-          "document",
-
-        iconImage:
-          "Image/Food Absorb-Icon.png",
-
-        labelTH:
-          "ประเมินการดูดซึมของอาหาร",
-
-        labelEN:
-          "Food Absorption Evaluation",
-
-        subtitleTH:
-          "ดูดซึมเร็ว, ปานกลาง, ช้า",
-
-        subtitleEN:
-          "Fast, moderate, slow absorption",
-
-        urlTH:
-          "resource-viewer.html?resource=absorption&lang=th",
-
-        urlEN:
-          "resource-viewer.html?resource=absorption&lang=en"
-      }
-
-    ]
-  },
+   STEP 08
+   INJECTION + BOLUS
+======================================================= */
+
+{
+  id: "step08",
+
+  number: "08",
+
+  icon: "Image/Icon-8.png",
+
+  pathTH: "ฉีดอินซูลิน",
+  pathEN: "Injection",
+
+  titleTH: "การฉีดอินซูลินและการคำนวณโบลัส",
+  titleEN: "Insulin Injection and Bolus Calculator",
+
+  descriptionTH:
+    "การฉีดอินซูลินด้วย P8 → การฉีดด่วน → การคำนวณโบลัส → ประวัติการฉีด",
+
+  descriptionEN:
+    "P8 Injection → Quick Injection → Bolus Calculation → Injection History",
+
+  playlistsTH: [],
+  playlistsEN: [],
+
+  topics: [
+
+    /* =====================================================
+       08-1 : P8 INJECTION
+    ===================================================== */
+
+    {
+      th: "ฉีดผ่าน P8",
+      en: "P8 Injection",
+
+      imagesTH: [
+        "Image/step-08/th/8.1-TH.png",
+        "Image/step-08/th/8.2-TH.png",
+        "Image/step-08/th/8.3-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-08/en/8.1-EN.png",
+        "Image/step-08/en/8.2-EN.png",
+        "Image/step-08/en/8.3-EN.png"
+      ],
+
+      videosTH: [
+        {
+          label: "การฉีด Insulin ด้วย P8",
+          url: "https://youtu.be/7TL37Ik35Y8"
+        },
+        {
+          label: "การเริ่ม–หยุดฉีดอินซูลินด้วย P8",
+          url: "https://youtu.be/xPCLOazQvWQ"
+        }
+      ],
+
+      videosEN: [
+        {
+          label: "Direct Insulin Injection Using the P8 Device",
+          url: "https://youtu.be/nA13U0-c9gU"
+        },
+        {
+          label: "Start/Stop P8 Injection",
+          url: "https://youtu.be/i67Ap7t7d-E"
+        }
+      ]
+    },
+
+
+    /* =====================================================
+       08-2 : QUICK INJECTION
+    ===================================================== */
+
+    {
+      th: "ฉีดด่วน",
+      en: "Quick Injection",
+
+      imagesTH: [
+        "Image/step-08/th/8.4-TH.png",
+        "Image/step-08/th/8.5-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-08/en/8.4-EN.png",
+        "Image/step-08/en/8.5-EN.png"
+      ],
+
+      videosTH: [
+        {
+          label: "การฉีดด่วนของ P8",
+          url: "https://youtu.be/7TL37Ik35Y8"
+        }
+      ],
+
+      videosEN: [
+        {
+          label: "P8 Quick Injection",
+          url: "https://youtu.be/7-fjt_9Sqzg"
+        }
+      ]
+    },
+
+
+    /* =====================================================
+       08-3 : BOLUS CALCULATION
+    ===================================================== */
+
+    {
+      th: "คำนวณโบลัส",
+      en: "Bolus Calculation",
+
+      imagesTH: [
+        "Image/step-08/th/8.6-TH.png",
+        "Image/step-08/th/8.7-TH.png",
+        "Image/step-08/th/8.8-TH.png",
+        "Image/step-08/th/8.9-TH.png",
+        "Image/step-08/th/8.10-TH.png",
+        "Image/step-08/th/8.11-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-08/en/8.6-EN.png",
+        "Image/step-08/en/8.7-EN.png",
+        "Image/step-08/en/8.8-EN.png",
+        "Image/step-08/en/8.9-EN.png",
+        "Image/step-08/en/8.10-EN.png",
+        "Image/step-08/en/8.11-EN.png"
+      ],
+
+      bolusModes: [
+
+        /* ---------- FIXED MEAL ---------- */
+
+        {
+          th: "มื้ออาหารคงที่",
+          en: "Fixed Meal",
+
+          imagesTH: [
+            "Image/step-08/th/bolus-th/fix-th/Fix-1-TH.png",
+            "Image/step-08/th/bolus-th/fix-th/Fix-2-TH.png",
+            "Image/step-08/th/bolus-th/fix-th/Fix-3-TH.png",
+            "Image/step-08/th/bolus-th/fix-th/Fix-4-TH.png",
+            "Image/step-08/th/bolus-th/fix-th/Fix-5-TH.png"
+          ],
+
+          imagesEN: [
+            "Image/step-08/en/bolus-en/fix-en/Fix-1-EN.png",
+            "Image/step-08/en/bolus-en/fix-en/Fix-2-EN.png",
+            "Image/step-08/en/bolus-en/fix-en/Fix-3-EN.png",
+            "Image/step-08/en/bolus-en/fix-en/Fix-4-EN.png",
+            "Image/step-08/en/bolus-en/fix-en/Fix-5-EN.png"
+          ]
+        },
+
+
+        /* ---------- ESTIMATED MEAL ---------- */
+
+        {
+          th: "การประมาณปริมาณอาหาร",
+          en: "Estimated Meal",
+
+          imagesTH: [
+            "Image/step-08/th/bolus-th/est-th/Est-1-TH.png",
+            "Image/step-08/th/bolus-th/est-th/Est-2-TH.png",
+            "Image/step-08/th/bolus-th/est-th/Est-3-TH.png",
+            "Image/step-08/th/bolus-th/est-th/Est-4-TH.png",
+            "Image/step-08/th/bolus-th/est-th/Est-5-TH.png",
+            "Image/step-08/th/bolus-th/est-th/Est-6-TH.png",
+            "Image/step-08/th/bolus-th/est-th/Est-7-TH.png",
+            "Image/step-08/th/bolus-th/est-th/Est-8-TH.png"
+          ],
+
+          imagesEN: [
+            "Image/step-08/en/bolus-en/est-en/Est-1-EN.png",
+            "Image/step-08/en/bolus-en/est-en/Est-2-EN.png",
+            "Image/step-08/en/bolus-en/est-en/Est-3-EN.png",
+            "Image/step-08/en/bolus-en/est-en/Est-4-EN.png",
+            "Image/step-08/en/bolus-en/est-en/Est-5-EN.png",
+            "Image/step-08/en/bolus-en/est-en/Est-6-EN.png",
+            "Image/step-08/en/bolus-en/est-en/Est-7-EN.png",
+            "Image/step-08/en/bolus-en/est-en/Est-8-EN.png"
+          ]
+        },
+
+
+        /* ---------- CARB COUNTING ---------- */
+
+        {
+          th: "การนับคาร์โบไฮเดรต",
+          en: "Carb Counting",
+
+          imagesTH: [
+            "Image/step-08/th/bolus-th/carb-th/Carb-1-TH.png",
+            "Image/step-08/th/bolus-th/carb-th/Carb-2-TH.png",
+            "Image/step-08/th/bolus-th/carb-th/Carb-3-TH.png",
+            "Image/step-08/th/bolus-th/carb-th/Carb-4-TH.png",
+            "Image/step-08/th/bolus-th/carb-th/Carb-5-TH.png",
+            "Image/step-08/th/bolus-th/carb-th/Carb-6-TH.png"
+          ],
+
+          imagesEN: [
+            "Image/step-08/en/bolus-en/carb-en/Carb-1-EN.png",
+            "Image/step-08/en/bolus-en/carb-en/Carb-2-EN.png",
+            "Image/step-08/en/bolus-en/carb-en/Carb-3-EN.png",
+            "Image/step-08/en/bolus-en/carb-en/Carb-4-EN.png",
+            "Image/step-08/en/bolus-en/carb-en/Carb-5-EN.png",
+            "Image/step-08/en/bolus-en/carb-en/Carb-6-EN.png"
+          ]
+        },
+
+
+        /* ---------- ADVANCED CARB COUNTING ---------- */
+
+        {
+          th: "การนับคาร์โบไฮเดรตขั้นสูง",
+          en: "Advanced Carb Counting",
+
+          imagesTH: [
+            "Image/step-08/th/bolus-th/adv-th/Adv-1-TH.png",
+            "Image/step-08/th/bolus-th/adv-th/Adv-2-TH.png",
+            "Image/step-08/th/bolus-th/adv-th/Adv-3-TH.png",
+            "Image/step-08/th/bolus-th/adv-th/Adv-4-TH.png",
+            "Image/step-08/th/bolus-th/adv-th/Adv-5-TH.png",
+            "Image/step-08/th/bolus-th/adv-th/Adv-6-TH.png"
+          ],
+
+          imagesEN: [
+            "Image/step-08/en/bolus-en/adv-en/Adv-1-EN.png",
+            "Image/step-08/en/bolus-en/adv-en/Adv-2-EN.png",
+            "Image/step-08/en/bolus-en/adv-en/Adv-3-EN.png",
+            "Image/step-08/en/bolus-en/adv-en/Adv-4-EN.png",
+            "Image/step-08/en/bolus-en/adv-en/Adv-5-EN.png",
+            "Image/step-08/en/bolus-en/adv-en/Adv-6-EN.png"
+          ],
+
+          videosTH: [
+            {
+              label: "การคำนวณโบลัส: การนับคาร์โบไฮเดรตขั้นสูง",
+              url: "https://youtu.be/i3N7cypK1iU"
+            }
+          ],
+
+          videosEN: [
+            {
+              label: "P8 Bolus Calculation: Advanced Carb Counting",
+              url: "https://youtu.be/XTCKln8incQ"
+            }
+          ]
+        }
+
+      ]
+    },
+
+
+    /* =====================================================
+       08-4 : INJECTION HISTORY
+    ===================================================== */
+
+    {
+      th: "ประวัติการฉีด",
+      en: "Injection History",
+
+      imagesTH: [
+        "Image/step-08/th/8.12-TH.png",
+        "Image/step-08/th/8.13-TH.png",
+        "Image/step-08/th/8.14-TH.png"
+      ],
+
+      imagesEN: [
+        "Image/step-08/en/8.12-EN.png",
+        "Image/step-08/en/8.13-EN.png",
+        "Image/step-08/en/8.14-EN.png"
+      ]
+    }
+
+  ],
+
+  resources: [
+    {
+      type: "external",
+      kind: "document",
+
+      iconImage:
+        "Image/Food Exchange-Icon.png",
+
+      labelTH:
+        "อาหารแลกเปลี่ยน",
+
+      labelEN:
+        "Food Exchange",
+
+      subtitleTH:
+        "ตารางอาหารแลกเปลี่ยนครบ 6 หมวดหมู่",
+
+      subtitleEN:
+        "Thai Food Exchange List",
+
+      urlTH:
+        "resource-viewer.html?resource=foodexchange&lang=th",
+
+      urlEN:
+        "resource-viewer.html?resource=foodexchange&lang=en"
+    },
+
+    {
+      type: "external",
+      kind: "document",
+
+      iconImage:
+        "Image/Food Absorb-Icon.png",
+
+      labelTH:
+        "ประเมินการดูดซึมของอาหาร",
+
+      labelEN:
+        "Food Absorption Evaluation",
+
+      subtitleTH:
+        "ดูดซึมเร็ว, ปานกลาง, ช้า",
+
+      subtitleEN:
+        "Fast, moderate, slow absorption",
+
+      urlTH:
+        "resource-viewer.html?resource=absorption&lang=th",
+
+      urlEN:
+        "resource-viewer.html?resource=absorption&lang=en"
+    }
+  ]
+},
 
 
   /* =======================================================
@@ -2128,8 +2387,8 @@ function buildManual() {
               }
 
 
-             const isStep06MultiImage =
-  step.number === "06" &&
+             const isMultiImageGuide =
+  ["06", "07", "08"].includes(step.number) &&
   topicImages.length > 1;
 
 
@@ -2147,7 +2406,7 @@ const imageItems =
 
 
         const nextImageHint =
-          isStep06MultiImage &&
+          isMultiImageGuide &&
           !isLastImage
 
             ? `
@@ -2182,7 +2441,7 @@ const imageItems =
     .join("");
 
     const multiImageGuideHint =
-  isStep06MultiImage
+  isMultiImageGuide
     ? `
       <div class="multi-image-guide-hint">
         <span>
@@ -2261,6 +2520,272 @@ const videoScrollHint =
     `
     : "";
 
+    /* =====================================================
+   STEP 08 : BOLUS SUB-NAVIGATION
+===================================================== */
+
+const hasBolusModes =
+  step.number === "08" &&
+  Array.isArray(topic.bolusModes) &&
+  topic.bolusModes.length > 0;
+
+
+const bolusSection =
+  hasBolusModes
+    ? (() => {
+
+        const bolusButtons =
+          topic.bolusModes
+            .map(
+              (
+                mode,
+                modeIndex
+              ) => {
+
+                const modeLabel =
+                  currentLanguage === "th"
+                    ? mode.th
+                    : mode.en;
+
+                return `
+                  <button
+                    type="button"
+                    class="bolus-subnav-btn ${
+                      modeIndex === 0
+                        ? "active"
+                        : ""
+                    }"
+                    data-bolus-target="${modeIndex}"
+                  >
+                    ${modeLabel}
+                  </button>
+                `;
+              }
+            )
+            .join("");
+
+
+        const bolusPanels =
+          topic.bolusModes
+            .map(
+              (
+                mode,
+                modeIndex
+              ) => {
+
+                const modeImages =
+                  currentLanguage === "th"
+                    ? (
+                        Array.isArray(mode.imagesTH)
+                          ? mode.imagesTH
+                          : []
+                      )
+                    : (
+                        Array.isArray(mode.imagesEN)
+                          ? mode.imagesEN
+                          : []
+                      );
+
+
+                const modeVideos =
+                  currentLanguage === "th"
+                    ? mode.videosTH
+                    : mode.videosEN;
+
+
+                const hasModeVideos =
+                  Array.isArray(modeVideos) &&
+                  modeVideos.some(
+                    (video) =>
+                      video &&
+                      typeof video.url === "string" &&
+                      video.url.trim() !== ""
+                  );
+
+
+                const modeImageItems =
+                  modeImages
+                    .map(
+                      (
+                        image,
+                        imageIndex
+                      ) => {
+
+                        const isLastModeImage =
+                          imageIndex ===
+                          modeImages.length - 1;
+
+
+                        const modeNextHint =
+                          !isLastModeImage
+                            ? `
+                              <div
+                                class="next-image-hint"
+                              >
+                                ${
+                                  currentLanguage === "th"
+                                    ? "กรุณาเลื่อนลง 👇 เพื่อดูขั้นตอนถัดไป"
+                                    : "Please scroll down 👇 to view the next step"
+                                }
+                              </div>
+                            `
+                            : "";
+
+
+                        return `
+                          <img
+                            src="${image}"
+                            alt=""
+                            class="slide-image"
+                            data-content-image
+                          >
+
+                          ${modeNextHint}
+                        `;
+                      }
+                    )
+                    .join("");
+
+
+                const modeGuideHint =
+                  modeImages.length > 1
+                    ? `
+                      <div
+                        class="multi-image-guide-hint"
+                      >
+
+                        <span>
+                          ${
+                            currentLanguage === "th"
+                              ? `📑 คู่มือนี้มี ${modeImages.length} ภาพ`
+                              : `📑 This guide contains ${modeImages.length} images`
+                          }
+                        </span>
+
+                        <span
+                          class="multi-image-scroll-text"
+                        >
+                          ${
+                            currentLanguage === "th"
+                              ? "กรุณาเลื่อนลง 👇 เพื่อดูขั้นตอนถัดไป"
+                              : "Please scroll down 👇 to view the next step"
+                          }
+                        </span>
+
+                      </div>
+                    `
+                    : "";
+
+
+                const modeVideoHint =
+                  hasModeVideos
+                    ? `
+                      <div
+                        class="video-scroll-message"
+                      >
+                        ${
+                          currentLanguage === "th"
+                            ? "กรุณาเลื่อนลง 👇 เพื่อดูวิดีโอ"
+                            : "Please scroll down 👇 to view the video"
+                        }
+                      </div>
+                    `
+                    : "";
+
+
+                const modeVideoButtons =
+                  buildYoutubeButtons(
+                    modeVideos,
+                    "video"
+                  );
+
+
+                return `
+                  <div
+                    class="bolus-mode-panel ${
+                      modeIndex === 0
+                        ? "active"
+                        : ""
+                    }"
+                    data-bolus-panel="${modeIndex}"
+                  >
+
+                    ${modeGuideHint}
+
+                    <div
+                      class="slide-images"
+                    >
+                      ${modeImageItems}
+                    </div>
+
+                    ${modeVideoHint}
+
+                    ${modeVideoButtons}
+
+                  </div>
+                `;
+              }
+            )
+            .join("");
+
+
+        return `
+  <div
+    class="bolus-mode-section"
+  >
+
+    <button
+      type="button"
+      class="bolus-dropdown-toggle"
+      aria-expanded="false"
+    >
+
+      <span
+        class="bolus-dropdown-label"
+      >
+        ${
+          currentLanguage === "th"
+            ? "เลือกวิธีคำนวณโบลัส"
+            : "Select Bolus Calculation Method"
+        }
+      </span>
+
+      <span
+        class="bolus-dropdown-icon"
+        aria-hidden="true"
+      >
+        ▼
+      </span>
+
+    </button>
+
+
+    <div
+      class="bolus-dropdown-menu"
+      hidden
+    >
+
+      <div
+        class="bolus-subnav"
+      >
+        ${bolusButtons}
+      </div>
+
+    </div>
+
+
+    <div
+      class="bolus-mode-content"
+    >
+      ${bolusPanels}
+    </div>
+
+  </div>
+`;
+
+      })()
+    : "";
+
               const placeholderTitle =
                 currentLanguage === "th"
                   ? "ยังไม่มีรูปคู่มือ"
@@ -2303,32 +2828,38 @@ const videoScrollHint =
   ${imageItems}
 </div>
 
+${bolusSection}
 
-  ${videoScrollHint}
+${videoScrollHint}
+
+${videoButtons}
 
 
-  ${videoButtons}
+                    ${
+  topicImages.length === 0 && !hasTopicVideos
+    ? `
+      <div
+        class="slide-placeholder show"
+      >
 
+        <div
+          class="placeholder-number"
+        >
+          ${step.number}
+        </div>
 
-                    <div
-                      class="slide-placeholder"
-                    >
+        <strong>
+          ${placeholderTitle}
+        </strong>
 
-                      <div
-                        class="placeholder-number"
-                      >
-                        ${step.number}
-                      </div>
+        <span>
+          ${placeholderText}
+        </span>
 
-                      <strong>
-                        ${placeholderTitle}
-                      </strong>
-
-                      <span>
-                        ${placeholderText}
-                      </span>
-
-                    </div>
+      </div>
+    `
+    : ""
+}
 
                   </div>
 
@@ -2652,19 +3183,467 @@ const videoScrollHint =
 
   bindCardEvents();
 
-
   bindResourceButtons();
 
+  bindBolusModeButtons();
 
   setupSliders();
 
-
   setupMissingImages();
-
 
   updateOpenCardHeight();
 
 }
+
+
+/* =========================================================
+   STEP 08 : BOLUS MODE BUTTON EVENTS
+   Move dropdown above resource cards
+========================================================= */
+
+function bindBolusModeButtons() {
+
+  const bolusSections =
+    document.querySelectorAll(
+      "#step08 .bolus-mode-section"
+    );
+
+
+  bolusSections.forEach(
+    (section) => {
+
+      /* =====================================================
+         ELEMENTS INSIDE BOLUS SECTION
+      ===================================================== */
+
+      const toggle =
+        section.querySelector(
+          ".bolus-dropdown-toggle"
+        );
+
+
+      const menu =
+        section.querySelector(
+          ".bolus-dropdown-menu"
+        );
+
+
+      const label =
+        section.querySelector(
+          ".bolus-dropdown-label"
+        );
+
+
+      const icon =
+        section.querySelector(
+          ".bolus-dropdown-icon"
+        );
+
+
+      const buttons =
+        Array.from(
+          section.querySelectorAll(
+            ".bolus-subnav-btn"
+          )
+        );
+
+
+      const panels =
+        Array.from(
+          section.querySelectorAll(
+            ".bolus-mode-panel"
+          )
+        );
+
+
+      /* =====================================================
+         FIND STEP 08 CARD + MAIN TOOLBAR
+      ===================================================== */
+
+      const stepCard =
+        section.closest(
+          "#step08"
+        );
+
+
+      if (!stepCard) {
+        return;
+      }
+
+
+      const manualToolbar =
+        stepCard.querySelector(
+          ".manual-toolbar"
+        );
+
+
+      const mainSubnav =
+        manualToolbar
+          ? manualToolbar.querySelector(
+              ".subnav"
+            )
+          : null;
+
+
+      if (
+        !manualToolbar ||
+        !mainSubnav ||
+        !toggle ||
+        !menu
+      ) {
+        return;
+      }
+
+
+      /* =====================================================
+         CREATE TOOLBAR SLOT
+         Place:
+         Main Navigate
+         ↓
+         Bolus Dropdown
+         ↓
+         Resource Cards
+      ===================================================== */
+
+      let toolbarSlot =
+        manualToolbar.querySelector(
+          ".bolus-toolbar-slot"
+        );
+
+
+      if (!toolbarSlot) {
+
+        toolbarSlot =
+          document.createElement(
+            "div"
+          );
+
+
+        toolbarSlot.className =
+          "bolus-toolbar-slot";
+
+
+        mainSubnav.insertAdjacentElement(
+          "afterend",
+          toolbarSlot
+        );
+
+      }
+
+
+      /* Move dropdown out of slide */
+
+      toolbarSlot.appendChild(
+        toggle
+      );
+
+
+      toolbarSlot.appendChild(
+        menu
+      );
+
+
+      /* =====================================================
+         SHOW DROPDOWN ONLY WHEN
+         MAIN NAV = BOLUS CALCULATION
+         Step 08 topic index 2
+      ===================================================== */
+
+      const mainNavButtons =
+        Array.from(
+          mainSubnav.querySelectorAll(
+            ".subnav-btn"
+          )
+        );
+
+
+      const setToolbarVisibility =
+        (topicIndex) => {
+
+          const isBolusTopic =
+            String(topicIndex) === "2";
+
+
+          toolbarSlot.hidden =
+            !isBolusTopic;
+
+
+          /* Close dropdown when leaving Bolus */
+
+          if (!isBolusTopic) {
+
+            menu.hidden = true;
+
+
+            toggle.setAttribute(
+              "aria-expanded",
+              "false"
+            );
+
+
+            if (icon) {
+
+              icon.textContent =
+                "▼";
+
+            }
+
+          }
+
+        };
+
+
+      /* Initial state */
+
+      const activeMainButton =
+        mainSubnav.querySelector(
+          ".subnav-btn.active"
+        );
+
+
+      setToolbarVisibility(
+        activeMainButton
+          ? activeMainButton.getAttribute(
+              "data-slide-target"
+            )
+          : "0"
+      );
+
+
+      /* Main Navigate click */
+
+      mainNavButtons.forEach(
+        (mainButton) => {
+
+          mainButton.addEventListener(
+            "click",
+            () => {
+
+              const targetIndex =
+                mainButton.getAttribute(
+                  "data-slide-target"
+                );
+
+
+              setToolbarVisibility(
+                targetIndex
+              );
+
+
+              requestAnimationFrame(
+                () => {
+
+                  updateOpenCardHeight();
+
+                }
+              );
+
+            }
+          );
+
+        }
+      );
+
+
+      /* =====================================================
+         OPEN / CLOSE BOLUS DROPDOWN
+      ===================================================== */
+
+      toggle.addEventListener(
+        "click",
+        (event) => {
+
+          event.preventDefault();
+          event.stopPropagation();
+
+
+          const isOpen =
+            toggle.getAttribute(
+              "aria-expanded"
+            ) === "true";
+
+
+          toggle.setAttribute(
+            "aria-expanded",
+            String(!isOpen)
+          );
+
+
+          menu.hidden =
+            isOpen;
+
+
+          if (icon) {
+
+            icon.textContent =
+              isOpen
+                ? "▼"
+                : "▲";
+
+          }
+
+
+          requestAnimationFrame(
+            () => {
+
+              updateOpenCardHeight();
+
+            }
+          );
+
+        }
+      );
+
+
+      /* =====================================================
+         SELECT BOLUS MODE
+      ===================================================== */
+
+      buttons.forEach(
+        (
+          button,
+          buttonIndex
+        ) => {
+
+          button.addEventListener(
+            "click",
+            (event) => {
+
+              event.preventDefault();
+              event.stopPropagation();
+
+
+              /* -----------------------------
+                 ACTIVE BUTTON
+              ----------------------------- */
+
+              buttons.forEach(
+                (
+                  item,
+                  index
+                ) => {
+
+                  item.classList.toggle(
+                    "active",
+                    index === buttonIndex
+                  );
+
+                }
+              );
+
+
+              /* -----------------------------
+                 ACTIVE CONTENT PANEL
+              ----------------------------- */
+
+              panels.forEach(
+                (
+                  panel,
+                  index
+                ) => {
+
+                  panel.classList.toggle(
+                    "active",
+                    index === buttonIndex
+                  );
+
+                }
+              );
+
+
+              /* -----------------------------
+                 UPDATE DROPDOWN LABEL
+              ----------------------------- */
+
+              if (label) {
+
+                label.textContent =
+                  button.textContent.trim();
+
+              }
+
+
+              /* -----------------------------
+                 CLOSE DROPDOWN
+              ----------------------------- */
+
+              menu.hidden = true;
+
+
+              toggle.setAttribute(
+                "aria-expanded",
+                "false"
+              );
+
+
+              if (icon) {
+
+                icon.textContent =
+                  "▼";
+
+              }
+
+
+              /* -----------------------------
+                 SCROLL BOLUS CONTENT TO TOP
+              ----------------------------- */
+
+              const activePanel =
+                panels[
+                  buttonIndex
+                ];
+
+
+              if (activePanel) {
+
+                const slideScroll =
+                  activePanel.closest(
+                    ".slide-scroll"
+                  );
+
+
+                if (slideScroll) {
+
+                  const sectionTop =
+                    section.offsetTop;
+
+
+                  slideScroll.scrollTo({
+                    top:
+                      Math.max(
+                        0,
+                        sectionTop - 12
+                      ),
+
+                    behavior:
+                      "smooth"
+                  });
+
+                }
+
+              }
+
+
+              requestAnimationFrame(
+                () => {
+
+                  updateOpenCardHeight();
+
+                }
+              );
+
+            }
+          );
+
+        }
+      );
+
+    }
+  );
+
+}
+
+
 /* =========================================================
    RESOURCE BUTTON EVENTS
 ========================================================= */

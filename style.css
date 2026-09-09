@@ -3799,16 +3799,27 @@ body {
 
 #step06 .slider-viewport,
 #step06 .slide,
-#step06 .slide-scroll {
+#step06 .slide-scroll,
+#step07 .slider-viewport,
+#step07 .slide,
+#step07 .slide-scroll,
+#step08 .slider-viewport,
+#step08 .slide,
+#step08 .slide-scroll {
   height: 560px !important;
 }
-#step06 .slide {
+
+#step06 .slide,
+#step07 .slide,
+#step08 .slide {
   flex: 0 0 560px !important;
 }
 
 /* Guide message above image */
 
-#step06 .multi-image-guide-hint {
+#step06 .multi-image-guide-hint,
+#step07 .multi-image-guide-hint,
+#step08 .multi-image-guide-hint {
   width: 100%;
 
   display: flex;
@@ -3828,7 +3839,9 @@ body {
 }
 
 
-#step06 .multi-image-scroll-text {
+#step06 .multi-image-scroll-text,
+#step07 .multi-image-scroll-text,
+#step08 .multi-image-scroll-text {
   display: inline-block;
 
   margin: 0;
@@ -3842,7 +3855,9 @@ body {
 
 /* Remove unnecessary space above/below Step 06 images */
 
-#step06 .slide-images {
+#step06 .slide-images,
+#step07 .slide-images,
+#step08 .slide-images {
   width: 100% !important;
 
   display: flex !important;
@@ -3859,7 +3874,9 @@ body {
 
 /* Keep the FIRST image completely visible */
 
-#step06 .slide-image {
+#step06 .slide-image,
+#step07 .slide-image,
+#step08 .slide-image {
   display: block !important;
 
   width: auto !important;
@@ -3883,20 +3900,25 @@ body {
 
   #step06 .slider-viewport,
   #step06 .slide,
-  #step06 .slide-scroll {
+  #step06 .slide-scroll,
+  #step07 .slider-viewport,
+  #step07 .slide,
+  #step07 .slide-scroll {
     height: 520px !important;
   }
-#step06 .slide {
-  flex: 0 0 520px !important;
-}
 
+  #step06 .slide,
+  #step07 .slide {
+    flex: 0 0 520px !important;
+  }
 
-  #step06 .slide-image {
+  #step06 .slide-image,
+  #step07 .slide-image {
     max-height: 460px !important;
   }
 
-
-  #step06 .multi-image-guide-hint {
+  #step06 .multi-image-guide-hint,
+  #step07 .multi-image-guide-hint {
     gap: 12px;
 
     margin: 0 0 2px !important;
@@ -3916,34 +3938,38 @@ body {
 
   #step06 .slider-viewport,
   #step06 .slide,
-  #step06 .slide-scroll {
+  #step06 .slide-scroll,
+  #step07 .slider-viewport,
+  #step07 .slide,
+  #step07 .slide-scroll {
     height: 460px !important;
   }
-#step06 .slide {
-  flex: 0 0 460px !important;
-}
 
+  #step06 .slide,
+  #step07 .slide {
+    flex: 0 0 460px !important;
+  }
 
-  #step06 .multi-image-guide-hint {
+  #step06 .multi-image-guide-hint,
+  #step07 .multi-image-guide-hint {
     gap: 6px;
 
     margin: 0 0 2px !important;
     padding: 2px 4px !important;
 
     font-size: 12px;
-
     flex-wrap: wrap;
   }
 
-
-  #step06 .slide-images {
+  #step06 .slide-images,
+  #step07 .slide-images {
     gap: 10px !important;
 
     padding: 0 4px 6px !important;
   }
 
-
-  #step06 .slide-image {
+  #step06 .slide-image,
+  #step07 .slide-image {
     width: auto !important;
     height: auto !important;
 
@@ -3954,6 +3980,821 @@ body {
     object-position: top center !important;
 
     margin: 0 auto !important;
+  }
+
+}
+/* =========================================================
+   STEP 08 : BOLUS SUB-NAVIGATION
+========================================================= */
+
+#step08 .bolus-mode-section {
+  width: 100%;
+  margin-top: 22px;
+}
+
+#step08 .bolus-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  padding: 0 8px;
+}
+
+#step08 .bolus-subnav-btn {
+  appearance: none;
+  border: 2px solid rgba(38, 196, 190, 0.35);
+  border-radius: 999px;
+  background: #ffffff;
+  color: #12609a;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.25;
+  padding: 9px 16px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+#step08 .bolus-subnav-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(20, 100, 232, 0.14);
+}
+
+#step08 .bolus-subnav-btn.active {
+  background: linear-gradient(
+    135deg,
+    #28c9c2,
+    #1fb7dc
+  );
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow:
+    0 5px 0 rgba(15, 112, 150, 0.16),
+    0 8px 18px rgba(31, 183, 220, 0.18);
+}
+
+
+/* =========================================================
+   BOLUS PANELS
+========================================================= */
+
+#step08 .bolus-mode-content {
+  width: 100%;
+}
+
+#step08 .bolus-mode-panel {
+  display: none;
+  width: 100%;
+}
+
+#step08 .bolus-mode-panel.active {
+  display: block;
+}
+
+
+/* =========================================================
+   BOLUS IMAGES
+========================================================= */
+
+#step08 .bolus-mode-panel .slide-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 0 6px 8px;
+}
+
+#step08 .bolus-mode-panel .slide-image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 460px;
+  object-fit: contain;
+  object-position: top center;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   BOLUS GUIDE / SCROLL TEXT
+========================================================= */
+
+#step08 .bolus-mode-panel .multi-image-guide-hint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+
+  width: 100%;
+  margin: 0 0 8px;
+  padding: 4px 8px;
+
+  text-align: center;
+  font-weight: 800;
+  color: #06427f;
+}
+
+#step08 .bolus-mode-panel .next-image-hint {
+  width: 100%;
+  margin: 10px 0 4px;
+
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  color: #06427f;
+}
+
+#step08 .bolus-mode-panel .video-scroll-message {
+  width: 100%;
+  margin: 14px 0 18px;
+
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.35;
+  font-weight: 800;
+  color: #06427f;
+  letter-spacing: 0.2px;
+}
+
+
+/* =========================================================
+   TABLET / iPAD
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  #step08 .bolus-subnav {
+    gap: 8px;
+  }
+
+  #step08 .bolus-subnav-btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  #step08 .bolus-mode-panel .slide-image {
+    max-height: 420px;
+  }
+
+  #step08 .bolus-mode-panel .multi-image-guide-hint {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  #step08 .bolus-mode-panel .video-scroll-message {
+    font-size: 22px;
+  }
+
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  #step08 .bolus-mode-section {
+    margin-top: 16px;
+  }
+
+  #step08 .bolus-subnav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+
+    width: 100%;
+    padding: 0 4px;
+  }
+
+  #step08 .bolus-subnav-btn {
+    width: 100%;
+    min-height: 42px;
+
+    border-radius: 14px;
+    padding: 8px 6px;
+
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  #step08 .bolus-mode-panel .slide-images {
+    gap: 10px;
+    padding: 0 4px 6px;
+  }
+
+  #step08 .bolus-mode-panel .slide-image {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 340px;
+
+    object-fit: contain;
+    object-position: top center;
+  }
+
+  #step08 .bolus-mode-panel .multi-image-guide-hint {
+    gap: 6px;
+    margin-bottom: 4px;
+    padding: 2px 4px;
+
+    font-size: 12px;
+  }
+
+  #step08 .bolus-mode-panel .next-image-hint {
+    margin: 8px 0 2px;
+    font-size: 12px;
+  }
+
+  #step08 .bolus-mode-panel .video-scroll-message {
+    margin: 12px 0 14px;
+    font-size: 18px;
+  }
+
+}
+/* =========================================================
+   STEP 08 : BOLUS DROPDOWN
+========================================================= */
+
+#step08 .bolus-dropdown-toggle {
+  width: 100%;
+  max-width: 520px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  margin: 0 auto 12px;
+  padding: 12px 18px;
+
+  border: 2px solid rgba(38, 196, 190, 0.38);
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  color: #12609a;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 14px rgba(20, 100, 232, 0.10);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+#step08 .bolus-dropdown-toggle:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 7px 18px rgba(20, 100, 232, 0.14);
+}
+
+
+#step08 .bolus-dropdown-toggle[aria-expanded="true"] {
+  border-color: #28c9c2;
+
+  box-shadow:
+    0 6px 18px rgba(40, 201, 194, 0.18);
+}
+
+
+#step08 .bolus-dropdown-label {
+  flex: 1;
+  text-align: left;
+}
+
+
+#step08 .bolus-dropdown-icon {
+  flex: 0 0 auto;
+
+  font-size: 14px;
+  line-height: 1;
+}
+
+
+#step08 .bolus-dropdown-menu {
+  width: 100%;
+  max-width: 760px;
+
+  margin: 0 auto 18px;
+}
+
+
+#step08 .bolus-dropdown-menu[hidden] {
+  display: none !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  #step08 .bolus-dropdown-toggle {
+    max-width: 480px;
+
+    padding: 11px 16px;
+
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  #step08 .bolus-dropdown-toggle {
+    width: calc(100% - 8px);
+    max-width: none;
+
+    margin-bottom: 10px;
+
+    padding: 10px 12px;
+
+    border-radius: 14px;
+
+    font-size: 13px;
+  }
+
+
+  #step08 .bolus-dropdown-menu {
+    width: 100%;
+    max-width: none;
+
+    margin-bottom: 14px;
+  }
+
+}
+/* =========================================================
+   STEP 08 : BOLUS TOOLBAR DROPDOWN
+   Desktop / Tablet / Phone
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   TOOLBAR SLOT
+   อยู่ใต้ Main Navigate และก่อน Resource Cards
+--------------------------------------------------------- */
+
+#step08 .bolus-toolbar-slot {
+  width: 100%;
+  margin: 6px 0 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: relative;
+  z-index: 20;
+}
+
+
+#step08 .bolus-toolbar-slot[hidden] {
+  display: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   DROPDOWN TOGGLE
+--------------------------------------------------------- */
+
+#step08 .bolus-toolbar-slot .bolus-dropdown-toggle {
+  width: 100%;
+  max-width: 520px;
+
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  margin: 0;
+
+  padding: 10px 18px;
+
+  border: 2px solid rgba(38, 196, 190, 0.45);
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  color: #12609a;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 14px rgba(20, 100, 232, 0.10);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+#step08 .bolus-toolbar-slot .bolus-dropdown-toggle:hover {
+  transform: translateY(-1px);
+
+  border-color: #28c9c2;
+
+  box-shadow:
+    0 7px 18px rgba(20, 100, 232, 0.14);
+}
+
+
+#step08
+.bolus-toolbar-slot
+.bolus-dropdown-toggle[aria-expanded="true"] {
+  border-color: #28c9c2;
+
+  box-shadow:
+    0 7px 18px rgba(40, 201, 194, 0.18);
+}
+
+
+#step08 .bolus-toolbar-slot .bolus-dropdown-label {
+  flex: 1;
+
+  min-width: 0;
+
+  text-align: left;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+#step08 .bolus-toolbar-slot .bolus-dropdown-icon {
+  flex: 0 0 auto;
+
+  font-size: 14px;
+  line-height: 1;
+
+  color: #12609a;
+}
+
+
+/* ---------------------------------------------------------
+   DROPDOWN MENU
+--------------------------------------------------------- */
+
+#step08 .bolus-toolbar-slot .bolus-dropdown-menu {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 8px 0 0;
+
+  padding: 10px;
+
+  border: 1px solid rgba(38, 196, 190, 0.30);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.98);
+
+  box-shadow:
+    0 8px 22px rgba(20, 100, 232, 0.12);
+
+  position: relative;
+  z-index: 30;
+}
+
+
+#step08
+.bolus-toolbar-slot
+.bolus-dropdown-menu[hidden] {
+  display: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   4 OPTIONS — ONE ROW ON COMPUTER
+--------------------------------------------------------- */
+
+#step08
+.bolus-toolbar-slot
+.bolus-subnav {
+  width: 100%;
+
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 8px;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+#step08
+.bolus-toolbar-slot
+.bolus-subnav-btn {
+  width: 100%;
+  min-width: 0;
+  min-height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 !important;
+  padding: 8px 10px;
+
+  border-radius: 14px;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 800;
+
+  line-height: 1.3;
+  text-align: center;
+
+  white-space: normal;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   TABLET / iPAD
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  #step08 .bolus-toolbar-slot {
+    margin:
+      6px 0 12px;
+  }
+
+
+  #step08
+  .bolus-toolbar-slot
+  .bolus-dropdown-toggle {
+    width: 100%;
+    max-width: 500px;
+
+    min-height: 46px;
+
+    padding:
+      9px 15px;
+
+    font-size: 14px;
+  }
+
+
+  #step08
+  .bolus-toolbar-slot
+  .bolus-dropdown-menu {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 8px;
+  }
+
+
+  /*
+     iPad:
+     ยังคง 4 ตัวเลือกในบรรทัดเดียว
+  */
+
+  #step08
+  .bolus-toolbar-slot
+  .bolus-subnav {
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+
+    gap: 6px;
+  }
+
+
+  #step08
+  .bolus-toolbar-slot
+  .bolus-subnav-btn {
+    min-height: 40px;
+
+    padding:
+      7px 6px;
+
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  #step08 .bolus-toolbar-slot {
+    width: 100%;
+
+    margin:
+      5px 0 10px;
+
+    align-items: stretch;
+  }
+
+
+  #step08
+  .bolus-toolbar-slot
+  .bolus-dropdown-toggle {
+    width: 100%;
+    max-width: none;
+
+    min-height: 44px;
+
+    padding:
+      9px 12px;
+
+    border-radius: 14px;
+
+    font-size: 13px;
+  }
+
+
+  #step08
+  .bolus-toolbar-slot
+  .bolus-dropdown-label {
+    white-space: nowrap;
+
+    font-size: 13px;
+  }
+
+
+  #step08
+  .bolus-toolbar-slot
+  .bolus-dropdown-menu {
+    width: 100%;
+    max-width: none;
+
+    margin-top: 6px;
+
+    padding: 7px;
+
+    border-radius: 14px;
+  }
+
+
+  /*
+     Phone:
+     2 × 2 เพื่อไม่ให้ภาษาไทยเบียด/ล้น
+  */
+
+  #step08
+  .bolus-toolbar-slot
+  .bolus-subnav {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 6px;
+  }
+
+
+  #step08
+  .bolus-toolbar-slot
+  .bolus-subnav-btn {
+    min-height: 40px;
+
+    padding:
+      7px 6px;
+
+    font-size: 11px;
+
+    line-height: 1.25;
+  }
+
+}
+/* =========================================================
+   STEP 08 : COMPACT BOLUS SUB-NAV
+   Keep labels on one line
+========================================================= */
+
+/* กล่องรวม 4 ปุ่ม */
+#step08
+.bolus-toolbar-slot
+.bolus-dropdown-menu {
+  padding: 6px 8px;
+}
+
+
+/* 4 ปุ่มในแถวเดียว */
+#step08
+.bolus-toolbar-slot
+.bolus-subnav {
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 6px;
+}
+
+
+/* ปรับกล่อง + ตัวหนังสือให้เล็กลง */
+#step08
+.bolus-toolbar-slot
+.bolus-subnav-btn {
+  min-height: 34px;
+
+  padding: 6px 7px;
+
+  font-size: 12px;
+  line-height: 1.15;
+
+  white-space: nowrap !important;
+
+  overflow: visible;
+  text-overflow: clip;
+}
+
+
+/* =========================================================
+   TABLET / iPAD
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  #step08
+  .bolus-toolbar-slot
+  .bolus-subnav {
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+
+    gap: 5px;
+  }
+
+
+  #step08
+  .bolus-toolbar-slot
+  .bolus-subnav-btn {
+    min-height: 32px;
+
+    padding: 5px 5px;
+
+    font-size: 10.5px;
+
+    white-space: nowrap !important;
+  }
+
+}
+
+
+/* =========================================================
+   PHONE
+   ใช้ 2 × 2 เพื่อไม่ให้ข้อความเล็กเกินไป
+========================================================= */
+
+@media (max-width: 760px) {
+
+  #step08
+  .bolus-toolbar-slot
+  .bolus-subnav {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 5px;
+  }
+
+
+  #step08
+  .bolus-toolbar-slot
+  .bolus-subnav-btn {
+    min-height: 32px;
+
+    padding: 5px 4px;
+
+    font-size: 10px;
+
+    white-space: nowrap !important;
   }
 
 }
