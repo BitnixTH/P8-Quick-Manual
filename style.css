@@ -4798,3 +4798,502 @@ body {
   }
 
 }
+
+/* =========================================================
+   STEP 09 : MULTI-IMAGE GUIDE + P8 MAINTENANCE BUTTON
+========================================================= */
+
+/* ---------- Multi-image guide ---------- */
+
+#step09 .slider-viewport,
+#step09 .slide,
+#step09 .slide-scroll {
+  height: 520px !important;
+}
+
+#step09 .slide {
+  flex: 0 0 520px !important;
+}
+
+#step09 .slide-scroll {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+#step09 .slide-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+  padding: 0 6px 10px;
+}
+
+#step09 .slide-image {
+  display: block;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 430px !important;
+  object-fit: contain !important;
+  object-position: top center !important;
+  margin: 0 auto !important;
+}
+
+#step09 .multi-image-guide-hint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  margin: 0 0 8px !important;
+  padding: 3px 6px !important;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  color: #06427f;
+}
+
+#step09 .next-image-hint {
+  width: 100%;
+  margin: 10px 0 4px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  color: #06427f;
+}
+
+/* ---------- Maintenance button ---------- */
+
+#step09 .resource-links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#step09 .resource-card {
+  /* TH / EN ใช้ขนาดเดียวกัน */
+  width: 720px;
+  max-width: 100%;
+  min-height: 104px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 12px 18px;
+  overflow: hidden;
+
+  border: 2px solid rgba(53, 208, 199, 0.42);
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #baf5ea 0%,
+      #9be9df 62%,
+      #82dcd5 100%
+    );
+
+  box-shadow:
+    0 8px 0 rgba(52, 156, 169, 0.22),
+    0 13px 22px rgba(36, 107, 140, 0.16),
+    inset 0 2px 3px rgba(255, 255, 255, 0.78);
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+
+  cursor: pointer;
+}
+
+#step09 .resource-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 0 rgba(52, 156, 169, 0.22),
+    0 16px 25px rgba(36, 107, 140, 0.18),
+    inset 0 2px 3px rgba(255, 255, 255, 0.82);
+}
+
+#step09 .resource-card:active {
+  transform: translateY(4px);
+  box-shadow:
+    0 3px 0 rgba(52, 156, 169, 0.22),
+    0 7px 14px rgba(36, 107, 140, 0.14),
+    inset 0 2px 3px rgba(255, 255, 255, 0.72);
+}
+
+#step09 .resource-card-icon {
+  width: 112px;
+  height: 82px;
+  flex: 0 0 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 18px;
+  background:
+    linear-gradient(
+      145deg,
+      #6be5dc 0%,
+      #36c7d0 100%
+    );
+  box-shadow:
+    0 5px 10px rgba(17, 99, 141, 0.20),
+    inset 0 2px 3px rgba(255, 255, 255, 0.60);
+}
+
+#step09 .resource-card-icon-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  object-fit: contain;
+  object-position: center;
+}
+
+#step09 .resource-card-copy {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 2px;
+  padding-right: 12px;
+
+  text-align: left;
+}
+
+#step09 .resource-card-title {
+  display: block;
+  margin: 0 0 5px;
+  color: #08497f;
+
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+#step09 .resource-card-subtitle {
+  display: block;
+  margin: 0;
+  color: #15527a;
+
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.25;
+
+  white-space: nowrap;
+  overflow: visible;
+}
+
+#step09 .resource-card-arrow {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background:
+    linear-gradient(
+      145deg,
+      #32d2c9 0%,
+      #23a8e4 100%
+    );
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 900;
+  box-shadow:
+    0 5px 9px rgba(21, 116, 160, 0.20),
+    inset 0 2px 2px rgba(255, 255, 255, 0.30);
+}
+
+/* ---------- Tablet / iPad ---------- */
+
+@media (max-width: 1024px) {
+  #step09 .slider-viewport,
+  #step09 .slide,
+  #step09 .slide-scroll {
+    height: 500px !important;
+  }
+
+  #step09 .slide {
+    flex: 0 0 500px !important;
+  }
+
+  #step09 .slide-image {
+    max-height: 410px !important;
+  }
+
+  #step09 .multi-image-guide-hint {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  #step09 .next-image-hint {
+    font-size: 14px;
+  }
+
+  #step09 .resource-card {
+    min-height: 94px;
+    gap: 14px;
+    padding: 10px 14px;
+    border-radius: 20px;
+  }
+
+  #step09 .resource-card-icon {
+    width: 94px;
+    height: 72px;
+    flex: 0 0 94px;
+    border-radius: 15px;
+  }
+
+  #step09 .resource-card-title {
+    font-size: 17px;
+  }
+
+  #step09 .resource-card-subtitle {
+    font-size: 13px;
+  }
+
+  #step09 .resource-card-arrow {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    font-size: 21px;
+  }
+}
+
+/* ---------- Phone ---------- */
+
+@media (max-width: 760px) {
+  #step09 .slider-viewport,
+  #step09 .slide,
+  #step09 .slide-scroll {
+    height: 460px !important;
+  }
+
+  #step09 .slide {
+    flex: 0 0 460px !important;
+  }
+
+  #step09 .slide-images {
+    gap: 10px;
+    padding: 0 4px 8px;
+  }
+
+  #step09 .slide-image {
+    max-width: 100% !important;
+    max-height: 360px !important;
+  }
+
+  #step09 .multi-image-guide-hint {
+    gap: 6px;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+
+  #step09 .next-image-hint {
+    font-size: 12px;
+  }
+
+  #step09 .resource-card {
+    min-height: 82px;
+    gap: 9px;
+    padding: 8px 10px;
+    border-radius: 17px;
+    box-shadow:
+      0 6px 0 rgba(52, 156, 169, 0.20),
+      0 10px 17px rgba(36, 107, 140, 0.14),
+      inset 0 2px 3px rgba(255, 255, 255, 0.75);
+  }
+
+  #step09 .resource-card-icon {
+    width: 72px;
+    height: 62px;
+    flex: 0 0 72px;
+    border-radius: 13px;
+  }
+
+  #step09 .resource-card-icon-image {
+    padding: 2px;
+  }
+
+  #step09 .resource-card-copy {
+    padding-left: 0;
+  }
+
+  #step09 .resource-card-title {
+    margin-bottom: 2px;
+    font-size: 14px;
+    line-height: 1.15;
+  }
+
+  #step09 .resource-card-subtitle {
+    font-size: 10.5px;
+    line-height: 1.2;
+  }
+
+  #step09 .resource-card-arrow {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+    font-size: 20px;
+  }
+}
+/* =========================================================
+   STEP 10 — DIABETES CARE
+   Match Step 09 sizing / responsive pattern
+========================================================= */
+
+#step10 .slider-viewport,
+#step10 .slide,
+#step10 .slide-scroll {
+  height: 520px !important;
+}
+
+#step10 .slide {
+  flex: 0 0 520px !important;
+}
+
+#step10 .slide-scroll {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+#step10 .slide-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+  padding: 0 6px 10px;
+}
+
+#step10 .slide-image {
+  display: block;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 430px !important;
+  object-fit: contain !important;
+  object-position: top center !important;
+  margin: 0 auto !important;
+}
+
+#step10 .multi-image-guide-hint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 0 8px !important;
+  padding: 3px 6px !important;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  color: #06427f;
+}
+
+#step10 .next-image-hint {
+  width: 100%;
+  margin: 2px 0 8px;
+  text-align: center;
+}
+
+/* Tablet / iPad */
+@media (max-width: 1024px) {
+  #step10 .slider-viewport,
+  #step10 .slide,
+  #step10 .slide-scroll {
+    height: 500px !important;
+  }
+
+  #step10 .slide {
+    flex: 0 0 500px !important;
+  }
+
+  #step10 .slide-image {
+    max-height: 410px !important;
+  }
+
+  #step10 .multi-image-guide-hint {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  #step10 .next-image-hint {
+    font-size: 14px;
+  }
+}
+
+/* Phone */
+@media (max-width: 760px) {
+  #step10 .slider-viewport,
+  #step10 .slide,
+  #step10 .slide-scroll {
+    height: 460px !important;
+  }
+
+  #step10 .slide {
+    flex: 0 0 460px !important;
+  }
+
+  #step10 .slide-images {
+    gap: 10px;
+    padding: 0 4px 8px;
+  }
+
+  #step10 .slide-image {
+    max-width: 100% !important;
+    max-height: 360px !important;
+  }
+
+  #step10 .multi-image-guide-hint {
+    gap: 6px;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+
+  #step10 .next-image-hint {
+    font-size: 12px;
+  }
+}
+
+/* =========================================================
+   STEP 10 — CATEGORY NAVIGATION
+   5 categories / 10 actual slides
+========================================================= */
+
+#step10 .subnav {
+  flex-wrap: wrap;
+  overflow-x: visible;
+}
+
+#step10 .subnav-btn {
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  #step10 .subnav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 760px) {
+  #step10 .subnav-btn {
+    padding: 9px 13px;
+    font-size: 11px;
+  }
+}

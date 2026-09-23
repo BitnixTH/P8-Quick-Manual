@@ -1572,157 +1572,201 @@ const steps = [
 },
 
 
-  /* =======================================================
-     STEP 09
-     ALERTS + P8 CARE
-  ======================================================= */
+/* =======================================================
+   STEP 09
+   ALERTS + P8 CARE
+======================================================= */
 
-  {
-    id:
-      "step09",
+{
+  id: "step09",
 
-    number:
-      "09",
+  number: "09",
 
-    icon:
-      "Image/Icon-9.png",
+  icon:
+    "Image/Icon-9.png",
 
-    pathTH:
-      "แจ้งเตือนและ<br>การดูแล P8",
+  pathTH:
+    "แจ้งเตือนและ<br>การดูแล P8",
 
-    pathEN:
-      "P8 Alerts<br>& Care",
+  pathEN:
+    "P8 Alerts<br>& Care",
 
-    titleTH:
-      "การแจ้งเตือนและการดูแลรักษา P8",
+  titleTH:
+    "การแจ้งเตือนและการดูแลรักษา P8",
 
-    titleEN:
-      "P8 Alerts and Maintenance",
+  titleEN:
+    "P8 Alerts and Maintenance",
 
-    descriptionTH:
-      "การแจ้งเตือนของ P8 → การฉีดอินซูลินผิดพลาด → การตรวจสอบประวัติการแจ้งเตือน → การเก็บรักษา P8 → การบำรุงรักษาและทำความสะอาด",
+  descriptionTH:
+    "ฟังก์ชันการทำงานของผลิตภัณฑ์ → การแจ้งเตือนและการดูแลรักษา P8",
 
-    descriptionEN:
-      "P8 Alerts → Injection Errors → Review Alert History → P8 Storage → Maintenance and Cleaning",
+  descriptionEN:
+    "Product Functions → P8 Alerts and Maintenance",
 
-    topics: [
+  playlistsTH: [],
+  playlistsEN: [],
 
-      {
-        th:
-          "การแจ้งเตือนของ P8",
+  topics: [
 
-        en:
-          "P8 Alerts"
-      },
+    {
+      th:
+        "แจ้งเตือนและการดูแลรักษา P8",
 
-      {
-        th:
-          "การฉีดอินซูลินผิดพลาด",
+      en:
+        "P8 Alerts and Maintenance",
 
-        en:
-          "Injection Errors"
-      },
+      imagesTH: [
+        "Image/step-09/th/9.1-TH.png",
+        "Image/step-09/th/9.2-TH.png",
+        "Image/step-09/th/9.3-TH.png"
+      ],
 
-      {
-        th:
-          "การตรวจสอบประวัติการแจ้งเตือน",
+      imagesEN: [
+        "Image/step-09/en/9.1-EN.png",
+        "Image/step-09/en/9.2-EN.png",
+        "Image/step-09/en/9.3-EN.png"
+      ]
+    }
 
-        en:
-          "Alert History"
-      },
+  ],
 
-      {
-        th:
-          "การเก็บรักษา P8",
+  resources: [
+    {
+      type: "external",
 
-        en:
-          "P8 Storage"
-      },
+      kind:
+        "maintenance",
 
-      {
-        th:
-          "การบำรุงรักษาและทำความสะอาด",
+      iconImage:
+        "Image/P8-Fixingman-Icon.png",
 
-        en:
-          "Maintenance & Cleaning"
-      }
+      labelTH:
+        "แจ้งซ่อมอุปกรณ์ P8",
 
-    ],
+      labelEN:
+        "P8 Device Maintenance",
 
-    images: [
+      subtitleTH:
+        "เราพร้อมดูแลและให้บริการอย่างเต็มที่",
 
-      "Image/Step09-1.png",
+      subtitleEN:
+        "We are ready to take care and provide full support",
 
-      "Image/Step09-2.png",
+      urlTH:
+        "https://script.google.com/macros/s/AKfycbwxDtUfkbHmzvhyjFyyzYJ-e-vJyN8NJECJ3Y-txv5Gz59VVpXa86_UVizZfUOJJ0HT/exec",
 
-      "Image/Step09-3.png",
+      urlEN:
+        "https://script.google.com/macros/s/AKfycbwxDtUfkbHmzvhyjFyyzYJ-e-vJyN8NJECJ3Y-txv5Gz59VVpXa86_UVizZfUOJJ0HT/exec"
+    }
+  ]
 
-      "Image/Step09-4.png",
-
-      "Image/Step09-5.png"
-
-    ]
-  },
-
+},
 
   /* =======================================================
      STEP 10
      DIABETES CARE
+     Same slider pattern as STEP 09
+     5 topics / 10 images
   ======================================================= */
 
   {
-    id:
-      "step10",
+    id: "step10",
 
-    number:
-      "10",
+    number: "10",
 
-    icon:
-      "Image/Icon-10.png",
+    icon: "Image/Icon-10.png",
 
-    pathTH:
-      "ดูแลเบาหวาน",
+    pathTH: "ดูแลเบาหวาน",
+    pathEN: "Diabetes Care",
 
-    pathEN:
-      "Diabetes Care",
-
-    titleTH:
-      "คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน",
-
-    titleEN:
-      "Additional Diabetes Care Guidance",
+    titleTH: "คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน",
+    titleEN: "Additional Diabetes Care Guidance",
 
     descriptionTH:
-      "คำแนะนำด้านอาหาร → คำแนะนำด้านการออกกำลังกาย",
+      "พื้นฐานอินซูลิน → CGM → อาหาร → การปรับอินซูลิน → การออกกำลังกาย",
 
     descriptionEN:
-      "Diet Guidance → Exercise Guidance",
+      "Insulin Basics → CGM → Diet → Insulin Adjustment → Exercise",
+
+    playlistsTH: [],
+    playlistsEN: [],
 
     topics: [
 
       {
-        th:
-          "คำแนะนำด้านอาหาร",
+        th: "พื้นฐานอินซูลิน",
+        en: "Insulin Basics",
 
-        en:
-          "Diet Guidance"
+        imagesTH: [
+          "Image/step-10/th/1-10-TH.png"
+        ],
+
+        imagesEN: [
+          "Image/step-10/en/01-10-EN.png"
+        ]
       },
 
       {
-        th:
-          "คำแนะนำด้านการออกกำลังกาย",
+        th: "CGM",
+        en: "CGM",
 
-        en:
-          "Exercise Guidance"
+        imagesTH: [
+          "Image/step-10/th/2-10-TH.png"
+        ],
+
+        imagesEN: [
+          "Image/step-10/en/02-10-EN.png"
+        ]
+      },
+
+      {
+        th: "อาหารสำหรับผู้ป่วยเบาหวาน",
+        en: "Diabetes Diet",
+
+        imagesTH: [
+          "Image/step-10/th/3-10-TH.png"
+        ],
+
+        imagesEN: [
+          "Image/step-10/en/03-10-EN.png"
+        ]
+      },
+
+      {
+        th: "การปรับอินซูลิน",
+        en: "Insulin Adjustment",
+
+        imagesTH: [
+          "Image/step-10/th/4-10-TH.png",
+          "Image/step-10/th/5-10-TH.png",
+          "Image/step-10/th/6-10-TH.png"
+        ],
+
+        imagesEN: [
+          "Image/step-10/en/04-10-EN.png",
+          "Image/step-10/en/05-10-EN.png",
+          "Image/step-10/en/06-10-EN.png"
+        ]
+      },
+
+      {
+        th: "การออกกำลังกาย",
+        en: "Exercise",
+
+        imagesTH: [
+          "Image/step-10/th/7-10-TH.png",
+          "Image/step-10/th/8-10-TH.png",
+          "Image/step-10/th/9-10-TH.png",
+          "Image/step-10/th/10-10-TH.png"
+        ],
+
+        imagesEN: [
+          "Image/step-10/en/07-10-EN.png",
+          "Image/step-10/en/08-10-EN.png",
+          "Image/step-10/en/09-10-EN.png",
+          "Image/step-10/en/10-10-EN.png"
+        ]
       }
-
-    ],
-
-    images: [
-
-      "Image/Step10-1.png",
-
-      "Image/Step10-2.png"
 
     ]
   }
@@ -2276,30 +2320,46 @@ function buildManual() {
           : "Hide details";
 
 
+      const navigationItems =
+        Array.isArray(step.navigation) &&
+        step.navigation.length > 0
+          ? step.navigation
+          : step.topics.map(
+              (topic, topicIndex) => ({
+                th: topic.th,
+                en: topic.en,
+                start: topicIndex,
+                end: topicIndex
+              })
+            );
+
+
       const topicButtons =
-        step.topics
+        navigationItems
           .map(
             (
-              topic,
-              topicIndex
+              item,
+              navIndex
             ) => {
 
               const label =
                 currentLanguage === "th"
-                  ? topic.th
-                  : topic.en;
+                  ? item.th
+                  : item.en;
 
 
               return `
 
                 <button
                   class="subnav-btn ${
-                    topicIndex === 0
+                    navIndex === 0
                       ? "active"
                       : ""
                   }"
                   type="button"
-                  data-slide-target="${topicIndex}"
+                  data-slide-target="${item.start}"
+                  data-slide-start="${item.start}"
+                  data-slide-end="${item.end}"
                 >
 
                   ${label}
@@ -2388,8 +2448,12 @@ function buildManual() {
 
 
              const isMultiImageGuide =
-  ["06", "07", "08"].includes(step.number) &&
+  ["06", "07", "08", "09"].includes(step.number) &&
   topicImages.length > 1;
+
+const showStep10ImageGuide =
+  step.number === "10" &&
+  topicImages.length > 0;
 
 
 const imageItems =
@@ -2406,7 +2470,8 @@ const imageItems =
 
 
         const nextImageHint =
-          isMultiImageGuide &&
+          (isMultiImageGuide || showStep10ImageGuide) &&
+          topicImages.length > 1 &&
           !isLastImage
 
             ? `
@@ -2441,24 +2506,30 @@ const imageItems =
     .join("");
 
     const multiImageGuideHint =
-  isMultiImageGuide
+  (isMultiImageGuide || showStep10ImageGuide)
     ? `
       <div class="multi-image-guide-hint">
         <span>
           ${
             currentLanguage === "th"
               ? `📑 คู่มือนี้มี ${topicImages.length} ภาพ`
-              : `📑 This guide contains ${topicImages.length} images`
+              : `📑 This guide contains ${topicImages.length} image${topicImages.length === 1 ? "" : "s"}`
           }
         </span>
 
-        <span class="multi-image-scroll-text">
-          ${
-            currentLanguage === "th"
-              ? "กรุณาเลื่อนลง 👇 เพื่อดูขั้นตอนถัดไป"
-              : "Please scroll down 👇 to view the next step"
-          }
-        </span>
+        ${
+          topicImages.length > 1
+            ? `
+              <span class="multi-image-scroll-text">
+                ${
+                  currentLanguage === "th"
+                    ? "กรุณาเลื่อนลง 👇 เพื่อดูขั้นตอนถัดไป"
+                    : "Please scroll down 👇 to view the next step"
+                }
+              </span>
+            `
+            : ""
+        }
       </div>
     `
     : "";
@@ -4404,6 +4475,7 @@ function setupSingleSlider(slider) {
   }
 
 
+
   /* -------------------------------------------------------
      GET CURRENT SCROLL AREA
   ------------------------------------------------------- */
@@ -4606,9 +4678,25 @@ function setupSingleSlider(slider) {
         index
       ) => {
 
+        const start =
+          Number(
+            button.dataset.slideStart ??
+            button.dataset.slideTarget ??
+            index
+          );
+
+
+        const end =
+          Number(
+            button.dataset.slideEnd ??
+            start
+          );
+
+
         button.classList.toggle(
           "active",
-          index === currentIndex
+          currentIndex >= start &&
+          currentIndex <= end
         );
 
       }
@@ -4721,6 +4809,7 @@ function setupSingleSlider(slider) {
     updateSubnav();
 
 
+
     updateSliderButtons();
 
 
@@ -4776,8 +4865,15 @@ function setupSingleSlider(slider) {
             event.stopPropagation();
 
 
+            const targetIndex =
+              Number(
+                button.dataset.slideTarget ??
+                index
+              );
+
+
             showSlide(
-              index
+              targetIndex
             );
 
           }
