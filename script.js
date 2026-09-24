@@ -1104,7 +1104,7 @@ const steps = [
   pathTH: "รู้จัก<br>DIA:CONN",
   pathEN: "DIA:CONN<br>App",
 
-  titleTH: "ทำความรู้จัก DIA:CONN App",
+  titleTH: "ทำความรู้จักแอป  DIA:CONN",
   titleEN: "Getting to Know the DIA:CONN App",
 
   descriptionTH:
