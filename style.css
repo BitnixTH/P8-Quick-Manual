@@ -5326,3 +5326,67 @@ body {
     white-space: normal !important; overflow-wrap: normal !important; word-break: keep-all !important; line-height: 1.35 !important;
   }
 }
+/* =========================================================
+   iPad — YouTube / Video buttons: 1 button per row
+   ========================================================= */
+
+@media (min-width: 761px) and (max-width: 1180px) {
+
+  /* กล่องที่ครอบปุ่มวิดีโอ ให้เรียงลงแนวตั้ง */
+  .video-buttons,
+  .youtube-buttons,
+  .playlist-buttons,
+  .video-grid,
+  .youtube-grid,
+  .playlist-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    max-width: 760px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    gap: 14px !important;
+  }
+
+  /* แต่ละปุ่มกินเต็ม 1 แถว */
+  :is(
+    .youtube-button,
+    .youtube-btn,
+    .youtube-card,
+    .video-button,
+    .video-btn,
+    .video-card,
+    .playlist-button,
+    .playlist-btn,
+    .playlist-card
+  ) {
+    width: 100% !important;
+    max-width: 760px !important;
+    min-width: 0 !important;
+    min-height: 88px !important;
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 16px 24px !important;
+  }
+
+  /* ข้อความให้อ่านเป็นคำตามปกติ */
+  :is(
+    .youtube-button,
+    .youtube-btn,
+    .youtube-card,
+    .video-button,
+    .video-btn,
+    .video-card,
+    .playlist-button,
+    .playlist-btn,
+    .playlist-card
+  ) :is(.label, .text, .title, span, p) {
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    line-break: auto !important;
+    line-height: 1.4 !important;
+  }
+}
