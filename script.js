@@ -2885,9 +2885,15 @@ const bolusSection =
                   data-topic-index="${topicIndex}"
                 >
 
-                  <div
-  class="slide-scroll"
->
+                <div
+                  class="slide-scroll"
+                >
+
+                  <div class="ipad-pinch-hint" aria-hidden="true">
+                    <span class="ipad-pinch-icon">🤏</span>
+                    <span class="ipad-pinch-th">ใช้นิ้ว ย่อ–ขยายภาพ เพื่อดูรายละเอียด</span>
+                    <span class="ipad-pinch-en">Pinch to zoom the image for details</span>
+                  </div>
 
   ${imageZoomHint}
 

@@ -5297,3 +5297,32 @@ body {
     font-size: 11px;
   }
 }
+
+/* =========================================================
+   iPad UX — pinch hint + wider YouTube CTA
+   Added 2026-09-24
+========================================================= */
+
+.ipad-pinch-hint { display: none; }
+
+@media (min-width: 761px) and (max-width: 1180px) {
+  .ipad-pinch-hint {
+    width: min(100%, 760px); margin: 0 auto 14px; padding: 12px 18px;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    text-align: center; color: #0b4f91; background: linear-gradient(145deg, #ffffff, #eaf8ff);
+    border: 2px dashed #67aef6; border-radius: 18px; box-shadow: 0 6px 16px rgba(28,101,160,.10);
+    font-size: 18px; font-weight: 850; line-height: 1.35;
+  }
+  .ipad-pinch-icon { flex: 0 0 auto; font-size: 24px; }
+  .ipad-pinch-en { display: none; }
+  html[lang="en"] .ipad-pinch-th { display: none; }
+  html[lang="en"] .ipad-pinch-en { display: inline; }
+
+  :is(.youtube-button,.youtube-btn,.youtube-card,.video-button,.video-btn,.video-card,.playlist-button,.playlist-btn,.playlist-card) {
+    width: min(100%, 760px) !important; max-width: 760px !important; min-height: 92px !important;
+    margin-left: auto !important; margin-right: auto !important; padding-left: 24px !important; padding-right: 24px !important;
+  }
+  :is(.youtube-button,.youtube-btn,.youtube-card,.video-button,.video-btn,.video-card,.playlist-button,.playlist-btn,.playlist-card) :is(.label,.text,.title,span,p) {
+    white-space: normal !important; overflow-wrap: normal !important; word-break: keep-all !important; line-height: 1.35 !important;
+  }
+}
