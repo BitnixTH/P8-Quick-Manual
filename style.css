@@ -650,6 +650,15 @@ body {
   line-height: 1.28;
 }
 
+/* Full Module 03 label; keep other sidebar cards unchanged. */
+.side-button:is([data-step-index="2"], [data-target="step03"]) > span:last-child {
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  line-height: 1.2;
+}
+
 
 /* =========================================================
    CARDS
