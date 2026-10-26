@@ -1,0 +1,690 @@
+{
+  "sourceDocument": "https://docs.google.com/document/d/1BzELARn-08ygePD0YIJcTCsQg3xqHjz1riEmH6B-y9Q/edit",
+  "replacementInstructions": "Replace each enPath in place with the completed English slide. Preserve exact path and filename. No code change is needed. Update status after replacement. Do not overwrite TH files.",
+  "assets": [
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/01-Get to Know the P8 Kit Components/1.1P8 Kit Components/P8 Kit Components.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/01-รู้จักอุปกรณ์ในชุด P8/1.1ชุดอุปกรณ์ P8/ชุดอุปกรณ์ P8.png",
+      "status": "temporary-thai-copy",
+      "sha256": "bf1323decbf68406d8e2973093c0515c9c32aa55b511b7687f05eb46b09e66c5"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/01-Get to Know the P8 Kit Components/1.2Compatibility/Compatibility.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/01-รู้จักอุปกรณ์ในชุด P8/1.2ความเข้ากันได้/ความเข้ากันได้.png",
+      "status": "temporary-thai-copy",
+      "sha256": "2a7233306a170c727f41e23314f4c03c0404e6aeeaebfdb65d456011a6294203"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/01-Get to Know the P8 Kit Components/1.3P8 Structure/P8 Structure.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/01-รู้จักอุปกรณ์ในชุด P8/1.3โครงสร้าง P8/โครงสร้าง P8.png",
+      "status": "temporary-thai-copy",
+      "sha256": "e80f730c2f4ca3e5414abbbb2270a3b0ec23b609eecefe5169b473d51b41380e"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/01-Get to Know the P8 Kit Components/1.4Button Functions/Button Functions.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/01-รู้จักอุปกรณ์ในชุด P8/1.4การทำงานของปุ่ม/การทำงานของปุ่ม.png",
+      "status": "temporary-thai-copy",
+      "sha256": "16167b46c073401dd6e03eaa2914c0cae0e03f6786527a053ecf8c277610a0bc"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/02-P8 Structure and Menus/2.1P8 Screen Layout/P8 Screen Layout.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/02-โครงสร้างและเมนูของ P8/2.1โครงสร้างหน้าจอ P8/โครงสร้างหน้าจอ P8.png",
+      "status": "temporary-thai-copy",
+      "sha256": "57325312dce1ecbd1f628229fe2807878dd1ca9d43d641046e34dfe809a90cbb"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/02-P8 Structure and Menus/2.2P8 Main Menu Structure/P8 Main Menu Structure.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/02-โครงสร้างและเมนูของ P8/2.2โครงสร้างเมนูหลัก P8/โครงสร้างเมนูหลัก P8.png",
+      "status": "temporary-thai-copy",
+      "sha256": "26dae4c12b88b2e51d3b0323f3ea62c48d7e05bf6aeeaf38e251973731f00c45"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/03-Power On:Off and Screen Operation/3.1P8 Power On:Off and Screen Sleep Mode/P8 Power On:Off and Screen Sleep Mode.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/03-การเปิด-ปิดและการใช้งานหน้าจอ/3.1เปิด-ปิด และโหมดพักหน้อจอ P8/เปิด-ปิด และโหมดพักหน้อจอ P8.png",
+      "status": "temporary-thai-copy",
+      "sha256": "db20ade50ab9b9ae85ef975474d96aa5e69e94af32af8398233d0691dec1bd28"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.1P8 Pen Registration and Pairing/P8 Pen Registration and Pairing-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.1ลงทะเบียนและจับคู่ปากกา P8/ลงทะเบียนและจับคู่ปากกา P8-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "b83d67e38508baa2787e9dd593544c72ab601883e50dcd661172af61be3d8a71"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.1P8 Pen Registration and Pairing/P8 Pen Registration and Pairing-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.1ลงทะเบียนและจับคู่ปากกา P8/ลงทะเบียนและจับคู่ปากกา P8-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "e08f220c2e48c4052fcd1d3f44fa099893f0685668c11f70f5296327ece973a0"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.2Unpairing the P8 Pen/Unpairing the P8 Pen.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.2เลิกจับคู่ปากกา P8/เลิกจับคู่ปากกา P8.png",
+      "status": "temporary-thai-copy",
+      "sha256": "b92d16243240de8ef7fd837f56a27b8f2310f6a4bca65c7d259ae6e788baefe0"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.3Find My P8 Pen/Find My P8 Pen.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.3ค้นหาปากกา P8/ค้นหาปากกา P8.png",
+      "status": "temporary-thai-copy",
+      "sha256": "4af4b5bbdf3c3d88bf3c8cd7591b439ac5f9b02a09090eba0b15b45f4ab2d3bc"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.4Device Settings-Injection Speed/Device Settings-Injection Speed.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.4ตั้งค่าอุปกรณ์-ความเร็วในการฉีด/ตั้งค่าอุปกรณ์-ความเร็วในการฉีด.png",
+      "status": "temporary-thai-copy",
+      "sha256": "906077fc6ca2cdcbe52b1753e992de45d882aa1e2fd542bd178f7e7bdbe168e4"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.5Device Settings-Post-Injection Hold Time/Device Settings-Post-Injection Hold Time.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.5ตั้งค่าอุปกรณ์-ระยะเวลารอหลังฉีดยา/ตั้งค่าอุปกรณ์-ระยะเวลารอหลังฉีดยา.png",
+      "status": "temporary-thai-copy",
+      "sha256": "de9fcb2d85114e2ca5ad7b1e00584ee5776f04ae0e67417ec8907ea533798182"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.6Device Settings-Maximum Insulin Dose per Injection/4.6 Device Settings-Maximum Insulin Dose per Injection.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.6ตั้งค่าอุปกรณ์-จำกัดปริมาณอินซูลินสูงสุดต่อครั้ง/ตั้งค่าอุปกรณ์-จำกัดปริมาณอินซูลินสูงสุดต่อครั้ง.png",
+      "status": "temporary-thai-copy",
+      "sha256": "5d066e1ce4392f50a2f9e27184f5bcbfde50e2a05f12c9eb3098b1d545596287"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.7 Device Settings-Insulin/4.7 Device Settings-Insulin.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.7ตั้งค่าอุปกรณ์-อินซูลิน/ตั้งค่าอุปกรณ์-อินซูลิน.png",
+      "status": "temporary-thai-copy",
+      "sha256": "c4de2c567176bd46ca6eef48f8ad217d5a4a22e7a242f7e78ea50a24ea2f9e0a"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/05-P8 Cartridge Replacement/5.1P8 Cartridge Replacement/P8 Cartridge Replacement.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/05-การเปลี่ยนคาร์ทริดจ์ P8/5.1การเปลี่ยนคาร์ทริดจ์ P8/การเปลี่ยนคาร์ทริดจ์ P8.png",
+      "status": "temporary-thai-copy",
+      "sha256": "1a24036bcd95d789a17550ff18da598e594c93bdcb33470a984b219965aa2eca"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/05-P8 Cartridge Replacement/5.2P8-Compatible Insulin and Pen Needles/P8-Compatible Insulin and Pen Needles.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/05-การเปลี่ยนคาร์ทริดจ์ P8/5.2อินซูลินและเข็มที่รองรับ P8/อินซูลินและเข็มที่รองรับ P8.png",
+      "status": "temporary-thai-copy",
+      "sha256": "fb3bada2c789fe080e68c43aafb5047f0c71a77a4c24f9977a37c5762d0d2894"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.1 Connect iCan CGM (i6:H6)*/Connect iCan CGM (i6:H6)-1*.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.1เชื่อมต่อ iCan CGM (i6:H6)*/เชื่อมต่อ iCan CGM (i6:H6)-1*.png",
+      "status": "temporary-thai-copy",
+      "sha256": "a30d45a0ae821f65235ded1b7efa38fcc10fafbad6c5e22018fc97dd7b00efcb"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.1 Connect iCan CGM (i6:H6)*/Connect iCan CGM (i6:H6)-2*.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.1เชื่อมต่อ iCan CGM (i6:H6)*/เชื่อมต่อ iCan CGM (i6:H6)-2*.png",
+      "status": "temporary-thai-copy",
+      "sha256": "95917e362f633cdc41f4ef9a966143f207fb1cb9923763339a28b1a203756987"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.2Connect CareSens Air 365 CGM/Connect CareSens Air 365 CGM-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.2เชื่อมต่อ CareSense Air 365 CGM/เชื่อมต่อ CareSense Air 365 CGM-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "bc58e92cba15d598e898188226375bb8364eb1d59624004c9c5135ce6f48b67f"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.2Connect CareSens Air 365 CGM/Connect CareSens Air 365 CGM-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.2เชื่อมต่อ CareSense Air 365 CGM/เชื่อมต่อ CareSense Air 365 CGM-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "f8f66b32e99609daf115ab67106009308f90df83094b8945ea86ede04fb9a4aa"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.3Disconnect iCan CGM (i6:H6)*/Disconnect iCan CGM (i6:H6)-1*.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.3ยกเลิกการเชื่อมต่อ iCan CGM (i6:H6)* /ยกเลิกการเชื่อมต่อ iCan CGM (i6:H6)-1*.png",
+      "status": "temporary-thai-copy",
+      "sha256": "914e68617f7dc129fc51fa8c0651701b1c08187255f12b455977df032e9e5112"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.3Disconnect iCan CGM (i6:H6)*/Disconnect iCan CGM (i6:H6)-2*.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.3ยกเลิกการเชื่อมต่อ iCan CGM (i6:H6)* /ยกเลิกการเชื่อมต่อ iCan CGM (i6:H6)-2*.png",
+      "status": "temporary-thai-copy",
+      "sha256": "3e8cadf51e80cc2936a25e4c5e26cefb1a3c8c15414e1cccd62eb09b0fc989b0"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.4Disconnect CareSens Air 365 CGM/Disconnect CareSens Air 365 CGM-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.4ยกเลิกการเชื่อมต่อ CareSense Air 365 CGM/ยกเลิกการเชื่อมต่อ CareSense Air 365 CGM-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "bf94dc7cc3de6f44f60d5f06f99d4fc0deef7d0abf1d9a7cb1f16705ad29985e"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.4Disconnect CareSens Air 365 CGM/Disconnect CareSens Air 365 CGM-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.4ยกเลิกการเชื่อมต่อ CareSense Air 365 CGM/ยกเลิกการเชื่อมต่อ CareSense Air 365 CGM-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "85d40fec9cf5c9239c4e9a3095a62fe86aa451b40125d49ac82355794f3962a7"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.5My Report/My Report-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.5รายงานของฉัน/รายงานของฉัน-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "b99fcc66b7981cde9d3d7c09adc86a6709ec178f1be6e0bea06536e0c13be20c"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.5My Report/My Report-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.5รายงานของฉัน/รายงานของฉัน-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "0d5c6191e0412c82b252e7e44dce0081e33b3585e480604b6926bec407d8a085"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.5My Report/My Report-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.5รายงานของฉัน/รายงานของฉัน-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "8ffc499583fb4fbdb96db1783c07bb390daeafb4eaca8cd2cf6dfceef2b96cd9"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.5My Report/My Report-4.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.5รายงานของฉัน/รายงานของฉัน-4.png",
+      "status": "temporary-thai-copy",
+      "sha256": "9f4f909584cfe66f743d4dbde1af02a4ec29ce1ed699995c488d007d1e6712e2"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.5My Report/My Report-5.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.5รายงานของฉัน/รายงานของฉัน-5.png",
+      "status": "temporary-thai-copy",
+      "sha256": "e27c63d45b0d7f1f9a8f122087dd04b2dfc98b8b419f3794693b927bda6feb18"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "0cab28ee6df33e7397204a14aa6191fbf22dbf1f00bc14a6f0890c55e734bc89"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "267187f3c1287c6b6673d2bb9b4ebfaec4edaf104959ded3c15b1cdf1d7fb3ba"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "229e52b9dd6583276fd3d10aed02530ac3f294b9cf8be03958622de4039dc684"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-4.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-4.png",
+      "status": "temporary-thai-copy",
+      "sha256": "0fc088d8b47a89e919b29524da43058bca6b0556784eed59c45c31f1c4d4b7dc"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-5.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-5.png",
+      "status": "temporary-thai-copy",
+      "sha256": "60f91f2045b7e639a6b65107f4829201e72d38341c78a23b63ef3f1b2f90d8b1"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-6.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-6.png",
+      "status": "temporary-thai-copy",
+      "sha256": "140254a67f968d215288e5c635264e83a2faa1928eb685da5e4a14525362b2a4"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-7.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-7.png",
+      "status": "temporary-thai-copy",
+      "sha256": "2fc87f5942574069f2198f00f1639ad40f2f8f2c525f2f6df2c4e686d34a7df5"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.7Disconnect CareWeb (Patient)/Disconnect CareWeb (Patient)-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.7ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)/ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "95733625824ca1971adbeaa6b9bd7b53011612fbfbc98cf595b8172ce7dc3340"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.7Disconnect CareWeb (Patient)/Disconnect CareWeb (Patient)-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.7ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)/ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "c3a8a63b2edef5a47cdf61a07be61e1958a8f0daef724efa3e5773558e310a80"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.7Disconnect CareWeb (Patient)/Disconnect CareWeb (Patient)-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.7ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)/ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "ddc7b8a02046c674bcbedd8b48acc6f812efc595440a2d775551588b95489338"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.8Disconnect CareWeb (Hospital)/Disconnect CareWeb (Hospital)-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.8ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)/ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "bd4b01c76483e3c118e7bc32f3a23f2eb8bed716f99831031ebb8ff4146bfdc2"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.8Disconnect CareWeb (Hospital)/Disconnect CareWeb (Hospital)-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.8ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)/ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "355f7e352580c5d4c5551c516f0c6ae465d8ae894bcca2778d9a9e21f899ae97"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.8Disconnect CareWeb (Hospital)/Disconnect CareWeb (Hospital)-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.8ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)/ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "c3a8a63b2edef5a47cdf61a07be61e1958a8f0daef724efa3e5773558e310a80"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.8Disconnect CareWeb (Hospital)/Disconnect CareWeb (Hospital)-4.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.8ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)/ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)-4.png",
+      "status": "temporary-thai-copy",
+      "sha256": "827ac570e2968ee1ad49047db00aa9d252ca1848366cf5c69445e7238376bb13"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.8Disconnect CareWeb (Hospital)/Disconnect CareWeb (Hospital)-5.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.8ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)/ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)-5.png",
+      "status": "temporary-thai-copy",
+      "sha256": "b6cced9bedaa63dab841344e96587769c09c990f743a9ec9e51eab7e57bc3a34"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.1Home Screen/Home Screen-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.1หน้าแรก/หน้าแรก-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "ca8bed276ff0944526b62e13dc672c02c5b3abf31bc436f489ae55e5db4ec2c4"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.1Home Screen/Home Screen-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.1หน้าแรก/หน้าแรก-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "38a34ec1203761fe93f5b07b0bc9553984000784fe2fe2867e2a234faf082dde"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.1Home Screen/Home Screen-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.1หน้าแรก/หน้าแรก-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "8799f0bb70a684162ad62c231a5886eac42b445e966d44d6b4fdc70ea7daa9c7"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.2Pen Information/Pen Information-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.2ข้อมูลปากกา/ข้อมูลปากกา-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "c5a8195a855256a90b2a3a60d3b2d14af55ad205b9d6fdd45628e69532ec7e8f"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.2Pen Information/Pen Information-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.2ข้อมูลปากกา/ข้อมูลปากกา-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "f75492eb9a1b35a28142e0a878ac2ef24b1db6af0f429651af7b0a2c1b445996"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.2Pen Information/Pen Information-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.2ข้อมูลปากกา/ข้อมูลปากกา-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "4b9f0dbb0221a61e54799cc0e1b75942e2717919c6caa350e516dc0e0846bbce"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.3More/More-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.3เพิ่มเติม/เพิ่มเติม-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "7fa56d8ab77e1715c38bc3315eaae2a4caf8d8827785ec004964d8925e12cc92"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.3More/More-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.3เพิ่มเติม/เพิ่มเติม-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "db4473bc112ae7bed643cc115fea6152736bdf4dd13b86d08946050e9f3200b1"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.3More/More-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.3เพิ่มเติม/เพิ่มเติม-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "5b0f1cf1c776bf87828d6a5f7748c13f4eeab77ad952c599691777ba8f32c1f3"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.4Inject/Inject-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.4การฉีด/การฉีด-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "caf4a1f58eef188e2149f71e67c2c7513ae69044f906258765b79b402a81daf9"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.4Inject/Inject-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.4การฉีด/การฉีด-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "44c40968fddbaa43c3f6fc777a6f106b61e97bd28fd9c064b2b82da23092431c"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.4Inject/Inject-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.4การฉีด/การฉีด-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "51a812378ed92f1efa833c8f052730f8c6382fbbd195e223f2c31113623832f2"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.5Find the Pen/Find the Pen.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.5ค้นหาปากกา/ค้นหาปากกา.png",
+      "status": "temporary-thai-copy",
+      "sha256": "14634e8935dddd3af35ccedcdbaf5a019c2e6605fcec84f9bf36cad61a7a1b32"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.6Device Settings/Device Settings-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.6การตั้งค่าอุปกรณ์/การตั้งค่าอุปกรณ์-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "250c4f67365a55c9071860c193836dfb84960a712dc47de11c1c3e08bd586fd9"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.6Device Settings/Device Settings-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.6การตั้งค่าอุปกรณ์/การตั้งค่าอุปกรณ์-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "52b850b48df315d01be93f8da99705ef1e78ad581488803466bc8bbff279cf4b"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.6Device Settings/Device Settings-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.6การตั้งค่าอุปกรณ์/การตั้งค่าอุปกรณ์-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "90a2e3a71a5778fb431c395b0957524df70bd9b91d4b54625bebaef478437766"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.6Device Settings/Device Settings-4.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.6การตั้งค่าอุปกรณ์/การตั้งค่าอุปกรณ์-4.png",
+      "status": "temporary-thai-copy",
+      "sha256": "e79802e3950c299ad1f985e20e2d8ec9b97a83f23fa2f75f127ae4a218e81a7f"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.1Inject Insulin Using P8/Inject Insulin Using P8.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.1ฉีดผ่าน P8/ฉีดผ่าน P8.png",
+      "status": "temporary-thai-copy",
+      "sha256": "e7b5975d26eef35e823c0366d792b838047195e4fd31f187b134cc54d6f1a117"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.2P8 Quick Injection via the DIACONN App/P8 Quick Injection via the DIACONN App.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.2ฉีดด่วนผ่านแอป DIACONN ของ P8/ฉีดด่วนผ่านแอป DIACONN ของ P8.png",
+      "status": "temporary-thai-copy",
+      "sha256": "f7996835a61c1866880ef206f60c7559bf9e92aa8eccee4efbbc4a2bd4cc299c"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.3P8 Injection History and Pen History/P8 Injection History and Pen History.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.3ประวัติการฉีด และประวัติปากกา P8/ประวัติการฉีด และประวัติปากกา P8.png",
+      "status": "temporary-thai-copy",
+      "sha256": "b237d1db48c966c7294e1e2ec8601bdf4807c5505e883414b29884b6c9139d93"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.4DIACONN App-Injection Time Settings/DIACONN App-Injection Time Settings-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.4แอป DIACONN-การตั้งเวลาฉีด/การตั้งค่าเวลาฉีด-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "29af055322865febcf143e43d80a4f2ecc5edd0cfdf1432b0700af58564fc791"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.4DIACONN App-Injection Time Settings/DIACONN App-Injection Time Settings-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.4แอป DIACONN-การตั้งเวลาฉีด/การตั้งค่าเวลาฉีด-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "17fcbf14a2424e78f1c86c68ce1b8ee932f45fbe26c0c4fee78eadc8be7bf984"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.5DIACONN App-Preset Insulin Dose (U)/DIACONN App-Preset Insulin Dose (U)-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.5แอป DIACONN-การตั้งค่าอินซูลินล่วงหน้า (U)/การตั้งค่าอินซูลินล่วงหน้า (U)-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "549a9ee00a7885e490d655eb647d382e5439a64b0827a19492d075703fb8f275"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.5DIACONN App-Preset Insulin Dose (U)/DIACONN App-Preset Insulin Dose (U)-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.5แอป DIACONN-การตั้งค่าอินซูลินล่วงหน้า (U)/การตั้งค่าอินซูลินล่วงหน้า (U)-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "5db38d3e6d467349c79bc8c1cf50eb3a29438c9123f3cea4a12b591dfdb6a7dd"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.6DIACONN App-Carbohydrate Settings (g)/DIACONN App-Carbohydrate Settings (g)-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.6แอป DIACONN-การตั้งค่าคาร์โบไฮเดรต (กรัม)/การตั้งค่าคาร์โบไฮเดรต (กรัม)-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "9f284e9741a60a036c9ea450e5fd3c22d44e12821ce7c00069977bad8fda66e2"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.6DIACONN App-Carbohydrate Settings (g)/DIACONN App-Carbohydrate Settings (g)-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.6แอป DIACONN-การตั้งค่าคาร์โบไฮเดรต (กรัม)/การตั้งค่าคาร์โบไฮเดรต (กรัม)-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "466f1ff6e62d5b5c182065bffca1de723398e76cee2e93ea22dd051741e5de61"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.6DIACONN App-Carbohydrate Settings (g)/DIACONN App-Carbohydrate Settings (g)-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.6แอป DIACONN-การตั้งค่าคาร์โบไฮเดรต (กรัม)/การตั้งค่าคาร์โบไฮเดรต (กรัม)-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "1f606c4b9cbc4c528a2a1e9665e88ab623f589f827a6d7149f72ebbc30049141"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.7DIACONN App-Advanced Bolus Calculator Settings and Injection/DIACONN App-Advanced Bolus Calculator Settings and Injection.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.7แอป DIACONN-ตั้งค่าเครื่องคิดเลขโบลัสขั้นสูงและการฉีด/ตั้งค่าเครื่องคิดเลขโบลัสขั้นสูงและการฉีด.png",
+      "status": "temporary-thai-copy",
+      "sha256": "e2b3b3b88a9dfd76eac5dad2b0e76438fa30bb164593df5a62f8685e4e7d224a"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/1.Fixed Meal/Fixed Meal-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/1.มื้ออาหารคงที่/มื้ออาหารคงที่-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "110739cf44bf3ceb6d623729feccedb443318cf83d9718ee9252f7323e9971e6"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/1.Fixed Meal/Fixed Meal-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/1.มื้ออาหารคงที่/มื้ออาหารคงที่-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "82e8e07e9f91b157cabfcf4ffc36eeb9459b791f486323cf5ce98afa495681aa"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/1.Fixed Meal/Fixed Meal-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/1.มื้ออาหารคงที่/มื้ออาหารคงที่-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "990ed7ecfb45c412d861f0db9737b6b4ea4979592bcd706237700015c3f7be1c"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/1.Fixed Meal/Fixed Meal-4.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/1.มื้ออาหารคงที่/มื้ออาหารคงที่-4.png",
+      "status": "temporary-thai-copy",
+      "sha256": "49e93a51030832c0626ee24a8af220c523856b869936a9d2c1b98c40a465c6bd"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/1.Fixed Meal/Fixed Meal-5.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/1.มื้ออาหารคงที่/มื้ออาหารคงที่-5.png",
+      "status": "temporary-thai-copy",
+      "sha256": "9da237ed1d44da055b0e65c9be46f5aafc7c88331915e304947ecf6bb2c37b53"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "87fc35c21fccddba6016cd4df4d55ce5b4a832d0d7adcf94e9b6fcbd655c7190"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "f59df40c65acdbaa9018e8368bac67ed52737b3791c13151052dc80fa1963d78"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "4ad1cd56a97891cad62318fa264f8a692c5b0a7fed4f4c78a8f62caa794bd2e7"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-4.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-4.png",
+      "status": "temporary-thai-copy",
+      "sha256": "1496eb45ea1630337a2733500ae9eb2d92e267b5b770e92305e39740c6b24bac"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-5.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-5.png",
+      "status": "temporary-thai-copy",
+      "sha256": "1496eb45ea1630337a2733500ae9eb2d92e267b5b770e92305e39740c6b24bac"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-6.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-6.png",
+      "status": "temporary-thai-copy",
+      "sha256": "bd70620fbf590745d831bade7e0d4f7bb06ead0970e6eb4951a12f68e66adb0a"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-7.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-7.png",
+      "status": "temporary-thai-copy",
+      "sha256": "f38a5e68a89861430e29e0f36aedf3af779d8f66f8c679ff51d3b5f06c9d60ca"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-8.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-8.png",
+      "status": "temporary-thai-copy",
+      "sha256": "3c56028efad25f7c8da8b36d1a6bb7acbf83239c5eaa44b0d313b603656ccb28"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-9.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-9.png",
+      "status": "temporary-thai-copy",
+      "sha256": "18159376eb2afdb4ac48834d11faf2f88c856f75cf54b92e80572a887b3d9a8b"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/3.Carb Counting/Carb Counting-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/3.การนับคาร์โบไฮเดรต/การนับคาร์โบไฮเดรต-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "dfdaa7ed573bb41c6236dbdbc47ae37a82117672abbddb93155746a5fa4a5998"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/3.Carb Counting/Carb Counting-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/3.การนับคาร์โบไฮเดรต/การนับคาร์โบไฮเดรต-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "9b607409aed830d8fa0af7004681c53f8528233f061bc04c2da25127580b8b7f"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/3.Carb Counting/Carb Counting-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/3.การนับคาร์โบไฮเดรต/การนับคาร์โบไฮเดรต-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "042cb61c3c595814791ef08299ede39c11c6abc0c3748449bd3b94e18119c252"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/3.Carb Counting/Carb Counting-4.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/3.การนับคาร์โบไฮเดรต/การนับคาร์โบไฮเดรต-4.png",
+      "status": "temporary-thai-copy",
+      "sha256": "7d51bc91b9a6349db418b0b5e4ac11e68fe3c0211114b28fe35c6a671ac3ae2a"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/3.Carb Counting/Carb Counting-5.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/3.การนับคาร์โบไฮเดรต/การนับคาร์โบไฮเดรต-5.png",
+      "status": "temporary-thai-copy",
+      "sha256": "8b0e856fb06a17a5f1b7527b88d402a4a338912e781fecdfe89e410fd0ef1cd2"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/3.Carb Counting/Carb Counting-6.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/3.การนับคาร์โบไฮเดรต/การนับคาร์โบไฮเดรต-6.png",
+      "status": "temporary-thai-copy",
+      "sha256": "1cdf6a68e9e42e054e7803ed4dbfa490424e1f27b8fbf147d52341636afc0ed4"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/4.Advanced Carb Counting/Advanced Carb Counting-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/4.การนับคาร์โบไฮเดรตขั้นสูง/การนับคาร์โบไฮเดรตขั้นสูง-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "5b1077fdbb3ea9339e128c9d66c411a332fed74e6fd6a9d0caa97857188df6d1"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/4.Advanced Carb Counting/Advanced Carb Counting-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/4.การนับคาร์โบไฮเดรตขั้นสูง/การนับคาร์โบไฮเดรตขั้นสูง-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "d45cace9f49bd1cab7cd3acdb1f6c84366ef71ca5f93dd2a3575cc53e6dd8102"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/4.Advanced Carb Counting/Advanced Carb Counting-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/4.การนับคาร์โบไฮเดรตขั้นสูง/การนับคาร์โบไฮเดรตขั้นสูง-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "c73c717913351cbd5ed5c978565ef3c323f15f448d38cb51360eace4877b49c6"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/4.Advanced Carb Counting/Advanced Carb Counting-4.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/4.การนับคาร์โบไฮเดรตขั้นสูง/การนับคาร์โบไฮเดรตขั้นสูง-4.png",
+      "status": "temporary-thai-copy",
+      "sha256": "e545134b3127a617e1d71e3961cb0e7c1e926a970c096afb355defceee6b4718"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/4.Advanced Carb Counting/Advanced Carb Counting-5.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/4.การนับคาร์โบไฮเดรตขั้นสูง/การนับคาร์โบไฮเดรตขั้นสูง-5.png",
+      "status": "temporary-thai-copy",
+      "sha256": "ff97cf51cf34713751f3e669225942d3e210f59c3f72a4b9f9d93a9bd50d70e8"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/4.Advanced Carb Counting/Advanced Carb Counting-6.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/4.การนับคาร์โบไฮเดรตขั้นสูง/การนับคาร์โบไฮเดรตขั้นสูง-6.png",
+      "status": "temporary-thai-copy",
+      "sha256": "bdecb9fbd70c7b94885f0940605a4738231510658f85b84b0c8009dcdc48a1e5"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.8Blood Glucose Prediction/Blood Glucose Prediction.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.8การคาดการณ์ระดับน้ำตาล/การคาดการณ์ระดับน้ำตาล.png",
+      "status": "temporary-thai-copy",
+      "sha256": "f248272164bd704aecdf290c3843991f09e054e6b8e9fc23d15d8b3ecd7e0ab6"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.9Insulin on Board (IOB)/Insulin on Board (IOB).png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.9ปริมาณอินซูลินที่ยังออกฤทธิ์ในร่างกาย (IOB)/ปริมาณอินซูลินที่ยังออกฤทธิ์ในร่างกาย (IOB).png",
+      "status": "temporary-thai-copy",
+      "sha256": "5c9611a71bc856392605a376f2789904e473961478a754f21886c9047f61c313"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.10Carbohydrates on Board (COB)/Carbohydrates on Board (COB).png",
+      "thSource": "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.10ปริมาณคาร์โบไฮเดรตที่ยังอยู่ในร่างกาย (COB)/ปริมาณคาร์โบไฮเดรตที่ยังอยู่ในร่างกาย (COB).png",
+      "status": "temporary-thai-copy",
+      "sha256": "b7bc639ccb8b062439d82ed605c8b024069d153a2d2e551bbb44ea454fffbd00"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/09-P8 Alerts and Maintenance/P8 Alerts and Maintenance-1.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/09-การแจ้งเตือนและการดูแลรักษา P8/การแจ้งเตือนและการดูแลรักษา P8-1.png",
+      "status": "temporary-thai-copy",
+      "sha256": "591f231485b5e6fa36399e1c09731aa98bb5dc9f1fa08d2348ec647b005ed103"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/09-P8 Alerts and Maintenance/P8 Alerts and Maintenance-2.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/09-การแจ้งเตือนและการดูแลรักษา P8/การแจ้งเตือนและการดูแลรักษา P8-2.png",
+      "status": "temporary-thai-copy",
+      "sha256": "518ff73b5d2a44386d84bd6caef356c0318215cd10796e01e1acf5130650222f"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/09-P8 Alerts and Maintenance/P8 Alerts and Maintenance-3.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/09-การแจ้งเตือนและการดูแลรักษา P8/การแจ้งเตือนและการดูแลรักษา P8-3.png",
+      "status": "temporary-thai-copy",
+      "sha256": "a98499b1564141b92cfba48c8ddbffeddc6dfd14e681f4b2e15463ee0b011044"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.1Insulin Basics (MDI)/Insulin Basics (MDI).png",
+      "thSource": "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.1พื้นฐานอินซูลิน (MDI)/พื้นฐานอินซูลิน MDI.png",
+      "status": "temporary-thai-copy",
+      "sha256": "a96181445fc6db76839a1593890f19c0ed7cc0cebe39850a74865d0c6064c1b3"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.2CGM-EN/CGM-EN.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.2CGM-TH/CGM-TH.png",
+      "status": "temporary-thai-copy",
+      "sha256": "a947dc2ac23a62687b2ac2fef18fab56c81a9fc145bebaf28f963cd97dbdb8d4"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.3CGM vs. BGM Comparison*/CGM vs. BGM Comparison*.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.3เปรียบเทียบCGM vs. BGM*/เปรียบเทียบCGM vs. BGM*.png",
+      "status": "temporary-thai-copy",
+      "sha256": "3f08472a61d42166451a3b7de7af5317c7928dff4c7a2c4f3583aa790d9448b4"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.4Hypoglycemia vs. Hyperglycemia Comparison*/Hypoglycemia vs. Hyperglycemia Comparison*.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.4เปรียบเทียบระดับน้ำตาลต่ำ vs. ระดับน้ำตาลสูง*/เปรียบเทียบระดับน้ำตาลต่ำ vs. ระดับน้ำตาลสูง*.png",
+      "status": "temporary-thai-copy",
+      "sha256": "f7b5da27a7cfc6af8d72b806ece7ca38b2e1b2fb25f2246fb2344262b2ccaae1"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.5Diet for People with Diabetes/Diet for People with Diabetes.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.5อาหารสำหรับผู้ป่วยเบาหวาน/อาหารสำหรับผู้ป่วยเบาหวาน.png",
+      "status": "temporary-thai-copy",
+      "sha256": "5abfc99cdc19a0d93d549a7a9473687173864301f0c14be15c1beb9036bcf7a5"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.6Exercise for People with Diabetes/Exercise Recommendations.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.6การออกกำลังกายสำหรับผู้ป่วยเบาหวาน/คำแนะนำด้านการออกกำลังกาย.png",
+      "status": "temporary-thai-copy",
+      "sha256": "bd72d84caeabd21e3b05a3a9e404ed95dd7e1083d30a537790e76d76117c6bcf"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.6Exercise for People with Diabetes/Aerobic vs. Anaerobic Exercise.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.6การออกกำลังกายสำหรับผู้ป่วยเบาหวาน/การออกกำลังกายแบบแอโรบิก vs. แอนแอโรบิก.png",
+      "status": "temporary-thai-copy",
+      "sha256": "e86e14209425d1878953e184803cfd81117f0f97588e330eb661984c973619c2"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.6Exercise for People with Diabetes/Exercise and Blood Glucose Management.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.6การออกกำลังกายสำหรับผู้ป่วยเบาหวาน/การออกกำลังกายและการจัดการระดับน้ำตาล.png",
+      "status": "temporary-thai-copy",
+      "sha256": "5dae8b46e2ba7844128762e3af4dab08e74ae4d07c6783bd109e260cc6514662"
+    },
+    {
+      "enPath": "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.6Exercise for People with Diabetes/Exercise and Insulin Dose Management.png",
+      "thSource": "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.6การออกกำลังกายสำหรับผู้ป่วยเบาหวาน/การออกกำลังกายและการจัดการการฉีดอินซูลิน.png",
+      "status": "temporary-thai-copy",
+      "sha256": "8dc393029bde16bc69d878705090cc573a8377b8157eb8406bf5e473dc04f6b7"
+    }
+  ]
+}

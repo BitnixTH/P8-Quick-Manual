@@ -31,1747 +31,1242 @@ const RESOURCE_LINKS = {
    STEPS
 ========================================================= */
 
+// Approved source: https://docs.google.com/document/d/1BzELARn-08ygePD0YIJcTCsQg3xqHjz1riEmH6B-y9Q/edit
+// EN image paths currently contain approved temporary Thai copies.
 const steps = [
-
-  /* =======================================================
-     STEP 01
-  ======================================================= */
-
   {
-    id: "step01",
-
-    number: "01",
-
-    icon:
-      "Image/Icon-1.png",
-
-    pathTH:
-      "อุปกรณ์ในชุด",
-
-    pathEN:
-      "P8 Set",
-
-    titleTH:
-      "รู้จักอุปกรณ์ในชุด P8",
-
-    titleEN:
-      "Getting to Know Your P8 Set",
-
-    descriptionTH:
-      "อุปกรณ์ทั้งหมดที่ได้รับในชุด และหน้าที่ของอุปกรณ์แต่ละชิ้น",
-
-    descriptionEN:
-      "Learn what is included in the P8 set and the function of each item.",
-
-    playlistsTH: [
+    "id": "step01",
+    "number": "01",
+    "icon": "Image/Icon-1.png",
+    "pathTH": "อุปกรณ์ในชุด",
+    "pathEN": "P8 Set",
+    "titleTH": "รู้จักอุปกรณ์ในชุด P8",
+    "titleEN": "Getting to Know Your P8 Set",
+    "descriptionTH": "อุปกรณ์ทั้งหมดที่ได้รับในชุด และหน้าที่ของอุปกรณ์แต่ละชิ้น",
+    "descriptionEN": "Learn what is included in the P8 set and the function of each item.",
+    "playlistsTH": [
       {
-        label:
-          "ดูวิดีโอการใช้งานปุ่ม P8 ทั้งหมด",
-
-        url:
-          "https://www.youtube.com/playlist?list=PLK0_7laFrXHsB09aJO9i8_afr6iOnw9qj"
+        "label": "ดูวิดีโอการใช้งานปุ่ม P8 ทั้งหมด",
+        "url": "https://www.youtube.com/playlist?list=PLK0_7laFrXHsB09aJO9i8_afr6iOnw9qj"
       }
     ],
-
-    playlistsEN: [
+    "playlistsEN": [
       {
-        label:
-          "Watch All P8 Button Videos",
-
-        url:
-          "https://www.youtube.com/playlist?list=PLK0_7laFrXHur2GZmAqiw-iyFA71XR2dR"
+        "label": "Watch All P8 Button Videos",
+        "url": "https://www.youtube.com/playlist?list=PLK0_7laFrXHur2GZmAqiw-iyFA71XR2dR"
       }
     ],
-
-    topics: [
-
+    "topics": [
       {
-        th:
-          "ชุดอุปกรณ์ P8",
-
-        en:
-          "P8 Kit",
-
-        imagesTH: [
-          "Image/step-01/th/1.1-TH.png"
+        "th": "ชุดอุปกรณ์ P8",
+        "en": "P8 Kit",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/01-รู้จักอุปกรณ์ในชุด P8/1.1ชุดอุปกรณ์ P8/ชุดอุปกรณ์ P8.png"
         ],
-
-        imagesEN: [
-          "Image/step-01/en/1.1-EN.png"
-        ]
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/01-Get to Know the P8 Kit Components/1.1P8 Kit Components/P8 Kit Components.png"
+        ],
+        "id": "1.1"
       },
-
       {
-        th:
-          "ความเข้ากันได้",
-
-        en:
-          "Compatibility",
-
-        imagesTH: [
-          "Image/step-01/th/1.2-TH.png"
+        "th": "ความเข้ากันได้",
+        "en": "Compatibility",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/01-รู้จักอุปกรณ์ในชุด P8/1.2ความเข้ากันได้/ความเข้ากันได้.png"
         ],
-
-        imagesEN: [
-          "Image/step-01/en/1.2-EN.png"
-        ]
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/01-Get to Know the P8 Kit Components/1.2Compatibility/Compatibility.png"
+        ],
+        "id": "1.2"
       },
-
       {
-        th:
-          "โครงสร้าง P8",
-
-        en:
-          "P8 Structure",
-
-        imagesTH: [
-          "Image/step-01/th/1.3-TH.png"
+        "th": "โครงสร้าง P8",
+        "en": "P8 Structure",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/01-รู้จักอุปกรณ์ในชุด P8/1.3โครงสร้าง P8/โครงสร้าง P8.png"
         ],
-
-        imagesEN: [
-          "Image/step-01/en/1.3-EN.png"
-        ]
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/01-Get to Know the P8 Kit Components/1.3P8 Structure/P8 Structure.png"
+        ],
+        "id": "1.3"
       },
-
       {
-        th:
-          "การทำงานของปุ่ม",
-
-        en:
-          "Button Functions",
-
-        imagesTH: [
-          "Image/step-01/th/1.4-TH.png"
+        "th": "การทำงานของปุ่ม",
+        "en": "Button Functions",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/01-รู้จักอุปกรณ์ในชุด P8/1.4การทำงานของปุ่ม/การทำงานของปุ่ม.png"
         ],
-
-        imagesEN: [
-          "Image/step-01/en/1.4-EN.png"
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/01-Get to Know the P8 Kit Components/1.4Button Functions/Button Functions.png"
         ],
-
-        videosTH: [
-
+        "videosTH": [
           {
-            label:
-              "ปุ่ม ACT",
-
-            url:
-              "https://youtu.be/pwEQordbMbY"
+            "label": "ปุ่ม ACT",
+            "url": "https://youtu.be/pwEQordbMbY"
           },
-
           {
-            label:
-              "ปุ่ม M",
-
-            url:
-              "https://youtu.be/KMm5-XTKStE"
+            "label": "ปุ่ม M",
+            "url": "https://youtu.be/KMm5-XTKStE"
           },
-
           {
-            label:
-              "ปุ่มขึ้น",
-
-            url:
-              "https://youtu.be/dSeXiwJDOSg"
+            "label": "ปุ่มขึ้น",
+            "url": "https://youtu.be/dSeXiwJDOSg"
           },
-
           {
-            label:
-              "ปุ่มลง",
-
-            url:
-              "https://youtu.be/vl7c41KUEsE"
+            "label": "ปุ่มลง",
+            "url": "https://youtu.be/vl7c41KUEsE"
           }
-
         ],
-
-        videosEN: [
-
+        "videosEN": [
           {
-            label:
-              "ACT Button",
-
-            url:
-              "https://youtu.be/kyB7ODIZg-g"
+            "label": "ACT Button",
+            "url": "https://youtu.be/kyB7ODIZg-g"
           },
-
           {
-            label:
-              "M Button",
-
-            url:
-              "https://youtu.be/JPgVrK4q72U"
+            "label": "M Button",
+            "url": "https://youtu.be/JPgVrK4q72U"
           },
-
           {
-            label:
-              "Up Button",
-
-            url:
-              "https://youtu.be/7WjFhPyknaE"
+            "label": "Up Button",
+            "url": "https://youtu.be/7WjFhPyknaE"
           },
-
           {
-            label:
-              "Down Button",
-
-            url:
-              "https://youtu.be/gUtn9HHzXaw"
+            "label": "Down Button",
+            "url": "https://youtu.be/gUtn9HHzXaw"
           }
-
-        ]
+        ],
+        "id": "1.4"
       }
-
     ]
   },
-
-
-  /* =======================================================
-     STEP 02
-  ======================================================= */
-
   {
-    id:
-      "step02",
-
-    number:
-      "02",
-
-    icon:
-      "Image/Icon-2.png",
-
-    pathTH:
-      "โครงสร้าง P8",
-
-    pathEN:
-      "P8 Structure",
-
-    titleTH:
-      "โครงสร้างและเมนูของ P8",
-
-    titleEN:
-      "P8 Structure and Menu",
-
-    descriptionTH:
-      "โครงสร้างตัวปากกาและหน้าจอ → ปุ่มต่าง ๆ → โครงสร้างเมนูหลัก",
-
-    descriptionEN:
-      "Pen structure and display → Buttons → Main menu structure",
-
-    playlistsTH: [
+    "id": "step02",
+    "number": "02",
+    "icon": "Image/Icon-2.png",
+    "pathTH": "โครงสร้าง P8",
+    "pathEN": "P8 Structure",
+    "titleTH": "โครงสร้างและเมนูของ P8",
+    "titleEN": "P8 Structure and Menu",
+    "descriptionTH": "โครงสร้างตัวปากกาและหน้าจอ → ปุ่มต่าง ๆ → โครงสร้างเมนูหลัก",
+    "descriptionEN": "Pen structure and display → Buttons → Main menu structure",
+    "playlistsTH": [
       {
-        label:
-          "ดูวิดีโอโครงสร้างเมนูหลักทั้งหมด",
-
-        url:
-          "https://www.youtube.com/playlist?list=PLdHbhasR9Z0Q"
+        "label": "ดูวิดีโอโครงสร้างเมนูหลักทั้งหมด",
+        "url": "https://www.youtube.com/playlist?list=PLdHbhasR9Z0Q"
       }
     ],
-
-    playlistsEN: [
+    "playlistsEN": [
       {
-        label:
-          "Watch All P8 Main Menu Videos",
-
-        url:
-          "https://www.youtube.com/playlist?list=PLJ6bip0RLwoY"
+        "label": "Watch All P8 Main Menu Videos",
+        "url": "https://www.youtube.com/playlist?list=PLJ6bip0RLwoY"
       }
     ],
-
-    topics: [
-
+    "topics": [
       {
-        th:
-          "โครงสร้างหน้าจอ",
-
-        en:
-          "Screen Structure",
-
-        imagesTH: [
-          "Image/step-02/th/2.1-TH.png"
+        "th": "โครงสร้างหน้าจอ",
+        "en": "Screen Structure",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/02-โครงสร้างและเมนูของ P8/2.1โครงสร้างหน้าจอ P8/โครงสร้างหน้าจอ P8.png"
         ],
-
-        imagesEN: [
-          "Image/step-02/en/2.1-EN.png"
-        ]
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/02-P8 Structure and Menus/2.1P8 Screen Layout/P8 Screen Layout.png"
+        ],
+        "id": "2.1"
       },
-
       {
-        th:
-          "โครงสร้างเมนูหลัก",
-
-        en:
-          "Main Menu Structure",
-
-        imagesTH: [
-          "Image/step-02/th/2.2-TH.png"
+        "th": "โครงสร้างเมนูหลัก",
+        "en": "Main Menu Structure",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/02-โครงสร้างและเมนูของ P8/2.2โครงสร้างเมนูหลัก P8/โครงสร้างเมนูหลัก P8.png"
         ],
-
-        imagesEN: [
-          "Image/step-02/en/2.2-EN.png"
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/02-P8 Structure and Menus/2.2P8 Main Menu Structure/P8 Main Menu Structure.png"
         ],
-
-        videosTH: [
-
+        "videosTH": [
           {
-            label:
-              "การไล่อากาศ (Prime)",
-
-            url:
-              "https://youtu.be/jYa3aL6ZxUI"
+            "label": "การไล่อากาศ (Prime)",
+            "url": "https://youtu.be/jYa3aL6ZxUI"
           },
-
           {
-            label:
-              "การเปลี่ยนคาร์ทริดจ์ (Cartridge)",
-
-            url:
-              "https://youtu.be/wN7_6W2rjNM"
+            "label": "การเปลี่ยนคาร์ทริดจ์ (Cartridge)",
+            "url": "https://youtu.be/wN7_6W2rjNM"
           },
-
           {
-            label:
-              "ความเร็วในการฉีดอินซูลิน (INJ Speed)",
-
-            url:
-              "https://youtu.be/E5F3Pev88aY"
+            "label": "ความเร็วในการฉีดอินซูลิน (INJ Speed)",
+            "url": "https://youtu.be/E5F3Pev88aY"
           },
-
           {
-            label:
-              "ข้อมูลของ P8 (Info)",
-
-            url:
-              "https://youtu.be/dBwcGnP7lEY"
+            "label": "ข้อมูลของ P8 (Info)",
+            "url": "https://youtu.be/dBwcGnP7lEY"
           },
-
           {
-            label:
-              "การตั้งค่า: ระดับเสียง",
-
-            url:
-              "https://youtu.be/HsK91yF7f3Q"
+            "label": "การตั้งค่า: ระดับเสียง",
+            "url": "https://youtu.be/HsK91yF7f3Q"
           },
-
           {
-            label:
-              "การตั้งค่า: วันที่และเวลา",
-
-            url:
-              "https://youtu.be/0rj1MOjaHjY"
+            "label": "การตั้งค่า: วันที่และเวลา",
+            "url": "https://youtu.be/0rj1MOjaHjY"
           },
-
           {
-            label:
-              "การตั้งค่า: ภาษา",
-
-            url:
-              "https://youtu.be/-gvyLtLWWr4"
+            "label": "การตั้งค่า: ภาษา",
+            "url": "https://youtu.be/-gvyLtLWWr4"
           },
-
           {
-            label:
-              "การตั้งค่า: ระยะเวลาเปิดหน้าจอ",
-
-            url:
-              "https://youtu.be/EH8nfVZVNOU"
+            "label": "การตั้งค่า: ระยะเวลาเปิดหน้าจอ",
+            "url": "https://youtu.be/EH8nfVZVNOU"
           },
-
           {
-            label:
-              "การตั้งค่า: บลูทูธ",
-
-            url:
-              "https://youtu.be/44AvdYObZUc"
+            "label": "การตั้งค่า: บลูทูธ",
+            "url": "https://youtu.be/44AvdYObZUc"
           },
-
           {
-            label:
-              "การตั้งค่า: หน่วยอุณหภูมิ",
-
-            url:
-              "https://youtu.be/2AbPUOW8B6M"
+            "label": "การตั้งค่า: หน่วยอุณหภูมิ",
+            "url": "https://youtu.be/2AbPUOW8B6M"
           }
-
         ],
-
-        videosEN: [
-
+        "videosEN": [
           {
-            label:
-              "Prime",
-
-            url:
-              "https://youtu.be/Lqz9efHSyi0"
+            "label": "Prime",
+            "url": "https://youtu.be/Lqz9efHSyi0"
           },
-
           {
-            label:
-              "Cartridge",
-
-            url:
-              "https://youtu.be/PGXhz9bLt-Q"
+            "label": "Cartridge",
+            "url": "https://youtu.be/PGXhz9bLt-Q"
           },
-
           {
-            label:
-              "INJ Speed",
-
-            url:
-              "https://youtu.be/BShxfa6Igs0"
+            "label": "INJ Speed",
+            "url": "https://youtu.be/BShxfa6Igs0"
           },
-
           {
-            label:
-              "Info",
-
-            url:
-              "https://youtu.be/SoD2_G10eus"
+            "label": "Info",
+            "url": "https://youtu.be/SoD2_G10eus"
           },
-
           {
-            label:
-              "Settings: Volume",
-
-            url:
-              "https://youtu.be/SoD2_G10eus"
+            "label": "Settings: Volume",
+            "url": "https://youtu.be/SoD2_G10eus"
           },
-
           {
-            label:
-              "Settings: Date/Time",
-
-            url:
-              "https://youtu.be/SbKFVA9x1W8"
+            "label": "Settings: Date/Time",
+            "url": "https://youtu.be/SbKFVA9x1W8"
           },
-
           {
-            label:
-              "Settings: Language",
-
-            url:
-              "https://youtu.be/lLw7hFQ2-nY"
+            "label": "Settings: Language",
+            "url": "https://youtu.be/lLw7hFQ2-nY"
           },
-
           {
-            label:
-              "Settings: Screen Time",
-
-            url:
-              "https://youtu.be/3wGtc7g0yRk"
+            "label": "Settings: Screen Time",
+            "url": "https://youtu.be/3wGtc7g0yRk"
           },
-
           {
-            label:
-              "Settings: Bluetooth",
-
-            url:
-              "https://youtu.be/dMslGt4CR8I"
+            "label": "Settings: Bluetooth",
+            "url": "https://youtu.be/dMslGt4CR8I"
           },
-
           {
-            label:
-              "Settings: TEMP Unit",
-
-            url:
-              "https://youtu.be/4gJSmth848Q"
+            "label": "Settings: TEMP Unit",
+            "url": "https://youtu.be/4gJSmth848Q"
           }
-
-        ]
+        ],
+        "id": "2.2"
       }
-
     ]
   },
-
-
-  /* =======================================================
-     STEP 03
-  ======================================================= */
-
   {
-    id:
-      "step03",
-
-    number:
-      "03",
-
-    icon:
-      "Image/Icon-3.png",
-
-    pathTH:
-      "เปิด–ปิด",
-
-    pathEN:
-      "Power & Screen",
-
-    titleTH:
-      "การเปิด–ปิดและการใช้งานหน้าจอ",
-
-    titleEN:
-      "Power On/Off and Screen Operation",
-
-    descriptionTH:
-      "เปิดเครื่อง → ปิดเครื่อง → โหมดพักหน้าจอ → การปลุกหน้าจอ/กลับมาใช้งาน",
-
-    descriptionEN:
-      "Power On → Power Off → Screen Saver Mode → Wake the Screen",
-
-    playlistsTH: [
-
+    "id": "step03",
+    "number": "03",
+    "icon": "Image/Icon-3.png",
+    "pathTH": "เปิด–ปิด",
+    "pathEN": "Power & Screen",
+    "titleTH": "เปิด-ปิด & หน้าจอ P8",
+    "titleEN": "Power On/Off P8 & Screen",
+    "descriptionTH": "เปิดเครื่อง → ปิดเครื่อง → โหมดพักหน้าจอ → การปลุกหน้าจอ/กลับมาใช้งาน",
+    "descriptionEN": "Power On → Power Off → Screen Saver Mode → Wake the Screen",
+    "playlistsTH": [
       {
-        label:
-          "เพลย์ลิสต์ การเปิดและปิดเครื่อง P8",
-
-        url:
-          "https://www.youtube.com/playlist?list=PLKN0TWjoRZgk"
+        "label": "เพลย์ลิสต์ การเปิดและปิดเครื่อง P8",
+        "url": "https://www.youtube.com/playlist?list=PLKN0TWjoRZgk"
       },
-
       {
-        label:
-          "เพลย์ลิสต์ โหมดพักหน้าจอ",
-
-        url:
-          "https://www.youtube.com/playlist?list=PLJWJvd8uHbhw"
+        "label": "เพลย์ลิสต์ โหมดพักหน้าจอ",
+        "url": "https://www.youtube.com/playlist?list=PLJWJvd8uHbhw"
       }
-
     ],
-
-    playlistsEN: [
-
+    "playlistsEN": [
       {
-        label:
-          "Power On/Off Playlist",
-
-        url:
-          "https://www.youtube.com/playlist?list=PLOXnusFnxhtY"
+        "label": "Power On/Off Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLOXnusFnxhtY"
       },
-
       {
-        label:
-          "Screen Saver Playlist",
-
-        url:
-          "https://www.youtube.com/playlist?list=PLV086eXSwm7E"
+        "label": "Screen Saver Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLV086eXSwm7E"
       }
-
     ],
-
-    topics: [
-
+    "topics": [
       {
-        th:
-          "เปิด–ปิดและโหมดพักหน้าจอ",
-
-        en:
-          "Power On/Off & Screen Saver",
-
-        imagesTH: [
-          "Image/step-03/th/3.1-TH.png"
+        "th": "เปิด–ปิดและโหมดพักหน้าจอ",
+        "en": "Power On/Off & Screen Saver",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/03-การเปิด-ปิดและการใช้งานหน้าจอ/3.1เปิด-ปิด และโหมดพักหน้อจอ P8/เปิด-ปิด และโหมดพักหน้อจอ P8.png"
         ],
-
-        imagesEN: [
-          "Image/step-03/en/3.1-EN.png"
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/03-Power On:Off and Screen Operation/3.1P8 Power On:Off and Screen Sleep Mode/P8 Power On:Off and Screen Sleep Mode.png"
         ],
-
-        videosTH: [
-
+        "videosTH": [
           {
-            label:
-              "การเปิดเครื่อง P8",
-
-            url:
-              "https://youtu.be/JWE8sWQ2iNc"
+            "label": "การเปิดเครื่อง P8",
+            "url": "https://youtu.be/JWE8sWQ2iNc"
           },
-
           {
-            label:
-              "การปิดเครื่อง P8",
-
-            url:
-              "https://youtu.be/nlT5HpFM-g0"
+            "label": "การปิดเครื่อง P8",
+            "url": "https://youtu.be/nlT5HpFM-g0"
           },
-
           {
-            label:
-              "โหมดพักหน้าจอ P8",
-
-            url:
-              "https://youtu.be/9pj48slsEQg"
+            "label": "โหมดพักหน้าจอ P8",
+            "url": "https://youtu.be/9pj48slsEQg"
           }
-
         ],
-
-        videosEN: [
-
+        "videosEN": [
           {
-            label:
-              "Power On the P8",
-
-            url:
-              "https://youtu.be/KyTE_RDgj2U"
+            "label": "Power On the P8",
+            "url": "https://youtu.be/KyTE_RDgj2U"
           },
-
           {
-            label:
-              "Power Off the P8",
-
-            url:
-              "https://youtu.be/hlUyCj4OiY0"
+            "label": "Power Off the P8",
+            "url": "https://youtu.be/hlUyCj4OiY0"
           },
-
           {
-            label:
-              "Screen Saver Mode of P8",
-
-            url:
-              "https://youtu.be/gDk6hvOkIpY"
+            "label": "Screen Saver Mode of P8",
+            "url": "https://youtu.be/gDk6hvOkIpY"
           }
-
-        ]
+        ],
+        "id": "3.1"
       }
-
     ]
   },
-
-/* =======================================================
-   STEP 04
-   DIA:CONN APP / P8 CONNECTION & SETTINGS
-======================================================= */
-
-{
-  id: "step04",
-
-  number: "04",
-
-  icon: "Image/Icon-4.png",
-
-  pathTH: "เชื่อมต่อแอป",
-  pathEN: "Connect App",
-
-  titleTH: "เชื่อมต่อและตั้งค่า P8 กับแอป DIA:CONN",
-  titleEN: "Connect and Set Up P8 with the DIA:CONN App",
-
-  descriptionTH:
-    "ลงทะเบียนและจับคู่ P8 → เลิกจับคู่ P8 → ค้นหาปากกา → ตั้งค่าอุปกรณ์",
-
-  descriptionEN:
-    "Register and Pair P8 → Unpair P8 → Find the Pen → Device Settings",
-
-  playlistsTH: [],
-  playlistsEN: [],
-
-  topics: [
-
-    /* ---------- 04-1 ---------- */
-
-    {
-      th: "ลงทะเบียนและจับคู่ปากกา P8",
-      en: "P8 Registration and Pairing",
-
-      imagesTH: [
-        "Image/step-04/th/4.1-TH.png",
-        "Image/step-04/th/4.2-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-04/en/4.1-EN.png",
-        "Image/step-04/en/4.2-EN.png"
-      ],
-
-      videosTH: [
-        {
-          label: "การลงทะเบียนและจับคู่ปากกา P8",
-          url: "https://youtu.be/uSYwPaVxmyA"
-        }
-      ],
-
-      videosEN: [
-        {
-          label: "P8 Registration and Pairing",
-          url: "https://youtu.be/5FeWETUjhH8"
-        }
-      ]
-    },
-
-    /* ---------- 04-2 ---------- */
-
-    {
-      th: "เลิกจับคู่ปากกา P8",
-      en: "Unpair the P8",
-
-      imagesTH: [
-        "Image/step-04/th/4.3-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-04/en/4.3-EN.png"
-      ],
-
-      videosTH: [
-        {
-          label: "เลิกจับคู่ปากกา P8",
-          url: "https://youtu.be/6hRcj-8iZFc"
-        }
-      ],
-
-      videosEN: [
-        {
-          label: "Unpair the P8",
-          url: "https://youtu.be/hBqoP2WZXQc"
-        }
-      ]
-    },
-
-    /* ---------- 04-3 ---------- */
-
-    {
-      th: "ค้นหาปากกา P8",
-      en: "Find the Pen",
-
-      imagesTH: [
-        "Image/step-04/th/4.4-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-04/en/4.4-EN.png"
-      ],
-
-      videosTH: [
-        {
-          label: "ค้นหาปากกา P8",
-          url: "https://youtu.be/-L8sHJbihy8"
-        }
-      ],
-
-      videosEN: [
-        {
-          label: "Find the Pen",
-          url: "https://youtu.be/FHWBBa5GqrQ"
-        }
-      ]
-    },
-
-    /* ---------- 04-4.1 ---------- */
-
-    {
-      th: "ตั้งค่าอุปกรณ์: ความเร็วในการฉีด",
-      en: "Device Settings: Injection Speed",
-
-      imagesTH: [
-        "Image/step-04/th/4.5-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-04/en/4.5-EN.png"
-      ],
-
-      videosTH: [
-        {
-          label: "การตั้งค่าอุปกรณ์: ความเร็วในการฉีดของ P8",
-          url: "https://youtu.be/SG5D4vj_3k4"
-        }
-      ],
-
-      videosEN: [
-        {
-          label: "P8 Device Settings: Injection Speed",
-          url: "https://youtu.be/SQlcHqN86Tc"
-        }
-      ]
-    },
-
-    /* ---------- 04-4.2 ---------- */
-
-    {
-      th: "ตั้งค่าอุปกรณ์: ระยะเวลารอหลังฉีดยา",
-      en: "Device Settings: Waiting Time After Injection",
-
-      imagesTH: [
-        "Image/step-04/th/4.6-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-04/en/4.6-EN.png"
-      ],
-
-      videosTH: [
-        {
-          label: "การตั้งค่าอุปกรณ์: ระยะเวลารอคอยหลังฉีดยาของ P8",
-          url: "https://youtu.be/jG0JA-J-lt4"
-        }
-      ],
-
-      videosEN: [
-        {
-          label: "P8 Device Settings: Waiting Time After Injection",
-          url: "https://youtu.be/TKfuFk9iWLQ"
-        }
-      ]
-    },
-
-    /* ---------- 04-4.3 ---------- */
-
-    {
-      th: "ตั้งค่าอุปกรณ์: จำกัดปริมาณอินซูลินสูงสุดต่อครั้ง",
-      en: "Device Settings: Single Dose Limit",
-
-      imagesTH: [
-        "Image/step-04/th/4.7-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-04/en/4.7-EN.png"
-      ],
-
-      videosTH: [
-        {
-          label: "การตั้งค่าอุปกรณ์: จำกัดปริมาณอินซูลินสูงสุดต่อครั้ง",
-          url: "https://youtu.be/mDe9GCXbnew"
-        }
-      ],
-
-      videosEN: [
-        {
-          label: "P8 Device Settings: Single Dose Limit",
-          url: "https://youtu.be/4XaX7dLw270"
-        }
-      ]
-    },
-
-    /* ---------- 04-4.4 ---------- */
-
-    {
-      th: "ตั้งค่าอุปกรณ์: อินซูลิน",
-      en: "Device Settings: Insulin",
-
-      imagesTH: [
-        "Image/step-04/th/4.8-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-04/en/4.8-EN.png"
-      ],
-
-      videosTH: [
-        {
-          label: "การตั้งค่าอุปกรณ์: อินซูลิน",
-          url: "https://youtu.be/XOT1KLINEuM"
-        }
-      ],
-
-      videosEN: [
-        {
-          label: "P8 Device Settings: Insulin",
-          url: "https://youtu.be/HglCAFK9Pgo"
-        }
-      ]
-    }
-
-  ]
-},
-
-
-/* =======================================================
-   STEP 05
-   CARTRIDGE REPLACEMENT
-======================================================= */
-
-{
-  id: "step05",
-
-  number: "05",
-
-  icon: "Image/Icon-5.png",
-
-  pathTH: "การเปลี่ยน<br>คาร์ทริดจ์",
-  pathEN: "Cartridge<br>Replacement",
-
-  titleTH: "การเปลี่ยนคาร์ทริดจ์ P8",
-  titleEN: "P8 Cartridge Replacement",
-
-  descriptionTH: "ขั้นตอนการเปลี่ยนคาร์ทริดจ์ P8",
-  descriptionEN: "How to replace the P8 cartridge",
-
-  /* ไม่ใช้ Playlist */
-  playlistsTH: [],
-  playlistsEN: [],
-
-  topics: [
-
-    /* ---------- 05-1 ---------- */
-
-    {
-      th: "การเปลี่ยนคาร์ทริดจ์ P8",
-      en: "P8 Cartridge Replacement",
-
-      imagesTH: [
-        "Image/step-05/th/5.1-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-05/en/5.1-EN.png"
-      ],
-
-      videosTH: [
-        {
-          label: "การเปลี่ยนคาร์ทริดจ์ P8",
-          url: "https://youtu.be/p7TRi8wVHE0"
-        }
-      ],
-
-      videosEN: [
-        {
-          label: "P8 Cartridge Replacement",
-          url: "https://youtu.be/4qSFRWU6rpQ"
-        }
-      ]
-    }
-
-  ]
-},
-
-
-/* =======================================================
-   STEP 06
-   CGM / MY REPORT / CAREWEB
-======================================================= */
-
-{
-  id: "step06",
-
-  number: "06",
-
-  icon: "Image/Icon-6.png",
-
-  pathTH: "เชื่อมต่อข้อมูล",
-  pathEN: "Connect Data",
-
-  titleTH: "เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน",
-  titleEN: "Device, CareWeb and Report Connections",
-
-  descriptionTH:
-    "เชื่อมต่อ/ยกเลิก CGM → รายงานของฉัน → เชื่อมต่อ/ยกเลิก CareWeb",
-
-  descriptionEN:
-    "Connect/Disconnect CGM → My Report → Connect/Disconnect CareWeb",
-
-  topics: [
-
-    /* ---------- 06-1 : CONNECT CGM ---------- */
-
-    {
-      th: "เชื่อมต่อ CareSens Air 365 CGM",
-      en: "Connect CareSens Air 365 CGM",
-
-      imagesTH: [
-        "Image/step-06/th/6.1-TH.png",
-        "Image/step-06/th/6.2-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-06/en/6.1-EN.png",
-        "Image/step-06/en/6.2-EN.png"
-      ]
-    },
-
-
-    /* ---------- 06-2 : DISCONNECT CGM ---------- */
-
-    {
-      th: "ยกเลิกการเชื่อมต่อ CareSens Air 365 CGM",
-      en: "Disconnect CareSens Air 365 CGM",
-
-      imagesTH: [
-        "Image/step-06/th/6.3-TH.png",
-        "Image/step-06/th/6.4-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-06/en/6.3-EN.png",
-        "Image/step-06/en/6.4-EN.png"
-      ]
-    },
-
-
-    /* ---------- 06-3 : MY REPORT ---------- */
-
-    {
-      th: "รายงานของฉัน",
-      en: "My Report",
-
-      imagesTH: [
-        "Image/step-06/th/6.5-TH.png",
-        "Image/step-06/th/6.6-TH.png",
-        "Image/step-06/th/6.7-TH.png",
-        "Image/step-06/th/6.8-TH.png",
-        "Image/step-06/th/6.9-TH.png",
-        "Image/step-06/th/6.10-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-06/en/6.5-EN.png",
-        "Image/step-06/en/6.6-EN.png",
-        "Image/step-06/en/6.7-EN.png",
-        "Image/step-06/en/6.8-EN.png",
-        "Image/step-06/en/6.9-EN.png",
-        "Image/step-06/en/6.10-EN.png"
-      ]
-    },
-
-
-    /* ---------- 06-4 : CONNECT CAREWEB ---------- */
-
-    {
-      th: "เชื่อมต่อ CareWeb",
-      en: "Connect CareWeb",
-
-      imagesTH: [
-        "Image/step-06/th/6.11-TH.png",
-        "Image/step-06/th/6.12-TH.png",
-        "Image/step-06/th/6.13-TH.png",
-        "Image/step-06/th/6.14-TH.png",
-        "Image/step-06/th/6.15-TH.png",
-        "Image/step-06/th/6.16-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-06/en/6.11-EN.png",
-        "Image/step-06/en/6.12-EN.png",
-        "Image/step-06/en/6.13-EN.png",
-        "Image/step-06/en/6.14-EN.png",
-        "Image/step-06/en/6.15-EN.png",
-        "Image/step-06/en/6.16-EN.png"
-      ]
-    },
-
-
-    /* ---------- 06-5 : DISCONNECT CAREWEB — PATIENT ---------- */
-
-    {
-      th: "ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)",
-      en: "Disconnect CareWeb (Patient)",
-
-      imagesTH: [
-        "Image/step-06/th/6.17-TH.png",
-        "Image/step-06/th/6.18-TH.png",
-        "Image/step-06/th/6.19-TH.png",
-        "Image/step-06/th/6.20-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-06/en/6.17-EN.png",
-        "Image/step-06/en/6.18-EN.png",
-        "Image/step-06/en/6.19-EN.png",
-        "Image/step-06/en/6.20-EN.png"
-      ]
-    },
-
-
-    /* ---------- 06-6 : DISCONNECT CAREWEB — HOSPITAL ---------- */
-
-    {
-      th: "ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)",
-      en: "Disconnect CareWeb (Hospital)",
-
-      imagesTH: [
-        "Image/step-06/th/6.21-TH.png",
-        "Image/step-06/th/6.22-TH.png",
-        "Image/step-06/th/6.23-TH.png",
-        "Image/step-06/th/6.24-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-06/en/6.21-EN.png",
-        "Image/step-06/en/6.22-EN.png",
-        "Image/step-06/en/6.23-EN.png",
-        "Image/step-06/en/6.24-EN.png"
-      ]
-    }
-
-  ]
-},
-/* =======================================================
-   STEP 07
-   GETTING TO KNOW DIA:CONN APP
-======================================================= */
-
-{
-  id: "step07",
-
-  number: "07",
-
-  icon: "Image/Icon-7.png",
-
-  pathTH: "รู้จัก<br>DIA:CONN",
-  pathEN: "DIA:CONN<br>App",
-
-  titleTH: "ทำความรู้จักแอป  DIA:CONN",
-  titleEN: "Getting to Know the DIA:CONN App",
-
-  descriptionTH:
-    "ทำความรู้จักหน้าจอและข้อมูลต่าง ๆ ภายในแอป DIA:CONN",
-
-  descriptionEN:
-    "Learn about the screens and information available in the DIA:CONN App",
-
-  topics: [
-
-    /* ---------- 07-1 : HOME ---------- */
-
-    {
-      th: "หน้าหลัก",
-      en: "Home Screen",
-
-      imagesTH: [
-        "Image/step-07/th/7.1-TH.png",
-        "Image/step-07/th/7.2-TH.png",
-        "Image/step-07/th/7.3-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-07/en/7.1-EN.png",
-        "Image/step-07/en/7.2-EN.png",
-        "Image/step-07/en/7.3-EN.png"
-      ]
-    },
-
-
-    /* ---------- 07-2 : PEN INFORMATION ---------- */
-
-    {
-      th: "ข้อมูลปากกา",
-      en: "Pen Information",
-
-      imagesTH: [
-        "Image/step-07/th/7.4-TH.png",
-        "Image/step-07/th/7.5-TH.png",
-        "Image/step-07/th/7.6-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-07/en/7.4-EN.png",
-        "Image/step-07/en/7.5-EN.png",
-        "Image/step-07/en/7.6-EN.png"
-      ]
-    },
-
-
-    /* ---------- 07-3 : MORE ---------- */
-
-    {
-      th: "เพิ่มเติม",
-      en: "More",
-
-      imagesTH: [
-        "Image/step-07/th/7.7-TH.png",
-        "Image/step-07/th/7.8-TH.png",
-        "Image/step-07/th/7.9-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-07/en/7.7-EN.png",
-        "Image/step-07/en/7.8-EN.png",
-        "Image/step-07/en/7.9-EN.png"
-      ]
-    },
-
-
-    /* ---------- 07-4 : INJECT ---------- */
-
-    {
-      th: "การฉีด",
-      en: "Inject",
-
-      imagesTH: [
-        "Image/step-07/th/7.10-TH.png",
-        "Image/step-07/th/7.11-TH.png",
-        "Image/step-07/th/7.12-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-07/en/7.10-EN.png",
-        "Image/step-07/en/7.11-EN.png",
-        "Image/step-07/en/7.12-EN.png"
-      ]
-    },
-
-
-    /* ---------- 07-5 : FIND THE PEN ---------- */
-
-    {
-      th: "ค้นหาปากกา",
-      en: "Find the pen",
-
-      imagesTH: [
-        "Image/step-07/th/7.13-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-07/en/7.13-EN.png"
-      ]
-    },
-
-
-    /* ---------- 07-6 : DEVICE SETTINGS ---------- */
-
-    {
-      th: "การตั้งค่าอุปกรณ์",
-      en: "Device Settings",
-
-      imagesTH: [
-        "Image/step-07/th/7.14-TH.png",
-        "Image/step-07/th/7.15-TH.png",
-        "Image/step-07/th/7.16-TH.png",
-        "Image/step-07/th/7.17-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-07/en/7.14-EN.png",
-        "Image/step-07/en/7.15-EN.png",
-        "Image/step-07/en/7.16-EN.png",
-        "Image/step-07/en/7.17-EN.png"
-      ]
-    }
-
-  ]
-},
-
-  /* =======================================================
-   STEP 08
-   INJECTION + BOLUS
-======================================================= */
-
-{
-  id: "step08",
-
-  number: "08",
-
-  icon: "Image/Icon-8.png",
-
-  pathTH: "ฉีดอินซูลิน",
-  pathEN: "Injection",
-
-  titleTH: "การฉีดอินซูลินและการคำนวณโบลัส",
-  titleEN: "Insulin Injection and Bolus Calculator",
-
-  descriptionTH:
-    "การฉีดอินซูลินด้วย P8 → การฉีดด่วน → การคำนวณโบลัส → ประวัติการฉีด",
-
-  descriptionEN:
-    "P8 Injection → Quick Injection → Bolus Calculation → Injection History",
-
-  playlistsTH: [],
-  playlistsEN: [],
-
-  topics: [
-
-    /* =====================================================
-       08-1 : P8 INJECTION
-    ===================================================== */
-
-    {
-      th: "ฉีดผ่าน P8",
-      en: "P8 Injection",
-
-      imagesTH: [
-        "Image/step-08/th/8.1-TH.png",
-        "Image/step-08/th/8.2-TH.png",
-        "Image/step-08/th/8.3-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-08/en/8.1-EN.png",
-        "Image/step-08/en/8.2-EN.png",
-        "Image/step-08/en/8.3-EN.png"
-      ],
-
-      videosTH: [
-        {
-          label: "การฉีด Insulin ด้วย P8",
-          url: "https://youtu.be/7TL37Ik35Y8"
-        },
-        {
-          label: "การเริ่ม–หยุดฉีดอินซูลินด้วย P8",
-          url: "https://youtu.be/xPCLOazQvWQ"
-        }
-      ],
-
-      videosEN: [
-        {
-          label: "Direct Insulin Injection Using the P8 Device",
-          url: "https://youtu.be/nA13U0-c9gU"
-        },
-        {
-          label: "Start/Stop P8 Injection",
-          url: "https://youtu.be/i67Ap7t7d-E"
-        }
-      ]
-    },
-
-
-    /* =====================================================
-       08-2 : QUICK INJECTION
-    ===================================================== */
-
-    {
-      th: "ฉีดด่วน",
-      en: "Quick Injection",
-
-      imagesTH: [
-        "Image/step-08/th/8.4-TH.png",
-        "Image/step-08/th/8.5-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-08/en/8.4-EN.png",
-        "Image/step-08/en/8.5-EN.png"
-      ],
-
-      videosTH: [
-        {
-          label: "การฉีดด่วนของ P8",
-          url: "https://youtu.be/7TL37Ik35Y8"
-        }
-      ],
-
-      videosEN: [
-        {
-          label: "P8 Quick Injection",
-          url: "https://youtu.be/7-fjt_9Sqzg"
-        }
-      ]
-    },
-
-
-    /* =====================================================
-       08-3 : BOLUS CALCULATION
-    ===================================================== */
-
-    {
-      th: "คำนวณโบลัส",
-      en: "Bolus Calculation",
-
-      imagesTH: [
-        "Image/step-08/th/8.6-TH.png",
-        "Image/step-08/th/8.7-TH.png",
-        "Image/step-08/th/8.8-TH.png",
-        "Image/step-08/th/8.9-TH.png",
-        "Image/step-08/th/8.10-TH.png",
-        "Image/step-08/th/8.11-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-08/en/8.6-EN.png",
-        "Image/step-08/en/8.7-EN.png",
-        "Image/step-08/en/8.8-EN.png",
-        "Image/step-08/en/8.9-EN.png",
-        "Image/step-08/en/8.10-EN.png",
-        "Image/step-08/en/8.11-EN.png"
-      ],
-
-      bolusModes: [
-
-        /* ---------- FIXED MEAL ---------- */
-
-        {
-          th: "มื้ออาหารคงที่",
-          en: "Fixed Meal",
-
-          imagesTH: [
-            "Image/step-08/th/bolus-th/fix-th/Fix-1-TH.png",
-            "Image/step-08/th/bolus-th/fix-th/Fix-2-TH.png",
-            "Image/step-08/th/bolus-th/fix-th/Fix-3-TH.png",
-            "Image/step-08/th/bolus-th/fix-th/Fix-4-TH.png",
-            "Image/step-08/th/bolus-th/fix-th/Fix-5-TH.png"
-          ],
-
-          imagesEN: [
-            "Image/step-08/en/bolus-en/fix-en/Fix-1-EN.png",
-            "Image/step-08/en/bolus-en/fix-en/Fix-2-EN.png",
-            "Image/step-08/en/bolus-en/fix-en/Fix-3-EN.png",
-            "Image/step-08/en/bolus-en/fix-en/Fix-4-EN.png",
-            "Image/step-08/en/bolus-en/fix-en/Fix-5-EN.png"
-          ]
-        },
-
-
-        /* ---------- ESTIMATED MEAL ---------- */
-
-        {
-          th: "การประมาณปริมาณอาหาร",
-          en: "Estimated Meal",
-
-          imagesTH: [
-            "Image/step-08/th/bolus-th/est-th/Est-1-TH.png",
-            "Image/step-08/th/bolus-th/est-th/Est-2-TH.png",
-            "Image/step-08/th/bolus-th/est-th/Est-3-TH.png",
-            "Image/step-08/th/bolus-th/est-th/Est-4-TH.png",
-            "Image/step-08/th/bolus-th/est-th/Est-5-TH.png",
-            "Image/step-08/th/bolus-th/est-th/Est-6-TH.png",
-            "Image/step-08/th/bolus-th/est-th/Est-7-TH.png",
-            "Image/step-08/th/bolus-th/est-th/Est-8-TH.png"
-          ],
-
-          imagesEN: [
-            "Image/step-08/en/bolus-en/est-en/Est-1-EN.png",
-            "Image/step-08/en/bolus-en/est-en/Est-2-EN.png",
-            "Image/step-08/en/bolus-en/est-en/Est-3-EN.png",
-            "Image/step-08/en/bolus-en/est-en/Est-4-EN.png",
-            "Image/step-08/en/bolus-en/est-en/Est-5-EN.png",
-            "Image/step-08/en/bolus-en/est-en/Est-6-EN.png",
-            "Image/step-08/en/bolus-en/est-en/Est-7-EN.png",
-            "Image/step-08/en/bolus-en/est-en/Est-8-EN.png"
-          ]
-        },
-
-
-        /* ---------- CARB COUNTING ---------- */
-
-        {
-          th: "การนับคาร์โบไฮเดรต",
-          en: "Carb Counting",
-
-          imagesTH: [
-            "Image/step-08/th/bolus-th/carb-th/Carb-1-TH.png",
-            "Image/step-08/th/bolus-th/carb-th/Carb-2-TH.png",
-            "Image/step-08/th/bolus-th/carb-th/Carb-3-TH.png",
-            "Image/step-08/th/bolus-th/carb-th/Carb-4-TH.png",
-            "Image/step-08/th/bolus-th/carb-th/Carb-5-TH.png",
-            "Image/step-08/th/bolus-th/carb-th/Carb-6-TH.png"
-          ],
-
-          imagesEN: [
-            "Image/step-08/en/bolus-en/carb-en/Carb-1-EN.png",
-            "Image/step-08/en/bolus-en/carb-en/Carb-2-EN.png",
-            "Image/step-08/en/bolus-en/carb-en/Carb-3-EN.png",
-            "Image/step-08/en/bolus-en/carb-en/Carb-4-EN.png",
-            "Image/step-08/en/bolus-en/carb-en/Carb-5-EN.png",
-            "Image/step-08/en/bolus-en/carb-en/Carb-6-EN.png"
-          ]
-        },
-
-
-        /* ---------- ADVANCED CARB COUNTING ---------- */
-
-        {
-          th: "การนับคาร์โบไฮเดรตขั้นสูง",
-          en: "Advanced Carb Counting",
-
-          imagesTH: [
-            "Image/step-08/th/bolus-th/adv-th/Adv-1-TH.png",
-            "Image/step-08/th/bolus-th/adv-th/Adv-2-TH.png",
-            "Image/step-08/th/bolus-th/adv-th/Adv-3-TH.png",
-            "Image/step-08/th/bolus-th/adv-th/Adv-4-TH.png",
-            "Image/step-08/th/bolus-th/adv-th/Adv-5-TH.png",
-            "Image/step-08/th/bolus-th/adv-th/Adv-6-TH.png"
-          ],
-
-          imagesEN: [
-            "Image/step-08/en/bolus-en/adv-en/Adv-1-EN.png",
-            "Image/step-08/en/bolus-en/adv-en/Adv-2-EN.png",
-            "Image/step-08/en/bolus-en/adv-en/Adv-3-EN.png",
-            "Image/step-08/en/bolus-en/adv-en/Adv-4-EN.png",
-            "Image/step-08/en/bolus-en/adv-en/Adv-5-EN.png",
-            "Image/step-08/en/bolus-en/adv-en/Adv-6-EN.png"
-          ],
-
-          videosTH: [
-            {
-              label: "การคำนวณโบลัส: การนับคาร์โบไฮเดรตขั้นสูง",
-              url: "https://youtu.be/i3N7cypK1iU"
-            }
-          ],
-
-          videosEN: [
-            {
-              label: "P8 Bolus Calculation: Advanced Carb Counting",
-              url: "https://youtu.be/XTCKln8incQ"
-            }
-          ]
-        }
-
-      ]
-    },
-
-
-    /* =====================================================
-       08-4 : INJECTION HISTORY
-    ===================================================== */
-
-    {
-      th: "ประวัติการฉีด",
-      en: "Injection History",
-
-      imagesTH: [
-        "Image/step-08/th/8.12-TH.png",
-        "Image/step-08/th/8.13-TH.png",
-        "Image/step-08/th/8.14-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-08/en/8.12-EN.png",
-        "Image/step-08/en/8.13-EN.png",
-        "Image/step-08/en/8.14-EN.png"
-      ]
-    }
-
-  ],
-
-  resources: [
-    {
-      type: "external",
-      kind: "document",
-
-      iconImage:
-        "Image/Food Exchange-Icon.png",
-
-      labelTH:
-        "อาหารแลกเปลี่ยน",
-
-      labelEN:
-        "Food Exchange",
-
-      subtitleTH:
-        "ตารางอาหารแลกเปลี่ยนครบ 6 หมวดหมู่",
-
-      subtitleEN:
-        "Thai Food Exchange List",
-
-      urlTH:
-        "resource-viewer.html?resource=foodexchange&lang=th",
-
-      urlEN:
-        "resource-viewer.html?resource=foodexchange&lang=en"
-    },
-
-    {
-      type: "external",
-      kind: "document",
-
-      iconImage:
-        "Image/Food Absorb-Icon.png",
-
-      labelTH:
-        "ประเมินการดูดซึมของอาหาร",
-
-      labelEN:
-        "Food Absorption Evaluation",
-
-      subtitleTH:
-        "ดูดซึมเร็ว, ปานกลาง, ช้า",
-
-      subtitleEN:
-        "Fast, moderate, slow absorption",
-
-      urlTH:
-        "resource-viewer.html?resource=absorption&lang=th",
-
-      urlEN:
-        "resource-viewer.html?resource=absorption&lang=en"
-    }
-  ]
-},
-
-
-/* =======================================================
-   STEP 09
-   ALERTS + P8 CARE
-======================================================= */
-
-{
-  id: "step09",
-
-  number: "09",
-
-  icon:
-    "Image/Icon-9.png",
-
-  pathTH:
-    "แจ้งเตือนและ<br>การดูแล P8",
-
-  pathEN:
-    "P8 Alerts<br>& Care",
-
-  titleTH:
-    "การแจ้งเตือนและการดูแลรักษา P8",
-
-  titleEN:
-    "P8 Alerts and Maintenance",
-
-  descriptionTH:
-    "ฟังก์ชันการทำงานของผลิตภัณฑ์ → การแจ้งเตือนและการดูแลรักษา P8",
-
-  descriptionEN:
-    "Product Functions → P8 Alerts and Maintenance",
-
-  playlistsTH: [],
-  playlistsEN: [],
-
-  topics: [
-
-    {
-      th:
-        "แจ้งเตือนและการดูแลรักษา P8",
-
-      en:
-        "P8 Alerts and Maintenance",
-
-      imagesTH: [
-        "Image/step-09/th/9.1-TH.png",
-        "Image/step-09/th/9.2-TH.png",
-        "Image/step-09/th/9.3-TH.png"
-      ],
-
-      imagesEN: [
-        "Image/step-09/en/9.1-EN.png",
-        "Image/step-09/en/9.2-EN.png",
-        "Image/step-09/en/9.3-EN.png"
-      ]
-    }
-
-  ],
-
-  resources: [
-    {
-      type: "external",
-
-      kind:
-        "maintenance",
-
-      iconImage:
-        "Image/P8-Fixingman-Icon.png",
-
-      labelTH:
-        "แจ้งซ่อมอุปกรณ์ P8",
-
-      labelEN:
-        "P8 Device Maintenance",
-
-      subtitleTH:
-        "เราพร้อมดูแลและให้บริการอย่างเต็มที่",
-
-      subtitleEN:
-        "We are ready to take care and provide full support",
-
-      urlTH:
-        "https://script.google.com/macros/s/AKfycbwxDtUfkbHmzvhyjFyyzYJ-e-vJyN8NJECJ3Y-txv5Gz59VVpXa86_UVizZfUOJJ0HT/exec",
-
-      urlEN:
-        "https://script.google.com/macros/s/AKfycbwxDtUfkbHmzvhyjFyyzYJ-e-vJyN8NJECJ3Y-txv5Gz59VVpXa86_UVizZfUOJJ0HT/exec"
-    }
-  ]
-
-},
-
-  /* =======================================================
-     STEP 10
-     DIABETES CARE
-     Same slider pattern as STEP 09
-     5 topics / 10 images
-  ======================================================= */
-
   {
-    id: "step10",
-
-    number: "10",
-
-    icon: "Image/Icon-10.png",
-
-    pathTH: "ดูแลเบาหวาน",
-    pathEN: "Diabetes Care",
-
-    titleTH: "คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน",
-    titleEN: "Additional Diabetes Care Guidance",
-
-    descriptionTH:
-      "พื้นฐานอินซูลิน → CGM → อาหาร → การปรับอินซูลิน → การออกกำลังกาย",
-
-    descriptionEN:
-      "Insulin Basics → CGM → Diet → Insulin Adjustment → Exercise",
-
-    playlistsTH: [],
-    playlistsEN: [],
-
-    topics: [
-
+    "id": "step04",
+    "number": "04",
+    "icon": "Image/Icon-4.png",
+    "pathTH": "เชื่อมต่อแอป",
+    "pathEN": "Connect App",
+    "titleTH": "เชื่อมต่อและตั้งค่า P8 กับแอป DIA:CONN",
+    "titleEN": "Connect and Set Up P8 with the DIA:CONN App",
+    "descriptionTH": "ลงทะเบียนและจับคู่ P8 → เลิกจับคู่ P8 → ค้นหาปากกา → ตั้งค่าอุปกรณ์",
+    "descriptionEN": "Register and Pair P8 → Unpair P8 → Find the Pen → Device Settings",
+    "playlistsTH": [],
+    "playlistsEN": [],
+    "topics": [
       {
-        th: "พื้นฐานอินซูลิน",
-        en: "Insulin Basics",
-
-        imagesTH: [
-          "Image/step-10/th/1-10-TH.png"
+        "th": "ลงทะเบียนและจับคู่ปากกา P8",
+        "en": "P8 Registration and Pairing",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.1ลงทะเบียนและจับคู่ปากกา P8/ลงทะเบียนและจับคู่ปากกา P8-1.png",
+          "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.1ลงทะเบียนและจับคู่ปากกา P8/ลงทะเบียนและจับคู่ปากกา P8-2.png"
         ],
-
-        imagesEN: [
-          "Image/step-10/en/01-10-EN.png"
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.1P8 Pen Registration and Pairing/P8 Pen Registration and Pairing-1.png",
+          "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.1P8 Pen Registration and Pairing/P8 Pen Registration and Pairing-2.png"
+        ],
+        "videosTH": [
+          {
+            "label": "การลงทะเบียนและจับคู่ปากกา P8",
+            "url": "https://youtu.be/uSYwPaVxmyA"
+          }
+        ],
+        "videosEN": [
+          {
+            "label": "P8 Registration and Pairing",
+            "url": "https://youtu.be/5FeWETUjhH8"
+          }
+        ],
+        "id": "4.1"
+      },
+      {
+        "th": "เลิกจับคู่ปากกา P8",
+        "en": "Unpair the P8",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.2เลิกจับคู่ปากกา P8/เลิกจับคู่ปากกา P8.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.2Unpairing the P8 Pen/Unpairing the P8 Pen.png"
+        ],
+        "videosTH": [
+          {
+            "label": "เลิกจับคู่ปากกา P8",
+            "url": "https://youtu.be/6hRcj-8iZFc"
+          }
+        ],
+        "videosEN": [
+          {
+            "label": "Unpair the P8",
+            "url": "https://youtu.be/hBqoP2WZXQc"
+          }
+        ],
+        "id": "4.2"
+      },
+      {
+        "th": "ค้นหาปากกา P8",
+        "en": "Find the Pen",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.3ค้นหาปากกา P8/ค้นหาปากกา P8.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.3Find My P8 Pen/Find My P8 Pen.png"
+        ],
+        "videosTH": [
+          {
+            "label": "ค้นหาปากกา P8",
+            "url": "https://youtu.be/-L8sHJbihy8"
+          }
+        ],
+        "videosEN": [
+          {
+            "label": "Find the Pen",
+            "url": "https://youtu.be/FHWBBa5GqrQ"
+          }
+        ],
+        "id": "4.3"
+      },
+      {
+        "th": "ตั้งค่าอุปกรณ์: ความเร็วในการฉีด",
+        "en": "Device Settings: Injection Speed",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.4ตั้งค่าอุปกรณ์-ความเร็วในการฉีด/ตั้งค่าอุปกรณ์-ความเร็วในการฉีด.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.4Device Settings-Injection Speed/Device Settings-Injection Speed.png"
+        ],
+        "videosTH": [
+          {
+            "label": "การตั้งค่าอุปกรณ์: ความเร็วในการฉีดของ P8",
+            "url": "https://youtu.be/SG5D4vj_3k4"
+          }
+        ],
+        "videosEN": [
+          {
+            "label": "P8 Device Settings: Injection Speed",
+            "url": "https://youtu.be/SQlcHqN86Tc"
+          }
+        ],
+        "id": "4.4"
+      },
+      {
+        "th": "ตั้งค่าอุปกรณ์: ระยะเวลารอหลังฉีดยา",
+        "en": "Device Settings: Waiting Time After Injection",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.5ตั้งค่าอุปกรณ์-ระยะเวลารอหลังฉีดยา/ตั้งค่าอุปกรณ์-ระยะเวลารอหลังฉีดยา.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.5Device Settings-Post-Injection Hold Time/Device Settings-Post-Injection Hold Time.png"
+        ],
+        "videosTH": [
+          {
+            "label": "การตั้งค่าอุปกรณ์: ระยะเวลารอคอยหลังฉีดยาของ P8",
+            "url": "https://youtu.be/jG0JA-J-lt4"
+          }
+        ],
+        "videosEN": [
+          {
+            "label": "P8 Device Settings: Waiting Time After Injection",
+            "url": "https://youtu.be/TKfuFk9iWLQ"
+          }
+        ],
+        "id": "4.5"
+      },
+      {
+        "th": "ตั้งค่าอุปกรณ์: จำกัดปริมาณอินซูลินสูงสุดต่อครั้ง",
+        "en": "Device Settings: Single Dose Limit",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.6ตั้งค่าอุปกรณ์-จำกัดปริมาณอินซูลินสูงสุดต่อครั้ง/ตั้งค่าอุปกรณ์-จำกัดปริมาณอินซูลินสูงสุดต่อครั้ง.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.6Device Settings-Maximum Insulin Dose per Injection/4.6 Device Settings-Maximum Insulin Dose per Injection.png"
+        ],
+        "videosTH": [
+          {
+            "label": "การตั้งค่าอุปกรณ์: จำกัดปริมาณอินซูลินสูงสุดต่อครั้ง",
+            "url": "https://youtu.be/mDe9GCXbnew"
+          }
+        ],
+        "videosEN": [
+          {
+            "label": "P8 Device Settings: Single Dose Limit",
+            "url": "https://youtu.be/4XaX7dLw270"
+          }
+        ],
+        "id": "4.6"
+      },
+      {
+        "th": "ตั้งค่าอุปกรณ์: อินซูลิน",
+        "en": "Device Settings: Insulin",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/04-เชื่อมต่อและตั้งค่า P8 กับแอป DIACONN/4.7ตั้งค่าอุปกรณ์-อินซูลิน/ตั้งค่าอุปกรณ์-อินซูลิน.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/04-Connect and Set Up P8 with the DIACONN App/4.7 Device Settings-Insulin/4.7 Device Settings-Insulin.png"
+        ],
+        "videosTH": [
+          {
+            "label": "การตั้งค่าอุปกรณ์: อินซูลิน",
+            "url": "https://youtu.be/XOT1KLINEuM"
+          }
+        ],
+        "videosEN": [
+          {
+            "label": "P8 Device Settings: Insulin",
+            "url": "https://youtu.be/HglCAFK9Pgo"
+          }
+        ],
+        "id": "4.7"
+      }
+    ]
+  },
+  {
+    "id": "step05",
+    "number": "05",
+    "icon": "Image/Icon-5.png",
+    "pathTH": "การเปลี่ยน<br>คาร์ทริดจ์",
+    "pathEN": "Cartridge<br>Replacement",
+    "titleTH": "การเปลี่ยนคาร์ทริดจ์ P8",
+    "titleEN": "P8 Cartridge Replacement",
+    "descriptionTH": "ขั้นตอนการเปลี่ยนคาร์ทริดจ์ P8",
+    "descriptionEN": "How to replace the P8 cartridge",
+    "playlistsTH": [],
+    "playlistsEN": [],
+    "topics": [
+      {
+        "th": "การเปลี่ยนคาร์ทริดจ์ P8",
+        "en": "P8 Cartridge Replacement",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/05-การเปลี่ยนคาร์ทริดจ์ P8/5.1การเปลี่ยนคาร์ทริดจ์ P8/การเปลี่ยนคาร์ทริดจ์ P8.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/05-P8 Cartridge Replacement/5.1P8 Cartridge Replacement/P8 Cartridge Replacement.png"
+        ],
+        "videosTH": [
+          {
+            "label": "การเปลี่ยนคาร์ทริดจ์ P8",
+            "url": "https://youtu.be/p7TRi8wVHE0"
+          }
+        ],
+        "videosEN": [
+          {
+            "label": "P8 Cartridge Replacement",
+            "url": "https://youtu.be/4qSFRWU6rpQ"
+          }
+        ],
+        "id": "5.1"
+      },
+      {
+        "th": "อินซูลินและเข็มที่รองรับ P8",
+        "en": "P8-Compatible Insulin and Pen Needles",
+        "id": "5.2",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/05-การเปลี่ยนคาร์ทริดจ์ P8/5.2อินซูลินและเข็มที่รองรับ P8/อินซูลินและเข็มที่รองรับ P8.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/05-P8 Cartridge Replacement/5.2P8-Compatible Insulin and Pen Needles/P8-Compatible Insulin and Pen Needles.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "step06",
+    "number": "06",
+    "icon": "Image/Icon-6.png",
+    "pathTH": "เชื่อมต่อข้อมูล",
+    "pathEN": "Connect Data",
+    "titleTH": "เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน",
+    "titleEN": "Device, CareWeb and Report Connections",
+    "descriptionTH": "เชื่อมต่อ/ยกเลิก CGM → รายงานของฉัน → เชื่อมต่อ/ยกเลิก CareWeb",
+    "descriptionEN": "Connect/Disconnect CGM → My Report → Connect/Disconnect CareWeb",
+    "topics": [
+      {
+        "th": "เชื่อมต่อ iCan CGM (i6/H6)",
+        "en": "Connect iCan CGM (i6:H6)",
+        "id": "6.1",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.1เชื่อมต่อ iCan CGM (i6:H6)*/เชื่อมต่อ iCan CGM (i6:H6)-1*.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.1เชื่อมต่อ iCan CGM (i6:H6)*/เชื่อมต่อ iCan CGM (i6:H6)-2*.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.1 Connect iCan CGM (i6:H6)*/Connect iCan CGM (i6:H6)-1*.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.1 Connect iCan CGM (i6:H6)*/Connect iCan CGM (i6:H6)-2*.png"
         ]
       },
-
       {
-        th: "CGM",
-        en: "CGM",
-
-        imagesTH: [
-          "Image/step-10/th/2-10-TH.png"
+        "th": "เชื่อมต่อ CareSens Air 365 CGM",
+        "en": "Connect CareSens Air 365 CGM",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.2เชื่อมต่อ CareSense Air 365 CGM/เชื่อมต่อ CareSense Air 365 CGM-1.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.2เชื่อมต่อ CareSense Air 365 CGM/เชื่อมต่อ CareSense Air 365 CGM-2.png"
         ],
-
-        imagesEN: [
-          "Image/step-10/en/02-10-EN.png"
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.2Connect CareSens Air 365 CGM/Connect CareSens Air 365 CGM-1.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.2Connect CareSens Air 365 CGM/Connect CareSens Air 365 CGM-2.png"
+        ],
+        "id": "6.2"
+      },
+      {
+        "th": "ยกเลิกการเชื่อมต่อ iCan CGM (i6/H6)",
+        "en": "Disconnect iCan CGM (i6:H6)",
+        "id": "6.3",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.3ยกเลิกการเชื่อมต่อ iCan CGM (i6:H6)* /ยกเลิกการเชื่อมต่อ iCan CGM (i6:H6)-1*.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.3ยกเลิกการเชื่อมต่อ iCan CGM (i6:H6)* /ยกเลิกการเชื่อมต่อ iCan CGM (i6:H6)-2*.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.3Disconnect iCan CGM (i6:H6)*/Disconnect iCan CGM (i6:H6)-1*.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.3Disconnect iCan CGM (i6:H6)*/Disconnect iCan CGM (i6:H6)-2*.png"
         ]
       },
-
       {
-        th: "อาหารสำหรับผู้ป่วยเบาหวาน",
-        en: "Diabetes Diet",
-
-        imagesTH: [
-          "Image/step-10/th/3-10-TH.png"
+        "th": "ยกเลิกการเชื่อมต่อ CareSens Air 365 CGM",
+        "en": "Disconnect CareSens Air 365 CGM",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.4ยกเลิกการเชื่อมต่อ CareSense Air 365 CGM/ยกเลิกการเชื่อมต่อ CareSense Air 365 CGM-1.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.4ยกเลิกการเชื่อมต่อ CareSense Air 365 CGM/ยกเลิกการเชื่อมต่อ CareSense Air 365 CGM-2.png"
         ],
-
-        imagesEN: [
-          "Image/step-10/en/03-10-EN.png"
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.4Disconnect CareSens Air 365 CGM/Disconnect CareSens Air 365 CGM-1.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.4Disconnect CareSens Air 365 CGM/Disconnect CareSens Air 365 CGM-2.png"
+        ],
+        "id": "6.4"
+      },
+      {
+        "th": "รายงานของฉัน",
+        "en": "My Report",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.5รายงานของฉัน/รายงานของฉัน-1.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.5รายงานของฉัน/รายงานของฉัน-2.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.5รายงานของฉัน/รายงานของฉัน-3.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.5รายงานของฉัน/รายงานของฉัน-4.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.5รายงานของฉัน/รายงานของฉัน-5.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.5My Report/My Report-1.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.5My Report/My Report-2.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.5My Report/My Report-3.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.5My Report/My Report-4.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.5My Report/My Report-5.png"
+        ],
+        "id": "6.5"
+      },
+      {
+        "th": "เชื่อมต่อ CareWeb",
+        "en": "Connect CareWeb",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-1.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-2.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-3.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-4.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-5.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-6.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.6เชื่อมต่อ CareWeb/เชื่อมต่อ CareWeb-7.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-1.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-2.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-3.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-4.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-5.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-6.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.6Connect CareWeb/Connect CareWeb-7.png"
+        ],
+        "id": "6.6"
+      },
+      {
+        "th": "ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)",
+        "en": "Disconnect CareWeb (Patient)",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.7ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)/ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)-1.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.7ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)/ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)-2.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.7ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)/ยกเลิกการเชื่อมต่อ CareWeb (ผู้ป่วย)-3.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.7Disconnect CareWeb (Patient)/Disconnect CareWeb (Patient)-1.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.7Disconnect CareWeb (Patient)/Disconnect CareWeb (Patient)-2.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.7Disconnect CareWeb (Patient)/Disconnect CareWeb (Patient)-3.png"
+        ],
+        "id": "6.7"
+      },
+      {
+        "th": "ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)",
+        "en": "Disconnect CareWeb (Hospital)",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.8ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)/ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)-1.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.8ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)/ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)-2.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.8ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)/ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)-3.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.8ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)/ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)-4.png",
+          "New Asset-P8 Quick Manual/TH/06-เชื่อมต่ออุปกรณ์ ผู้ดูแล และรายงาน/6.8ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)/ยกเลิกการเชื่อมต่อ CareWeb (โรงพยาบาล)-5.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.8Disconnect CareWeb (Hospital)/Disconnect CareWeb (Hospital)-1.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.8Disconnect CareWeb (Hospital)/Disconnect CareWeb (Hospital)-2.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.8Disconnect CareWeb (Hospital)/Disconnect CareWeb (Hospital)-3.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.8Disconnect CareWeb (Hospital)/Disconnect CareWeb (Hospital)-4.png",
+          "New Asset-P8 Quick Manual/EN/06-Device Connection, Caregivers, and Reports/6.8Disconnect CareWeb (Hospital)/Disconnect CareWeb (Hospital)-5.png"
+        ],
+        "id": "6.8"
+      }
+    ]
+  },
+  {
+    "id": "step07",
+    "number": "07",
+    "icon": "Image/Icon-7.png",
+    "pathTH": "รู้จัก<br>DIA:CONN",
+    "pathEN": "DIA:CONN<br>App",
+    "titleTH": "ทำความรู้จักแอป  DIA:CONN",
+    "titleEN": "Getting to Know the DIA:CONN App",
+    "descriptionTH": "ทำความรู้จักหน้าจอและข้อมูลต่าง ๆ ภายในแอป DIA:CONN",
+    "descriptionEN": "Learn about the screens and information available in the DIA:CONN App",
+    "topics": [
+      {
+        "th": "หน้าหลัก",
+        "en": "Home Screen",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.1หน้าแรก/หน้าแรก-1.png",
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.1หน้าแรก/หน้าแรก-2.png",
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.1หน้าแรก/หน้าแรก-3.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.1Home Screen/Home Screen-1.png",
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.1Home Screen/Home Screen-2.png",
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.1Home Screen/Home Screen-3.png"
+        ],
+        "id": "7.1"
+      },
+      {
+        "th": "ข้อมูลปากกา",
+        "en": "Pen Information",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.2ข้อมูลปากกา/ข้อมูลปากกา-1.png",
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.2ข้อมูลปากกา/ข้อมูลปากกา-2.png",
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.2ข้อมูลปากกา/ข้อมูลปากกา-3.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.2Pen Information/Pen Information-1.png",
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.2Pen Information/Pen Information-2.png",
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.2Pen Information/Pen Information-3.png"
+        ],
+        "id": "7.2"
+      },
+      {
+        "th": "เพิ่มเติม",
+        "en": "More",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.3เพิ่มเติม/เพิ่มเติม-1.png",
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.3เพิ่มเติม/เพิ่มเติม-2.png",
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.3เพิ่มเติม/เพิ่มเติม-3.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.3More/More-1.png",
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.3More/More-2.png",
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.3More/More-3.png"
+        ],
+        "id": "7.3"
+      },
+      {
+        "th": "การฉีด",
+        "en": "Inject",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.4การฉีด/การฉีด-1.png",
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.4การฉีด/การฉีด-2.png",
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.4การฉีด/การฉีด-3.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.4Inject/Inject-1.png",
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.4Inject/Inject-2.png",
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.4Inject/Inject-3.png"
+        ],
+        "id": "7.4"
+      },
+      {
+        "th": "ค้นหาปากกา",
+        "en": "Find the pen",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.5ค้นหาปากกา/ค้นหาปากกา.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.5Find the Pen/Find the Pen.png"
+        ],
+        "id": "7.5"
+      },
+      {
+        "th": "การตั้งค่าอุปกรณ์",
+        "en": "Device Settings",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.6การตั้งค่าอุปกรณ์/การตั้งค่าอุปกรณ์-1.png",
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.6การตั้งค่าอุปกรณ์/การตั้งค่าอุปกรณ์-2.png",
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.6การตั้งค่าอุปกรณ์/การตั้งค่าอุปกรณ์-3.png",
+          "New Asset-P8 Quick Manual/TH/07-ทำความรู้จักแอป DIACONN/7.6การตั้งค่าอุปกรณ์/การตั้งค่าอุปกรณ์-4.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.6Device Settings/Device Settings-1.png",
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.6Device Settings/Device Settings-2.png",
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.6Device Settings/Device Settings-3.png",
+          "New Asset-P8 Quick Manual/EN/07-Introduction to the DIACONN App/7.6Device Settings/Device Settings-4.png"
+        ],
+        "id": "7.6"
+      }
+    ]
+  },
+  {
+    "id": "step08",
+    "number": "08",
+    "icon": "Image/Icon-8.png",
+    "pathTH": "ฉีดอินซูลิน",
+    "pathEN": "Injection",
+    "titleTH": "การฉีดอินซูลินและการคำนวณโบลัส",
+    "titleEN": "Insulin Injection and Bolus Calculator",
+    "descriptionTH": "การฉีดอินซูลินด้วย P8 → การฉีดด่วน → การคำนวณโบลัส → ประวัติการฉีด",
+    "descriptionEN": "P8 Injection → Quick Injection → Bolus Calculation → Injection History",
+    "playlistsTH": [],
+    "playlistsEN": [],
+    "topics": [
+      {
+        "th": "ฉีดผ่าน P8",
+        "en": "P8 Injection",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.1ฉีดผ่าน P8/ฉีดผ่าน P8.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.1Inject Insulin Using P8/Inject Insulin Using P8.png"
+        ],
+        "videosTH": [
+          {
+            "label": "การฉีด Insulin ด้วย P8",
+            "url": "https://youtu.be/7TL37Ik35Y8"
+          },
+          {
+            "label": "การเริ่ม–หยุดฉีดอินซูลินด้วย P8",
+            "url": "https://youtu.be/xPCLOazQvWQ"
+          }
+        ],
+        "videosEN": [
+          {
+            "label": "Direct Insulin Injection Using the P8 Device",
+            "url": "https://youtu.be/nA13U0-c9gU"
+          },
+          {
+            "label": "Start/Stop P8 Injection",
+            "url": "https://youtu.be/i67Ap7t7d-E"
+          }
+        ],
+        "id": "8.1",
+        "playlistsTH": [
+          {
+            "label": "การฉีดอินซูลินด้วย P8",
+            "url": "https://www.youtube.com/playlist?list=PLHVBZA9VsGDs"
+          },
+          {
+            "label": "การเริ่ม-หยุดฉีดด้วย P8",
+            "url": "https://www.youtube.com/playlist?list=PLbs3Om0DpomU"
+          }
         ]
       },
-
       {
-        th: "การปรับอินซูลิน",
-        en: "Insulin Adjustment",
-
-        imagesTH: [
+        "th": "ฉีดด่วนผ่านแอป DIACONN ของ P8",
+        "en": "Quick Injection",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.2ฉีดด่วนผ่านแอป DIACONN ของ P8/ฉีดด่วนผ่านแอป DIACONN ของ P8.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.2P8 Quick Injection via the DIACONN App/P8 Quick Injection via the DIACONN App.png"
+        ],
+        "videosTH": [
+          {
+            "label": "การฉีดด่วนของ P8",
+            "url": "https://youtu.be/7TL37Ik35Y8"
+          }
+        ],
+        "videosEN": [
+          {
+            "label": "P8 Quick Injection",
+            "url": "https://youtu.be/7-fjt_9Sqzg"
+          }
+        ],
+        "id": "8.2",
+        "playlistsTH": [
+          {
+            "label": "การฉีดด่วนผ่านแอป DIA: CONN ของ P8",
+            "url": "https://www.youtube.com/playlist?list=PLfBj1bR1_xcM"
+          }
+        ]
+      },
+      {
+        "th": "ประวัติการฉีด และประวัติปากกา P8",
+        "en": "Injection History",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.3ประวัติการฉีด และประวัติปากกา P8/ประวัติการฉีด และประวัติปากกา P8.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.3P8 Injection History and Pen History/P8 Injection History and Pen History.png"
+        ],
+        "id": "8.3"
+      },
+      {
+        "th": "แอป DIACONN-การตั้งเวลาฉีด",
+        "en": "DIACONN App-Injection Time Settings",
+        "id": "8.4",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.4แอป DIACONN-การตั้งเวลาฉีด/การตั้งค่าเวลาฉีด-1.png",
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.4แอป DIACONN-การตั้งเวลาฉีด/การตั้งค่าเวลาฉีด-2.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.4DIACONN App-Injection Time Settings/DIACONN App-Injection Time Settings-1.png",
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.4DIACONN App-Injection Time Settings/DIACONN App-Injection Time Settings-2.png"
+        ]
+      },
+      {
+        "th": "แอป DIACONN-การตั้งค่าอินซูลินล่วงหน้า (U)",
+        "en": "DIACONN App-Preset Insulin Dose (U)",
+        "id": "8.5",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.5แอป DIACONN-การตั้งค่าอินซูลินล่วงหน้า (U)/การตั้งค่าอินซูลินล่วงหน้า (U)-1.png",
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.5แอป DIACONN-การตั้งค่าอินซูลินล่วงหน้า (U)/การตั้งค่าอินซูลินล่วงหน้า (U)-2.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.5DIACONN App-Preset Insulin Dose (U)/DIACONN App-Preset Insulin Dose (U)-1.png",
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.5DIACONN App-Preset Insulin Dose (U)/DIACONN App-Preset Insulin Dose (U)-2.png"
+        ]
+      },
+      {
+        "th": "แอป DIACONN-การตั้งค่าคาร์โบไฮเดรต (กรัม)",
+        "en": "DIACONN App-Carbohydrate Settings (g)",
+        "id": "8.6",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.6แอป DIACONN-การตั้งค่าคาร์โบไฮเดรต (กรัม)/การตั้งค่าคาร์โบไฮเดรต (กรัม)-1.png",
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.6แอป DIACONN-การตั้งค่าคาร์โบไฮเดรต (กรัม)/การตั้งค่าคาร์โบไฮเดรต (กรัม)-2.png",
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.6แอป DIACONN-การตั้งค่าคาร์โบไฮเดรต (กรัม)/การตั้งค่าคาร์โบไฮเดรต (กรัม)-3.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.6DIACONN App-Carbohydrate Settings (g)/DIACONN App-Carbohydrate Settings (g)-1.png",
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.6DIACONN App-Carbohydrate Settings (g)/DIACONN App-Carbohydrate Settings (g)-2.png",
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.6DIACONN App-Carbohydrate Settings (g)/DIACONN App-Carbohydrate Settings (g)-3.png"
+        ]
+      },
+      {
+        "th": "แอป DIACONN-ตั้งค่าเครื่องคิดเลขโบลัสขั้นสูงและการฉีด",
+        "en": "Bolus Calculation",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.7แอป DIACONN-ตั้งค่าเครื่องคิดเลขโบลัสขั้นสูงและการฉีด/ตั้งค่าเครื่องคิดเลขโบลัสขั้นสูงและการฉีด.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.7DIACONN App-Advanced Bolus Calculator Settings and Injection/DIACONN App-Advanced Bolus Calculator Settings and Injection.png"
+        ],
+        "bolusModes": [
+          {
+            "th": "มื้ออาหารคงที่",
+            "en": "Fixed Meal",
+            "imagesTH": [
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/1.มื้ออาหารคงที่/มื้ออาหารคงที่-1.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/1.มื้ออาหารคงที่/มื้ออาหารคงที่-2.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/1.มื้ออาหารคงที่/มื้ออาหารคงที่-3.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/1.มื้ออาหารคงที่/มื้ออาหารคงที่-4.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/1.มื้ออาหารคงที่/มื้ออาหารคงที่-5.png"
+            ],
+            "imagesEN": [
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/1.Fixed Meal/Fixed Meal-1.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/1.Fixed Meal/Fixed Meal-2.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/1.Fixed Meal/Fixed Meal-3.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/1.Fixed Meal/Fixed Meal-4.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/1.Fixed Meal/Fixed Meal-5.png"
+            ]
+          },
+          {
+            "th": "การประมาณปริมาณอาหาร",
+            "en": "Estimated Meal",
+            "imagesTH": [
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-1.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-2.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-3.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-4.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-5.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-6.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-7.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-8.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/2.การประมาณปริมาณอาหาร/การประมาณปริมาณอาหาร-9.png"
+            ],
+            "imagesEN": [
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-1.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-2.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-3.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-4.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-5.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-6.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-7.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-8.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/2.Estimated Meal/Estimated Meal-9.png"
+            ]
+          },
+          {
+            "th": "การนับคาร์โบไฮเดรต",
+            "en": "Carb Counting",
+            "imagesTH": [
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/3.การนับคาร์โบไฮเดรต/การนับคาร์โบไฮเดรต-1.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/3.การนับคาร์โบไฮเดรต/การนับคาร์โบไฮเดรต-2.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/3.การนับคาร์โบไฮเดรต/การนับคาร์โบไฮเดรต-3.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/3.การนับคาร์โบไฮเดรต/การนับคาร์โบไฮเดรต-4.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/3.การนับคาร์โบไฮเดรต/การนับคาร์โบไฮเดรต-5.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/3.การนับคาร์โบไฮเดรต/การนับคาร์โบไฮเดรต-6.png"
+            ],
+            "imagesEN": [
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/3.Carb Counting/Carb Counting-1.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/3.Carb Counting/Carb Counting-2.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/3.Carb Counting/Carb Counting-3.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/3.Carb Counting/Carb Counting-4.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/3.Carb Counting/Carb Counting-5.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/3.Carb Counting/Carb Counting-6.png"
+            ]
+          },
+          {
+            "th": "การนับคาร์โบไฮเดรตขั้นสูง",
+            "en": "Advanced Carb Counting",
+            "imagesTH": [
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/4.การนับคาร์โบไฮเดรตขั้นสูง/การนับคาร์โบไฮเดรตขั้นสูง-1.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/4.การนับคาร์โบไฮเดรตขั้นสูง/การนับคาร์โบไฮเดรตขั้นสูง-2.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/4.การนับคาร์โบไฮเดรตขั้นสูง/การนับคาร์โบไฮเดรตขั้นสูง-3.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/4.การนับคาร์โบไฮเดรตขั้นสูง/การนับคาร์โบไฮเดรตขั้นสูง-4.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/4.การนับคาร์โบไฮเดรตขั้นสูง/การนับคาร์โบไฮเดรตขั้นสูง-5.png",
+              "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/โหมดการคำนวณโบลัส/4.การนับคาร์โบไฮเดรตขั้นสูง/การนับคาร์โบไฮเดรตขั้นสูง-6.png"
+            ],
+            "imagesEN": [
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/4.Advanced Carb Counting/Advanced Carb Counting-1.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/4.Advanced Carb Counting/Advanced Carb Counting-2.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/4.Advanced Carb Counting/Advanced Carb Counting-3.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/4.Advanced Carb Counting/Advanced Carb Counting-4.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/4.Advanced Carb Counting/Advanced Carb Counting-5.png",
+              "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/Bolus Calculation Mode/4.Advanced Carb Counting/Advanced Carb Counting-6.png"
+            ],
+            "videosTH": [
+              {
+                "label": "การคำนวณโบลัส: การนับคาร์โบไฮเดรตขั้นสูง",
+                "url": "https://youtu.be/i3N7cypK1iU"
+              }
+            ],
+            "videosEN": [
+              {
+                "label": "P8 Bolus Calculation: Advanced Carb Counting",
+                "url": "https://youtu.be/XTCKln8incQ"
+              }
+            ]
+          }
+        ],
+        "id": "8.7",
+        "playlistsTH": [
+          {
+            "label": "การคำนวณโบลัส: การนับคาร์โบไฮเดรตขั้นสูง",
+            "url": "https://www.youtube.com/playlist?list=PLRZtJG9zoDAI"
+          }
+        ]
+      },
+      {
+        "th": "การคาดการณ์ระดับน้ำตาล",
+        "en": "Blood Glucose Prediction",
+        "id": "8.8",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.8การคาดการณ์ระดับน้ำตาล/การคาดการณ์ระดับน้ำตาล.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.8Blood Glucose Prediction/Blood Glucose Prediction.png"
+        ]
+      },
+      {
+        "th": "ปริมาณอินซูลินที่ยังออกฤทธิ์ในร่างกาย (IOB)",
+        "en": "Insulin on Board (IOB)",
+        "id": "8.9",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.9ปริมาณอินซูลินที่ยังออกฤทธิ์ในร่างกาย (IOB)/ปริมาณอินซูลินที่ยังออกฤทธิ์ในร่างกาย (IOB).png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.9Insulin on Board (IOB)/Insulin on Board (IOB).png"
+        ]
+      },
+      {
+        "th": "ปริมาณคาร์โบไฮเดรตที่ยังอยู่ในร่างกาย (COB)",
+        "en": "Carbohydrates on Board (COB)",
+        "id": "8.10",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/08-การฉีดอินซูลินและการคำนวณโบลัส/8.10ปริมาณคาร์โบไฮเดรตที่ยังอยู่ในร่างกาย (COB)/ปริมาณคาร์โบไฮเดรตที่ยังอยู่ในร่างกาย (COB).png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/08-Insulin Injection and Bolus Calculation/8.10Carbohydrates on Board (COB)/Carbohydrates on Board (COB).png"
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "type": "external",
+        "kind": "document",
+        "iconImage": "Image/Food Exchange-Icon.png",
+        "labelTH": "อาหารแลกเปลี่ยน",
+        "labelEN": "Food Exchange",
+        "subtitleTH": "ตารางอาหารแลกเปลี่ยนครบ 6 หมวดหมู่",
+        "subtitleEN": "Thai Food Exchange List",
+        "urlTH": "resource-viewer.html?resource=foodexchange&lang=th",
+        "urlEN": "resource-viewer.html?resource=foodexchange&lang=en"
+      },
+      {
+        "type": "external",
+        "kind": "document",
+        "iconImage": "Image/Food Absorb-Icon.png",
+        "labelTH": "ประเมินการดูดซึมของอาหาร",
+        "labelEN": "Food Absorption Evaluation",
+        "subtitleTH": "ดูดซึมเร็ว, ปานกลาง, ช้า",
+        "subtitleEN": "Fast, moderate, slow absorption",
+        "urlTH": "resource-viewer.html?resource=absorption&lang=th",
+        "urlEN": "resource-viewer.html?resource=absorption&lang=en"
+      }
+    ]
+  },
+  {
+    "id": "step09",
+    "number": "09",
+    "icon": "Image/Icon-9.png",
+    "pathTH": "แจ้งเตือนและ<br>การดูแล P8",
+    "pathEN": "P8 Alerts<br>& Care",
+    "titleTH": "การแจ้งเตือนและการดูแลรักษา P8",
+    "titleEN": "P8 Alerts and Maintenance",
+    "descriptionTH": "ฟังก์ชันการทำงานของผลิตภัณฑ์ → การแจ้งเตือนและการดูแลรักษา P8",
+    "descriptionEN": "Product Functions → P8 Alerts and Maintenance",
+    "playlistsTH": [],
+    "playlistsEN": [],
+    "topics": [
+      {
+        "th": "แจ้งเตือนและการดูแลรักษา P8",
+        "en": "P8 Alerts and Maintenance",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/09-การแจ้งเตือนและการดูแลรักษา P8/การแจ้งเตือนและการดูแลรักษา P8-1.png",
+          "New Asset-P8 Quick Manual/TH/09-การแจ้งเตือนและการดูแลรักษา P8/การแจ้งเตือนและการดูแลรักษา P8-2.png",
+          "New Asset-P8 Quick Manual/TH/09-การแจ้งเตือนและการดูแลรักษา P8/การแจ้งเตือนและการดูแลรักษา P8-3.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/09-P8 Alerts and Maintenance/P8 Alerts and Maintenance-1.png",
+          "New Asset-P8 Quick Manual/EN/09-P8 Alerts and Maintenance/P8 Alerts and Maintenance-2.png",
+          "New Asset-P8 Quick Manual/EN/09-P8 Alerts and Maintenance/P8 Alerts and Maintenance-3.png"
+        ],
+        "id": "9.1"
+      }
+    ],
+    "resources": [
+      {
+        "type": "external",
+        "kind": "maintenance",
+        "iconImage": "Image/P8-Fixingman-Icon.png",
+        "labelTH": "แจ้งซ่อมอุปกรณ์ P8",
+        "labelEN": "P8 Device Maintenance",
+        "subtitleTH": "เราพร้อมดูแลและให้บริการอย่างเต็มที่",
+        "subtitleEN": "We are ready to take care and provide full support",
+        "urlTH": "https://script.google.com/macros/s/AKfycbwxDtUfkbHmzvhyjFyyzYJ-e-vJyN8NJECJ3Y-txv5Gz59VVpXa86_UVizZfUOJJ0HT/exec",
+        "urlEN": "https://script.google.com/macros/s/AKfycbwxDtUfkbHmzvhyjFyyzYJ-e-vJyN8NJECJ3Y-txv5Gz59VVpXa86_UVizZfUOJJ0HT/exec"
+      }
+    ]
+  },
+  {
+    "id": "step10",
+    "number": "10",
+    "icon": "Image/Icon-10.png",
+    "pathTH": "ดูแลเบาหวาน",
+    "pathEN": "Diabetes Care",
+    "titleTH": "คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน",
+    "titleEN": "Additional Diabetes Care Guidance",
+    "descriptionTH": "พื้นฐานอินซูลิน → CGM → อาหาร → การปรับอินซูลิน → การออกกำลังกาย",
+    "descriptionEN": "Insulin Basics → CGM → Diet → Insulin Adjustment → Exercise",
+    "playlistsTH": [],
+    "playlistsEN": [],
+    "topics": [
+      {
+        "th": "พื้นฐานอินซูลิน",
+        "en": "Insulin Basics",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.1พื้นฐานอินซูลิน (MDI)/พื้นฐานอินซูลิน MDI.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.1Insulin Basics (MDI)/Insulin Basics (MDI).png"
+        ],
+        "id": "10.1"
+      },
+      {
+        "th": "CGM",
+        "en": "CGM",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.2CGM-TH/CGM-TH.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.2CGM-EN/CGM-EN.png"
+        ],
+        "id": "10.2"
+      },
+      {
+        "th": "เปรียบเทียบCGM vs. BGM",
+        "en": "CGM vs. BGM Comparison",
+        "id": "10.3",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.3เปรียบเทียบCGM vs. BGM*/เปรียบเทียบCGM vs. BGM*.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.3CGM vs. BGM Comparison*/CGM vs. BGM Comparison*.png"
+        ]
+      },
+      {
+        "th": "เปรียบเทียบระดับน้ำตาลต่ำ vs. ระดับน้ำตาลสูง",
+        "en": "Hypoglycemia vs. Hyperglycemia Comparison",
+        "id": "10.4",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.4เปรียบเทียบระดับน้ำตาลต่ำ vs. ระดับน้ำตาลสูง*/เปรียบเทียบระดับน้ำตาลต่ำ vs. ระดับน้ำตาลสูง*.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.4Hypoglycemia vs. Hyperglycemia Comparison*/Hypoglycemia vs. Hyperglycemia Comparison*.png"
+        ]
+      },
+      {
+        "th": "อาหารสำหรับผู้ป่วยเบาหวาน",
+        "en": "Diabetes Diet",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.5อาหารสำหรับผู้ป่วยเบาหวาน/อาหารสำหรับผู้ป่วยเบาหวาน.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.5Diet for People with Diabetes/Diet for People with Diabetes.png"
+        ],
+        "id": "10.5"
+      },
+      {
+        "th": "การปรับอินซูลิน",
+        "en": "Insulin Adjustment",
+        "imagesTH": [
           "Image/step-10/th/4-10-TH.png",
           "Image/step-10/th/5-10-TH.png",
           "Image/step-10/th/6-10-TH.png"
         ],
-
-        imagesEN: [
+        "imagesEN": [
           "Image/step-10/en/04-10-EN.png",
           "Image/step-10/en/05-10-EN.png",
           "Image/step-10/en/06-10-EN.png"
-        ]
-      },
-
-      {
-        th: "การออกกำลังกาย",
-        en: "Exercise",
-
-        imagesTH: [
-          "Image/step-10/th/7-10-TH.png",
-          "Image/step-10/th/8-10-TH.png",
-          "Image/step-10/th/9-10-TH.png",
-          "Image/step-10/th/10-10-TH.png"
         ],
-
-        imagesEN: [
-          "Image/step-10/en/07-10-EN.png",
-          "Image/step-10/en/08-10-EN.png",
-          "Image/step-10/en/09-10-EN.png",
-          "Image/step-10/en/10-10-EN.png"
-        ]
+        "id": "10.insulin-adjustment"
+      },
+      {
+        "th": "การออกกำลังกาย",
+        "en": "Exercise",
+        "imagesTH": [
+          "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.6การออกกำลังกายสำหรับผู้ป่วยเบาหวาน/คำแนะนำด้านการออกกำลังกาย.png",
+          "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.6การออกกำลังกายสำหรับผู้ป่วยเบาหวาน/การออกกำลังกายแบบแอโรบิก vs. แอนแอโรบิก.png",
+          "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.6การออกกำลังกายสำหรับผู้ป่วยเบาหวาน/การออกกำลังกายและการจัดการระดับน้ำตาล.png",
+          "New Asset-P8 Quick Manual/TH/10-คำแนะนำเพิ่มเติมสำหรับการดูแลเบาหวาน/10.6การออกกำลังกายสำหรับผู้ป่วยเบาหวาน/การออกกำลังกายและการจัดการการฉีดอินซูลิน.png"
+        ],
+        "imagesEN": [
+          "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.6Exercise for People with Diabetes/Exercise Recommendations.png",
+          "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.6Exercise for People with Diabetes/Aerobic vs. Anaerobic Exercise.png",
+          "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.6Exercise for People with Diabetes/Exercise and Blood Glucose Management.png",
+          "New Asset-P8 Quick Manual/EN/10-Additional Diabetes Management Guidance/10.6Exercise for People with Diabetes/Exercise and Insulin Dose Management.png"
+        ],
+        "id": "10.6"
       }
-
     ]
   }
-
 ];
+
 /* =========================================================
    GLOBAL STATE
 ========================================================= */
@@ -2557,6 +2052,11 @@ const imageItems =
                   "video"
                 );
 
+              const topicPlaylistButtons = buildYoutubeButtons(
+                currentLanguage === "th" ? topic.playlistsTH : topic.playlistsEN,
+                "playlist"
+              );
+
               const hasTopicVideos =
   Array.isArray(topicVideos) &&
   topicVideos.some(
@@ -2910,6 +2410,8 @@ ${bolusSection}
 ${videoScrollHint}
 
 ${videoButtons}
+
+${topicPlaylistButtons}
 
 
                     ${
@@ -3423,7 +2925,7 @@ function bindBolusModeButtons() {
       /* =====================================================
          SHOW DROPDOWN ONLY WHEN
          MAIN NAV = BOLUS CALCULATION
-         Step 08 topic index 2
+         Resolve the topic from its slide so content additions do not change the target.
       ===================================================== */
 
       const mainNavButtons =
@@ -3438,7 +2940,7 @@ function bindBolusModeButtons() {
         (topicIndex) => {
 
           const isBolusTopic =
-            String(topicIndex) === "2";
+            String(topicIndex) === section.closest(".slide").dataset.topicIndex;
 
 
           toolbarSlot.hidden =
@@ -3471,6 +2973,12 @@ function bindBolusModeButtons() {
 
 
       /* Initial state */
+
+      const slider = stepCard.querySelector("[data-slider]");
+
+      if (slider) {
+        slider._syncBolusToolbar = setToolbarVisibility;
+      }
 
       const activeMainButton =
         mainSubnav.querySelector(
@@ -4814,6 +4322,8 @@ function setupSingleSlider(slider) {
 
     updateSubnav();
 
+    // Arrows, dots, scrollbar, and programmatic navigation share this path.
+    slider._syncBolusToolbar?.(currentIndex);
 
 
     updateSliderButtons();
