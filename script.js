@@ -276,8 +276,8 @@ const steps = [
     "icon": "Image/Icon-3.png",
     "pathTH": "เปิด-ปิด & หน้าจอ P8",
     "pathEN": "Power On/Off P8 & Screen",
-    "titleTH": "เปิด-ปิด & หน้าจอ P8",
-    "titleEN": "Power On/Off P8 & Screen",
+    "titleTH": "การเปิด-ปิด และการใช้งานหน้าจอ P8",
+    "titleEN": "P8 Power On/Off and Screen Operation",
     "descriptionTH": "เปิดเครื่อง → ปิดเครื่อง → โหมดพักหน้าจอ → การปลุกหน้าจอ/กลับมาใช้งาน",
     "descriptionEN": "Power On → Power Off → Screen Saver Mode → Wake the Screen",
     "playlistsTH": [
